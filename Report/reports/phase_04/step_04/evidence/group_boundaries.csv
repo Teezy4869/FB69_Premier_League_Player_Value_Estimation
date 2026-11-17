@@ -1,0 +1,21 @@
+grouping,group,GK,DEF,MID,FWD,total,usable_targets
+starts_group,0 starts,7,77,101,139,324,282
+starts_group,1-9 starts,75,245,232,203,755,747
+starts_group,10-18 starts,26,214,176,173,589,589
+starts_group,19-28 starts,24,214,173,151,562,562
+starts_group,29-38 starts,73,185,157,101,516,516
+starts_group,starts missing,1,0,0,0,1,1
+usage_group,mainly substitute (<50% started),9,164,291,350,814,769
+usage_group,mixed (50-89% started),14,384,360,321,1079,1077
+usage_group,starter (>=90% started),182,387,188,96,853,850
+usage_group,appearances missing,1,0,0,0,1,1
+age_band,<=21,1,82,113,124,320,272
+age_band,22-24,17,163,161,171,512,510
+age_band,25-27,32,241,207,196,676,676
+age_band,28-30,46,222,185,149,602,602
+age_band,31+,110,227,173,127,637,637
+minutes_band,1-89,7,88,106,129,330,290
+minutes_band,90-449,0,119,120,123,362,352
+minutes_band,450-899,0,121,111,88,320,320
+minutes_band,900+,0,607,502,427,1536,1536
+minutes_band,minutes missing,199,0,0,0,199,199

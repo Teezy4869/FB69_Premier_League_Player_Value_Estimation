@@ -1,0 +1,14 @@
+phase: phase_02b0_step_05
+max_live_http_attempts: 50
+absolute_step_attempt_ceiling: 150
+workers: 1
+min_request_interval_seconds: 1.2
+max_retries: 1
+backoff_seconds: 2
+max_retry_after_seconds: 10
+run_dir: data/phase_02b0/reliability
+log_path: logs/phase_02b0_reliability_requests.jsonl
+profile_seasons: [2019/2020, 2022/2023, 2024/2025]
+profile_player_ids: [40604, 675088, 874025]
+match_seasons: [2020/2021, 2021/2022, 2023/2024]
+team_probe_seasons: [2019/2020, 2024/2025]

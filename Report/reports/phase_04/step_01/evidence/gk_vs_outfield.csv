@@ -1,0 +1,3 @@
+,rows,unique_players,median_confirmed_appearances,minutes_null_pct,target_coverage_pct,mean_null_metrics
+Goalkeeper,206,95,17.0,96.6,100.0,34.49
+Outfield,2541,1133,21.0,0.0,98.03,16.11

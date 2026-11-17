@@ -1,0 +1,36 @@
+COMMAND: python -m unittest tests.collection.test_final_acceptance_fix tests.collection.test_population_execution02 -v
+EXIT_CODE: 0
+
+STDOUT:
+
+STDERR:
+test_conflicting_lineup_identity (tests.collection.test_final_acceptance_fix.StrictEvidenceTests.test_conflicting_lineup_identity) ... ok
+test_deterministic_evidence_evaluation (tests.collection.test_final_acceptance_fix.StrictEvidenceTests.test_deterministic_evidence_evaluation) ... ok
+test_duplicate_key_and_season_population (tests.collection.test_final_acceptance_fix.StrictEvidenceTests.test_duplicate_key_and_season_population) ... ok
+test_explicit_unused_and_verified_complete_contract (tests.collection.test_final_acceptance_fix.StrictEvidenceTests.test_explicit_unused_and_verified_complete_contract) ... ok
+test_fact_only_positive_with_missing_lineup_sub_metadata (tests.collection.test_final_acceptance_fix.StrictEvidenceTests.test_fact_only_positive_with_missing_lineup_sub_metadata) ... ok
+test_malformed_swap (tests.collection.test_final_acceptance_fix.StrictEvidenceTests.test_malformed_swap) ... ok
+test_missing_matchfacts (tests.collection.test_final_acceptance_fix.StrictEvidenceTests.test_missing_matchfacts) ... ok
+test_multiple_substitutions (tests.collection.test_final_acceptance_fix.StrictEvidenceTests.test_multiple_substitutions) ... ok
+test_no_substitution_events_is_not_negative (tests.collection.test_final_acceptance_fix.StrictEvidenceTests.test_no_substitution_events_is_not_negative) ... ok
+test_nonempty_but_incomplete_events (tests.collection.test_final_acceptance_fix.StrictEvidenceTests.test_nonempty_but_incomplete_events) ... ok
+test_raw_checksum_mismatch (tests.collection.test_final_acceptance_fix.StrictEvidenceTests.test_raw_checksum_mismatch) ... ok
+test_real_replay_and_preserved_multiclub_relations (tests.collection.test_final_acceptance_fix.StrictEvidenceTests.test_real_replay_and_preserved_multiclub_relations) ... ok
+test_real_samples_all_six_seasons (tests.collection.test_final_acceptance_fix.StrictEvidenceTests.test_real_samples_all_six_seasons) ... ok
+test_self_consistent_feed_does_not_prove_negative (tests.collection.test_final_acceptance_fix.StrictEvidenceTests.test_self_consistent_feed_does_not_prove_negative) ... ok
+test_starter_and_entering_substitute (tests.collection.test_final_acceptance_fix.StrictEvidenceTests.test_starter_and_entering_substitute) ... ok
+test_wrong_scope_rejected (tests.collection.test_final_acceptance_fix.StrictEvidenceTests.test_wrong_scope_rejected) ... ok
+test_wrong_team_and_invalid_player_id (tests.collection.test_final_acceptance_fix.StrictEvidenceTests.test_wrong_team_and_invalid_player_id) ... ok
+test_abandoned_match_and_replay (tests.collection.test_population_execution02.PopulationExecution02Tests.test_abandoned_match_and_replay) ... ok
+test_duplicate_lineup_stops_batch_quality_gate (tests.collection.test_population_execution02.PopulationExecution02Tests.test_duplicate_lineup_stops_batch_quality_gate) ... ok
+test_invalid_and_duplicate_player_id_are_reported (tests.collection.test_population_execution02.PopulationExecution02Tests.test_invalid_and_duplicate_player_id_are_reported) ... ok
+test_missing_lineup_list_is_reported (tests.collection.test_population_execution02.PopulationExecution02Tests.test_missing_lineup_list_is_reported) ... ok
+test_missing_substitution_evidence_is_unknown (tests.collection.test_population_execution02.PopulationExecution02Tests.test_missing_substitution_evidence_is_unknown) ... ok
+test_multiclub_and_missing_leaderboard_candidate (tests.collection.test_population_execution02.PopulationExecution02Tests.test_multiclub_and_missing_leaderboard_candidate) ... ok
+test_saved_match_distinguishes_entered_from_unused_substitute (tests.collection.test_population_execution02.PopulationExecution02Tests.test_saved_match_distinguishes_entered_from_unused_substitute) ... ok
+test_wrong_fixture_context_is_rejected (tests.collection.test_population_execution02.PopulationExecution02Tests.test_wrong_fixture_context_is_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in 2.183s
+
+OK

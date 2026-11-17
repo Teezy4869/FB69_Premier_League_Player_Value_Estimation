@@ -1,0 +1,54 @@
+feature,bins,median_first_bin_eur,median_last_bin_eur,last_to_first_ratio,direction_changes,peak_bin,trend
+age_at_season_end_years,10,4.75e+06,2e+06,0.421053,1,5,inverted U (peak in bin 5)
+m_appearances,10,2e+06,2.75e+07,13.75,0,10,monotonic
+m_starts,10,2.1e+06,2.8e+07,13.3333,0,10,monotonic
+m_minutes_played,10,2e+06,3e+07,15,0,10,monotonic
+m_goals,10,4.9e+06,4e+07,8.16327,0,10,monotonic
+m_assists,10,5e+06,3.9e+07,7.8,2,10,mostly monotonic (minor reversals)
+m_shots,10,5e+06,4.5e+07,9,0,10,monotonic
+m_shots_on_target,10,7e+06,4.35e+07,6.21429,2,10,mostly monotonic (minor reversals)
+m_shots_per90,10,8e+06,2.5e+07,3.125,2,10,mostly monotonic (minor reversals)
+m_shots_on_target_per90,10,1.5e+07,2.5e+07,1.66667,4,9,irregular
+m_big_chances_created,10,1e+07,5e+07,5,2,10,mostly monotonic (minor reversals)
+m_dribbles_succeeded,10,6.5e+06,3.5e+07,5.38462,0,10,monotonic
+m_touches_opposition_box,10,5e+06,4.5e+07,9,0,10,monotonic
+m_expected_goals,10,5e+06,4e+07,8,0,10,monotonic
+m_non_penalty_xg,10,5e+06,4e+07,8,0,10,monotonic
+m_expected_assists,10,2e+06,4.5e+07,22.5,0,10,monotonic
+m_expected_goals_on_target,10,1e+07,4e+07,4,0,10,monotonic
+m_accurate_passes,10,4e+06,3.35e+07,8.375,2,10,mostly monotonic (minor reversals)
+m_accurate_passes_per90,10,1e+07,2.5e+07,2.5,2,10,mostly monotonic (minor reversals)
+m_accurate_long_passes,10,8e+06,2.2e+07,2.75,2,9,mostly monotonic (minor reversals)
+m_accurate_long_passes_per90,10,1.7e+07,1e+07,0.588235,3,2,irregular
+m_chances_created,10,8e+06,4.2e+07,5.25,0,10,monotonic
+m_successful_crosses,10,1.25e+07,2.75e+07,2.2,4,10,irregular
+m_passing_accuracy,10,7.5e+06,2.5e+07,3.33333,0,10,monotonic
+m_long_ball_accuracy,10,8e+06,2.2e+07,2.75,1,9,mostly monotonic (minor reversals)
+m_cross_accuracy,10,1.5e+07,1.3e+07,0.866667,1,5,mostly monotonic (minor reversals)
+m_touches,10,5e+06,3.2e+07,6.4,0,10,monotonic
+m_tackles,10,7e+06,2.5e+07,3.57143,2,10,mostly monotonic (minor reversals)
+m_tackles_per90,10,1.75e+07,1.4e+07,0.8,1,2,mostly monotonic (minor reversals)
+m_interceptions,10,1e+07,2.2e+07,2.2,4,10,irregular
+m_interceptions_per90,10,2e+07,1e+07,0.5,4,1,irregular
+m_recoveries,10,5e+06,2.5e+07,5,0,10,monotonic
+m_recoveries_per90,10,1.25e+07,1.3e+07,1.04,5,5,irregular
+m_blocked_shots,10,1.6e+07,2e+07,1.25,5,10,irregular
+m_blocks_per90,10,3e+07,1e+07,0.333333,0,1,monotonic
+m_clearances,10,1.2e+07,2.2e+07,1.83333,6,6,irregular
+m_clearances_per90,10,2.8e+07,1.4e+07,0.5,4,1,irregular
+m_aerials_won,10,1e+07,2e+07,2,6,6,irregular
+m_aerials_won_percent,10,1.5e+07,1.5e+07,1,3,2,irregular
+m_duels_won,10,5e+06,2.8e+07,5.6,0,10,monotonic
+m_duels_won_percent,10,1.15e+07,1.5e+07,1.30435,5,2,irregular
+m_yellow_cards,10,7e+06,2.5e+07,3.57143,2,10,mostly monotonic (minor reversals)
+m_red_cards,10,8e+06,2e+07,2.5,4,9,irregular
+m_fouls_committed,10,6e+06,2.8e+07,4.66667,0,10,monotonic
+m_fouls_won,10,7e+06,3.5e+07,5,0,10,monotonic
+m_saves,6,1.5e+06,1.5e+07,10,1,4,mostly monotonic (minor reversals)
+m_save_percentage,6,2e+06,1e+07,5,1,4,inverted U (peak in bin 4)
+m_clean_sheets,6,1.5e+06,2.5e+07,16.6667,0,6,monotonic
+m_goals_conceded,6,2e+06,1.5e+07,7.5,4,4,irregular
+m_goals_conceded_per90,6,9e+06,1.5e+06,0.166667,1,2,inverted U (peak in bin 2)
+m_penalty_saves,4,6.5e+06,1.5e+07,2.30769,2,4,mostly monotonic (minor reversals)
+m_goals_prevented,6,7.5e+06,1.5e+07,2,3,6,irregular
+m_rating,10,3e+06,4.2e+07,14,0,10,monotonic

@@ -1,0 +1,16 @@
+{
+ "generated_at_utc": "2026-11-08T03:07:35.514070+00:00",
+ "historical_files": 16290,
+ "current_files": 16456,
+ "changed": [
+  "CLAUDE.md"
+ ],
+ "removed": [],
+ "added_count": 166,
+ "unexpected_changes": [],
+ "unexpected_added": [],
+ "documented_edits_changed": [
+  "CLAUDE.md"
+ ],
+ "historical_protected": true
+}

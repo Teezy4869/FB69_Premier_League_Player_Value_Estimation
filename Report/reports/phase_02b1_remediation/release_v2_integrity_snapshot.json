@@ -1,0 +1,564 @@
+{
+  "snapshot_created_at_utc": "2026-11-03T03:54:47.044238+00:00",
+  "release_version": "fotmob_epl_2019_2025_v2",
+  "release_manifest_sha256": "b656af4923d22216deb690138978e2f7612434b6fce11bd7656b673cab38e067",
+  "release_file_count": 35,
+  "release_files": [
+    {
+      "rel_path": "curated/player_season_metrics_wide.parquet",
+      "size_bytes": 502448,
+      "sha256": "69ec796311a76ea0b291c18a4d4c5e16112b910f4fef081f4cf15eb319ec8825"
+    },
+    {
+      "rel_path": "manifests/collection_manifest.sqlite",
+      "size_bytes": 19685376,
+      "sha256": "3accf5c91826afbddafdcad14658f20a43c0931f839396c6db88c5b5ced22c76"
+    },
+    {
+      "rel_path": "manifests/metric_dictionary_v3.csv",
+      "size_bytes": 28840,
+      "sha256": "b54256010704643893474f39bb9c89887a43a77b1bafa0ba592159fdbc082e86"
+    },
+    {
+      "rel_path": "metadata/data_dictionary.md",
+      "size_bytes": 1408,
+      "sha256": "1a11cba007be5bb56a5cef9ddd6ff0d6e04bf20293da25b559be2869d9fe5157"
+    },
+    {
+      "rel_path": "metadata/entity_relationships.md",
+      "size_bytes": 499,
+      "sha256": "3d0aeed28bc92ac9cb2c94a07331a798a4b7898e2ca9ccdd0e443e5f325dcdd8"
+    },
+    {
+      "rel_path": "metadata/known_issues.md",
+      "size_bytes": 648,
+      "sha256": "559717e992c1d37a15a59a5778c1a1eb74b74562372754645130113fd2dfe624"
+    },
+    {
+      "rel_path": "metadata/release_manifest.json",
+      "size_bytes": 3543,
+      "sha256": "b656af4923d22216deb690138978e2f7612434b6fce11bd7656b673cab38e067"
+    },
+    {
+      "rel_path": "normalized/historical_position_observations.parquet",
+      "size_bytes": 352843,
+      "sha256": "3ffc696c3fb1d42605c30bb6746d14e33f477a18c57a67555690cb698baeaa43"
+    },
+    {
+      "rel_path": "normalized/matches.parquet",
+      "size_bytes": 26675,
+      "sha256": "b9b93392f757f4dd741d2a0a220c285686e2a01f17ee10a6aa11c9096b22caf5"
+    },
+    {
+      "rel_path": "normalized/metric_observations.parquet",
+      "size_bytes": 1916631,
+      "sha256": "f6bce66e0040a1ba5635f1e09dd96ec5b15f3945c093460f72dd5266d96f4f8d"
+    },
+    {
+      "rel_path": "normalized/player_match_appearances.parquet",
+      "size_bytes": 606649,
+      "sha256": "ae125ea8f9ec37019918834c9c636dcdc413f6b23abf82da2e4b00ba0c98e1f9"
+    },
+    {
+      "rel_path": "normalized/player_seasons.parquet",
+      "size_bytes": 284239,
+      "sha256": "83ff6f0b3f09abcb62bcf5368511d1651fcb1f7629950cc0bf30fb417fe75e43"
+    },
+    {
+      "rel_path": "normalized/player_team_seasons.parquet",
+      "size_bytes": 270301,
+      "sha256": "d3f484ced06bcba10c09e8fcecadae2bdca8fbd2268006e3a1925c23b1a69437"
+    },
+    {
+      "rel_path": "normalized/players.parquet",
+      "size_bytes": 110650,
+      "sha256": "fae45cba4e8a1aa37197db799cba2b5ee54731e936545fad0d488acbca0d3c9a"
+    },
+    {
+      "rel_path": "normalized/seasons.parquet",
+      "size_bytes": 2117,
+      "sha256": "0f5280d446989c625ece2974731379eddc40ab824950ba1e4065e4915a706722"
+    },
+    {
+      "rel_path": "normalized/teams.parquet",
+      "size_bytes": 3269,
+      "sha256": "d00072ea74685f9c50cc7cb27bdc71047ea10fc5ceaaf38790f3f4190c0e5258"
+    },
+    {
+      "rel_path": "quality_reports/batch_quality_report.csv",
+      "size_bytes": 31163,
+      "sha256": "e570c1075618f9953ddc13b934625e05d35b13b125c9edff5ea055f4dcdd31eb"
+    },
+    {
+      "rel_path": "quality_reports/collection_gap_report.csv",
+      "size_bytes": 1598,
+      "sha256": "028017f2b539b89145429a151c46d83a8f2f3a55337d213b3c5d3ecf85d13637"
+    },
+    {
+      "rel_path": "quality_reports/cross_season_feature_coverage.csv",
+      "size_bytes": 26317,
+      "sha256": "b8fe479b4a4bf46e4f3124fe4d74fa9bfae12c995aa9aa0c92ef5e1c9c76b05e"
+    },
+    {
+      "rel_path": "quality_reports/data_quality_issue_tracker.csv",
+      "size_bytes": 1655,
+      "sha256": "d75a7c340c8e7e72e77c959581a2f42145c3f41d39c6f055e04073d2ef1b7356"
+    },
+    {
+      "rel_path": "quality_reports/execution06_metric_rebuild_samples.csv",
+      "size_bytes": 881,
+      "sha256": "97cf5bd25ce40f253f2cb013658dd4841e5e9c1400b56396516a6b5ee9c5b299"
+    },
+    {
+      "rel_path": "quality_reports/execution06_reproducibility_samples.csv",
+      "size_bytes": 865,
+      "sha256": "0ef3dbfb5ba033bf13c80a4c0c6c736e43341f4033ef18974c605639c9a79e53"
+    },
+    {
+      "rel_path": "quality_reports/metric_reconciliation_report.csv",
+      "size_bytes": 5591453,
+      "sha256": "3f3a14e72f978aa2e6c251150067676b61e5f2accac83d38c03876af5ee3fbb4"
+    },
+    {
+      "rel_path": "quality_reports/normalization_report.csv",
+      "size_bytes": 1826,
+      "sha256": "f17fe61252cfba75c8254378343a0d89d60d686567e6d5590f26171d4bfd715c"
+    },
+    {
+      "rel_path": "quality_reports/player_population_quality.csv",
+      "size_bytes": 463,
+      "sha256": "931498474cb97989b749aa192758e55c9edca8d18db3a639f350b845b66db645"
+    },
+    {
+      "rel_path": "quality_reports/raw_integrity_report.csv",
+      "size_bytes": 3605813,
+      "sha256": "0952ae51426db5a8f379ed3e130ec81cc1e6f7b4f012edba5b323c0133ebc7a7"
+    },
+    {
+      "rel_path": "quality_reports/referential_integrity_report.csv",
+      "size_bytes": 1077,
+      "sha256": "7338036ed062833998185d6adf48fc8eb7625890fda7e05cedb26e4fa77cfb1e"
+    },
+    {
+      "rel_path": "quality_reports/season_2019_2020_acceptance.md",
+      "size_bytes": 835,
+      "sha256": "598852ef46b41ebd659dc3e5e493c51bc3a0d5721aa849566eaf5d4a04c605e3"
+    },
+    {
+      "rel_path": "quality_reports/season_2020_2021_acceptance.md",
+      "size_bytes": 838,
+      "sha256": "15f7fa06740c21fb011329549264b98bfe7c3903d5e6eb6aa1a5dedbdc956907"
+    },
+    {
+      "rel_path": "quality_reports/season_2021_2022_acceptance.md",
+      "size_bytes": 838,
+      "sha256": "0ffd24235e080c4c2285e8c28c09150172ffb2fde02c876af6eb8f78f40f3a5b"
+    },
+    {
+      "rel_path": "quality_reports/season_2022_2023_acceptance.md",
+      "size_bytes": 838,
+      "sha256": "be39f18cde669682bcebb3eaf1d662c038f1c15deac98dc028f27721d2135cee"
+    },
+    {
+      "rel_path": "quality_reports/season_2023_2024_acceptance.md",
+      "size_bytes": 838,
+      "sha256": "b0b750770220e0e7ecf9e6d5887a2fc861472d8276e2f37d34ebfec5b1e609c5"
+    },
+    {
+      "rel_path": "quality_reports/season_2024_2025_acceptance.md",
+      "size_bytes": 838,
+      "sha256": "d00c165bd8f7925eb6236e92dc6e3af7eb2bd6a37b6ee19b6c5adc76e800b669"
+    },
+    {
+      "rel_path": "quality_reports/source_lineage_report.csv",
+      "size_bytes": 1737853,
+      "sha256": "29c7b159cae50506f1dd6540376d54ce783c47605aa5bb4fdc6527be5582a69c"
+    },
+    {
+      "rel_path": "README.md",
+      "size_bytes": 1446,
+      "sha256": "2de3e2a0a1b4e01270c76947935beeb0c1ea72bceb025e2c9351d47dc92fe687"
+    }
+  ],
+  "parquet_tables": {
+    "players": {
+      "path": "normalized/players.parquet",
+      "rows": 1757,
+      "columns": [
+        "player_id",
+        "lineup_name",
+        "profile_name",
+        "birth_date",
+        "nationality_code",
+        "nationality_name",
+        "current_team_id",
+        "current_position",
+        "profile_status",
+        "profile_raw_path",
+        "profile_collected_at_utc"
+      ],
+      "size_bytes": 110650,
+      "sha256": "fae45cba4e8a1aa37197db799cba2b5ee54731e936545fad0d488acbca0d3c9a"
+    },
+    "teams": {
+      "path": "normalized/teams.parquet",
+      "rows": 120,
+      "columns": [
+        "season_id",
+        "season_label",
+        "team_id",
+        "team_name",
+        "short_name",
+        "fixture_raw_path"
+      ],
+      "size_bytes": 3269,
+      "sha256": "d00072ea74685f9c50cc7cb27bdc71047ea10fc5ceaaf38790f3f4190c0e5258"
+    },
+    "seasons": {
+      "path": "normalized/seasons.parquet",
+      "rows": 6,
+      "columns": [
+        "season_label",
+        "season_id",
+        "competition_id",
+        "eligible_completed_matches",
+        "status",
+        "fixture_source_id"
+      ],
+      "size_bytes": 2117,
+      "sha256": "0f5280d446989c625ece2974731379eddc40ab824950ba1e4065e4915a706722"
+    },
+    "matches": {
+      "path": "normalized/matches.parquet",
+      "rows": 2281,
+      "columns": [
+        "season_label",
+        "season_id",
+        "match_id",
+        "match_date_utc",
+        "home_team_id",
+        "away_team_id",
+        "finished",
+        "cancelled",
+        "eligible_completed",
+        "status_reason",
+        "score",
+        "fixture_source_id",
+        "fixture_raw_path",
+        "fixture_collected_at_utc",
+        "competition_id",
+        "match_status"
+      ],
+      "size_bytes": 26675,
+      "sha256": "b9b93392f757f4dd741d2a0a220c285686e2a01f17ee10a6aa11c9096b22caf5"
+    },
+    "player_seasons": {
+      "path": "normalized/player_seasons.parquet",
+      "rows": 4052,
+      "columns": [
+        "season_label",
+        "season_id",
+        "player_id",
+        "player_name",
+        "evidence_status",
+        "in_candidate_population",
+        "appeared_match_count",
+        "team_count",
+        "evidence_raw_paths",
+        "profile_status"
+      ],
+      "size_bytes": 284239,
+      "sha256": "83ff6f0b3f09abcb62bcf5368511d1651fcb1f7629950cc0bf30fb417fe75e43"
+    },
+    "player_team_seasons": {
+      "path": "normalized/player_team_seasons.parquet",
+      "rows": 4135,
+      "columns": [
+        "season_label",
+        "season_id",
+        "player_id",
+        "team_id",
+        "membership_status",
+        "in_candidate_relation",
+        "appeared_match_count",
+        "evidence_raw_paths",
+        "validation_status"
+      ],
+      "size_bytes": 270301,
+      "sha256": "d3f484ced06bcba10c09e8fcecadae2bdca8fbd2268006e3a1925c23b1a69437"
+    },
+    "player_match_appearances": {
+      "path": "normalized/player_match_appearances.parquet",
+      "rows": 89392,
+      "columns": [
+        "season_label",
+        "season_id",
+        "match_id",
+        "match_date_utc",
+        "team_id",
+        "player_id",
+        "player_name",
+        "lineup_role",
+        "substitution_events",
+        "participation_status",
+        "source_id",
+        "capture_id",
+        "request_key",
+        "raw_path",
+        "collected_at_utc",
+        "starting_status",
+        "substitution_status",
+        "evidence_source",
+        "validation_status"
+      ],
+      "size_bytes": 606649,
+      "sha256": "ae125ea8f9ec37019918834c9c636dcdc413f6b23abf82da2e4b00ba0c98e1f9"
+    },
+    "historical_position_observations": {
+      "path": "normalized/historical_position_observations.parquet",
+      "rows": 151475,
+      "columns": [
+        "season_id",
+        "match_id",
+        "player_id",
+        "team_id",
+        "lineup_role",
+        "source_field",
+        "original_code",
+        "mapped_group",
+        "mapping_status",
+        "mapping_version",
+        "raw_path"
+      ],
+      "size_bytes": 352843,
+      "sha256": "3ffc696c3fb1d42605c30bb6746d14e33f477a18c57a67555690cb698baeaa43"
+    },
+    "metric_observations": {
+      "path": "normalized/metric_observations.parquet",
+      "rows": 207043,
+      "columns": [
+        "season_label",
+        "season_id",
+        "player_id",
+        "player_name",
+        "team_id",
+        "team_count",
+        "metric_name",
+        "metric_group",
+        "original_metric_name",
+        "original_source_field",
+        "source_title",
+        "raw_value",
+        "value",
+        "source_format",
+        "source_reported_unit",
+        "unit",
+        "aggregation_type",
+        "source_endpoint",
+        "source_component",
+        "source_per90",
+        "season_entry",
+        "metric_status",
+        "request_key",
+        "capture_id",
+        "collection_timestamp",
+        "collected_at_utc",
+        "raw_path",
+        "in_appeared_population"
+      ],
+      "size_bytes": 1916631,
+      "sha256": "f6bce66e0040a1ba5635f1e09dd96ec5b15f3945c093460f72dd5266d96f4f8d"
+    },
+    "player_season_metrics_wide": {
+      "path": "curated/player_season_metrics_wide.parquet",
+      "rows": 4052,
+      "columns": [
+        "season_id",
+        "season_label",
+        "player_id",
+        "population_status",
+        "profile_raw_path",
+        "confirmed_team_ids",
+        "confirmed_team_count",
+        "stats_raw_path",
+        "m_accurate_long_passes",
+        "m_accurate_long_passes_per90",
+        "m_accurate_passes",
+        "m_accurate_passes_per90",
+        "m_aerials_won",
+        "m_aerials_won_percent",
+        "m_appearances",
+        "m_assists",
+        "m_big_chances_created",
+        "m_blocked_shots",
+        "m_blocks_per90",
+        "m_chances_created",
+        "m_clean_sheets",
+        "m_clearances",
+        "m_clearances_per90",
+        "m_cross_accuracy",
+        "m_dribbles_succeeded",
+        "m_duels_won",
+        "m_duels_won_percent",
+        "m_expected_assists",
+        "m_expected_goals",
+        "m_expected_goals_on_target",
+        "m_fouls_committed",
+        "m_fouls_won",
+        "m_goals",
+        "m_goals_conceded",
+        "m_goals_conceded_per90",
+        "m_goals_prevented",
+        "m_interceptions",
+        "m_interceptions_per90",
+        "m_key_passes",
+        "m_long_ball_accuracy",
+        "m_minutes_played",
+        "m_non_penalty_xg",
+        "m_passing_accuracy",
+        "m_penalty_saves",
+        "m_rating",
+        "m_recoveries",
+        "m_recoveries_per90",
+        "m_red_cards",
+        "m_save_percentage",
+        "m_saves",
+        "m_shots",
+        "m_shots_on_target",
+        "m_shots_on_target_per90",
+        "m_shots_per90",
+        "m_starts",
+        "m_successful_crosses",
+        "m_tackles",
+        "m_tackles_per90",
+        "m_touches",
+        "m_touches_opposition_box",
+        "m_yellow_cards",
+        "s_accurate_long_passes",
+        "s_accurate_long_passes_per90",
+        "s_accurate_passes",
+        "s_accurate_passes_per90",
+        "s_aerials_won",
+        "s_aerials_won_percent",
+        "s_appearances",
+        "s_assists",
+        "s_big_chances_created",
+        "s_blocked_shots",
+        "s_blocks_per90",
+        "s_chances_created",
+        "s_clean_sheets",
+        "s_clearances",
+        "s_clearances_per90",
+        "s_cross_accuracy",
+        "s_dribbles_succeeded",
+        "s_duels_won",
+        "s_duels_won_percent",
+        "s_expected_assists",
+        "s_expected_goals",
+        "s_expected_goals_on_target",
+        "s_fouls_committed",
+        "s_fouls_won",
+        "s_goals",
+        "s_goals_conceded",
+        "s_goals_conceded_per90",
+        "s_goals_prevented",
+        "s_interceptions",
+        "s_interceptions_per90",
+        "s_key_passes",
+        "s_long_ball_accuracy",
+        "s_minutes_played",
+        "s_non_penalty_xg",
+        "s_passing_accuracy",
+        "s_penalty_saves",
+        "s_rating",
+        "s_recoveries",
+        "s_recoveries_per90",
+        "s_red_cards",
+        "s_save_percentage",
+        "s_saves",
+        "s_shots",
+        "s_shots_on_target",
+        "s_shots_on_target_per90",
+        "s_shots_per90",
+        "s_starts",
+        "s_successful_crosses",
+        "s_tackles",
+        "s_tackles_per90",
+        "s_touches",
+        "s_touches_opposition_box",
+        "s_yellow_cards"
+      ],
+      "size_bytes": 502448,
+      "sha256": "69ec796311a76ea0b291c18a4d4c5e16112b910f4fef081f4cf15eb319ec8825"
+    }
+  },
+  "recomputed_baseline_counts": {
+    "unique_players_in_players_table": 1757,
+    "unique_players_in_player_seasons": 1757,
+    "unique_players_in_wide_table": 1757,
+    "player_season_records": 4052,
+    "player_season_metrics_wide_records": 4052,
+    "population_classification_breakdown": {
+      "APPEARED": 3262,
+      "UNKNOWN_PARTICIPATION": 586,
+      "UNUSED_SUBSTITUTE_ONLY": 204
+    },
+    "player_team_seasons_records": 4135,
+    "player_team_seasons_validation_status": {
+      "CONFIRMED": 3323,
+      "UNRESOLVED": 812
+    },
+    "multi_club_player_seasons_count": 61,
+    "total_matches": 2281,
+    "completed_matches": 2280,
+    "ineligible_abandoned_matches": 1,
+    "abandoned_match_detail": [
+      {
+        "match_id": "4193691",
+        "season_label": "2023/2024",
+        "status": "CANCELLED_OR_ABANDONED"
+      }
+    ],
+    "player_match_appearances_records": 89392,
+    "pma_participation_status_breakdown": {
+      "STARTED": 50160,
+      "SUBSTITUTED_ON": 15628,
+      "UNUSED_SUBSTITUTE": 7290,
+      "UNKNOWN": 16314
+    },
+    "pma_lineup_role_breakdown": {
+      "STARTER": 50160,
+      "SUBSTITUTE": 39232
+    },
+    "pma_validation_status_breakdown": {
+      "CONFIRMED": 65788,
+      "NOT_APPEARED": 7290,
+      "UNRESOLVED": 16314
+    },
+    "historical_position_observations_records": 151475,
+    "position_mapped_group_breakdown": {
+      "GK": 14055,
+      "UNKNOWN": 43134,
+      "DEF": 37086,
+      "MID": 31850,
+      "FWD": 25350
+    },
+    "metric_observations_records": 207043,
+    "metric_dictionary_metric_count": 53,
+    "metric_observation_statuses": {
+      "OBSERVED": 139440,
+      "CONFLICTING": 1150,
+      "OBSERVED_ZERO": 7798,
+      "MISSING": 34121,
+      "UNVERIFIED_POSITION": 21272,
+      "UNSUPPORTED": 3262
+    },
+    "reconciliation_comparisons_count": 31587,
+    "reconciliation_conflicts_count": 575,
+    "coverage_anomalies_valid_gt_eligible_count": 41,
+    "legacy_quality_gates_planned_count": 12,
+    "historical_2019_2020_xg_valid_count": 67,
+    "historical_2019_2020_xa_valid_count": 0
+  },
+  "verification_verdict": "BASELINE_VERIFIED"
+}

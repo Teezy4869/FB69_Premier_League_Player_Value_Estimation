@@ -1,0 +1,42 @@
+phase: phase_02b1_execution_01
+competition: English Premier League
+league_id: 47
+seasons:
+  2019/2020: 14022
+  2020/2021: 15382
+  2021/2022: 16390
+  2022/2023: 17664
+  2023/2024: 20720
+  2024/2025: 23685
+verified_request_endpoints: [leagues, leagueseasondeepstats, matchDetails, playerData, playerStats]
+excluded_as_historical_roster: [teams]
+unverified_endpoint: [playerMatches]
+candidate_leaderboard_metrics: [mins_played, goals, saves]
+workers: 1
+min_request_interval_seconds: 1.2
+max_retries: 1
+backoff_seconds: 2
+max_retry_after_seconds: 10
+request_timeout_seconds: 15
+max_response_bytes: 3000000
+max_batch_size: 50
+max_run_http_attempts: 50
+manifest_path: data/phase_02b1/collection_manifest.sqlite
+raw_dir: data/phase_02b1/raw
+quarantine_dir: data/phase_02b1/quarantine
+checkpoint_dir: data/phase_02b1/checkpoints
+normalized_dir: data/phase_02b1/normalized
+report_dir: reports/phase_02b1
+log_path: logs/phase_02b1_requests.jsonl
+request_contract: fotmob-data-v1
+parser_version: 1
+schema_version: 1
+cache_policy: verify_sha256_and_scope_before_reuse
+quality:
+  expected_finished_fixtures_per_season: 380
+  max_consecutive_schema_errors: 3
+  max_consecutive_server_errors: 2
+  stop_http_statuses: [403, 429]
+  require_raw_checksum: true
+  require_provenance: true
+  optional_metric_missing_is_fatal: false

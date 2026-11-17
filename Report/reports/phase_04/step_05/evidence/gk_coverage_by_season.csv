@@ -1,0 +1,6 @@
+season,gk_rows,minutes_metric_present,lineup_minutes_present,m_saves_present_pct,m_save_percentage_present_pct,m_clean_sheets_present_pct,m_goals_conceded_present_pct,m_goals_conceded_per90_present_pct,m_penalty_saves_present_pct,m_goals_prevented_present_pct
+2020/2021,41,2,41,95.122,92.6829,95.122,95.122,95.122,65.8537,92.6829
+2021/2022,42,1,42,97.619,97.619,97.619,97.619,97.619,61.9048,97.619
+2022/2023,39,0,39,100,100,100,100,100,76.9231,100
+2023/2024,40,2,40,95,95,95,95,95,75,90
+2024/2025,44,2,44,93.1818,93.1818,93.1818,93.1818,93.1818,63.6364,59.0909

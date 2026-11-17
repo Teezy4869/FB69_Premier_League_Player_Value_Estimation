@@ -1,0 +1,9 @@
+status,label,meaning,reliability_class,cells,cells_pct,stored_null,stored_zero,stored_non_zero
+OBSERVED,Observed value,Value reported by the source for the season,available,91289,62.7024,0,0,91289
+OBSERVED_ZERO,Genuine observed zero,The source reports zero events; the stored value is 0,available,5762,3.95766,0,5762,0
+OBSERVED_FALLBACK_LEADERBOARD,Observed via fallback,Value taken from the season leaderboard because the player stats page lacked it,available (alternative source path),402,0.276116,0,270,132
+OBSERVED_SOURCE_REVISED,"Observed, revised by source",Value differs between collection passes; the later source value is kept (RS5-13),available (revised),95,0.0652513,0,0,95
+MISSING,Unavailable observation,The source provides no value for this player-season; the stored value is null,unavailable,27361,18.7931,27361,0,0
+UNVERIFIED_POSITION,Not applicable or unverified by position,Position-specific metric on a row whose position does not match or is not verified; null,not applicable,17899,12.294,17899,0,0
+UNSUPPORTED,Unsupported metric,The source has no data for this metric at all (key_passes); null,unavailable (no source data),2747,1.88679,2747,0,0
+CONFLICTING,Conflicting source values,Collection passes disagree and no value could be confirmed; null,unverified conflict,36,0.0247268,36,0,0

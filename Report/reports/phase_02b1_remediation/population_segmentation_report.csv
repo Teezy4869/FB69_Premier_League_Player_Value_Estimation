@@ -1,0 +1,8 @@
+season_label,season_id,total_player_seasons,confirmed_appeared_count,unverified_count,confirmed_non_appeared_count,conflicting_count,multi_club_player_seasons_count,confirmed_multi_club_appeared_count,total_matchday_squad_appearances,unresolved_substitute_observations,unused_substitute_observations,status
+2019/2020,14022,614,515,10,89,0,7,7,14034,46,3374,SEGMENTATION_VERIFIED
+2020/2021,15382,641,524,99,18,0,11,11,14643,3449,801,SEGMENTATION_VERIFIED
+2021/2022,16390,679,537,107,35,0,12,12,15162,3401,1276,SEGMENTATION_VERIFIED
+2022/2023,17664,699,554,103,42,0,24,21,15185,2561,1279,SEGMENTATION_VERIFIED
+2023/2024,20720,734,570,144,20,0,12,12,15180,3236,560,SEGMENTATION_VERIFIED
+2024/2025,23685,685,562,123,0,0,17,17,15188,3621,0,SEGMENTATION_VERIFIED
+ALL_SEASONS,TOTAL,4052,3262,586,204,0,83,80,89392,16314,7290,POPULATION_RECONCILED

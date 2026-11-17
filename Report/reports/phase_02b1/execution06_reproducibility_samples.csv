@@ -1,0 +1,7 @@
+season_label,match_id,raw_path,raw_sha256_valid,expected_links,rebuilt_links,status,issues
+2019/2020,3055738,data/phase_02b1/raw/2019_2020/matchDetails/cap_ff02b0965b6b4cdc8b5d05a76a3f4ca3/response.json,True,36,36,PASS,
+2020/2021,3411352,data/phase_02b1/raw/2020_2021/matchDetails/cap_ed7952a5077d46e3bffbe3c7fa601502/response.json,True,36,36,PASS,
+2021/2022,3609929,data/phase_02b1/raw/2021_2022/matchDetails/cap_7f9be9a8b9be44878677cd98b5c03c2c/response.json,True,40,40,PASS,
+2022/2023,3900932,data/phase_02b1/raw/2022_2023/matchDetails/cap_c4f9d3c726b241cc929257637272b293/response.json,True,40,40,PASS,
+2023/2024,4193450,data/phase_02b1/raw/2023_2024/matchDetails/cap_368bc7050ae14e61bf60ca0848578878/response.json,True,40,40,PASS,
+2024/2025,4506263,data/phase_02b1/raw/2024_2025/matchDetails/cap_72971aa6d5b24493b77d7c252279ac03/response.json,True,40,40,PASS,

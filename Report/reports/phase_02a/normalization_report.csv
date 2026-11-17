@@ -1,0 +1,8 @@
+dataset,row_count,primary_key,duplicate_key_count,null_key_count,status,note
+players,109,player_id,0,0,PASS,Raw sources retained
+teams,27,team_id,0,0,PASS,Raw sources retained
+player_seasons,120,player_id+season_id,0,0,PASS,Raw sources retained
+player_team_seasons,120,player_id+team_id+season_id,0,0,PASS,Raw sources retained
+matches,2281,match_id,0,0,PASS,Raw sources retained
+player_match_links,47,player_id+match_id,0,0,PASS,Sampled lineage only
+metric_observations,2880,player_id+season_id+metric,0,0,PASS,Raw sources retained

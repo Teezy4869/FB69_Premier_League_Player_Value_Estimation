@@ -1,0 +1,81 @@
+test_audit_is_of_the_current_dataset (tests.research_scope.test_audit_rs5.AuditRs5Test.test_audit_is_of_the_current_dataset) ... ok
+test_every_column_has_a_leakage_classification (tests.research_scope.test_audit_rs5.AuditRs5Test.test_every_column_has_a_leakage_classification) ... ok
+test_evidence_contains_only_official_seasons (tests.research_scope.test_audit_rs5.AuditRs5Test.test_evidence_contains_only_official_seasons) ... ok
+test_feature_reliability_covers_every_candidate (tests.research_scope.test_audit_rs5.AuditRs5Test.test_feature_reliability_covers_every_candidate) ... ok
+test_feature_windows_rechecked_on_five_seasons (tests.research_scope.test_audit_rs5.AuditRs5Test.test_feature_windows_rechecked_on_five_seasons) ... ok
+test_no_candidate_feature_encodes_the_target (tests.research_scope.test_audit_rs5.AuditRs5Test.test_no_candidate_feature_encodes_the_target) ... ok
+test_no_candidate_predictor_fails_and_every_target_derived_column_is_excluded (tests.research_scope.test_audit_rs5.AuditRs5Test.test_no_candidate_predictor_fails_and_every_target_derived_column_is_excluded) ... ok
+test_quality_invariants (tests.research_scope.test_audit_rs5.AuditRs5Test.test_quality_invariants) ... ok
+test_temporal_indicators_recomputed_independently (tests.research_scope.test_audit_rs5.AuditRs5Test.test_temporal_indicators_recomputed_independently) ... ok
+test_adjudications_are_automated_not_human (tests.research_scope.test_crosswalk_rs5.CrosswalkRs5Test.test_adjudications_are_automated_not_human) ... ok
+test_evidence_inputs_are_scoped (tests.research_scope.test_crosswalk_rs5.CrosswalkRs5Test.test_evidence_inputs_are_scoped) ... ok
+test_integrity_rules_hold (tests.research_scope.test_crosswalk_rs5.CrosswalkRs5Test.test_integrity_rules_hold) ... ok
+test_manifest_hashes (tests.research_scope.test_crosswalk_rs5.CrosswalkRs5Test.test_manifest_hashes) ... ok
+test_no_in_scope_mapping_changed (tests.research_scope.test_crosswalk_rs5.CrosswalkRs5Test.test_no_in_scope_mapping_changed) ... ok
+test_status_counts (tests.research_scope.test_crosswalk_rs5.CrosswalkRs5Test.test_status_counts) ... ok
+test_universe_is_exactly_the_rs5_population (tests.research_scope.test_crosswalk_rs5.CrosswalkRs5Test.test_universe_is_exactly_the_rs5_population) ... ok
+test_unresolved_identities_stay_unresolved (tests.research_scope.test_crosswalk_rs5.CrosswalkRs5Test.test_unresolved_identities_stay_unresolved) ... ok
+test_validation_labels_cover_mapped_identities (tests.research_scope.test_crosswalk_rs5.CrosswalkRs5Test.test_validation_labels_cover_mapped_identities) ... ok
+test_crawl_log_is_referenced_not_copied (tests.research_scope.test_fotmob_rs5.FotmobRs5Test.test_crawl_log_is_referenced_not_copied) ... ok
+test_dictionary_has_no_six_season_counts (tests.research_scope.test_fotmob_rs5.FotmobRs5Test.test_dictionary_has_no_six_season_counts) ... ok
+test_every_csv_is_in_scope (tests.research_scope.test_fotmob_rs5.FotmobRs5Test.test_every_csv_is_in_scope) ... ok
+test_every_table_is_in_scope (tests.research_scope.test_fotmob_rs5.FotmobRs5Test.test_every_table_is_in_scope) ... ok
+test_historical_release_unchanged (tests.research_scope.test_fotmob_rs5.FotmobRs5Test.test_historical_release_unchanged) ... ok
+test_manifest_hashes_and_inventory (tests.research_scope.test_fotmob_rs5.FotmobRs5Test.test_manifest_hashes_and_inventory) ... ok
+test_missingness_semantics_preserved (tests.research_scope.test_fotmob_rs5.FotmobRs5Test.test_missingness_semantics_preserved)
+UNKNOWN stays UNKNOWN, null stays null, zero stays zero: counts equal the v3.1 slice per status and per metric. ... ok
+test_players_are_exactly_those_referenced (tests.research_scope.test_fotmob_rs5.FotmobRs5Test.test_players_are_exactly_those_referenced) ... ok
+test_population_counts (tests.research_scope.test_fotmob_rs5.FotmobRs5Test.test_population_counts) ... ok
+test_primary_keys_unique (tests.research_scope.test_fotmob_rs5.FotmobRs5Test.test_primary_keys_unique) ... ok
+test_recalculated_totals_and_conflicts (tests.research_scope.test_fotmob_rs5.FotmobRs5Test.test_recalculated_totals_and_conflicts) ... ok
+test_rows_and_schema_equal_the_v3_1_slice (tests.research_scope.test_fotmob_rs5.FotmobRs5Test.test_rows_and_schema_equal_the_v3_1_slice) ... ok
+test_season_data_provenance_never_points_to_excluded_season (tests.research_scope.test_fotmob_rs5.FotmobRs5Test.test_season_data_provenance_never_points_to_excluded_season)
+Profiles (player-level) may sit in a 2019_2020 capture folder; season data must not. ... ok
+test_all_integration_checks_pass (tests.research_scope.test_integrated_rs5.IntegratedRs5Test.test_all_integration_checks_pass) ... ok
+test_counts (tests.research_scope.test_integrated_rs5.IntegratedRs5Test.test_counts) ... ok
+test_dropped_columns_are_absent (tests.research_scope.test_integrated_rs5.IntegratedRs5Test.test_dropped_columns_are_absent) ... ok
+test_every_join_kept_row_count (tests.research_scope.test_integrated_rs5.IntegratedRs5Test.test_every_join_kept_row_count) ... ok
+test_nothing_imputed_or_zero_filled (tests.research_scope.test_integrated_rs5.IntegratedRs5Test.test_nothing_imputed_or_zero_filled) ... ok
+test_outputs_match_manifest (tests.research_scope.test_integrated_rs5.IntegratedRs5Test.test_outputs_match_manifest) ... ok
+test_dataset_is_the_audited_and_reproduced_one (tests.research_scope.test_release_rs5.ReleaseRs5Test.test_dataset_is_the_audited_and_reproduced_one) ... ok
+test_historical_releases_untouched_by_name (tests.research_scope.test_release_rs5.ReleaseRs5Test.test_historical_releases_untouched_by_name) ... ok
+test_manifest_inventory_and_hashes (tests.research_scope.test_release_rs5.ReleaseRs5Test.test_manifest_inventory_and_hashes) ... ok
+test_release_documents_do_not_present_2019_20_as_data (tests.research_scope.test_release_rs5.ReleaseRs5Test.test_release_documents_do_not_present_2019_20_as_data)
+Mentions of 2019/20 in the release text may only explain the exclusion or historical context. ... ok
+test_required_contents_present (tests.research_scope.test_release_rs5.ReleaseRs5Test.test_required_contents_present) ... ok
+test_scope_declared_and_snapshot_matches_config (tests.research_scope.test_release_rs5.ReleaseRs5Test.test_scope_declared_and_snapshot_matches_config) ... ok
+test_rs5_sources_have_no_season_literals (tests.research_scope.test_scope.NoLocalSeasonListsTest.test_rs5_sources_have_no_season_literals) ... ok
+test_2019_20_is_explicitly_excluded_everywhere (tests.research_scope.test_scope.ScopeConfigTest.test_2019_20_is_explicitly_excluded_everywhere) ... ok
+test_bad_configs_are_rejected (tests.research_scope.test_scope.ScopeConfigTest.test_bad_configs_are_rejected) ... ok
+test_cutoffs_are_read_from_the_approved_config_not_copied (tests.research_scope.test_scope.ScopeConfigTest.test_cutoffs_are_read_from_the_approved_config_not_copied) ... ok
+test_exactly_the_five_approved_seasons (tests.research_scope.test_scope.ScopeConfigTest.test_exactly_the_five_approved_seasons) ... ok
+test_objective_and_cutoff_policy_reference_existing_decisions (tests.research_scope.test_scope.ScopeConfigTest.test_objective_and_cutoff_policy_reference_existing_decisions) ... ok
+test_assert_seasons_rejects_excluded_season_in_every_form (tests.research_scope.test_scope.ScopeEnforcementTest.test_assert_seasons_rejects_excluded_season_in_every_form) ... ok
+test_assert_seasons_rejects_unknown_and_null (tests.research_scope.test_scope.ScopeEnforcementTest.test_assert_seasons_rejects_unknown_and_null) ... ok
+test_check_table_accepts_clean_and_rejects_contaminated (tests.research_scope.test_scope.ScopeEnforcementTest.test_check_table_accepts_clean_and_rejects_contaminated) ... ok
+test_all_validation_checks_pass (tests.research_scope.test_targets_rs5.TargetRs5RevalidatedIdentityTest.test_all_validation_checks_pass) ... ok
+test_counts (tests.research_scope.test_targets_rs5.TargetRs5RevalidatedIdentityTest.test_counts) ... ok
+test_only_identity_columns_differ_from_step_2 (tests.research_scope.test_targets_rs5.TargetRs5RevalidatedIdentityTest.test_only_identity_columns_differ_from_step_2) ... ok
+test_outputs_match_manifest (tests.research_scope.test_targets_rs5.TargetRs5RevalidatedIdentityTest.test_outputs_match_manifest) ... ok
+test_rows_equal_historical_in_scope_rows (tests.research_scope.test_targets_rs5.TargetRs5RevalidatedIdentityTest.test_rows_equal_historical_in_scope_rows) ... ok
+test_schema_is_the_approved_target_schema (tests.research_scope.test_targets_rs5.TargetRs5RevalidatedIdentityTest.test_schema_is_the_approved_target_schema) ... ok
+test_scope_and_cutoffs (tests.research_scope.test_targets_rs5.TargetRs5RevalidatedIdentityTest.test_scope_and_cutoffs) ... ok
+test_select_target_never_uses_future_valuations (tests.research_scope.test_targets_rs5.TargetRs5RevalidatedIdentityTest.test_select_target_never_uses_future_valuations)
+Synthetic observations, not research data. ... ok
+test_staleness_is_a_label_not_an_exclusion (tests.research_scope.test_targets_rs5.TargetRs5RevalidatedIdentityTest.test_staleness_is_a_label_not_an_exclusion) ... ok
+test_statistics_definitions_are_recorded (tests.research_scope.test_targets_rs5.TargetRs5RevalidatedIdentityTest.test_statistics_definitions_are_recorded) ... ok
+test_all_validation_checks_pass (tests.research_scope.test_targets_rs5.TargetRs5Test.test_all_validation_checks_pass) ... ok
+test_counts (tests.research_scope.test_targets_rs5.TargetRs5Test.test_counts) ... ok
+test_outputs_match_manifest (tests.research_scope.test_targets_rs5.TargetRs5Test.test_outputs_match_manifest) ... ok
+test_rows_equal_historical_in_scope_rows (tests.research_scope.test_targets_rs5.TargetRs5Test.test_rows_equal_historical_in_scope_rows) ... ok
+test_schema_is_the_approved_target_schema (tests.research_scope.test_targets_rs5.TargetRs5Test.test_schema_is_the_approved_target_schema) ... ok
+test_scope_and_cutoffs (tests.research_scope.test_targets_rs5.TargetRs5Test.test_scope_and_cutoffs) ... ok
+test_select_target_never_uses_future_valuations (tests.research_scope.test_targets_rs5.TargetRs5Test.test_select_target_never_uses_future_valuations)
+Synthetic observations, not research data. ... ok
+test_staleness_is_a_label_not_an_exclusion (tests.research_scope.test_targets_rs5.TargetRs5Test.test_staleness_is_a_label_not_an_exclusion) ... ok
+test_statistics_definitions_are_recorded (tests.research_scope.test_targets_rs5.TargetRs5Test.test_statistics_definitions_are_recorded) ... ok
+
+----------------------------------------------------------------------
+Ran 71 tests in 20.571s
+
+OK

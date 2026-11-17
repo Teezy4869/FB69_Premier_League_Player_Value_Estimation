@@ -1,0 +1,145 @@
+season_label,metric,available,missing,not_applicable,unsupported,unparseable,sample_rows,source_endpoints,unit,statistic_type,note
+2019/2020,appearances,32,0,0,0,0,32,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2019/2020,minutes_played,32,0,0,0,0,32,leagueseasondeepstats|playerStats,minutes,total,No zero imputation; percentages only describe the sampled rows
+2019/2020,starts,32,0,0,0,0,32,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2019/2020,rating,30,2,0,0,0,32,playerStats,FotMob rating points,rating,No zero imputation; percentages only describe the sampled rows
+2019/2020,goals,28,4,0,0,0,32,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2019/2020,assists,29,3,0,0,0,32,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2019/2020,shots,25,7,0,0,0,32,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2019/2020,shots_on_target,22,10,0,0,0,32,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2019/2020,expected_goals,7,25,0,0,0,32,playerStats,expected goals; provider definition unverified,total,No zero imputation; percentages only describe the sampled rows
+2019/2020,expected_assists,0,32,0,0,0,32,,expected assists; provider definition unverified,total,No zero imputation; percentages only describe the sampled rows
+2019/2020,accurate_passes,29,3,0,0,0,32,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2019/2020,passing_accuracy,29,3,0,0,0,32,playerStats,percent; denominator not supplied,percentage,No zero imputation; percentages only describe the sampled rows
+2019/2020,chances_created,26,6,0,0,0,32,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2019/2020,key_passes,0,0,0,32,0,32,,unknown,unknown,No zero imputation; percentages only describe the sampled rows
+2019/2020,accurate_long_passes,26,6,0,0,0,32,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2019/2020,tackles,25,7,0,0,0,32,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2019/2020,interceptions,23,9,0,0,0,32,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2019/2020,clearances,0,32,0,0,0,32,,count,total,No zero imputation; percentages only describe the sampled rows
+2019/2020,blocked_shots,18,14,0,0,0,32,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2019/2020,duels_won,25,7,0,0,0,32,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2019/2020,saves,4,0,28,0,0,32,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2019/2020,goals_conceded,4,0,28,0,0,32,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2019/2020,clean_sheets,4,0,28,0,0,32,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2019/2020,goals_prevented,0,4,28,0,0,32,,goal-equivalent; provider definition unverified,total,No zero imputation; percentages only describe the sampled rows
+2020/2021,appearances,8,0,0,0,0,8,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2020/2021,minutes_played,8,0,0,0,0,8,leagueseasondeepstats|playerStats,minutes,total,No zero imputation; percentages only describe the sampled rows
+2020/2021,starts,8,0,0,0,0,8,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2020/2021,rating,7,1,0,0,0,8,playerStats,FotMob rating points,rating,No zero imputation; percentages only describe the sampled rows
+2020/2021,goals,7,1,0,0,0,8,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2020/2021,assists,8,0,0,0,0,8,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2020/2021,shots,6,2,0,0,0,8,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2020/2021,shots_on_target,6,2,0,0,0,8,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2020/2021,expected_goals,6,2,0,0,0,8,playerStats,expected goals; provider definition unverified,total,No zero imputation; percentages only describe the sampled rows
+2020/2021,expected_assists,7,1,0,0,0,8,playerStats,expected assists; provider definition unverified,total,No zero imputation; percentages only describe the sampled rows
+2020/2021,accurate_passes,7,1,0,0,0,8,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2020/2021,passing_accuracy,7,1,0,0,0,8,playerStats,percent; denominator not supplied,percentage,No zero imputation; percentages only describe the sampled rows
+2020/2021,chances_created,7,1,0,0,0,8,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2020/2021,key_passes,0,0,0,8,0,8,,unknown,unknown,No zero imputation; percentages only describe the sampled rows
+2020/2021,accurate_long_passes,7,1,0,0,0,8,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2020/2021,tackles,6,2,0,0,0,8,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2020/2021,interceptions,6,2,0,0,0,8,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2020/2021,clearances,0,8,0,0,0,8,,count,total,No zero imputation; percentages only describe the sampled rows
+2020/2021,blocked_shots,6,2,0,0,0,8,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2020/2021,duels_won,6,2,0,0,0,8,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2020/2021,saves,1,0,7,0,0,8,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2020/2021,goals_conceded,1,0,7,0,0,8,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2020/2021,clean_sheets,1,0,7,0,0,8,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2020/2021,goals_prevented,1,0,7,0,0,8,playerStats,goal-equivalent; provider definition unverified,total,No zero imputation; percentages only describe the sampled rows
+2021/2022,appearances,8,0,0,0,0,8,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2021/2022,minutes_played,8,0,0,0,0,8,leagueseasondeepstats|playerStats,minutes,total,No zero imputation; percentages only describe the sampled rows
+2021/2022,starts,8,0,0,0,0,8,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2021/2022,rating,8,0,0,0,0,8,playerStats,FotMob rating points,rating,No zero imputation; percentages only describe the sampled rows
+2021/2022,goals,7,1,0,0,0,8,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2021/2022,assists,7,1,0,0,0,8,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2021/2022,shots,6,2,0,0,0,8,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2021/2022,shots_on_target,6,2,0,0,0,8,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2021/2022,expected_goals,6,2,0,0,0,8,playerStats,expected goals; provider definition unverified,total,No zero imputation; percentages only describe the sampled rows
+2021/2022,expected_assists,7,1,0,0,0,8,playerStats,expected assists; provider definition unverified,total,No zero imputation; percentages only describe the sampled rows
+2021/2022,accurate_passes,7,1,0,0,0,8,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2021/2022,passing_accuracy,7,1,0,0,0,8,playerStats,percent; denominator not supplied,percentage,No zero imputation; percentages only describe the sampled rows
+2021/2022,chances_created,6,2,0,0,0,8,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2021/2022,key_passes,0,0,0,8,0,8,,unknown,unknown,No zero imputation; percentages only describe the sampled rows
+2021/2022,accurate_long_passes,7,1,0,0,0,8,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2021/2022,tackles,6,2,0,0,0,8,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2021/2022,interceptions,6,2,0,0,0,8,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2021/2022,clearances,0,8,0,0,0,8,,count,total,No zero imputation; percentages only describe the sampled rows
+2021/2022,blocked_shots,6,2,0,0,0,8,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2021/2022,duels_won,6,2,0,0,0,8,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2021/2022,saves,1,0,7,0,0,8,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2021/2022,goals_conceded,1,0,7,0,0,8,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2021/2022,clean_sheets,1,0,7,0,0,8,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2021/2022,goals_prevented,1,0,7,0,0,8,playerStats,goal-equivalent; provider definition unverified,total,No zero imputation; percentages only describe the sampled rows
+2022/2023,appearances,32,0,0,0,0,32,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2022/2023,minutes_played,32,0,0,0,0,32,leagueseasondeepstats|playerStats,minutes,total,No zero imputation; percentages only describe the sampled rows
+2022/2023,starts,32,0,0,0,0,32,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2022/2023,rating,30,2,0,0,0,32,playerStats,FotMob rating points,rating,No zero imputation; percentages only describe the sampled rows
+2022/2023,goals,28,4,0,0,0,32,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2022/2023,assists,29,3,0,0,0,32,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2022/2023,shots,23,9,0,0,0,32,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2022/2023,shots_on_target,18,14,0,0,0,32,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2022/2023,expected_goals,22,10,0,0,0,32,playerStats,expected goals; provider definition unverified,total,No zero imputation; percentages only describe the sampled rows
+2022/2023,expected_assists,27,5,0,0,0,32,playerStats,expected assists; provider definition unverified,total,No zero imputation; percentages only describe the sampled rows
+2022/2023,accurate_passes,27,5,0,0,0,32,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2022/2023,passing_accuracy,27,5,0,0,0,32,playerStats,percent; denominator not supplied,percentage,No zero imputation; percentages only describe the sampled rows
+2022/2023,chances_created,24,8,0,0,0,32,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2022/2023,key_passes,0,0,0,32,0,32,,unknown,unknown,No zero imputation; percentages only describe the sampled rows
+2022/2023,accurate_long_passes,25,7,0,0,0,32,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2022/2023,tackles,22,10,0,0,0,32,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2022/2023,interceptions,21,11,0,0,0,32,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2022/2023,clearances,0,32,0,0,0,32,,count,total,No zero imputation; percentages only describe the sampled rows
+2022/2023,blocked_shots,19,13,0,0,0,32,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2022/2023,duels_won,23,9,0,0,0,32,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2022/2023,saves,4,0,28,0,0,32,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2022/2023,goals_conceded,4,0,28,0,0,32,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2022/2023,clean_sheets,4,0,28,0,0,32,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2022/2023,goals_prevented,4,0,28,0,0,32,playerStats,goal-equivalent; provider definition unverified,total,No zero imputation; percentages only describe the sampled rows
+2023/2024,appearances,8,0,0,0,0,8,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2023/2024,minutes_played,8,0,0,0,0,8,leagueseasondeepstats|playerStats,minutes,total,No zero imputation; percentages only describe the sampled rows
+2023/2024,starts,8,0,0,0,0,8,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2023/2024,rating,7,1,0,0,0,8,playerStats,FotMob rating points,rating,No zero imputation; percentages only describe the sampled rows
+2023/2024,goals,7,1,0,0,0,8,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2023/2024,assists,7,1,0,0,0,8,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2023/2024,shots,6,2,0,0,0,8,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2023/2024,shots_on_target,6,2,0,0,0,8,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2023/2024,expected_goals,6,2,0,0,0,8,playerStats,expected goals; provider definition unverified,total,No zero imputation; percentages only describe the sampled rows
+2023/2024,expected_assists,7,1,0,0,0,8,playerStats,expected assists; provider definition unverified,total,No zero imputation; percentages only describe the sampled rows
+2023/2024,accurate_passes,7,1,0,0,0,8,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2023/2024,passing_accuracy,7,1,0,0,0,8,playerStats,percent; denominator not supplied,percentage,No zero imputation; percentages only describe the sampled rows
+2023/2024,chances_created,7,1,0,0,0,8,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2023/2024,key_passes,0,0,0,8,0,8,,unknown,unknown,No zero imputation; percentages only describe the sampled rows
+2023/2024,accurate_long_passes,7,1,0,0,0,8,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2023/2024,tackles,6,2,0,0,0,8,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2023/2024,interceptions,6,2,0,0,0,8,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2023/2024,clearances,4,4,0,0,0,8,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2023/2024,blocked_shots,5,3,0,0,0,8,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2023/2024,duels_won,6,2,0,0,0,8,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2023/2024,saves,1,0,7,0,0,8,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2023/2024,goals_conceded,1,0,7,0,0,8,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2023/2024,clean_sheets,1,0,7,0,0,8,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2023/2024,goals_prevented,1,0,7,0,0,8,playerStats,goal-equivalent; provider definition unverified,total,No zero imputation; percentages only describe the sampled rows
+2024/2025,appearances,32,0,0,0,0,32,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2024/2025,minutes_played,32,0,0,0,0,32,leagueseasondeepstats|playerStats,minutes,total,No zero imputation; percentages only describe the sampled rows
+2024/2025,starts,32,0,0,0,0,32,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2024/2025,rating,31,1,0,0,0,32,playerStats,FotMob rating points,rating,No zero imputation; percentages only describe the sampled rows
+2024/2025,goals,28,4,0,0,0,32,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2024/2025,assists,29,3,0,0,0,32,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2024/2025,shots,23,9,0,0,0,32,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2024/2025,shots_on_target,20,12,0,0,0,32,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2024/2025,expected_goals,22,10,0,0,0,32,playerStats,expected goals; provider definition unverified,total,No zero imputation; percentages only describe the sampled rows
+2024/2025,expected_assists,27,5,0,0,0,32,playerStats,expected assists; provider definition unverified,total,No zero imputation; percentages only describe the sampled rows
+2024/2025,accurate_passes,27,5,0,0,0,32,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2024/2025,passing_accuracy,27,5,0,0,0,32,playerStats,percent; denominator not supplied,percentage,No zero imputation; percentages only describe the sampled rows
+2024/2025,chances_created,23,9,0,0,0,32,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2024/2025,key_passes,0,0,0,32,0,32,,unknown,unknown,No zero imputation; percentages only describe the sampled rows
+2024/2025,accurate_long_passes,26,6,0,0,0,32,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2024/2025,tackles,23,9,0,0,0,32,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2024/2025,interceptions,22,10,0,0,0,32,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2024/2025,clearances,23,9,0,0,0,32,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2024/2025,blocked_shots,20,12,0,0,0,32,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2024/2025,duels_won,23,9,0,0,0,32,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2024/2025,saves,4,0,28,0,0,32,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2024/2025,goals_conceded,4,0,28,0,0,32,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2024/2025,clean_sheets,4,0,28,0,0,32,playerStats,count,total,No zero imputation; percentages only describe the sampled rows
+2024/2025,goals_prevented,4,0,28,0,0,32,playerStats,goal-equivalent; provider definition unverified,total,No zero imputation; percentages only describe the sampled rows

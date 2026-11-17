@@ -1,0 +1,232 @@
+{
+ "xg_xa_tight": {
+  "expected_goals": {
+   "2019/2020": {
+    "compared": 53,
+    "within_0.02": 52,
+    "within_0.05": 53,
+    "within_0.10": 53,
+    "max_gap": 0.03,
+    "median_gap": 0.0,
+    "season_value_without_match_value": 16,
+    "nonzero_among_those": 16,
+    "median_of_those": 0.11
+   },
+   "2020/2021": {
+    "compared": 433,
+    "within_0.02": 385,
+    "within_0.05": 432,
+    "within_0.10": 432,
+    "max_gap": 0.18,
+    "median_gap": 0.01,
+    "season_value_without_match_value": 0,
+    "nonzero_among_those": 0,
+    "median_of_those": null
+   },
+   "2021/2022": {
+    "compared": 446,
+    "within_0.02": 384,
+    "within_0.05": 445,
+    "within_0.10": 446,
+    "max_gap": 0.05,
+    "median_gap": 0.01,
+    "season_value_without_match_value": 0,
+    "nonzero_among_those": 0,
+    "median_of_those": null
+   },
+   "2022/2023": {
+    "compared": 458,
+    "within_0.02": 378,
+    "within_0.05": 452,
+    "within_0.10": 458,
+    "max_gap": 0.08,
+    "median_gap": 0.01,
+    "season_value_without_match_value": 0,
+    "nonzero_among_those": 0,
+    "median_of_those": null
+   },
+   "2023/2024": {
+    "compared": 460,
+    "within_0.02": 408,
+    "within_0.05": 458,
+    "within_0.10": 459,
+    "max_gap": 0.35,
+    "median_gap": 0.01,
+    "season_value_without_match_value": 0,
+    "nonzero_among_those": 0,
+    "median_of_those": null
+   },
+   "2024/2025": {
+    "compared": 457,
+    "within_0.02": 391,
+    "within_0.05": 455,
+    "within_0.10": 457,
+    "max_gap": 0.05,
+    "median_gap": 0.01,
+    "season_value_without_match_value": 0,
+    "nonzero_among_those": 0,
+    "median_of_those": null
+   }
+  },
+  "expected_assists": {
+   "2019/2020": {
+    "compared": 50,
+    "within_0.02": 23,
+    "within_0.05": 50,
+    "within_0.10": 50,
+    "max_gap": 0.05,
+    "median_gap": 0.02,
+    "season_value_without_match_value": 46,
+    "nonzero_among_those": 7,
+    "median_of_those": 0.0
+   },
+   "2020/2021": {
+    "compared": 460,
+    "within_0.02": 335,
+    "within_0.05": 457,
+    "within_0.10": 459,
+    "max_gap": 0.15,
+    "median_gap": 0.01,
+    "season_value_without_match_value": 56,
+    "nonzero_among_those": 12,
+    "median_of_those": 0.0
+   },
+   "2021/2022": {
+    "compared": 468,
+    "within_0.02": 356,
+    "within_0.05": 466,
+    "within_0.10": 468,
+    "max_gap": 0.05,
+    "median_gap": 0.01,
+    "season_value_without_match_value": 64,
+    "nonzero_among_those": 17,
+    "median_of_those": 0.0
+   },
+   "2022/2023": {
+    "compared": 485,
+    "within_0.02": 364,
+    "within_0.05": 482,
+    "within_0.10": 485,
+    "max_gap": 0.06,
+    "median_gap": 0.01,
+    "season_value_without_match_value": 64,
+    "nonzero_among_those": 11,
+    "median_of_those": 0.0
+   },
+   "2023/2024": {
+    "compared": 491,
+    "within_0.02": 364,
+    "within_0.05": 488,
+    "within_0.10": 490,
+    "max_gap": 0.22,
+    "median_gap": 0.01,
+    "season_value_without_match_value": 68,
+    "nonzero_among_those": 18,
+    "median_of_those": 0.0
+   },
+   "2024/2025": {
+    "compared": 496,
+    "within_0.02": 364,
+    "within_0.05": 494,
+    "within_0.10": 496,
+    "max_gap": 0.06,
+    "median_gap": 0.01,
+    "season_value_without_match_value": 57,
+    "nonzero_among_those": 10,
+    "median_of_those": 0.0
+   }
+  }
+ },
+ "xg_2019_20": {
+  "confirmed_rows": 515,
+  "rows_with_season_xg": 69,
+  "median_games_with_match_xg_among_them": 1.0,
+  "median_games_played_among_them": 31.0,
+  "total_games_recorded": 58.0,
+  "total_games": 10614.0
+ },
+ "xg_2019_20_matches": [
+  {
+   "match_id": "3055811",
+   "date": "2019-10-05",
+   "players_with_xg": 10,
+   "home": "Liverpool",
+   "away": "Leicester City"
+  },
+  {
+   "match_id": "3055892",
+   "date": "2019-12-07",
+   "players_with_xg": 15,
+   "home": "Manchester City",
+   "away": "Manchester United"
+  },
+  {
+   "match_id": "3055937",
+   "date": "2019-12-28",
+   "players_with_xg": 17,
+   "home": "West Ham United",
+   "away": "Leicester City"
+  },
+  {
+   "match_id": "3056063",
+   "date": "2020-07-05",
+   "players_with_xg": 16,
+   "home": "Newcastle United",
+   "away": "West Ham United"
+  }
+ ],
+ "minutes_outliers": [
+  {
+   "fotmob_player_id": "1130797",
+   "season": "2023/2024",
+   "season_minutes": 51.0,
+   "match_sum": 42.0,
+   "games": 8.0
+  },
+  {
+   "fotmob_player_id": "1396784",
+   "season": "2023/2024",
+   "season_minutes": 942.0,
+   "match_sum": 923.0,
+   "games": 20.0
+  }
+ ],
+ "batch_2020_04_08": {
+  "rows_by_season": {
+   "2019/2020": 491
+  },
+  "with_previous_value": 491,
+  "median_previous_valuation_date": "2019-12-10",
+  "top_previous_dates": [
+   [
+    "2019-12-10",
+    372
+   ],
+   [
+    "2020-03-09",
+    64
+   ],
+   [
+    "2020-02-11",
+    9
+   ],
+   [
+    "2020-02-27",
+    6
+   ],
+   [
+    "2019-12-17",
+    4
+   ]
+  ],
+  "median_age_reported": 109,
+  "median_age_from_previous_valuation": 229,
+  "pct_games_after_batch": 25.33,
+  "pct_games_after_previous_valuation": 52.72
+ },
+ "overall_with_previous_valuation_substituted_for_timing_only": {
+  "pct_over_90_days": 63.35,
+  "pct_games_after": 45.48,
+  "note": "Descriptive only. No date or value was replaced in the target dataset."
+ }
+}

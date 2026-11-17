@@ -1,0 +1,14 @@
+check,rows
+m_starts > m_appearances,6
+m_shots_on_target > m_shots,0
+m_goals > m_shots,0
+m_minutes_played > 90 x m_appearances,0
+m_appearances > 38,0
+started + sub_in != confirmed appearances,0
+confirmed_appearance_count < 1,0
+target_usable differs from target value present,0
+VALID target older than 90 days,0
+STALE_TARGET not older than 90 days,0
+missing_feature_count differs from null m_* count,0
+temporal games after valuation > games in season,0
+per90 rate reported with minutes < 90,40

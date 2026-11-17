@@ -1,0 +1,15 @@
+grouping,n,groups,kruskal_h,epsilon_squared
+position_group_season,2697,4,69.7852,0.0258847
+"season (grouping key, not a predictor)",2697,5,39.2176,0.0145466
+position x season (grouping),2697,20,115.387,0.0427992
+age band (derived from age),2697,5,528.522,0.196039
+minutes band (derived; missing kept separate),2697,5,672.134,0.249308
+season within GK,206,5,2.70555,0.0131978
+season within DEF,924,5,22.3913,0.0242593
+season within MID,817,5,6.9465,0.00851287
+season within FWD,750,5,14.4116,0.0192411
+position within 2020/2021,515,4,18.1868,0.0353829
+position within 2021/2022,528,4,14.6325,0.0277656
+position within 2022/2023,542,4,11.9018,0.0219996
+position within 2023/2024,567,4,6.90386,0.0121976
+position within 2024/2025,545,4,25.1578,0.0462459

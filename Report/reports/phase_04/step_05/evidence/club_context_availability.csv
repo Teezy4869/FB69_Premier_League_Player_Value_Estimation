@@ -1,0 +1,9 @@
+column,non_null,distinct,example
+confirmed_team_ids,2747,73,8602
+confirmed_team_count,2747,2,1
+associated_team_count,2747,2,1
+associated_team_ids,2747,89,8602
+associated_team_names,2747,89,Wolverhampton Wanderers
+is_multi_club,2747,2,False
+multi_club_status,2747,2,SINGLE_CLUB
+multi_club_class,2747,3,SINGLE_CLUB

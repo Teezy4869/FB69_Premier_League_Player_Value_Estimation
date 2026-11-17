@@ -1,0 +1,17 @@
+path,table,grain,physical_rows,manifest_rows,duplicate_grain_keys,null_identifier_rows,identifier_type_errors,distinct_raw_paths,missing_raw_paths,status
+curated/confirmed_appeared_player_seasons.parquet,confirmed_appeared_player_seasons,season_id|player_id,3262,3262,0,0,0,0,0,PASS
+curated/player_season_metrics_wide.parquet,player_season_metrics_wide,season_id|player_id,4052,4052,0,0,0,0,0,PASS
+normalized/complete_player_season_classification.parquet,complete_player_season_classification,season_id|player_id,4052,4052,0,0,0,0,0,PASS
+normalized/confirmed_appeared_player_seasons.parquet,confirmed_appeared_player_seasons,season_id|player_id,3262,3262,0,0,0,0,0,PASS
+normalized/confirmed_non_appeared_player_seasons.parquet,confirmed_non_appeared_player_seasons,season_id|player_id,0,0,0,0,0,0,0,PASS
+normalized/historical_position_observations.parquet,historical_position_observations,match_id|player_id|source_field,151475,151475,0,0,0,0,0,PASS
+normalized/matches.parquet,matches,match_id,2281,2281,0,0,0,0,0,PASS
+normalized/metric_observations.parquet,metric_observations,season_id|player_id|metric_name|source_endpoint|original_source_field|raw_path,207043,207043,0,0,0,3394,0,PASS
+normalized/player_match_appearances.parquet,player_match_appearances,match_id|player_id,89392,89392,0,0,0,0,0,PASS
+normalized/player_seasons.parquet,player_seasons,season_id|player_id,4052,4052,0,0,0,0,0,PASS
+normalized/player_team_seasons.parquet,player_team_seasons,season_id|player_id|team_id,4135,4135,0,0,0,0,0,PASS
+normalized/players.parquet,players,player_id,1757,1757,0,0,0,0,0,PASS
+normalized/seasons.parquet,seasons,season_id,6,6,0,0,0,0,0,PASS
+normalized/substitution_evidence_registry.parquet,substitution_evidence_registry,match_id|player_id,89392,89392,0,0,0,0,0,PASS
+normalized/teams.parquet,teams,season_id|team_id,120,120,0,0,0,0,0,PASS
+normalized/unverified_player_seasons.parquet,unverified_player_seasons,season_id|player_id,790,790,0,0,0,0,0,PASS

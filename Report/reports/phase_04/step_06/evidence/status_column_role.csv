@@ -1,0 +1,6 @@
+possible_role,basis,assessment,decision_needed
+Interpret nulls in EDA and audits,"Distinguishes unavailable, not applicable, unsupported and conflicting nulls",Used throughout Phase 4,none
+Missingness indicators for preprocessing,"MISSING is informative (fringe players, lower values; 4.3 and 4.5)","Possible; one indicator per metric family or per block, not per status value",P4-D01 decision
+Applicability masks,UNVERIFIED_POSITION marks GK-only metrics on outfield rows,Possible for position-specific designs,"P4-D01, P4-B10"
+Exclusion of unusable cells,CONFLICTING (36 cells) and UNSUPPORTED (key_passes),Keep null; never zero,none
+Numeric performance features,Statuses are categorical source codes,Not appropriate,n/a

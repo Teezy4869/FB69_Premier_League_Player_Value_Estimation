@@ -1,0 +1,238 @@
+{
+ "id_bridge_scan": {
+  "profiles_scanned": 1343,
+  "contain_transfermarkt_string": 0,
+  "contains_opta_key_prefix": 400,
+  "matching_key_names": {
+   "rightmidfielder": 237,
+   "rightmidfielder_short": 161,
+   "opta": 400,
+   "leftmidfielder": 242,
+   "leftmidfielder_short": 162
+  }
+ },
+ "confirmed_player_name": {
+  "null_names": 0,
+  "distinct_names": 1394
+ },
+ "minutes_null_vs_status": [
+  {
+   "st": "OBSERVED",
+   "n": 3022,
+   "nonnull": 3022
+  },
+  {
+   "st": "MISSING",
+   "n": 237,
+   "nonnull": 0
+  },
+  {
+   "st": "OBSERVED_SOURCE_REVISED",
+   "n": 3,
+   "nonnull": 3
+  }
+ ],
+ "minutes_null_vs_gk_metric": [
+  {
+   "minutes_null": false,
+   "has_gk_metric": false,
+   "n": 3025
+  },
+  {
+   "minutes_null": true,
+   "has_gk_metric": false,
+   "n": 2
+  },
+  {
+   "minutes_null": true,
+   "has_gk_metric": true,
+   "n": 235
+  }
+ ],
+ "minutes_null_vs_appearance_evidence": [
+  {
+   "n": 237,
+   "median_apps": 18.0,
+   "min_apps": 1,
+   "max_apps": 38
+  }
+ ],
+ "multi_club_flag_vs_count": [
+  {
+   "is_multi_club": false,
+   "confirmed_team_count": 1,
+   "associated_team_count": 1,
+   "n": 3182
+  },
+  {
+   "is_multi_club": true,
+   "confirmed_team_count": 1,
+   "associated_team_count": 2,
+   "n": 19
+  },
+  {
+   "is_multi_club": true,
+   "confirmed_team_count": 2,
+   "associated_team_count": 2,
+   "n": 61
+  }
+ ],
+ "fotmob_appeared_player_matches": [
+  {
+   "season_label": "2019/2020",
+   "appeared_player_matches": 10614,
+   "confirmed_appearance_sum": 10614
+  },
+  {
+   "season_label": "2020/2021",
+   "appeared_player_matches": 10393,
+   "confirmed_appearance_sum": 10393
+  },
+  {
+   "season_label": "2021/2022",
+   "appeared_player_matches": 10485,
+   "confirmed_appearance_sum": 10485
+  },
+  {
+   "season_label": "2022/2023",
+   "appeared_player_matches": 11345,
+   "confirmed_appearance_sum": 11345
+  },
+  {
+   "season_label": "2023/2024",
+   "appeared_player_matches": 11384,
+   "confirmed_appearance_sum": 11384
+  },
+  {
+   "season_label": "2024/2025",
+   "appeared_player_matches": 11567,
+   "confirmed_appearance_sum": 11567
+  }
+ ],
+ "tm_epl_season_shape": [
+  {
+   "season": "2019/2020",
+   "min_rows_per_game": 23,
+   "max_rows_per_game": 32,
+   "med": 28.0,
+   "games_under_22": 0,
+   "min_players_per_club": 21,
+   "max_players_per_club": 30,
+   "modal_selected_date": "2020-04-08",
+   "n_on_modal_date": 489,
+   "before_last_match": 496,
+   "n": 496,
+   "games_after_modal_date": 92,
+   "games": 380
+  },
+  {
+   "season": "2020/2021",
+   "min_rows_per_game": 24,
+   "max_rows_per_game": 29,
+   "med": 27.0,
+   "games_under_22": 0,
+   "min_players_per_club": 22,
+   "max_players_per_club": 30,
+   "modal_selected_date": "2021-03-18",
+   "n_on_modal_date": 476,
+   "before_last_match": 513,
+   "n": 513,
+   "games_after_modal_date": 94,
+   "games": 380
+  },
+  {
+   "season": "2021/2022",
+   "min_rows_per_game": 23,
+   "max_rows_per_game": 30,
+   "med": 28.0,
+   "games_under_22": 0,
+   "min_players_per_club": 22,
+   "max_players_per_club": 30,
+   "modal_selected_date": "2021-12-23",
+   "n_on_modal_date": 378,
+   "before_last_match": 505,
+   "n": 505,
+   "games_after_modal_date": 211,
+   "games": 380
+  },
+  {
+   "season": "2022/2023",
+   "min_rows_per_game": 25,
+   "max_rows_per_game": 34,
+   "med": 30.0,
+   "games_under_22": 0,
+   "min_players_per_club": 24,
+   "max_players_per_club": 36,
+   "modal_selected_date": "2022-11-03",
+   "n_on_modal_date": 328,
+   "before_last_match": 542,
+   "n": 542,
+   "games_after_modal_date": 254,
+   "games": 380
+  },
+  {
+   "season": "2023/2024",
+   "min_rows_per_game": 25,
+   "max_rows_per_game": 33,
+   "med": 30.0,
+   "games_under_22": 0,
+   "min_players_per_club": 25,
+   "max_players_per_club": 35,
+   "modal_selected_date": "2023-12-19",
+   "n_on_modal_date": 390,
+   "before_last_match": 568,
+   "n": 568,
+   "games_after_modal_date": 211,
+   "games": 380
+  },
+  {
+   "season": "2024/2025",
+   "min_rows_per_game": 26,
+   "max_rows_per_game": 34,
+   "med": 31.0,
+   "games_under_22": 0,
+   "min_players_per_club": 23,
+   "max_players_per_club": 36,
+   "modal_selected_date": "2024-12-16",
+   "n_on_modal_date": 291,
+   "before_last_match": 545,
+   "n": 545,
+   "games_after_modal_date": 221,
+   "games": 380
+  }
+ ],
+ "zero_valuation_rows": [
+  {
+   "player_id": "60096",
+   "date": "2008-03-17",
+   "market_value_in_eur": "0",
+   "current_club_name": "NK Maribor"
+  }
+ ],
+ "fotmob_team_seasons_by_team_count": [
+  {
+   "season_label": "2019/2020",
+   "teams": 20
+  },
+  {
+   "season_label": "2020/2021",
+   "teams": 20
+  },
+  {
+   "season_label": "2021/2022",
+   "teams": 20
+  },
+  {
+   "season_label": "2022/2023",
+   "teams": 20
+  },
+  {
+   "season_label": "2023/2024",
+   "teams": 20
+  },
+  {
+   "season_label": "2024/2025",
+   "teams": 20
+  }
+ ]
+}

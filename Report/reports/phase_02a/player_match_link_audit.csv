@@ -1,0 +1,11 @@
+season_label,match_id,match_status,home_team_id,away_team_id,detail_status,lineup_player_count,selected_player_links,selected_team_players,lineup_duplicate_entries,source_id,note
+2019/2020,3055887,FINISHED,8650,8668,AVAILABLE,36,6,8,0,match_2019_2020_3055887,Only sampled player IDs are emitted as links; absence from lineup is not season absence
+2019/2020,3056023,FINISHED,8650,8678,AVAILABLE,36,5,8,0,match_2019_2020_3056023,Only sampled player IDs are emitted as links; absence from lineup is not season absence
+2020/2021,3411454,FINISHED,8456,9879,AVAILABLE,36,2,2,0,match_2020_2021_3411454,Only sampled player IDs are emitted as links; absence from lineup is not season absence
+2021/2022,3610088,FINISHED,8456,8602,AVAILABLE,40,2,2,0,match_2021_2022_3610088,Only sampled player IDs are emitted as links; absence from lineup is not season absence
+2022/2023,3901106,FINISHED,8456,8668,AVAILABLE,40,7,8,0,match_2022_2023_3901106,Only sampled player IDs are emitted as links; absence from lineup is not season absence
+2022/2023,3901188,FINISHED,8456,10261,AVAILABLE,40,7,8,0,match_2022_2023_3901188,Only sampled player IDs are emitted as links; absence from lineup is not season absence
+2023/2024,4193667,FINISHED,8456,8586,AVAILABLE,40,2,2,0,match_2023_2024_4193667,Only sampled player IDs are emitted as links; absence from lineup is not season absence
+2023/2024,4421797,FINISHED,8678,8346,AVAILABLE,40,0,0,0,match_2023_2024_4421797,Only sampled player IDs are emitted as links; absence from lineup is not season absence
+2024/2025,4506347,FINISHED,8650,8466,AVAILABLE,40,11,16,0,match_2024_2025_4506347,Only sampled player IDs are emitted as links; absence from lineup is not season absence
+2024/2025,4506416,FINISHED,8650,8456,AVAILABLE,40,5,8,0,match_2024_2025_4506416,Only sampled player IDs are emitted as links; absence from lineup is not season absence

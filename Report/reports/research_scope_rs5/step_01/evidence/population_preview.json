@@ -1,0 +1,37 @@
+{
+ "scope_id": "rs5_v1",
+ "official_seasons": [
+  "2020/2021",
+  "2021/2022",
+  "2022/2023",
+  "2023/2024",
+  "2024/2025"
+ ],
+ "excluded_seasons": [
+  "2019/2020"
+ ],
+ "confirmed_rows_by_season_in_scope": {
+  "2020/2021": 524,
+  "2021/2022": 537,
+  "2022/2023": 554,
+  "2023/2024": 570,
+  "2024/2025": 562
+ },
+ "confirmed_rows_in_scope": 2747,
+ "players_in_scope": 1228,
+ "players_only_in_excluded_seasons": 115,
+ "players_in_both": 400,
+ "historical_integrated_in_scope_preview": {
+  "rows": 2747,
+  "usable_targets": 2697,
+  "missing_targets": 50,
+  "unmapped_rows": 2,
+  "players_by_crosswalk_status": {
+   "AUTO_ADJUDICATED": 36,
+   "AUTO_EXACT": 1190,
+   "REVIEW_REQUIRED": 2
+  },
+  "batch_2020_04_08_rows_in_scope": 0
+ },
+ "note": "Preview from historical files filtered in memory. It is a reconciliation expectation, not a research output."
+}

@@ -1,0 +1,83 @@
+{
+  "completed_seasons": [
+    "2019/2020",
+    "2020/2021",
+    "2021/2022",
+    "2022/2023",
+    "2023/2024",
+    "2024/2025"
+  ],
+  "parser_version": "v2b1r_acceptance_fix_1",
+  "input_hashes": {
+    "data/releases/fotmob_epl_2019_2025_v2/normalized/player_match_appearances.parquet": "ae125ea8f9ec37019918834c9c636dcdc413f6b23abf82da2e4b00ba0c98e1f9",
+    "data/releases/fotmob_epl_2019_2025_v3/normalized/player_match_appearances.parquet": "106958b38a30cca5fe9622c0d65d431cb4c720ff9c8f59d9a92af85927649348",
+    "data/releases/fotmob_epl_2019_2025_v3/normalized/matches.parquet": "b9b93392f757f4dd741d2a0a220c285686e2a01f17ee10a6aa11c9096b22caf5",
+    "data/releases/fotmob_epl_2019_2025_v3/normalized/complete_player_season_classification.parquet": "2b290f36b5442c4ed00733ca5dd5920985f2cfc7e24492a2b940700116d984a9",
+    "data/releases/fotmob_epl_2019_2025_v3/normalized/player_team_seasons.parquet": "76ae0e27da98393634505e0d18c131dbfafb5f81ba8d5df4f6b35d89bf3c38f8"
+  },
+  "staging_path": "data/staging/fotmob_epl_2019_2025_v3_1_provisional",
+  "status": "AUDITED",
+  "matches_audited": 2280,
+  "player_matches": 89392,
+  "player_seasons": 4052,
+  "match_completeness": {
+    "PARTIAL": 2280
+  },
+  "player_match_status": {
+    "STARTED": 50160,
+    "SUBSTITUTED_ON": 15628,
+    "UNKNOWN": 23604
+  },
+  "population_status": {
+    "CONFIRMED_APPEARED": 3262,
+    "UNVERIFIED": 790
+  },
+  "v3_to_corrected": {
+    "STARTED->STARTED": 50160,
+    "SUBSTITUTED_ON->SUBSTITUTED_ON": 15628,
+    "UNUSED_SUBSTITUTE->UNKNOWN": 23604
+  },
+  "v2_to_v3": {
+    "STARTED->STARTED": 50160,
+    "SUBSTITUTED_ON->SUBSTITUTED_ON": 15628,
+    "UNUSED_SUBSTITUTE->UNUSED_SUBSTITUTE": 7290,
+    "UNKNOWN->UNUSED_SUBSTITUTE": 16314
+  },
+  "raw_checksum_verified": 2280,
+  "network_requests": 0,
+  "part2": {
+    "status": "ACCEPTED_CONDITIONAL",
+    "verdict": "CONDITIONAL_GO",
+    "release_path": "data/releases/fotmob_epl_2019_2025_v3_1",
+    "release_files": 39,
+    "parquet_tables": 16,
+    "full_tests": {
+      "command": "C:\\Users\\THEGIOILAP\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe -m unittest discover -s tests -v",
+      "python_executable": "C:\\Users\\THEGIOILAP\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+      "python_version": "3.14.6 (tags/v3.14.6:c63aec6, Jun 10 2026, 10:26:10) [MSC v.1944 64 bit (AMD64)]",
+      "dependencies": {
+        "pyarrow": "24.0.0",
+        "pandas": "3.0.5",
+        "requests": "2.34.2",
+        "pyyaml": "6.0.3"
+      },
+      "started_utc": "2026-11-03T08:53:40.306812+00:00",
+      "ended_utc": "2026-11-03T08:55:21.181384+00:00",
+      "discovered_tests": 190,
+      "executed_tests": 190,
+      "passed": 190,
+      "failed": 0,
+      "errored": 0,
+      "skipped": 0,
+      "exit_code": 0,
+      "log_path": "reports/final_acceptance_fix/full_test_execution.log"
+    },
+    "quality_gates_passed": 30,
+    "parquet_table_contracts_passed": 16,
+    "coverage_rows": 318,
+    "coverage_above_100": 0,
+    "historical_coverage_anomalies_rechecked": 41,
+    "candidate_content_match": true,
+    "parent_release_hash_drift": []
+  }
+}

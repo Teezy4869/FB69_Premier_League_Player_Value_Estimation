@@ -1,0 +1,975 @@
+# FB69 Phase 4.0 condition register (machine-readable).
+# This file is the single structured source for Phase 4 conditions. PHASE4_CONDITION_REGISTER.md is rendered from it.
+# It does NOT replace or override: configs/research_scope.yaml (scope), data_dictionary.csv (column roles),
+# the release docs (evidence), or reports/research_scope_rs5/step_04/ISSUE_TRACKER.md (issue history).
+# Issue ids from the rs5 tracker are kept; P4-* ids are added only for conditions that had no id.
+# Conditions carry an optional `status` and `resolution`. Without a status, a condition is OPEN.
+# The only resolutions recorded here are those stated in an owner prompt or delegated technical decisions (each says which).
+# Every other "owner_approval_required: true" item is still open.
+register_id: fb69_phase4_conditions_v1
+created: "2026-11-08"
+updated: "2026-11-09 (Phase 4.1: P4-C01, ENV-P4-01 and P4-D04 resolved; P4-B05 added. Phase 4.2: P4-C02 resolved; P4-B07 added. Phase 4.3: P4-C03 and ENV-P4-03 resolved; P4-B08 added. Phase 4.4: P4-C04 resolved; P4-B09 added. Phase 4.5: P4-B10 and P4-D05 added. Phase 4.6: no condition changed; modeling risks in step_06/MODELING_RISK_REGISTER.md. Phase 4.7: no condition changed; action view in step_07/PHASE4_ISSUE_TRACKER.md). 2026-11-09 owner decisions: owner_decision blocks added to 18 conditions (ODR-01 to ODR-16); ENV-P4-02 resolved by evidence; phase4_acceptance recorded; no existing field changed)"
+phase: "4.0 (acceptance and preparation only)"
+dataset:
+  path: data/releases/fb69_player_season_integrated_rs5_v1/player_season_integrated_rs5_v1.parquet
+  sha256: 4d94ec73cfb9d72421fb2bbb1d7976bcf29f8a4f6cc985435955e574b072eedd
+  rows: 2747
+  columns: 175
+scope_config:
+  path: configs/research_scope.yaml
+  sha256: a028b7d54dd1e8f6a7d6ea447d6c03152796b7a8d9617f0758a8407fc87fc4bf
+  scope_id: rs5_v1
+classification_legend:
+  A: Mandatory research constraint. Every Phase 4 analysis must obey it.
+  B: Mandatory caution. Analysis is allowed, but interpretation must reflect it.
+  C: Pending owner decision. Claude Code must not decide it.
+  D: Later-phase requirement. Must be resolved before the named downstream stage.
+feature_register: reports/phase_04/step_00/phase4_feature_eligibility.csv
+
+conditions:
+  # ---------------- A: mandatory research constraints ----------------
+  - id: P4-A01
+    title: Official dataset only
+    classification: A
+    description: Use only player_season_integrated_rs5_v1.parquet at the SHA-256 above. Integrated v1 (six seasons) is historical and must not be used for research.
+    evidence: "SHA-256 recomputed and equal to manifest; 21/21 release files verified (evidence/phase4_00_verification.json); PHASE4_CONDITIONS.md #1"
+    affected: All Phase 4 work
+    required_action: Verify the hash at the start of every Phase 4 notebook or script; stop if it differs.
+    responsible_stage: All Phase 4 steps
+    owner_approval_required: false
+    blocks_phase_4_1: false
+    blocks_final_modeling: false
+    target_phase: "4.1 onward"
+  - id: P4-A02
+    title: Five-season scope from configs/research_scope.yaml (D9)
+    classification: A
+    description: Seasons 2020/21-2024/25 only, read through src/research_scope/scope.py. No 2019/20 rows, comparison, sensitivity or workstream. Do not hard-code season lists.
+    evidence: "0 rows with season 2019/2020 or season_id 14022; check_parquet passes on the dataset and on 23/23 rs5 parquet files with a season column; release scope snapshot is byte-identical to the config"
+    affected: All rows, all analyses
+    required_action: Load the scope via load_scope(); run check_parquet/check_table on any derived table.
+    responsible_stage: All Phase 4 steps
+    owner_approval_required: false
+    blocks_phase_4_1: false
+    blocks_final_modeling: false
+    target_phase: "4.1 onward"
+  - id: P4-A03
+    title: No target or temporal-audit columns as predictors
+    classification: A
+    description: The 16 target columns (TARGET, TARGET_METADATA, TARGET_AUDIT_NOT_A_PREDICTOR) and 8 temporal_* columns are never predictors. target_audit_previous_value has Spearman 0.97 with the log target.
+    evidence: "leakage_audit.csv: all 24 classified FAIL; LEAKAGE_AUDIT.md"
+    affected: 24 columns
+    required_action: Exclude by role in every feature list; temporal_* may only describe RD-03.
+    responsible_stage: All Phase 4 steps
+    owner_approval_required: false
+    blocks_phase_4_1: false
+    blocks_final_modeling: false
+    target_phase: "4.1 onward"
+  - id: P4-A04
+    title: nationality_profile_present_day is not a predictor
+    classification: A
+    description: Present-day profile value collected November 2026; not a historical fact.
+    evidence: "leakage_audit.csv FAIL; data_dictionary.csv note"
+    affected: 1 column
+    required_action: Exclude from predictors.
+    responsible_stage: All Phase 4 steps
+    owner_approval_required: false
+    blocks_phase_4_1: false
+    blocks_final_modeling: false
+    target_phase: "4.1 onward"
+  - id: P4-A05
+    title: No ids, keys, identity, population-evidence or provenance columns as predictors
+    classification: A
+    description: canonical_player_id, fotmob_player_id, transfermarkt_player_id, names, birth date, identity_* / crosswalk quality, population evidence and provenance columns are not predictors. season and season_id are grouping and split keys, not free predictors.
+    evidence: "data_dictionary.csv candidate_predictor=False for all 33; leakage_audit.csv (ids FAIL; season WARNING: valuation dates are season-wide batches)"
+    affected: 33 columns
+    required_action: Use ids only as group keys; identity-quality columns only for sensitivity grouping.
+    responsible_stage: All Phase 4 steps
+    owner_approval_required: false
+    blocks_phase_4_1: false
+    blocks_final_modeling: false
+    target_phase: "4.1 onward"
+  - id: P4-A06
+    title: Objective A framing only (D6)
+    classification: A
+    description: Present results as end-of-season estimation. Not forecasting. Not evidence that performance causes or determines value.
+    evidence: "configs/research_scope.yaml research_objective A; PHASE4_CONDITIONS.md #3"
+    affected: All reporting
+    required_action: State the objective and the RD-03 caveat in every Phase 4 report.
+    responsible_stage: All Phase 4 steps
+    owner_approval_required: false
+    blocks_phase_4_1: false
+    blocks_final_modeling: false
+    target_phase: "4.1 onward"
+    owner_decision:
+      odr_id: ODR-02
+      decision: 'KEEP D6: Objective A, end-of-season market value estimation.'
+      rationale: Owner reaffirmed the objective.
+      implementation_boundary: Do not reframe the task as forecasting or causal estimation; the 2024/25 hold-out is read under Objective A.
+      remaining_limitation: None beyond RD-03.
+      decision_status: OWNER_DECIDED
+      residual_status: CARRIED_FORWARD
+      residual_blocks_final_modeling: false
+      evidence: configs/research_scope.yaml; PHASE4_CONDITIONS.md
+      date: '2026-11-09'
+      source: FB69_PHASE4_OWNER_DECISION_REGISTER (2026-11-09, status APPROVED FOR CONTROLLED TRANSITION) and the owner prompt 'MASTER PROMPT - FB69 CONTROLLED TRANSITION'
+  - id: P4-A07
+    title: No blind imputation, zero-fill or silent row drop
+    classification: A
+    description: Null means missing. Read the paired s_* status before interpreting a null. Report any handling with counts. UNKNOWN, UNVERIFIED and null are never converted to zero.
+    evidence: "33.00% of metric cells null (48,043 of 145,591); 0 null metrics carry status OBSERVED; DATA_CONTRACT_RS5.md Values; PHASE4_CONDITIONS.md #6"
+    affected: 53 m_* metrics
+    required_action: In EDA, describe missingness by status, season, position and target availability; do not transform.
+    responsible_stage: All Phase 4 steps
+    owner_approval_required: false
+    blocks_phase_4_1: false
+    blocks_final_modeling: false
+    target_phase: "4.1 onward"
+  - id: RS5-11
+    title: No random row-level split as an evaluation strategy
+    classification: A
+    also: D
+    description: 687 players appear in 2+ seasons (2,206 of 2,747 rows). A random row split puts the same player in train and test.
+    evidence: "Recomputed: 687 players, 2,206 rows; LEAKAGE_AUDIT.md"
+    affected: Any split, cross-validation or EDA holdout
+    required_action: "Prohibit random row splits. Later, assess (a) grouped split by canonical_player_id and (b) temporal split by season. Not implemented in Phase 4.0."
+    responsible_stage: Split design, before model evaluation
+    owner_approval_required: false
+    blocks_phase_4_1: false
+    blocks_final_modeling: true
+    target_phase: "Before model evaluation"
+    owner_decision:
+      odr_id: ODR-14
+      decision: 'As P4-D02: grouped-by-player K-fold (primary) and 2024/25 temporal hold-out (secondary); no random row split.'
+      rationale: Owner decision P4-D02 / RS5-11.
+      implementation_boundary: Split not implemented.
+      remaining_limitation: Protocol must be approved before any evaluation.
+      decision_status: OWNER_DECIDED_IMPLEMENTATION_PENDING
+      residual_status: OPEN_PENDING_OWNER_REVIEW
+      residual_blocks_final_modeling: true
+      evidence: step_06/SPLIT_STRATEGY_ASSESSMENT.md
+      date: '2026-11-09'
+      source: FB69_PHASE4_OWNER_DECISION_REGISTER (2026-11-09, status APPROVED FOR CONTROLLED TRANSITION) and the owner prompt 'MASTER PROMPT - FB69 CONTROLLED TRANSITION'
+  - id: ISS-28
+    title: key_passes has no data; clearances in 3 of 5 seasons
+    classification: A
+    description: m_key_passes is null on every row (status UNSUPPORTED) and is excluded. clearances and clearances_per90 have values only in 2021/22 (33), 2023/24 (51), 2024/25 (447); see RD-04.
+    evidence: "Recomputed: m_key_passes non-null 0; s_key_passes UNSUPPORTED 2,747"
+    affected: m_key_passes, s_key_passes, m_clearances, m_clearances_per90
+    required_action: Exclude key_passes from predictors. Never impute absent seasons of clearances.
+    responsible_stage: All Phase 4 steps
+    owner_approval_required: false
+    blocks_phase_4_1: false
+    blocks_final_modeling: false
+    target_phase: "4.1 onward"
+  - id: P4-A08
+    title: Target rule unchanged; no staleness filter or age cap by default
+    classification: A
+    description: "D4 (latest valid valuation on or before season end) and D6 are locked. Staleness is a label, not an exclusion (stale_label_days_is_exclusion_rule: false). Any filter needs a documented analysis and owner approval (ISS-22, RD-01)."
+    evidence: "configs/research_scope.yaml season_cutoff_policy; 0 valuations after cutoff"
+    affected: Target, all rows
+    required_action: Keep all 2,697 usable targets; report staleness, do not filter.
+    responsible_stage: All Phase 4 steps
+    owner_approval_required: false
+    blocks_phase_4_1: false
+    blocks_final_modeling: false
+    target_phase: "4.1 onward"
+  - id: P4-A09
+    title: Keep elite-player tails
+    classification: A
+    description: Heavy right tails are genuine (e.g. 158 goal values beyond 3 IQR). Do not delete outliers; use robust methods or transforms if needed.
+    evidence: "FEATURE_RELIABILITY_ASSESSMENT.md; PHASE4_CONDITIONS.md #10"
+    affected: Count metrics and target
+    required_action: Describe tails in EDA; no outlier removal.
+    responsible_stage: All Phase 4 steps
+    owner_approval_required: false
+    blocks_phase_4_1: false
+    blocks_final_modeling: false
+    target_phase: "4.1 onward"
+  - id: P4-A10
+    title: Release, scope, mappings and target method are read-only
+    classification: A
+    description: Do not modify the release, configs/research_scope.yaml, the crosswalk, target construction or historical artifacts. Any change needs a new version (data contract, Versioning).
+    evidence: "DATA_CONTRACT_RS5.md; protection check: 16,290 historical files, 0 unexpected changes (evidence/protection_check_phase4_00.json)"
+    affected: All source artifacts
+    required_action: Write Phase 4 outputs under new paths only.
+    responsible_stage: All Phase 4 steps
+    owner_approval_required: false
+    blocks_phase_4_1: false
+    blocks_final_modeling: false
+    target_phase: "4.1 onward"
+  - id: ISS-16
+    title: Internal academic use only (D2)
+    classification: A
+    description: Upstream Transfermarkt rights are unverified. Never redistribute raw data or imply Transfermarkt licensed it.
+    evidence: "ISSUE_TRACKER.md (Accepted)"
+    affected: Any publication of data or figures
+    required_action: Attribute sources; do not publish raw rows.
+    responsible_stage: All Phase 4 steps
+    owner_approval_required: false
+    blocks_phase_4_1: false
+    blocks_final_modeling: false
+    target_phase: "4.1 onward"
+  - id: ISS-18
+    title: Use the protected full-suite test runner
+    classification: A
+    description: Plain unittest discover -s tests rewrites 10 Phase 2 files. Use src/phase3/step3_qa_run_full_tests.py <evidence_dir> for the full suite; tests/research_scope alone is safe.
+    evidence: "ISSUE_TRACKER.md (Mitigated)"
+    affected: Test execution
+    required_action: Never run plain discover on tests/.
+    responsible_stage: All Phase 4 steps
+    owner_approval_required: false
+    blocks_phase_4_1: false
+    blocks_final_modeling: false
+    target_phase: "4.1 onward"
+
+  # ---------------- B: mandatory caution and interpretation ----------------
+  - id: RD-03
+    title: Temporal construct mismatch (also ISS-02)
+    classification: B
+    also: C
+    description: The label is a mid-season valuation (median 150 days before season end); features cover the whole season. Not leakage under A, but it weakens label-feature correspondence.
+    evidence: "Recomputed: median age 150 days; 56.62% of usable targets > 90 days (1,527/2,697); 44.10% of appearances (24,286/55,073) and 43.66% of minutes after the valuation; 0 valuations after cutoff"
+    affected: Target vs all m_* and position_group_season
+    required_action: "Report the mismatch with every relationship; never read it as performance causing the earlier valuation. Owner decision still open: keep D4 and report (default) or approve a new rule (new version). Claude Code must not change D4/D6."
+    responsible_stage: All Phase 4 steps; owner
+    owner_approval_required: true
+    blocks_phase_4_1: false
+    blocks_final_modeling: false
+    target_phase: "4.1 onward (interpretation); decision before final modeling report"
+    owner_decision:
+      odr_id: ODR-01
+      decision: 'KEEP D4: latest valid valuation on or before the official season end.'
+      rationale: Owner accepted the Phase 4.5 reproduction of the RD-03 references (150 days, 56.62%, 44.10%, 43.66%) and the default recommendation.
+      implementation_boundary: No change to target construction. Report the temporal construct mismatch with every relationship and result.
+      remaining_limitation: 'Construct mismatch persists: later full-season performance must never be read as causing an earlier valuation.'
+      decision_status: OWNER_DECIDED
+      residual_status: CARRIED_FORWARD
+      residual_blocks_final_modeling: false
+      evidence: step_05/TEMPORAL_RELIABILITY_REPORT.md
+      date: '2026-11-09'
+      source: FB69_PHASE4_OWNER_DECISION_REGISTER (2026-11-09, status APPROVED FOR CONTROLLED TRANSITION) and the owner prompt 'MASTER PROMPT - FB69 CONTROLLED TRANSITION'
+  - id: ISS-01
+    title: Identity mappings not human-validated
+    classification: B
+    also: C, D
+    description: "No human labels. Random-300 sample: 234 confirmed, 66 inconclusive, 0 rejected by the automated validator; 95% lower bound among decided pairs 98.73% (SOP 99%); 73.70% if inconclusive counts as unverified. Mapping coverage (99.84% of identities, 99.93% of rows) is not mapping precision."
+    evidence: "ENTITY_RESOLUTION_REPORT.md; recomputed: identity_human_reviewed False on 2,747 rows; validation_sample_for_labeling.csv has 0 of 514 human_label filled"
+    affected: 2,745 mapped rows
+    required_action: "Safe: describing coverage, counts and automated-validator results. Caution: any target-based conclusion carries a small wrong-target risk. Run identity sensitivity (P4-B01) where results matter. Owner labels the sample."
+    responsible_stage: Owner (labels); Phase 4 analysis (sensitivity)
+    owner_approval_required: true
+    blocks_phase_4_1: false
+    blocks_final_modeling: true
+    target_phase: "Before final modeling dataset acceptance"
+    owner_decision:
+      odr_id: ODR-07
+      decision: KEEP all rows, including the 533-row identity sensitivity subset; use the subset for sensitivity analysis where relevant.
+      rationale: Phase 4.3-4.5 identity sensitivity was small (median |delta rho| 0.016) but the subset is non-random.
+      implementation_boundary: Main dataset unchanged. Mapping coverage must not be described as precision.
+      remaining_limitation: Identity mappings are not fully human-validated; precision is not established.
+      decision_status: OWNER_DECIDED
+      residual_status: OPEN_PENDING_EVIDENCE
+      residual_blocks_final_modeling: true
+      evidence: step_05/IDENTITY_SENSITIVITY_REPORT.md
+      date: '2026-11-09'
+      source: FB69_PHASE4_OWNER_DECISION_REGISTER (2026-11-09, status APPROVED FOR CONTROLLED TRANSITION) and the owner prompt 'MASTER PROMPT - FB69 CONTROLLED TRANSITION'
+  - id: P4-B01
+    title: Identity sensitivity
+    classification: B
+    also: D
+    description: "Compare results with and without rows whose identity_evidence_tier is not AUTO_EXACT_VALIDATED or whose identity_rs5_validation_label is INCONCLUSIVE."
+    evidence: "Recomputed: 533 such rows (tiers: AUTO_EXACT_VALIDATED 2,214; AUTO_EXACT_NOT_INDEPENDENTLY_VALIDATED 449; AUTO_ADJUDICATED_INDEPENDENT_RULE 76; AUTO_ADJUDICATED_EXTERNAL 6; UNRESOLVED 2); PHASE4_CONDITIONS.md #9"
+    affected: 533 rows
+    required_action: Use as a sensitivity subset where identity matters; do not drop these rows from the main analysis.
+    responsible_stage: EDA (optional), modeling (required)
+    owner_approval_required: false
+    blocks_phase_4_1: false
+    blocks_final_modeling: true
+    target_phase: "Before final results"
+    owner_decision:
+      odr_id: ODR-08
+      decision: Retain all rows; plan a comparison of the full target-usable population with the population excluding the 533-row subset.
+      rationale: Owner decision ISS-01 / P4-B01.
+      implementation_boundary: Do not remove the subset from the source dataset; do not claim identity precision.
+      remaining_limitation: Sensitivity comparison not yet designed in detail or run.
+      decision_status: OWNER_DECIDED_IMPLEMENTATION_PENDING
+      residual_status: CARRIED_FORWARD
+      residual_blocks_final_modeling: true
+      evidence: step_05/IDENTITY_SENSITIVITY_REPORT.md; reports/phase_05/step_00/PHASE5_EVALUATION_PROTOCOL.md
+      date: '2026-11-09'
+      source: FB69_PHASE4_OWNER_DECISION_REGISTER (2026-11-09, status APPROVED FOR CONTROLLED TRANSITION) and the owner prompt 'MASTER PROMPT - FB69 CONTROLLED TRANSITION'
+  - id: ISS-21
+    title: Valuation dates are league-wide batches
+    classification: B
+    also: D
+    description: Season and target timing are confounded; valuation age tracks the season's batch, not the player. 18 usable targets are dated before their own season's first match.
+    evidence: "Per-season share > 90 days: 2020/21 2.91%, 2021/22 78.03%, 2022/23 66.97%, 2023/24 72.66%, 2024/25 59.63%; recomputed 18 pre-season valuations"
+    affected: Target timing, season comparisons
+    required_action: Analyse season-aware; do not compare seasons without noting batch timing.
+    responsible_stage: EDA and modeling
+    owner_approval_required: false
+    blocks_phase_4_1: false
+    blocks_final_modeling: false
+    target_phase: "4.1 onward"
+  - id: ISS-22
+    title: Staleness filters change the season mix
+    classification: B
+    also: C
+    description: A 90-day filter would remove 2.91% of 2020/21 but 78.03% of 2021/22 targets, a selection bias.
+    evidence: "TEMPORAL_ALIGNMENT_REPORT.md; recomputed buckets 0-30: 27, 31-60: 113, 61-90: 1,030, 91-180: 1,140, >180: 387"
+    affected: Any filter on target age
+    required_action: No filter. Any proposed filter needs a documented analysis and owner approval.
+    responsible_stage: Owner, if a filter is proposed
+    owner_approval_required: true
+    blocks_phase_4_1: false
+    blocks_final_modeling: false
+    target_phase: "Only if a filter is proposed"
+    owner_decision:
+      odr_id: ODR-04
+      decision: NO staleness filter.
+      rationale: Default recommendation; consistent with RD-01 and P4-A08.
+      implementation_boundary: Any future filter needs a separate documented analysis and owner approval.
+      remaining_limitation: Staleness stays in the data and is reported.
+      decision_status: OWNER_DECIDED
+      residual_status: CARRIED_FORWARD
+      residual_blocks_final_modeling: false
+      evidence: step_05/TEMPORAL_RELIABILITY_REPORT.md
+      date: '2026-11-09'
+      source: FB69_PHASE4_OWNER_DECISION_REGISTER (2026-11-09, status APPROVED FOR CONTROLLED TRANSITION) and the owner prompt 'MASTER PROMPT - FB69 CONTROLLED TRANSITION'
+  - id: ISS-27
+    title: Missingness is not random
+    classification: B
+    also: D
+    description: Missing-target rows average 42.10 null metrics vs 17.03 with a target; goalkeepers 34.49 vs 15.01-17.92 for outfield groups. Complete-case analysis drops goalkeepers and fringe players selectively.
+    evidence: "Recomputed from missing_feature_count; MISSINGNESS_REPORT.md"
+    affected: Complete-case analyses
+    required_action: Report missingness patterns; plan treatment before preprocessing.
+    responsible_stage: EDA (describe); preprocessing (treat)
+    owner_approval_required: false
+    blocks_phase_4_1: false
+    blocks_final_modeling: true
+    target_phase: "Plan before preprocessing"
+    owner_decision:
+      odr_id: ODR-15
+      decision: No blanket complete-case deletion; consider missingness by season, position, playing time and target availability; GK and outfield separately.
+      rationale: 'Phase 4.5: missingness follows playing time, not season.'
+      implementation_boundary: Any metric-specific rule must be proposed and approved before implementation.
+      remaining_limitation: Per-metric rules not yet approved.
+      decision_status: OWNER_DECIDED_IMPLEMENTATION_PENDING
+      residual_status: OPEN_PENDING_OWNER_REVIEW
+      residual_blocks_final_modeling: true
+      evidence: step_05/MISSINGNESS_ANALYSIS_REPORT.md
+      date: '2026-11-09'
+      source: FB69_PHASE4_OWNER_DECISION_REGISTER (2026-11-09, status APPROVED FOR CONTROLLED TRANSITION) and the owner prompt 'MASTER PROMPT - FB69 CONTROLLED TRANSITION'
+  - id: ISS-25
+    title: A null may mean "no event"
+    classification: B
+    also: D
+    description: "Some nulls likely mean nothing happened (penalty_saves null on 31.55% of GK rows; xG null 17.95%), others mean unavailable. Status counts across s_*: OBSERVED 91,289; OBSERVED_ZERO 5,762; MISSING 27,361; UNVERIFIED_POSITION 17,899; UNSUPPORTED 2,747; OBSERVED_FALLBACK_LEADERBOARD 402; OBSERVED_SOURCE_REVISED 95; CONFLICTING 36."
+    evidence: "Recomputed s_* status counts; MISSINGNESS_REPORT.md"
+    affected: Count metrics
+    required_action: Decide per metric in a later step; never zero-fill silently.
+    responsible_stage: Preprocessing design
+    owner_approval_required: false
+    blocks_phase_4_1: false
+    blocks_final_modeling: true
+    target_phase: "Before preprocessing"
+    owner_decision:
+      odr_id: ODR-15
+      decision: No blanket zero fill; no assumption that null means zero; interpret nulls per metric with s_* status.
+      rationale: 'Phase 4.2 P4-B07: count metrics record no zeros; nulls sit where zeros would be expected for some metrics only.'
+      implementation_boundary: Any metric-specific rule must be proposed and approved before implementation.
+      remaining_limitation: Per-metric rules not yet approved.
+      decision_status: OWNER_DECIDED_IMPLEMENTATION_PENDING
+      residual_status: OPEN_PENDING_OWNER_REVIEW
+      residual_blocks_final_modeling: true
+      evidence: step_02 and step_05 missingness evidence
+      date: '2026-11-09'
+      source: FB69_PHASE4_OWNER_DECISION_REGISTER (2026-11-09, status APPROVED FOR CONTROLLED TRANSITION) and the owner prompt 'MASTER PROMPT - FB69 CONTROLLED TRANSITION'
+  - id: ISS-29
+    title: Source-reported rates not independently verifiable
+    classification: B
+    description: "8 features are accepted as the source reports them: aerials_won_percent, cross_accuracy, duels_won_percent, long_ball_accuracy, passing_accuracy, save_percentage, clean_sheets, goals_conceded_per90. The other 8 per90 rates were verified indirectly."
+    evidence: "FEATURE_RELIABILITY_ASSESSMENT.md (SOURCE_REPORTED_NOT_VERIFIED)"
+    affected: 8 m_* features
+    required_action: Assess reliability (consistency with totals where possible) before relying on them; flag in interpretation.
+    responsible_stage: EDA (assess), feature decision
+    owner_approval_required: false
+    blocks_phase_4_1: false
+    blocks_final_modeling: false
+    target_phase: "4.1 onward"
+  - id: ISS-11
+    title: Goalkeeper minutes mostly missing
+    classification: B
+    description: GK per90 rates cannot be checked; GK features are limited.
+    evidence: "m_minutes_played 7.24% null, mostly GK"
+    affected: GK rows (206)
+    required_action: Treat GK analysis separately; note limits.
+    responsible_stage: EDA and modeling
+    owner_approval_required: false
+    blocks_phase_4_1: false
+    blocks_final_modeling: false
+    target_phase: "4.1 onward"
+  - id: RD-01
+    title: Targets older than 365 days
+    classification: B
+    also: C
+    description: "12 usable targets are over 365 days old (max 731). The oldest, Khanya Leshabela 2020/21, uses a valuation dated 2019-05-23. That is an old valuation date on an in-scope 2020/21 row, not a 2019/20 season record."
+    evidence: "Recomputed list of 12 rows (evidence/phase4_00_verification.json rd01_over_365); SCOPE_DECLARATION.md"
+    affected: 12 rows
+    required_action: Keep them. Flag as weak labels in interpretation. No age cap unless the owner approves one.
+    responsible_stage: Owner
+    owner_approval_required: true
+    blocks_phase_4_1: false
+    blocks_final_modeling: true
+    target_phase: "Decision recorded before final modeling dataset"
+    owner_decision:
+      odr_id: ODR-03
+      decision: KEEP ALL targets older than 365 days; flag them as weak labels in analysis and reporting.
+      rationale: Default recommendation; a filter would change the season mix (ISS-22).
+      implementation_boundary: No age cap or exclusion without a new owner decision. Weak-label flag is a reporting attribute, not a new dataset column.
+      remaining_limitation: Old labels remain weak; Phase 5 results must report them (planned in PHASE5_EVALUATION_PROTOCOL.md).
+      decision_status: OWNER_DECIDED_IMPLEMENTATION_PENDING
+      residual_status: CARRIED_FORWARD
+      residual_blocks_final_modeling: false
+      evidence: step_05/evidence (old valuations)
+      date: '2026-11-09'
+      source: FB69_PHASE4_OWNER_DECISION_REGISTER (2026-11-09, status APPROVED FOR CONTROLLED TRANSITION) and the owner prompt 'MASTER PROMPT - FB69 CONTROLLED TRANSITION'
+  - id: RS5-13
+    title: Retrospective collection
+    classification: B
+    description: Metrics were collected on 2026-11-02/03; 95 cells were revised by the source (status OBSERVED_SOURCE_REVISED). Values may differ from what was visible at season end.
+    evidence: "Recomputed: 95 OBSERVED_SOURCE_REVISED cells"
+    affected: All m_*
+    required_action: Document in interpretation.
+    responsible_stage: All Phase 4 steps
+    owner_approval_required: false
+    blocks_phase_4_1: false
+    blocks_final_modeling: false
+    target_phase: "4.1 onward"
+  - id: DQ-RS5-04
+    title: m_starts > m_appearances in 6 rows
+    classification: B
+    description: 6 rows in 2020/21 kept as published.
+    evidence: "Recomputed: 6 rows"
+    affected: 6 rows
+    required_action: Do not correct; note if starts/appearances ratios are used.
+    responsible_stage: EDA
+    owner_approval_required: false
+    blocks_phase_4_1: false
+    blocks_final_modeling: false
+    target_phase: "4.1 onward"
+  - id: P4-B02
+    title: Conflicting and unverified-position cells
+    classification: B
+    description: 36 CONFLICTING cells are null and traceable; 17,899 UNVERIFIED_POSITION cells are null. Neither means zero.
+    evidence: "Recomputed s_* status counts; DATA_QUALITY_REPORT.md"
+    affected: m_* cells
+    required_action: Keep as null; count separately from MISSING in EDA.
+    responsible_stage: EDA
+    owner_approval_required: false
+    blocks_phase_4_1: false
+    blocks_final_modeling: false
+    target_phase: "4.1 onward"
+  - id: P4-B03
+    title: Target skew and batch structure
+    classification: B
+    description: "Target is heavily right-skewed (EUR median 13.0m, mean 19.26m, max 200m, min 0.1m). A log scale is natural for description. Account for season-level valuation batches."
+    evidence: "Recomputed target statistics; PHASE4_CONDITIONS.md #8"
+    affected: target_market_value
+    required_action: Describe on raw and log scales; do not transform the stored column.
+    responsible_stage: EDA
+    owner_approval_required: false
+    blocks_phase_4_1: false
+    blocks_final_modeling: false
+    target_phase: "4.1 onward"
+  - id: P4-B04
+    title: position_group_season is a whole-season modal position
+    classification: B
+    description: Derived from lineups over the whole season, partly after the valuation.
+    evidence: "leakage_audit.csv WARNING"
+    affected: 1 column
+    required_action: Note the RD-03 caveat when used.
+    responsible_stage: EDA
+    owner_approval_required: false
+    blocks_phase_4_1: false
+    blocks_final_modeling: false
+    target_phase: "4.1 onward"
+  - id: P4-B05
+    title: Per-90 rates on very small minute denominators (found in Phase 4.1)
+    classification: B
+    also: D
+    description: "40 rows report per-90 rates with fewer than 90 minutes played; rates are arithmetically consistent with the source totals but unstable (maximum m_tackles_per90 = 60 from 3 minutes; m_accurate_passes_per90 up to 102.9). 330 rows (12.0%) have under 90 minutes."
+    evidence: "reports/phase_04/step_01/evidence/logical_checks.csv, extreme_per90_rows.csv, low_playing_time.csv"
+    affected: 10 m_*_per90 metrics; low-minute rows
+    required_action: "Describe per-90 distributions together with minutes in Phase 4.2; never delete or cap these values silently. Any minimum-minutes rule for analysis or modeling is a research decision for the owner."
+    responsible_stage: Phase 4.2 EDA; preprocessing design
+    owner_approval_required: false
+    blocks_phase_4_1: false
+    blocks_final_modeling: false
+    target_phase: "4.2 onward"
+  - id: P4-B07
+    title: Count metrics record no zeros; nulls sit where zeros would be expected (found in Phase 4.2)
+    classification: B
+    also: D
+    description: "18 outfield count metrics (for example tackles, shots on target, big chances created, blocked shots) never contain a recorded zero (minimum 1). Their nulls fall on low-minute rows (median 14-35 minutes on null rows for most, against about 1,450-1,800 on observed rows). 317 outfield rows have minutes but no detailed statistics (median 14 minutes). Goals, assists, cards and starts do record zeros (OBSERVED_ZERO). Extends ISS-25; unverifiable row by row."
+    evidence: "reports/phase_04/step_02/evidence/zero_recording.csv; univariate_summary.json (detailed_block_missing)"
+    affected: 18 m_* count metrics and their rates; low-minute outfield rows
+    required_action: "Keep nulls as nulls (P4-A07). Read each null with its s_* status; the meaning of a null differs by metric. Treatment (for example a status-based indicator) is a preprocessing design decision (P4-D01)."
+    responsible_stage: Phase 4.3 EDA; preprocessing design
+    owner_approval_required: false
+    blocks_phase_4_1: false
+    blocks_final_modeling: false
+    target_phase: "4.3 onward"
+  - id: P4-B08
+    title: Playing time drives most volume-value associations; defensive and goalkeeper volumes reverse given playing time (found in Phase 4.3)
+    classification: B
+    also: D
+    description: "Minutes, appearances and starts have Spearman about 0.53 with the target, and most season totals inherit their association from playing time (partial Spearman given starts: appearances 0.14, tackles -0.05, recoveries -0.05, duels won 0.09). Given starts, defensive totals turn negative (interceptions -0.18, blocked shots -0.22, clearances -0.23) and goalkeeper saves and goals conceded change sign (+0.53 to -0.22; +0.47 to -0.29). A team-strength or team-style confounder is plausible but cannot be examined while club context is pending (RS5-12). 54 outfield feature pairs have |Spearman| >= 0.8 and four redundancy clusters link features at >= 0.9 (playing-time volumes; shots and xG; shot rates; xA and chances created)."
+    evidence: "reports/phase_04/step_03/evidence/feature_target_association.csv (partial_spearman_given_*), strong_feature_pairs_outfield.csv, redundancy_clusters_outfield.csv"
+    affected: Season-total m_* metrics, goalkeeper volume metrics, any interpretation of feature-target associations
+    required_action: "Read volume associations together with playing time; never report a raw volume correlation as a performance effect. Do not remove or merge correlated features in EDA; the representation (totals, rates, or both) is a feature-design decision (P4-D03). Revisit the team-context hypothesis if RS5-12 is decided."
+    responsible_stage: Interpretation; feature design
+    owner_approval_required: false
+    blocks_phase_4_1: false
+    blocks_final_modeling: false
+    target_phase: "4.4 onward"
+  - id: P4-B09
+    title: Rate-metric drift across seasons among regular outfield players (found in Phase 4.4)
+    classification: B
+    also: D
+    description: "Among outfield players with at least 19 starts, the median recoveries per 90 falls from 5.19 (2020/21) to 3.98 (2024/25) and interceptions per 90 from 1.07 to 0.76, while coverage of both is 100% in every season; shots per 90 and tackles per 90 rise and fall (peaks 2023/24 and 2022/23) and passing accuracy rises to 84.3% in 2024/25. The cause (playing style, or source definition and collection changes, RS5-13) cannot be identified from the dataset."
+    evidence: "reports/phase_04/step_04/evidence/season_rate_metric_medians_regular_outfield.csv, season_rate_metric_coverage_regular_outfield.csv; fig44_08"
+    affected: "m_recoveries_per90, m_interceptions_per90, m_shots_per90, m_tackles_per90, m_passing_accuracy (and their totals)"
+    required_action: "Read season comparisons of these metrics with the drift in mind; assess source consistency in Phase 4.5; consider season-aware evaluation (P4-D02). Do not rescale or correct values."
+    responsible_stage: Phase 4.5 reliability; evaluation design
+    owner_approval_required: false
+    blocks_phase_4_1: false
+    blocks_final_modeling: false
+    target_phase: "4.5 onward"
+  - id: P4-B10
+    title: Status coding asymmetries on goalkeeper rows and conflicts concentrated in 2024/25 (found in Phase 4.5)
+    classification: B
+    also: D
+    description: "On goalkeeper rows, outfield metrics are coded MISSING (6,558 cells), not UNVERIFIED_POSITION, although they are not recorded for the position; the not-applicable status is used only for goalkeeper metrics on outfield rows (17,787 cells) plus 112 cells on goalkeeper rows (63 of them penalty_saves). 33 of the 36 CONFLICTING cells (rating, goals_prevented) fall in 2024/25. Status and value agree on all 145,591 cells."
+    evidence: "reports/phase_04/step_05/evidence/status_semantics.csv, gk_status_matrix.csv, gk_outfield_metric_status.csv, status_share_by_season.csv"
+    affected: "Outfield m_* on GK rows; m_penalty_saves; m_rating and m_goals_prevented in 2024/25"
+    required_action: "Read MISSING on goalkeeper rows for outfield metrics as 'not recorded for the position', never as zero or as unknown goalkeeper performance. Consider this in the s_* role decision (P4-D01) and in any position-specific design."
+    responsible_stage: Preprocessing design
+    owner_approval_required: false
+    blocks_phase_4_1: false
+    blocks_final_modeling: false
+    target_phase: "4.6 onward"
+  - id: ISS-23
+    title: Source removes same-day duplicates and empty values upstream
+    classification: B
+    description: Valuation conflicts cannot be seen.
+    evidence: "Phase 3"
+    affected: Target
+    required_action: Document.
+    responsible_stage: Reporting
+    owner_approval_required: false
+    blocks_phase_4_1: false
+    blocks_final_modeling: false
+    target_phase: "4.1 onward"
+  - id: ISS-24
+    title: datum_mw semantics unknown
+    classification: B
+    description: Whether the valuation date is the effective or publication date is unknown; affects age interpretation.
+    evidence: "Phase 3"
+    affected: target_valuation_date, valuation age
+    required_action: Document with any age-based statement.
+    responsible_stage: Reporting
+    owner_approval_required: false
+    blocks_phase_4_1: false
+    blocks_final_modeling: false
+    target_phase: "4.1 onward"
+  - id: ISS-09/ISS-10
+    title: Cross-source differences (height, assists)
+    classification: B
+    description: Heights and assists differ between FotMob and Transfermarkt for some pairs or seasons.
+    evidence: "Phase 3"
+    affected: Identity evidence
+    required_action: Keep FotMob as the only feature source; do not mix sources.
+    responsible_stage: All Phase 4 steps
+    owner_approval_required: false
+    blocks_phase_4_1: false
+    blocks_final_modeling: false
+    target_phase: "4.1 onward"
+  - id: ISS-07
+    title: 4 birth dates disputed across sources
+    classification: B
+    description: Historical finding; affects age_at_season_end_years for a few players.
+    evidence: "Phase 3"
+    affected: age_at_season_end_years
+    required_action: Note; use official records only if needed.
+    responsible_stage: EDA
+    owner_approval_required: false
+    blocks_phase_4_1: false
+    blocks_final_modeling: false
+    target_phase: "4.1 onward"
+  - id: ISS-15/26/30/31/14, RS5-09, ISS-13
+    title: Low-impact documented limitations
+    classification: B
+    description: "Search-summary evidence; 2 minutes gaps in 2023/24; starts differ from confirmed on 13 rows; no separate population file; raw marketValues not carried; 387 profiles in 2019_2020-named capture folders (player-level, not season data); no git (D5)."
+    evidence: "ISSUE_TRACKER.md"
+    affected: Various, negligible
+    required_action: Document only.
+    responsible_stage: Reporting
+    owner_approval_required: false
+    blocks_phase_4_1: false
+    blocks_final_modeling: false
+    target_phase: "4.1 onward"
+
+  # ---------------- C: pending owner decisions ----------------
+  - id: RD-04
+    title: Five features with incomplete window evidence
+    classification: C
+    also: D
+    description: "clearances and clearances_per90 (no values in 2020/21, 2022/23); expected_goals_on_target (92.06% window agreement in 2022/23); touches_opposition_box (verified only in 2024/25); goals_prevented (GK; verified only in 2024/25)."
+    evidence: "LEAKAGE_AUDIT.md; recomputed non-null counts per season (evidence/phase4_00_verification.json)"
+    affected: m_clearances, m_clearances_per90, m_expected_goals_on_target, m_touches_opposition_box, m_goals_prevented (and their s_* columns)
+    required_action: "Owner chooses: exclude, or use with season-aware handling. Until then, neither include nor exclude automatically. EDA may describe them, labelled pending."
+    responsible_stage: Owner
+    owner_approval_required: true
+    blocks_phase_4_1: false
+    blocks_final_modeling: true
+    target_phase: "Before feature selection / final modeling"
+    owner_decision:
+      odr_id: ODR-09
+      decision: 'EXCLUDE FROM BASELINE: clearances, clearances_per90, expected_goals_on_target, touches_opposition_box, goals_prevented.'
+      rationale: Incomplete feature-window evidence (rs5 feature_window_audit; Phase 4.5 RD-04 assessment).
+      implementation_boundary: Columns and metadata stay in the dataset. Sensitivity use requires a separately approved design.
+      remaining_limitation: Source-quality limitation of the five metrics remains.
+      decision_status: OWNER_DECIDED
+      residual_status: CARRIED_FORWARD
+      residual_blocks_final_modeling: false
+      evidence: reports/research_scope_rs5/step_04/evidence/feature_window_audit_rs5.csv; step_05/METRIC_RELIABILITY_REPORT.md
+      date: '2026-11-09'
+      source: FB69_PHASE4_OWNER_DECISION_REGISTER (2026-11-09, status APPROVED FOR CONTROLLED TRANSITION) and the owner prompt 'MASTER PROMPT - FB69 CONTROLLED TRANSITION'
+  - id: RS5-12
+    title: Club context usage
+    classification: C
+    also: D
+    description: 8 CLUB_CONTEXT columns may encode a post-valuation transfer and proxy value (73 multi-club rows).
+    evidence: "Recomputed: 73 multi-club rows (54 confirmed appearances for 2 clubs, 19 squad-only); leakage_audit.csv REQUIRES RESEARCH DECISION"
+    affected: 8 columns
+    required_action: Not candidate predictors by default. Owner decides any use.
+    responsible_stage: Owner
+    owner_approval_required: true
+    blocks_phase_4_1: false
+    blocks_final_modeling: true
+    target_phase: "Before feature selection / final modeling"
+    owner_decision:
+      odr_id: ODR-10
+      decision: 'EXCLUDE FROM BASELINE: all eight club-context columns.'
+      rationale: Club context is not a player-performance feature and was never a default candidate.
+      implementation_boundary: Columns stay in the dataset. Any later use requires a separate owner decision.
+      remaining_limitation: None for the baseline.
+      decision_status: OWNER_DECIDED
+      residual_status: CARRIED_FORWARD
+      residual_blocks_final_modeling: false
+      evidence: step_05/evidence (club context)
+      date: '2026-11-09'
+      source: FB69_PHASE4_OWNER_DECISION_REGISTER (2026-11-09, status APPROVED FOR CONTROLLED TRANSITION) and the owner prompt 'MASTER PROMPT - FB69 CONTROLLED TRANSITION'
+  - id: RD-02
+    title: Two inconclusive RULE adjudications (El Mohamady, Wesley)
+    classification: C
+    description: "Ahmed El Mohamady (FotMob 111930 -> TM 66333; 2020/21) and Wesley (656562 -> 381362; 2020/21, 2021/22). All 3 rows: AUTO_ADJUDICATED, tier AUTO_ADJUDICATED_INDEPENDENT_RULE, label INCONCLUSIVE, adjudicator automated, target usable. Nothing in scope contradicts them."
+    evidence: "Recomputed rows (evidence/phase4_00_verification.json rd02_rows); ENTITY_RESOLUTION_REPORT.md"
+    affected: 3 rows
+    required_action: "Mappings unchanged. Owner chooses keep (default) or REVIEW_REQUIRED (needs a new version). Note: 6 further AUTO_ADJUDICATED_EXTERNAL rows (5 players) are also INCONCLUSIVE; the rule was already inconclusive for them historically. They are covered by P4-B01, not RD-02."
+    responsible_stage: Owner
+    owner_approval_required: true
+    blocks_phase_4_1: false
+    blocks_final_modeling: true
+    target_phase: "Decision recorded before final modeling dataset"
+    owner_decision:
+      odr_id: ODR-05
+      decision: KEEP the existing El Mohamady and Wesley mappings.
+      rationale: Default recommendation; no new evidence.
+      implementation_boundary: No mapping change and no new mapping version.
+      remaining_limitation: Their adjudication stays INCONCLUSIVE; no human confirmation may be claimed.
+      decision_status: OWNER_DECIDED
+      residual_status: CARRIED_FORWARD
+      residual_blocks_final_modeling: false
+      evidence: reports/research_scope_rs5 (adjudication records)
+      date: '2026-11-09'
+      source: FB69_PHASE4_OWNER_DECISION_REGISTER (2026-11-09, status APPROVED FOR CONTROLLED TRANSITION) and the owner prompt 'MASTER PROMPT - FB69 CONTROLLED TRANSITION'
+  - id: ISS-04
+    title: Two unresolved identities
+    classification: C
+    description: "Daniel Chesters (982620, 2021/22) and Jimi Tauriainen (1188035, 2023/24): REVIEW_REQUIRED, no target (NO_ELIGIBLE_IDENTITY_MATCH)."
+    evidence: "Recomputed; UNMATCHED_PLAYER_REPORT.md"
+    affected: 2 rows
+    required_action: Human review of the queue rows (data/research_rs5/review/matching_review_queue.csv). Do not adjudicate automatically.
+    responsible_stage: Owner
+    owner_approval_required: true
+    blocks_phase_4_1: false
+    blocks_final_modeling: false
+    target_phase: "Any time; a resolution needs a new version"
+    owner_decision:
+      odr_id: ODR-06
+      decision: 'KEEP UNRESOLVED: Daniel Chesters and Jimi Tauriainen stay in the review queue.'
+      rationale: No human adjudication is available.
+      implementation_boundary: No automatic adjudication. Any resolution requires a new version and audit.
+      remaining_limitation: The two identities remain unresolved.
+      decision_status: OWNER_DECIDED
+      residual_status: OPEN_PENDING_EVIDENCE
+      residual_blocks_final_modeling: false
+      evidence: data/research_rs5/review/matching_review_queue.csv
+      date: '2026-11-09'
+      source: FB69_PHASE4_OWNER_DECISION_REGISTER (2026-11-09, status APPROVED FOR CONTROLLED TRANSITION) and the owner prompt 'MASTER PROMPT - FB69 CONTROLLED TRANSITION'
+  - id: P4-C01
+    title: Phase 4.1 instruction and plan
+    classification: C
+    description: The Phase 4.0 verdict permits Phase 4.1 only "according to the approved Phase 4 plan". No Phase 4 plan file exists in the repository.
+    evidence: "Search of reports/, configs/ and docs for a Phase 4 plan: none found"
+    affected: Start of Phase 4.1
+    required_action: Owner supplies the Phase 4.1 prompt or plan.
+    responsible_stage: Owner
+    owner_approval_required: true
+    blocks_phase_4_1: true
+    blocks_final_modeling: false
+    target_phase: "Before 4.1"
+    status: RESOLVED_FOR_4_1
+    resolution: "Owner prompt 'PHASE 4.1 - DATASET PROFILING & STRUCTURAL EDA' (2026-11-08) is the authorized Phase 4.1 plan. It authorizes 4.1 only; 4.2 needs a new owner authorization."
+  - id: P4-C02
+    title: Phase 4.2 instruction
+    classification: C
+    description: Phase 4.1 authorized 4.1 only; Phase 4.2 needed a new owner authorization.
+    evidence: "Phase 4.1 handoff (G4.1 PASS) asked the owner to authorize 4.2"
+    affected: Start of Phase 4.2
+    required_action: Owner supplies the Phase 4.2 prompt.
+    responsible_stage: Owner
+    owner_approval_required: true
+    blocks_phase_4_1: false
+    blocks_final_modeling: false
+    target_phase: "Before 4.2"
+    status: RESOLVED_FOR_4_2
+    resolution: "Owner prompt 'PHASE 4.2 - TARGET & UNIVARIATE ANALYSIS' (2026-11-08), issued after the Phase 4.1 handoff, authorizes 4.2 only. It contains no separate written statement accepting G4.1 and no answer on ENV-P4-01, so the delegated ENV-P4-01 resolution stands. 4.3 needs a new owner authorization."
+  - id: P4-C03
+    title: Phase 4.3 instruction
+    classification: C
+    description: Phase 4.2 authorized 4.2 only; Phase 4.3 needed a new owner authorization.
+    evidence: "Phase 4.2 handoff (G4.2 PASS) asked the owner to authorize 4.3"
+    affected: Start of Phase 4.3
+    required_action: Owner supplies the Phase 4.3 prompt.
+    responsible_stage: Owner
+    owner_approval_required: true
+    blocks_phase_4_1: false
+    blocks_final_modeling: false
+    target_phase: "Before 4.3"
+    status: RESOLVED_FOR_4_3
+    resolution: "Owner prompt 'PHASE 4.3 - BIVARIATE ANALYSIS' (2026-11-09), issued after the Phase 4.2 handoff, authorizes 4.3 only. It contains no separate written statement accepting G4.2 and no answer on the open owner decisions, which remain open. 4.4 needs a new owner authorization."
+  - id: P4-C04
+    title: Phase 4.4 to 4.7 instructions
+    classification: C
+    description: Phase 4.3 authorized 4.3 only; Phases 4.4 to 4.7 needed owner authorization.
+    evidence: "Owner prompts 'PHASE 4.4' to 'PHASE 4.7' and the owner's chat instruction (2026-11-09): carry out the phases without approval between them"
+    affected: Start of Phases 4.4, 4.5, 4.6 and 4.7
+    required_action: Owner supplies the prompts.
+    responsible_stage: Owner
+    owner_approval_required: true
+    blocks_phase_4_1: false
+    blocks_final_modeling: false
+    target_phase: "Before 4.4"
+    status: RESOLVED_FOR_4_4_TO_4_7
+    resolution: "The owner supplied the Phase 4.4, 4.5, 4.6 and 4.7 prompts and instructed (2026-11-09) that they be executed without an approval between phases. This authorizes 4.4 to 4.7 in sequence; each sub-phase still ends with its own gate, and a FAIL stops the sequence. It is not a written acceptance of G4.3 or of later gates, and it answers none of the open owner decisions. Phase 5 is not authorized."
+  - id: ENV-P4-01
+    title: Accepted environment .venv314 is not executable on this machine
+    classification: C
+    also: B
+    description: ".venv314 (Python 3.14.6) points to C:\\Users\\THEGIOILAP\\...\\pythoncore-3.14-64, which is missing here. The project .venv runs (Python 3.13.13) and its pip freeze is identical to reports/phase_03/step_05/requirements_freeze.txt (duckdb 2.0.0, pyarrow 24.0.0, pandas 3.1.0). Phase 4.0 verification ran under .venv. Byte-level rebuild reproducibility was established under .venv314 and was not re-tested here (no rebuild authorized)."
+    evidence: "evidence/venv_pip_freeze.txt; .venv314/pyvenv.cfg"
+    affected: Reproducibility record; README rebuild commands
+    required_action: "Owner confirms which interpreter Phase 4 uses on this machine (.venv as found, or restore a 3.14.6 base for .venv314). Every Phase 4 output records interpreter and package versions. Do not replace .venv314 or install packages without approval."
+    responsible_stage: Owner
+    owner_approval_required: true
+    blocks_phase_4_1: false
+    blocks_final_modeling: false
+    target_phase: "Before 4.1 outputs are archived"
+    status: RESOLVED_DELEGATED_TECHNICAL_DECISION
+    resolution: "Re-checked in Phase 4.1: .venv314 still cannot start (base interpreter missing); .venv runs Python 3.13.13 with the pinned freeze. Phase 4.1 evidence and tests ran under .venv. The notebook (needs matplotlib and a Jupyter kernel, absent from .venv) ran on the same base interpreter with .venv site-packages first on PYTHONPATH, so the pinned pandas/numpy/pyarrow/duckdb were used. Nothing was installed or replaced. Taken under the standing delegation of routine technical decisions; the owner may override. Byte-level rebuild reproducibility under 3.14.6 remains untested on this machine."
+
+  # ---------------- D: later-phase requirements ----------------
+  - id: P4-D01
+    title: Status-column (s_*) role
+    classification: D
+    description: "The dictionary flags the 53 s_* columns as candidate predictors, but they are categorical source statuses, not numeric performance. Whether any enters a model (e.g. as a missingness indicator) is a preprocessing design decision. s_key_passes is constant (UNSUPPORTED) and excluded."
+    evidence: "data_dictionary.csv; s_* are string; status values recomputed"
+    affected: 53 columns
+    required_action: Use s_* in EDA to interpret nulls. Decide their modeling role, with justification, before preprocessing.
+    responsible_stage: Preprocessing design
+    owner_approval_required: false
+    blocks_phase_4_1: false
+    blocks_final_modeling: true
+    target_phase: "Before preprocessing"
+    owner_decision:
+      odr_id: ODR-13
+      decision: Do not use all s_* columns as direct predictors by default; use them to interpret source missingness. Any indicator is proposed per metric with justification.
+      rationale: 'Phase 4.5: status semantics clean on 145,591 cells; missingness follows playing time.'
+      implementation_boundary: No indicator is created or transformed now.
+      remaining_limitation: Not closed until the metric-level indicator policy is designed and approved.
+      decision_status: OWNER_DECIDED_IMPLEMENTATION_PENDING
+      residual_status: OPEN_PENDING_OWNER_REVIEW
+      residual_blocks_final_modeling: true
+      evidence: step_05/MISSINGNESS_ANALYSIS_REPORT.md; reports/phase_05/step_00/PHASE5_MISSINGNESS_POLICY.md
+      date: '2026-11-09'
+      source: FB69_PHASE4_OWNER_DECISION_REGISTER (2026-11-09, status APPROVED FOR CONTROLLED TRANSITION) and the owner prompt 'MASTER PROMPT - FB69 CONTROLLED TRANSITION'
+  - id: P4-D02
+    title: Split strategy
+    classification: D
+    description: Choose and justify grouped-by-player and/or temporal-by-season evaluation (RS5-11).
+    evidence: "RS5-11"
+    affected: Model evaluation
+    required_action: Document the split before any model is evaluated.
+    responsible_stage: Model evaluation design
+    owner_approval_required: false
+    blocks_phase_4_1: false
+    blocks_final_modeling: true
+    target_phase: "Before model evaluation"
+    owner_decision:
+      odr_id: ODR-14
+      decision: 'Primary: grouped-by-player K-fold on canonical_player_id. Secondary: temporal hold-out (develop 2020/21-2023/24, hold out 2024/25), returning and new players reported separately; hold-out never used for iterative tuning.'
+      rationale: 'Phase 4.6: random row split would put about 76% of test rows'' players in training.'
+      implementation_boundary: Split not implemented; fold count and balancing are Claude recommendations for owner review.
+      remaining_limitation: Protocol must be approved before any evaluation.
+      decision_status: OWNER_DECIDED_IMPLEMENTATION_PENDING
+      residual_status: OPEN_PENDING_OWNER_REVIEW
+      residual_blocks_final_modeling: true
+      evidence: step_06/SPLIT_STRATEGY_ASSESSMENT.md; reports/phase_05/step_00/PHASE5_EVALUATION_PROTOCOL.md
+      date: '2026-11-09'
+      source: FB69_PHASE4_OWNER_DECISION_REGISTER (2026-11-09, status APPROVED FOR CONTROLLED TRANSITION) and the owner prompt 'MASTER PROMPT - FB69 CONTROLLED TRANSITION'
+  - id: P4-D03
+    title: Final feature inclusion
+    classification: D
+    description: RD-04, RS5-12, the 8 source-reported features and the s_* role must be decided before the final feature set is frozen.
+    evidence: "phase4_feature_eligibility.csv"
+    affected: 21 conditional columns + s_*
+    required_action: Record decisions with owner approval where marked.
+    responsible_stage: Feature selection
+    owner_approval_required: true
+    blocks_phase_4_1: false
+    blocks_final_modeling: true
+    target_phase: "Before final modeling"
+    owner_decision:
+      odr_id: ODR-12
+      decision: 'CONTROLLED FEATURE DESIGN: prepare an explicit feature-level proposal from the Phase 4.6 assessment and these decisions.'
+      rationale: Final inclusion needs column-level review.
+      implementation_boundary: Final column-level inclusion must be reviewed by the owner before preprocessing.
+      remaining_limitation: Not closed until the feature proposal is owner-reviewed.
+      decision_status: OWNER_DECIDED_IMPLEMENTATION_PENDING
+      residual_status: OPEN_PENDING_OWNER_REVIEW
+      residual_blocks_final_modeling: true
+      evidence: step_06/FEATURE_ASSESSMENT_MATRIX.md; reports/phase_05/step_00/PHASE5_FEATURE_PROPOSAL.md
+      date: '2026-11-09'
+      source: FB69_PHASE4_OWNER_DECISION_REGISTER (2026-11-09, status APPROVED FOR CONTROLLED TRANSITION) and the owner prompt 'MASTER PROMPT - FB69 CONTROLLED TRANSITION'
+  - id: P4-D04
+    title: Protection checker does not cover Phase 4 outputs
+    classification: D
+    description: "src/research_scope/protect.py allows new files only under the rs5 roots. Phase 4 outputs (reports/phase_04/...) will appear as unexpected_added in a future verify run. The Phase 4.0 check was run before any Phase 4.0 file was created: 16,290 historical files, 0 removed, 0 unexpected changes, only the documented CLAUDE.md edit."
+    evidence: "evidence/protection_check_phase4_00.json"
+    affected: Future protection checks
+    required_action: Before the next protection check, add the Phase 4 output root or take a new baseline (a tooling change, documented).
+    responsible_stage: Next protection check
+    owner_approval_required: false
+    blocks_phase_4_1: false
+    blocks_final_modeling: false
+    target_phase: "Next protection check"
+    status: RESOLVED
+    resolution: "Phase 4.1 added PHASE4_OUTPUT_ROOTS (reports/phase_04/, src/phase4/, tests/phase4/, FB69_report.ipynb) to src/research_scope/protect.py. The historical baseline JSON was not modified. Phase 4.1 protection check: reports/phase_04/step_01/evidence/protection_check_phase4_01.json."
+  - id: P4-D05
+    title: Goalkeeper minutes are available only in lineup evidence (found in Phase 4.5)
+    classification: D
+    also: C
+    description: "m_minutes_played is null on 199 of 206 goalkeeper rows, but lineup-derived minutes (temporal_minutes_before_or_on_valuation + temporal_minutes_after_valuation) exist on all 206 rows, equal m_minutes_played on 2,489 of 2,491 outfield rows (max difference 19 minutes), and reproduce goals_conceded_per90 exactly on all 198 goalkeeper rows with a value. The temporal_* columns are temporal-audit columns and never predictors (P4-A03)."
+    evidence: "reports/phase_04/step_05/evidence/gk_minutes_sources.csv, gk_consistency_checks.csv, reliability_summary.json (outfield_minutes_agreement)"
+    affected: "m_minutes_played for goalkeepers; any playing-time feature for goalkeepers"
+    required_action: "Owner decides whether a season-total minutes value may be derived from lineup evidence for goalkeepers (a new feature version, documented), or whether goalkeeper playing time is represented by starts and appearances only. Claude Code must not derive it automatically."
+    responsible_stage: Feature design (owner decision)
+    owner_approval_required: true
+    blocks_phase_4_1: false
+    blocks_final_modeling: false
+    target_phase: "Before feature engineering"
+    owner_decision:
+      odr_id: ODR-11
+      decision: Represent goalkeeper playing time with starts and appearances in the baseline.
+      rationale: Avoids a new feature version derived from lineup evidence.
+      implementation_boundary: Do not derive goalkeeper minutes from lineup evidence; no new feature version.
+      remaining_limitation: GK playing time is coarser than minutes.
+      decision_status: OWNER_DECIDED
+      residual_status: CARRIED_FORWARD
+      residual_blocks_final_modeling: false
+      evidence: step_05/METRIC_RELIABILITY_REPORT.md
+      date: '2026-11-09'
+      source: FB69_PHASE4_OWNER_DECISION_REGISTER (2026-11-09, status APPROVED FOR CONTROLLED TRANSITION) and the owner prompt 'MASTER PROMPT - FB69 CONTROLLED TRANSITION'
+  - id: ENV-P4-02
+    title: Full 437-test suite not re-run in Phase 4.0
+    classification: D
+    description: Phase 4.0 ran the 71 rs5 tests (all pass under .venv). The full suite (437 at G5) was not re-run, to avoid the protected runner's temporary rewrite of Phase 2 files in an acceptance-only step.
+    evidence: "evidence/rs5_tests.log"
+    affected: Test evidence
+    required_action: Re-run with src/phase3/step3_qa_run_full_tests.py <evidence_dir> when code changes or before final acceptance.
+    responsible_stage: Before final acceptance
+    owner_approval_required: false
+    blocks_phase_4_1: false
+    blocks_final_modeling: false
+    target_phase: "Before final acceptance"
+    status: RESOLVED
+    resolution: "Satisfied by the Phase 4.7 protected full-suite runs (484 OK, then 488 OK; step_07/evidence/full_suite_run_1 and full_suite_final). Evidence-based, not an owner policy."
+  - id: ENV-P4-03
+    title: Phase 4.3 interpreter on the current machine
+    classification: D
+    also: B
+    description: "In Phase 4.3 the repository is at D:\\PTIT\\Hoc_may\\FB69 on a machine where .venv cannot start (its base, Python 3.13.13 under another user profile, is missing) and .venv314 runs (Python 3.14.6, base pythoncore-3.14-64 present). The .venv314 pip freeze is identical to reports/phase_03/step_05/requirements_freeze.txt (duckdb 2.0.0, pyarrow 24.0.0, pandas 3.1.0, numpy 2.5.4)."
+    evidence: "reports/phase_04/step_03/evidence/venv314_pip_freeze.txt; tests_rs5_and_phase4.log"
+    affected: Reproducibility record of Phase 4.3
+    required_action: "Record interpreter and package versions with every Phase 4 output. Do not install or replace environments without approval."
+    responsible_stage: Phase 4.3
+    owner_approval_required: false
+    blocks_phase_4_1: false
+    blocks_final_modeling: false
+    target_phase: "4.3"
+    status: RESOLVED_DELEGATED_TECHNICAL_DECISION
+    resolution: "Phase 4.3 evidence and tests ran under .venv314 (the environment accepted at G5). The notebook (needs matplotlib and a Jupyter kernel, absent from .venv314) ran on the same base interpreter, Python 3.14.6, with .venv314 site-packages first on PYTHONPATH, so the pinned pandas/numpy/pyarrow/duckdb were used. Nothing was installed or replaced. Phase 4.1 and 4.2 outputs re-executed under this interpreter give the same values; only the environment line and the order of tied rows in two sorted display tables differ. Taken under the standing delegation of routine technical decisions; the owner may override."
+    owner_decision:
+      odr_id: ODR-16
+      decision: 'ACCEPTED: notebook runs with base Python 3.14.6 and .venv314 site-packages on PYTHONPATH.'
+      rationale: Owner accepted the documented arrangement for the Phase 4 reproducibility record.
+      implementation_boundary: No package installation, environment replacement or dependency change.
+      remaining_limitation: No single project environment contains the notebook dependencies.
+      decision_status: OWNER_DECIDED
+      residual_status: CARRIED_FORWARD
+      residual_blocks_final_modeling: false
+      evidence: reports/phase_04/README.md; step_07/PHASE4_FINAL_ACCEPTANCE_REPORT.md
+      date: '2026-11-09'
+      source: FB69_PHASE4_OWNER_DECISION_REGISTER (2026-11-09, status APPROVED FOR CONTROLLED TRANSITION) and the owner prompt 'MASTER PROMPT - FB69 CONTROLLED TRANSITION'
+
+owner_decision_record:
+  date: '2026-11-09'
+  source: FB69_PHASE4_OWNER_DECISION_REGISTER (2026-11-09, status APPROVED FOR CONTROLLED TRANSITION) and the owner prompt 'MASTER PROMPT - FB69 CONTROLLED TRANSITION'
+  readable_register: reports/phase_04/step_07/PHASE4_OWNER_DECISION_REGISTER.md
+  decision_status_legend:
+    OWNER_DECIDED: Governance decision taken; nothing further to implement for this condition.
+    OWNER_DECIDED_IMPLEMENTATION_PENDING: Policy decided; its design or implementation still needs work and owner review.
+  residual_status_legend:
+    CARRIED_FORWARD: The limitation stays and must be reported; no open action beyond that.
+    OPEN_PENDING_EVIDENCE: Cannot be closed without new evidence (for example human validation).
+    OPEN_PENDING_OWNER_REVIEW: Waits for owner review of a Phase 5.0 design deliverable.
+  note: 'A condition with an owner_decision block but no status is still OPEN in the register sense: the decision does not resolve the empirical issue.'
+phase4_acceptance:
+  date: '2026-11-09'
+  source: FB69_PHASE4_OWNER_DECISION_REGISTER (2026-11-09, status APPROVED FOR CONTROLLED TRANSITION) and the owner prompt 'MASTER PROMPT - FB69 CONTROLLED TRANSITION'
+  gates:
+    G4.0: CONDITIONAL PASS (dataset acceptance; not part of the owner's G4.1-G4.7 acceptance; dataset conditions remain)
+    G4.1: PASS (Claude) -> OWNER_ACCEPTED
+    G4.2: PASS (Claude) -> OWNER_ACCEPTED
+    G4.3: PASS (Claude) -> OWNER_ACCEPTED
+    G4.4: PASS (Claude) -> OWNER_ACCEPTED
+    G4.5: PASS (Claude) -> OWNER_ACCEPTED
+    G4.6: PASS (Claude) -> OWNER_ACCEPTED
+    G4.7: CONDITIONAL PASS (Claude, before owner acceptance) -> PASS after verification of the four owner conditions
+  phase4_overall: ACCEPTED
+  env_p4_03: OWNER_ACCEPTED
+  note: Acceptance closes the administrative conditions of G4.7 only. It does not resolve research limitations or authorize final modeling.

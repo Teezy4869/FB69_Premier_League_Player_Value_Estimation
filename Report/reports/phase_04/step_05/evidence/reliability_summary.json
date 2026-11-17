@@ -1,0 +1,69 @@
+{
+ "dataset": "data/releases/fb69_player_season_integrated_rs5_v1/player_season_integrated_rs5_v1.parquet",
+ "sha256_verified": true,
+ "scope_id": "rs5_v1",
+ "scope_check": {
+  "season": {
+   "2020/2021": 524,
+   "2021/2022": 537,
+   "2022/2023": 554,
+   "2023/2024": 570,
+   "2024/2025": 562
+  },
+  "season_id": {
+   "15382": 524,
+   "16390": 537,
+   "17664": 554,
+   "20720": 570,
+   "23685": 562
+  }
+ },
+ "scope_check_derived_temporal_by_season": {
+  "season": {
+   "2020/2021": 1,
+   "2021/2022": 1,
+   "2022/2023": 1,
+   "2023/2024": 1,
+   "2024/2025": 1
+  }
+ },
+ "status_cells": {
+  "OBSERVED": 91289,
+  "OBSERVED_ZERO": 5762,
+  "OBSERVED_FALLBACK_LEADERBOARD": 402,
+  "OBSERVED_SOURCE_REVISED": 95,
+  "MISSING": 27361,
+  "UNVERIFIED_POSITION": 17899,
+  "UNSUPPORTED": 2747,
+  "CONFLICTING": 36
+ },
+ "temporal_reference_all_match": true,
+ "temporal_reference": {
+  "Median valuation age (days)": 150.0,
+  "Usable targets older than 90 days (%)": 56.6185,
+  "Appearances after the valuation date (%)": 44.0978,
+  "Minutes after the valuation date (%)": 43.6647,
+  "Targets older than 365 days": 12.0,
+  "Valuations after the season cutoff": 0.0,
+  "Usable targets dated before the season's first match": 18.0
+ },
+ "outfield_minutes_agreement": {
+  "rows_compared": 2491,
+  "identical": 2489,
+  "max_abs_difference": 19.0
+ },
+ "identity_sensitivity_rows": 533,
+ "reliability_classes": {
+  "reliable with caveat": 25,
+  "reliable values, limited coverage": 15,
+  "uncertain: source-reported": 6,
+  "pending owner decision (RD-04)": 5,
+  "source-reported, internally consistent": 2
+ },
+ "dataset_sha256_after": "4d94ec73cfb9d72421fb2bbb1d7976bcf29f8a4f6cc985435955e574b072eedd",
+ "versions": {
+  "python": "3.14.6",
+  "pandas": "3.1.0",
+  "numpy": "2.5.4"
+ }
+}

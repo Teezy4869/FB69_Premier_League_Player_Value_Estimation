@@ -1,0 +1,8 @@
+measure,value,note
+usable targets,2697,
+players with a usable target,1196,
+distinct target values,84,"coarse, rounded valuations"
+skewness raw / log10,2.31 / -0.84,log over-corrects slightly
+max / median,15.4,heavy upper tail
+share of total value in top 5% of rows,21.1%,raw-scale errors dominated by the tail
+rows beyond 3 IQR (raw),32,genuine elite players (4.2)

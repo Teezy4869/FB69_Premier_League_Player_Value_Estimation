@@ -1,0 +1,63 @@
+== interpreter: D:\PTIT\Hoc_may\FB69\.venv314\Scripts\python.exe 3.14.6
+== tests/research_scope
+----------------------------------------------------------------------
+Ran 71 tests in 19.795s
+
+OK
+== tests/phase4
+test_correlation_matrix_well_formed (tests.phase4.test_bivariate_43.BivariateTest.test_correlation_matrix_well_formed) ... ok
+test_correlations_match_reference_and_use_pairwise_complete_rows (tests.phase4.test_bivariate_43.BivariateTest.test_correlations_match_reference_and_use_pairwise_complete_rows) ... ok
+test_dataset_unchanged_after_analysis (tests.phase4.test_bivariate_43.BivariateTest.test_dataset_unchanged_after_analysis) ... ok
+test_goalkeeper_metrics_only_on_goalkeeper_rows (tests.phase4.test_bivariate_43.BivariateTest.test_goalkeeper_metrics_only_on_goalkeeper_rows) ... ok
+test_identity_rows_kept_in_main_analysis (tests.phase4.test_bivariate_43.BivariateTest.test_identity_rows_kept_in_main_analysis) ... ok
+test_only_eligible_features_analysed (tests.phase4.test_bivariate_43.BivariateTest.test_only_eligible_features_analysed) ... ok
+test_recorded_evidence_equals_recomputation (tests.phase4.test_bivariate_43.BivariateTest.test_recorded_evidence_equals_recomputation) ... ok
+test_redundancy_clusters_describe_without_removing (tests.phase4.test_bivariate_43.BivariateTest.test_redundancy_clusters_describe_without_removing) ... ok
+test_statistics_helpers (tests.phase4.test_bivariate_43.BivariateTest.test_statistics_helpers) ... ok
+test_dataset_unchanged (tests.phase4.test_feasibility_46.FeasibilityTest.test_dataset_unchanged) ... ok
+test_eligibility_file_unchanged (tests.phase4.test_feasibility_46.FeasibilityTest.test_eligibility_file_unchanged) ... ok
+test_every_feature_assessed_on_every_dimension (tests.phase4.test_feasibility_46.FeasibilityTest.test_every_feature_assessed_on_every_dimension) ... ok
+test_owner_decisions_stay_pending_and_exclusions_respected (tests.phase4.test_feasibility_46.FeasibilityTest.test_owner_decisions_stay_pending_and_exclusions_respected) ... ok
+test_recorded_evidence_equals_recomputation (tests.phase4.test_feasibility_46.FeasibilityTest.test_recorded_evidence_equals_recomputation) ... ok
+test_split_feasibility_is_analytic_only (tests.phase4.test_feasibility_46.FeasibilityTest.test_split_feasibility_is_analytic_only) ... ok
+test_dataset_unchanged_after_analysis (tests.phase4.test_multivariate_44.MultivariateTest.test_dataset_unchanged_after_analysis) ... ok
+test_goalkeeper_metrics_described_on_goalkeeper_rows_only (tests.phase4.test_multivariate_44.MultivariateTest.test_goalkeeper_metrics_described_on_goalkeeper_rows_only) ... ok
+test_groups_cover_every_row_without_filling (tests.phase4.test_multivariate_44.MultivariateTest.test_groups_cover_every_row_without_filling) ... ok
+test_profiles_reconcile_with_dataset (tests.phase4.test_multivariate_44.MultivariateTest.test_profiles_reconcile_with_dataset) ... ok
+test_recorded_evidence_equals_recomputation (tests.phase4.test_multivariate_44.MultivariateTest.test_recorded_evidence_equals_recomputation) ... ok
+test_season_tables_follow_scope (tests.phase4.test_multivariate_44.MultivariateTest.test_season_tables_follow_scope) ... ok
+test_small_cells_left_empty (tests.phase4.test_multivariate_44.MultivariateTest.test_small_cells_left_empty) ... ok
+test_dataset_unchanged_after_profiling (tests.phase4.test_profiling_41.ProfilingTest.test_dataset_unchanged_after_profiling) ... ok
+test_hash_mismatch_stops_before_loading (tests.phase4.test_profiling_41.ProfilingTest.test_hash_mismatch_stops_before_loading) ... ok
+test_known_anomaly_preserved_not_corrected (tests.phase4.test_profiling_41.ProfilingTest.test_known_anomaly_preserved_not_corrected) ... ok
+test_no_unexpected_categories (tests.phase4.test_profiling_41.ProfilingTest.test_no_unexpected_categories) ... ok
+test_only_official_seasons (tests.phase4.test_profiling_41.ProfilingTest.test_only_official_seasons) ... ok
+test_overview_matches_official_release (tests.phase4.test_profiling_41.ProfilingTest.test_overview_matches_official_release) ... ok
+test_recorded_evidence_equals_recomputation (tests.phase4.test_profiling_41.ProfilingTest.test_recorded_evidence_equals_recomputation) ... ok
+test_schema_profile_covers_every_column_once (tests.phase4.test_profiling_41.ProfilingTest.test_schema_profile_covers_every_column_once) ... ok
+test_status_and_value_agree (tests.phase4.test_profiling_41.ProfilingTest.test_status_and_value_agree) ... ok
+test_dataset_unchanged_after_analysis (tests.phase4.test_reliability_45.ReliabilityTest.test_dataset_unchanged_after_analysis) ... ok
+test_goalkeeper_checks (tests.phase4.test_reliability_45.ReliabilityTest.test_goalkeeper_checks) ... ok
+test_identity_subset_kept_and_compared (tests.phase4.test_reliability_45.ReliabilityTest.test_identity_subset_kept_and_compared) ... ok
+test_rd04_not_resolved_and_matches_window_audit (tests.phase4.test_reliability_45.ReliabilityTest.test_rd04_not_resolved_and_matches_window_audit) ... ok
+test_recorded_evidence_equals_recomputation (tests.phase4.test_reliability_45.ReliabilityTest.test_recorded_evidence_equals_recomputation) ... ok
+test_status_semantics_preserved (tests.phase4.test_reliability_45.ReliabilityTest.test_status_semantics_preserved) ... ok
+test_temporal_reference_values_recomputed (tests.phase4.test_reliability_45.ReliabilityTest.test_temporal_reference_values_recomputed) ... ok
+test_cross_phase_statistics_consistent (tests.phase4.test_synthesis_47.SynthesisTest.test_cross_phase_statistics_consistent) ... ok
+test_integrity (tests.phase4.test_synthesis_47.SynthesisTest.test_integrity) ... ok
+test_notebook_executed_cleanly (tests.phase4.test_synthesis_47.SynthesisTest.test_notebook_executed_cleanly) ... ok
+test_recorded_evidence (tests.phase4.test_synthesis_47.SynthesisTest.test_recorded_evidence) ... ok
+test_dataset_unchanged_after_analysis (tests.phase4.test_univariate_42.UnivariateTest.test_dataset_unchanged_after_analysis) ... ok
+test_excluded_columns_never_analysed (tests.phase4.test_univariate_42.UnivariateTest.test_excluded_columns_never_analysed) ... ok
+test_feature_set_follows_eligibility_register (tests.phase4.test_univariate_42.UnivariateTest.test_feature_set_follows_eligibility_register) ... ok
+test_goalkeeper_metrics_on_goalkeeper_rows (tests.phase4.test_univariate_42.UnivariateTest.test_goalkeeper_metrics_on_goalkeeper_rows) ... ok
+test_per90_bands_cover_rows_with_minutes (tests.phase4.test_univariate_42.UnivariateTest.test_per90_bands_cover_rows_with_minutes) ... ok
+test_rd04_flagged_not_resolved (tests.phase4.test_univariate_42.UnivariateTest.test_rd04_flagged_not_resolved) ... ok
+test_recorded_evidence_equals_recomputation (tests.phase4.test_univariate_42.UnivariateTest.test_recorded_evidence_equals_recomputation) ... ok
+test_stored_data_unchanged_and_tails_kept (tests.phase4.test_univariate_42.UnivariateTest.test_stored_data_unchanged_and_tails_kept) ... ok
+test_target_statistics_on_raw_values (tests.phase4.test_univariate_42.UnivariateTest.test_target_statistics_on_raw_values) ... ok
+
+----------------------------------------------------------------------
+Ran 51 tests in 13.012s
+
+OK

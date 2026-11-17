@@ -1,0 +1,14 @@
+position_group_season,usage_group,rows,players,usable_targets,target_p10_eur,target_p25_eur,target_median_eur,target_p75_eur,target_p90_eur,target_max_eur,age_median,starts_median,appearances_median,minutes_median,minutes_missing_pct,null_metrics_median,p4b01_share_pct,valuation_age_median_days,interpretable
+DEF,mainly substitute (<50% started),164,143,155,320000,1.65e+06,4.5e+06,1e+07,2.12e+07,5e+07,24.315,1,4,104,0,23,29.2683,152,True
+DEF,mixed (50-89% started),384,242,384,1.86e+06,4.375e+06,1.2e+07,2e+07,3.5e+07,7.5e+07,26.805,13,18,1226.5,0,11,18.75,150,True
+DEF,starter (>=90% started),387,217,385,3e+06,7.5e+06,1.8e+07,3e+07,4.5e+07,1e+08,27.25,27,28,2408,0,11,17.3127,150,True
+FWD,mainly substitute (<50% started),350,250,335,800000,2.5e+06,9e+06,1.6e+07,2.5e+07,7e+07,23.905,1,11,219,0,17,24.8571,150,True
+FWD,mixed (50-89% started),321,190,320,4.95e+06,1e+07,2.2e+07,4e+07,6e+07,1.5e+08,26.05,19,28,1730,0,10,13.3956,73,True
+FWD,starter (>=90% started),96,59,95,9.4e+06,1.8e+07,3.5e+07,6.25e+07,1e+08,2e+08,26.23,32,34,2790.5,0,10,10.4167,150,True
+GK,appearances missing,1,1,1,900000,900000,900000,900000,900000,900000,28.79,,,,100,52,100,724,False
+GK,mainly substitute (<50% started),9,9,9,200000,500000,1.5e+06,2e+06,5.6e+06,8e+06,30.21,0,1,14,22.2222,46,44.4444,152,False
+GK,mixed (50-89% started),14,12,14,560000,1.125e+06,2e+06,2.5e+06,7.2e+06,1.3e+07,32.65,2.5,4,,100,35,42.8571,152,False
+GK,starter (>=90% started),182,84,182,1e+06,2.5e+06,8e+06,1.8e+07,2.8e+07,6.5e+07,30.205,23.5,23.5,,100,34,21.978,150,True
+MID,mainly substitute (<50% started),291,221,270,590000,2e+06,7e+06,1.5e+07,2.2e+07,1.3e+08,24.05,2,10,244,0,15,23.7113,152,True
+MID,mixed (50-89% started),360,231,359,3e+06,8.5e+06,1.8e+07,3.2e+07,4.84e+07,1.3e+08,26.535,17,25,1564,0,10,14.4444,150,True
+MID,starter (>=90% started),188,112,188,5.7e+06,1.275e+07,2.5e+07,4.575e+07,7.5e+07,1.3e+08,26.78,31.5,33,2711.5,0,10,18.0851,150,True

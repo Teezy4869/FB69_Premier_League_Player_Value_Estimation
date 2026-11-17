@@ -1,0 +1,2 @@
+task_id,request_key,season_label,stage,resource_type,decision,schema_status,scope_status,error_classification,raw_path,capture_id,missing_value_count,note
+tsk_d396c0a7999a781fbe9566d413dc6ec8110cc47ffb5237dfaa04332d978a4285,,2023/2024,D,HISTORICAL_MEMBERSHIP_GATE,VALIDATED,,,,,,0,Every appeared-player profile task validated; historical clubs remain lineup-derived

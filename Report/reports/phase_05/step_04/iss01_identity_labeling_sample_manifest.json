@@ -1,0 +1,12 @@
+{
+ "source": "data\\research_rs5\\review\\validation_sample_for_labeling.csv",
+ "source_sha256": "e9cdf910168bad4faa48ece02979299ccb0925ae24fc0159c8555aee67b39c4a",
+ "seed": 0,
+ "rows": 101,
+ "by_reason": {
+  "RANDOM_AUTO_EXACT": 100,
+  "WORST_ERROR_STEP03": 1
+ },
+ "identity_sensitive": 67,
+ "output_sha256": "3021bd49ca1768da7266dd1b8c946c62309613f79eb0c7bff596ac418ba89ae3"
+}

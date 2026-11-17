@@ -1,0 +1,11 @@
+{
+  "metric_rebuilt_player_seasons": 4052,
+  "metric_value_status_mismatches": 0,
+  "metric_mismatch_samples": [],
+  "conflict_inventory_rows": 575,
+  "conflict_inventory_match": true,
+  "coverage_rows": 318,
+  "coverage_matrix_match": true,
+  "data_content_reproducible": true,
+  "comparison_contract": "Canonical m_*/s_* values and statuses by (season_id, player_id); conflict action keys; all coverage rows. Population labels are rebuilt separately from Part 1 evidence."
+}

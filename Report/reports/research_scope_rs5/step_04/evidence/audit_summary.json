@@ -1,0 +1,72 @@
+{
+ "dataset": "data/releases/fb69_player_season_integrated_rs5_v1/player_season_integrated_rs5_v1.parquet",
+ "dataset_sha256": "4d94ec73cfb9d72421fb2bbb1d7976bcf29f8a4f6cc985435955e574b072eedd",
+ "leakage_classification": {
+  "FAIL": 28,
+  "WARNING": 118,
+  "PASS": 16,
+  "REQUIRES RESEARCH DECISION": 13
+ },
+ "candidate_leakage_classification": {
+  "PASS": 1,
+  "WARNING": 102,
+  "REQUIRES RESEARCH DECISION": 5
+ },
+ "reliability_status": {
+  "RELIABLE_WITH_ALIGNMENT_LIMIT": 40,
+  "SOURCE_REPORTED_NOT_VERIFIED": 8,
+  "PARTIAL_SEASON_COVERAGE": 2,
+  "WINDOW_NOT_FULLY_VERIFIED": 3,
+  "NO_DATA": 1,
+  "RELIABLE": 1
+ },
+ "max_abs_spearman_candidate": [
+  0.671,
+  "m_clean_sheets"
+ ],
+ "window_check": {
+  "rows": 265,
+  "identical_to_historical_in_scope_rows": true,
+  "seasons": [
+   "2020/2021",
+   "2021/2022",
+   "2022/2023",
+   "2023/2024",
+   "2024/2025"
+  ]
+ },
+ "temporal_overall": {
+  "usable_targets": 2697,
+  "targets_older_than_90_days": 1527,
+  "pct_targets_older_than_90_days": 56.62,
+  "appearances_after_valuation": 24286,
+  "appearances": 55073,
+  "pct_appearances_after_valuation": 44.1,
+  "temporal_columns_agree_with_recomputation": true,
+  "pct_minutes_after_valuation": 43.66,
+  "age_days_quantiles": {
+   "0.0": 2.0,
+   "0.1": 66.0,
+   "0.25": 66.0,
+   "0.5": 150.0,
+   "0.75": 160.0,
+   "0.9": 206.0,
+   "1.0": 731.0
+  },
+  "staleness_bins": {
+   "61-90": 1030,
+   "91-180": 1140,
+   ">180": 387,
+   "0-30": 27,
+   "31-60": 113
+  },
+  "targets_over_365_days": 12,
+  "valuation_after_cutoff": 0,
+  "valuations_before_season_start": 18,
+  "alignment_class": {
+   "MIXED": 2136,
+   "ALL_GAMES_ON_OR_BEFORE_VALUATION": 337,
+   "ALL_GAMES_AFTER_VALUATION": 224
+  }
+ }
+}

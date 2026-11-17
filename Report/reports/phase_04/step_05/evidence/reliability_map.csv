@@ -1,0 +1,54 @@
+feature,null_applicable_pct,seasons_with_values,window_evidence,source_check,applicability,reliability_class,caveats
+age_at_season_end_years,0,5,not a season metric,"birth date (4 disputed, ISS-07)",all rows,reliable with caveat,ISS-07
+m_appearances,0.0364033,5,verified all seasons,window audit,ALL,reliable with caveat,RD-03
+m_starts,0.0364033,5,verified or derived from verified totals,window audit,ALL,reliable with caveat,RD-03
+m_minutes_played,7.24427,5,verified all seasons,window audit,ALL,reliable with caveat,"RD-03, RS5-13"
+m_goals,7.24427,5,verified all seasons,window audit,ALL,reliable with caveat,RD-03
+m_assists,6.66181,5,verified all seasons,window audit,ALL,reliable with caveat,RD-03
+m_shots,19.039,5,verified all seasons,window audit,ALL,reliable with caveat,RD-03
+m_shots_on_target,30.9064,5,verified all seasons,window audit,ALL,"reliable values, limited coverage",RD-03
+m_shots_per90,19.039,5,verified or derived from verified totals,window audit,ALL,reliable with caveat,"RD-03, P4-B05, P4-B09"
+m_shots_on_target_per90,30.9064,5,verified or derived from verified totals,window audit,ALL,"reliable values, limited coverage","RD-03, P4-B05"
+m_big_chances_created,44.2665,5,verified all seasons,window audit,ALL,"reliable values, limited coverage",RD-03
+m_dribbles_succeeded,24.7907,5,verified all seasons,window audit,ALL,"reliable values, limited coverage",RD-03
+m_touches_opposition_box,21.1867,5,incomplete: DISAGREES_WITH_MATCH_SUM,window audit,ALL,pending owner decision (RD-04),"RD-03, RD-04"
+m_expected_goals,17.9469,5,verified all seasons,window audit,ALL,reliable with caveat,"RD-03, RS5-13, leaderboard fallback"
+m_non_penalty_xg,22.1696,5,verified all seasons,window audit,ALL,"reliable values, limited coverage",RD-03
+m_expected_assists,1.38333,5,verified all seasons,window audit,ALL,reliable with caveat,"RD-03, leaderboard fallback"
+m_expected_goals_on_target,31.3069,5,incomplete: DISAGREES_WITH_MATCH_SUM,window audit,ALL,pending owner decision (RD-04),"RD-03, RD-04"
+m_accurate_passes,11.8311,5,verified all seasons,window audit,ALL,reliable with caveat,RD-03
+m_accurate_passes_per90,11.8675,5,verified or derived from verified totals,window audit,ALL,reliable with caveat,"RD-03, P4-B05, P4-B02"
+m_accurate_long_passes,15.2166,5,verified all seasons,window audit,ALL,reliable with caveat,RD-03
+m_accurate_long_passes_per90,15.2166,5,verified or derived from verified totals,window audit,ALL,reliable with caveat,"RD-03, P4-B05"
+m_chances_created,21.5872,5,verified all seasons,window audit,ALL,"reliable values, limited coverage",RD-03
+m_successful_crosses,41.7546,5,verified all seasons,window audit,ALL,"reliable values, limited coverage",RD-03
+m_passing_accuracy,11.8311,5,verified or derived from verified totals,source-reported (ISS-29),ALL,uncertain: source-reported,"RD-03, ISS-29, P4-B09"
+m_long_ball_accuracy,15.2166,5,verified or derived from verified totals,source-reported (ISS-29),ALL,uncertain: source-reported,"RD-03, ISS-29"
+m_cross_accuracy,41.7546,5,verified or derived from verified totals,source-reported (ISS-29),ALL,uncertain: source-reported,"RD-03, ISS-29"
+m_touches,19.039,5,verified all seasons,window audit,ALL,reliable with caveat,RD-03
+m_tackles,19.8034,5,verified all seasons,window audit,ALL,reliable with caveat,RD-03
+m_tackles_per90,19.8034,5,verified or derived from verified totals,window audit,ALL,reliable with caveat,"RD-03, P4-B05, P4-B09"
+m_interceptions,22.7157,5,verified all seasons,window audit,ALL,"reliable values, limited coverage",RD-03
+m_interceptions_per90,22.7157,5,verified or derived from verified totals,window audit,ALL,"reliable values, limited coverage","RD-03, P4-B05, P4-B09"
+m_recoveries,19.1846,5,verified all seasons,window audit,ALL,reliable with caveat,RD-03
+m_recoveries_per90,19.1846,5,verified or derived from verified totals,window audit,ALL,reliable with caveat,"RD-03, P4-B05, P4-B09"
+m_blocked_shots,34.6924,5,verified all seasons,window audit,ALL,"reliable values, limited coverage",RD-03
+m_blocks_per90,34.6924,5,verified or derived from verified totals,window audit,ALL,"reliable values, limited coverage","RD-03, P4-B05"
+m_clearances,80.6698,3,incomplete: NO_SEASON_VALUES,window audit,ALL,pending owner decision (RD-04),"RD-03, RD-04"
+m_clearances_per90,80.6698,3,"incomplete: NOT_VERIFIABLE_FROM_MATCH_DATA, NO_SEASON_VALUES",window audit,ALL,pending owner decision (RD-04),"RD-03, RD-04, P4-B05"
+m_aerials_won,21.7328,5,verified all seasons,window audit,ALL,"reliable values, limited coverage",RD-03
+m_aerials_won_percent,21.7328,5,verified or derived from verified totals,source-reported (ISS-29),ALL,uncertain: source-reported,"RD-03, ISS-29"
+m_duels_won,19.1118,5,verified all seasons,window audit,ALL,reliable with caveat,RD-03
+m_duels_won_percent,19.1118,5,verified or derived from verified totals,source-reported (ISS-29),ALL,uncertain: source-reported,"RD-03, ISS-29"
+m_yellow_cards,11.8311,5,verified or derived from verified totals,window audit,ALL,reliable with caveat,RD-03
+m_red_cards,11.8311,5,verified or derived from verified totals,window audit,ALL,reliable with caveat,RD-03
+m_fouls_committed,20.4223,5,verified all seasons,window audit,ALL,"reliable values, limited coverage",RD-03
+m_fouls_won,21.5144,5,verified all seasons,window audit,ALL,"reliable values, limited coverage",RD-03
+m_saves,3.8835,5,verified all seasons,window audit,GK_ONLY,reliable with caveat,"RD-03, GK only, ISS-11"
+m_save_percentage,4.36893,5,verified or derived from verified totals,source-reported (ISS-29),GK_ONLY,"source-reported, internally consistent","RD-03, ISS-29, GK only, ISS-11"
+m_clean_sheets,3.8835,5,verified or derived from verified totals,source-reported (ISS-29),GK_ONLY,uncertain: source-reported,"RD-03, ISS-29, GK only, ISS-11"
+m_goals_conceded,3.8835,5,verified all seasons,window audit,GK_ONLY,reliable with caveat,"RD-03, GK only, ISS-11"
+m_goals_conceded_per90,3.8835,5,verified or derived from verified totals,source-reported (ISS-29),GK_ONLY,"source-reported, internally consistent","RD-03, ISS-29, P4-B05, GK only, ISS-11"
+m_penalty_saves,31.5534,5,incomplete: RARE_EVENT_CONSISTENT,window audit,GK_ONLY,"reliable values, limited coverage","RD-03, GK only, ISS-11"
+m_goals_prevented,12.6214,5,incomplete: PARTIAL_MATCH_COVERAGE,window audit,GK_ONLY,pending owner decision (RD-04),"RD-03, RD-04, GK only, ISS-11, P4-B02"
+m_rating,5.71533,5,verified all seasons,window audit,ALL,reliable with caveat,"RD-03, RS5-13, P4-B02"

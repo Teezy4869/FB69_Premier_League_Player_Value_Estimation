@@ -1,0 +1,53 @@
+{
+ "class_counts": {
+  "MULTI_CLUB_CONFIRMED_APPEARANCES": 61,
+  "MULTI_CLUB_SQUAD_ONLY": 19
+ },
+ "by_season": {
+  "2019/2020": {
+   "MULTI_CLUB_CONFIRMED_APPEARANCES": 7
+  },
+  "2020/2021": {
+   "MULTI_CLUB_CONFIRMED_APPEARANCES": 8,
+   "MULTI_CLUB_SQUAD_ONLY": 3
+  },
+  "2021/2022": {
+   "MULTI_CLUB_CONFIRMED_APPEARANCES": 9,
+   "MULTI_CLUB_SQUAD_ONLY": 3
+  },
+  "2022/2023": {
+   "MULTI_CLUB_CONFIRMED_APPEARANCES": 15,
+   "MULTI_CLUB_SQUAD_ONLY": 6
+  },
+  "2023/2024": {
+   "MULTI_CLUB_CONFIRMED_APPEARANCES": 10,
+   "MULTI_CLUB_SQUAD_ONLY": 2
+  },
+  "2024/2025": {
+   "MULTI_CLUB_SQUAD_ONLY": 5,
+   "MULTI_CLUB_CONFIRMED_APPEARANCES": 12
+  }
+ },
+ "flag_with_two_clubs_any_squad_row": 80,
+ "flagged_total": 80,
+ "clubs_with_appearance_by_class": {
+  "MULTI_CLUB_SQUAD_ONLY": {
+   "1": 19
+  },
+  "MULTI_CLUB_CONFIRMED_APPEARANCES": {
+   "2": 61
+  }
+ },
+ "tm_club_count_by_class": {
+  "MULTI_CLUB_SQUAD_ONLY": {
+   "1": 19
+  },
+  "MULTI_CLUB_CONFIRMED_APPEARANCES": {
+   "2": 61
+  }
+ },
+ "appearances_equal_season_metric_confirmed": 61,
+ "appeared_rows_equal_appearances": 80,
+ "single_club_rows": 3182,
+ "single_club_rows_with_second_club_in_any_squad_row": 0
+}

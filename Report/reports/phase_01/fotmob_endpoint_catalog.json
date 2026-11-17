@@ -1,0 +1,746 @@
+{
+  "generated_at_utc": "2026-11-02T06:46:41.848507+00:00",
+  "competition": "English Premier League",
+  "league_id_verified": true,
+  "documentation_sources": [
+    "https://github.com/pseudo-r/Public-FotMob-API",
+    "https://github.com/ccdejene/fotmob-mcp",
+    "https://github.com/petmorr/FotMobDataAnalysis"
+  ],
+  "http_attempts": 19,
+  "request_budget": 25,
+  "endpoints": {
+    "allLeagues": {
+      "path": "/api/data/allLeagues",
+      "documented_by": [
+        "https://github.com/pseudo-r/Public-FotMob-API",
+        "https://github.com/ccdejene/fotmob-mcp",
+        "https://github.com/petmorr/FotMobDataAnalysis"
+      ],
+      "documentation_status": "candidate, independently tested below",
+      "live_status": "AVAILABLE",
+      "purpose": "Global league directory and ID lookup",
+      "parameters": {},
+      "level_2_plus": "supporting league identification",
+      "requests_tested": 1,
+      "last_observed_at_utc": "2026-11-02T06:46:28.404307+00:00",
+      "last_source_url": "https://www.fotmob.com/api/data/allLeagues",
+      "http_status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 86027,
+      "top_level_keys": [
+        "popular",
+        "international",
+        "countries"
+      ],
+      "nested_fields_observed": {},
+      "sample": "data/audit/raw_samples/all_leagues.json",
+      "error": null,
+      "response_error": null,
+      "pagination_or_size_notes": "No pagination field observed in the sampled directory; response_bytes is logged."
+    },
+    "leagues": {
+      "path": "/api/data/leagues",
+      "documented_by": [
+        "https://github.com/pseudo-r/Public-FotMob-API",
+        "https://github.com/ccdejene/fotmob-mcp",
+        "https://github.com/petmorr/FotMobDataAnalysis"
+      ],
+      "documentation_status": "candidate, independently tested below",
+      "live_status": "AVAILABLE",
+      "purpose": "League season metadata, standings and match index",
+      "parameters": {
+        "id": "league ID",
+        "season": "YYYY/YYYY for historical requests"
+      },
+      "level_2_plus": "match index and team metadata",
+      "requests_tested": 7,
+      "last_observed_at_utc": "2026-11-02T06:46:37.196154+00:00",
+      "last_source_url": "https://www.fotmob.com/api/data/leagues?id=47&season=2024%2F2025",
+      "http_status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 882788,
+      "top_level_keys": [
+        "tabs",
+        "allAvailableSeasons",
+        "details",
+        "seostr",
+        "QAData",
+        "table",
+        "transfers",
+        "overview",
+        "stats",
+        "fixtures",
+        "playoff",
+        "seasons"
+      ],
+      "nested_fields_observed": {
+        "details": [
+          "id",
+          "type",
+          "name",
+          "selectedSeason",
+          "latestSeason",
+          "shortName",
+          "country",
+          "gender",
+          "nationalTeamId",
+          "faqJSONLD",
+          "breadcrumbJSONLD",
+          "canSyncCalendar",
+          "hasFixtureDifficulty",
+          "leagueColor",
+          "dataProvider",
+          "seopath"
+        ],
+        "stats": [
+          "players",
+          "teams",
+          "seasonStatLinks",
+          "seasonsWithLinks"
+        ],
+        "fixtures": [
+          "firstUnplayedMatch",
+          "allMatches",
+          "hasOngoingMatch",
+          "fixtureInfo"
+        ]
+      },
+      "sample": "data/audit/raw_samples/league_2024_2025.json",
+      "error": null,
+      "response_error": null,
+      "pagination_or_size_notes": "No pagination field observed; sampled response contains allMatches. Large response size is logged."
+    },
+    "leagueseasondeepstats": {
+      "path": "/api/data/leagueseasondeepstats",
+      "documented_by": [
+        "https://github.com/pseudo-r/Public-FotMob-API",
+        "https://github.com/ccdejene/fotmob-mcp",
+        "https://github.com/petmorr/FotMobDataAnalysis"
+      ],
+      "documentation_status": "candidate, independently tested below",
+      "live_status": "AVAILABLE",
+      "purpose": "Season player stat table",
+      "parameters": {
+        "id": "league ID",
+        "season": "numeric TournamentId",
+        "type": "players",
+        "stat": "goals"
+      },
+      "level_2_plus": "season player statistics",
+      "requests_tested": 6,
+      "last_observed_at_utc": "2026-11-02T06:46:37.896375+00:00",
+      "last_source_url": "https://www.fotmob.com/api/data/leagueseasondeepstats?id=47&season=23685&type=players&stat=goals",
+      "http_status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 70980,
+      "top_level_keys": [
+        "statsData",
+        "seasons",
+        "statsList",
+        "leagueDetails",
+        "type",
+        "teamName",
+        "currentSeasonId",
+        "currentStatName",
+        "teamColors",
+        "substatTitle",
+        "substatLocalizedTitleId"
+      ],
+      "nested_fields_observed": {
+        "statsData": {
+          "record_count": 271,
+          "first_record_keys": [
+            "id",
+            "teamId",
+            "name",
+            "position",
+            "substatValue",
+            "statValue",
+            "rank",
+            "type"
+          ]
+        }
+      },
+      "sample": "data/audit/raw_samples/deep_stats_2024_2025.json",
+      "error": null,
+      "response_error": null,
+      "stats_data_count": 271,
+      "pagination_observed": [
+        "statsData",
+        "seasons",
+        "statsList",
+        "leagueDetails",
+        "type",
+        "teamName",
+        "currentSeasonId",
+        "currentStatName",
+        "teamColors",
+        "substatTitle",
+        "substatLocalizedTitleId"
+      ],
+      "pagination_or_size_notes": "One stat=goals table per request; no pagination field observed. Other metrics were not probed."
+    },
+    "teams": {
+      "path": "/api/data/teams",
+      "documented_by": [
+        "https://github.com/pseudo-r/Public-FotMob-API",
+        "https://github.com/ccdejene/fotmob-mcp",
+        "https://github.com/petmorr/FotMobDataAnalysis"
+      ],
+      "documentation_status": "candidate, independently tested below",
+      "live_status": "AVAILABLE",
+      "purpose": "Team profile and squad",
+      "parameters": {
+        "id": "team ID"
+      },
+      "level_2_plus": "team and player identifiers",
+      "requests_tested": 1,
+      "last_observed_at_utc": "2026-11-02T06:46:38.596602+00:00",
+      "last_source_url": "https://www.fotmob.com/api/data/teams?id=8650",
+      "http_status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 817399,
+      "top_level_keys": [
+        "tabs",
+        "allAvailableSeasons",
+        "details",
+        "seostr",
+        "QAData",
+        "table",
+        "transfers",
+        "overview",
+        "stats",
+        "fixtures",
+        "squad",
+        "history"
+      ],
+      "nested_fields_observed": {
+        "details": [
+          "id",
+          "type",
+          "name",
+          "latestSeason",
+          "shortName",
+          "country",
+          "gender",
+          "nationalTeamId",
+          "faqJSONLD",
+          "sportsTeamJSONLD",
+          "breadcrumbJSONLD",
+          "canSyncCalendar",
+          "hasFixtureDifficulty",
+          "primaryLeagueId",
+          "primaryLeagueName",
+          "teamColor",
+          "seopath"
+        ],
+        "stats": [
+          "teamId",
+          "primaryLeagueId",
+          "primarySeasonId",
+          "players",
+          "teams",
+          "tournamentId",
+          "tournamentSeasons"
+        ],
+        "fixtures": [
+          "allFixtures",
+          "primaryTournamentId",
+          "previousFixturesUrl",
+          "hasOngoingMatch"
+        ],
+        "squad": [
+          "squad",
+          "isNationalTeam"
+        ]
+      },
+      "sample": "data/audit/raw_samples/team.json",
+      "error": null,
+      "response_error": null,
+      "has_squad": true,
+      "pagination_or_size_notes": "No pagination field observed in the sampled team response; large response size is logged."
+    },
+    "playerData": {
+      "path": "/api/data/playerData",
+      "documented_by": [
+        "https://github.com/pseudo-r/Public-FotMob-API",
+        "https://github.com/ccdejene/fotmob-mcp",
+        "https://github.com/petmorr/FotMobDataAnalysis"
+      ],
+      "documentation_status": "candidate, independently tested below",
+      "live_status": "AVAILABLE",
+      "purpose": "Player profile and season references",
+      "parameters": {
+        "id": "player ID"
+      },
+      "level_2_plus": "player profile",
+      "requests_tested": 1,
+      "last_observed_at_utc": "2026-11-02T06:46:39.404530+00:00",
+      "last_source_url": "https://www.fotmob.com/api/data/playerData?id=286119",
+      "http_status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 87592,
+      "top_level_keys": [
+        "id",
+        "name",
+        "birthDate",
+        "contractEnd",
+        "isCoach",
+        "isCaptain",
+        "gender",
+        "primaryTeam",
+        "positionDescription",
+        "injuryInformation",
+        "internationalDuty",
+        "playerInformation",
+        "mainLeague",
+        "trophies",
+        "recentMatches",
+        "matchesUrl",
+        "matchFilters",
+        "careerHistory",
+        "traits",
+        "meta",
+        "coachStats",
+        "statSeasons",
+        "firstSeasonStats",
+        "status",
+        "marketValues",
+        "relatedLinksData",
+        "nextMatch",
+        "dataProvider",
+        "initialMatchesPage"
+      ],
+      "nested_fields_observed": {
+        "matchFilters": [
+          "teams",
+          "leagues"
+        ]
+      },
+      "sample": "data/audit/raw_samples/player_data.json",
+      "error": null,
+      "response_error": null,
+      "has_profile": true,
+      "pagination_or_size_notes": "No pagination field observed in profile; matchesUrl and initialMatchesPage fields were observed."
+    },
+    "playerMatches": {
+      "path": "/api/data/playerMatches",
+      "documented_by": [
+        "https://github.com/pseudo-r/Public-FotMob-API",
+        "https://github.com/ccdejene/fotmob-mcp",
+        "https://github.com/petmorr/FotMobDataAnalysis"
+      ],
+      "documentation_status": "candidate, independently tested below",
+      "live_status": "FAILED",
+      "purpose": "Paginated player match history",
+      "parameters": {
+        "playerId": "player ID",
+        "parentLeagueId": "league ID",
+        "before": "optional Unix timestamp cursor"
+      },
+      "level_2_plus": "player match index",
+      "requests_tested": 2,
+      "last_observed_at_utc": "2026-11-02T06:46:40.805055+00:00",
+      "last_source_url": "https://www.fotmob.com/api/data/playerMatches?playerId=286119&before=1596240000&parentLeagueId=47",
+      "http_status": 400,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 47,
+      "top_level_keys": [],
+      "sample": "data/audit/raw_samples/player_matches.json",
+      "error": "HTTP 400",
+      "response_error": "Invalid or missing query parameters",
+      "pagination_or_size_notes": "Pagination unverified: both tested parameter variants returned HTTP 400; reference documentation mentions a before cursor."
+    },
+    "matchDetails": {
+      "path": "/api/data/matchDetails",
+      "documented_by": [
+        "https://github.com/pseudo-r/Public-FotMob-API",
+        "https://github.com/ccdejene/fotmob-mcp",
+        "https://github.com/petmorr/FotMobDataAnalysis"
+      ],
+      "documentation_status": "candidate, independently tested below",
+      "live_status": "AVAILABLE",
+      "purpose": "One match facts, teams and events",
+      "parameters": {
+        "matchId": "match ID"
+      },
+      "level_2_plus": "match metadata and details",
+      "requests_tested": 1,
+      "last_observed_at_utc": "2026-11-02T06:46:41.505704+00:00",
+      "last_source_url": "https://www.fotmob.com/api/data/matchDetails?matchId=3055738",
+      "http_status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 140347,
+      "top_level_keys": [
+        "general",
+        "header",
+        "nav",
+        "ongoing",
+        "hasPendingVAR",
+        "content",
+        "seo"
+      ],
+      "nested_fields_observed": {
+        "content": [
+          "matchFacts",
+          "liveticker",
+          "superlive",
+          "buzz",
+          "stats",
+          "playerStats",
+          "shotmap",
+          "lineup",
+          "table",
+          "h2h",
+          "momentum"
+        ],
+        "header": [
+          "teams",
+          "status",
+          "events"
+        ]
+      },
+      "sample": "data/audit/raw_samples/match_details.json",
+      "error": null,
+      "response_error": null,
+      "has_match_facts": true,
+      "pagination_or_size_notes": "One match per request; no pagination field observed."
+    }
+  },
+  "observations": [
+    {
+      "endpoint": "allLeagues",
+      "params": {},
+      "sample": "data/audit/raw_samples/all_leagues.json",
+      "timestamp_utc": "2026-11-02T06:46:28.404307+00:00",
+      "attempt": 1,
+      "retry_index": 0,
+      "source_url": "https://www.fotmob.com/api/data/allLeagues",
+      "http_status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 86027,
+      "outcome": "OK",
+      "elapsed_seconds": 0.129
+    },
+    {
+      "endpoint": "leagues",
+      "params": {
+        "id": 47
+      },
+      "sample": "data/audit/raw_samples/league_current.json",
+      "timestamp_utc": "2026-11-02T06:46:29.104717+00:00",
+      "attempt": 2,
+      "retry_index": 0,
+      "source_url": "https://www.fotmob.com/api/data/leagues?id=47",
+      "http_status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 860450,
+      "outcome": "OK",
+      "elapsed_seconds": 0.46
+    },
+    {
+      "endpoint": "leagues",
+      "params": {
+        "id": 47,
+        "season": "2019/2020"
+      },
+      "sample": "data/audit/raw_samples/league_2019_2020.json",
+      "timestamp_utc": "2026-11-02T06:46:29.805129+00:00",
+      "attempt": 3,
+      "retry_index": 0,
+      "source_url": "https://www.fotmob.com/api/data/leagues?id=47&season=2019%2F2020",
+      "http_status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 859806,
+      "outcome": "OK",
+      "elapsed_seconds": 0.594
+    },
+    {
+      "endpoint": "leagueseasondeepstats",
+      "params": {
+        "id": 47,
+        "season": 14022,
+        "type": "players",
+        "stat": "goals"
+      },
+      "sample": "data/audit/raw_samples/deep_stats_2019_2020.json",
+      "timestamp_utc": "2026-11-02T06:46:30.505765+00:00",
+      "attempt": 4,
+      "retry_index": 0,
+      "source_url": "https://www.fotmob.com/api/data/leagueseasondeepstats?id=47&season=14022&type=players&stat=goals",
+      "http_status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 68877,
+      "outcome": "OK",
+      "elapsed_seconds": 0.653
+    },
+    {
+      "endpoint": "leagues",
+      "params": {
+        "id": 47,
+        "season": "2020/2021"
+      },
+      "sample": "data/audit/raw_samples/league_2020_2021.json",
+      "timestamp_utc": "2026-11-02T06:46:31.205905+00:00",
+      "attempt": 5,
+      "retry_index": 0,
+      "source_url": "https://www.fotmob.com/api/data/leagues?id=47&season=2020%2F2021",
+      "http_status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 880893,
+      "outcome": "OK",
+      "elapsed_seconds": 0.493
+    },
+    {
+      "endpoint": "leagueseasondeepstats",
+      "params": {
+        "id": 47,
+        "season": 15382,
+        "type": "players",
+        "stat": "goals"
+      },
+      "sample": "data/audit/raw_samples/deep_stats_2020_2021.json",
+      "timestamp_utc": "2026-11-02T06:46:31.906504+00:00",
+      "attempt": 6,
+      "retry_index": 0,
+      "source_url": "https://www.fotmob.com/api/data/leagueseasondeepstats?id=47&season=15382&type=players&stat=goals",
+      "http_status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 70682,
+      "outcome": "OK",
+      "elapsed_seconds": 0.291
+    },
+    {
+      "endpoint": "leagues",
+      "params": {
+        "id": 47,
+        "season": "2021/2022"
+      },
+      "sample": "data/audit/raw_samples/league_2021_2022.json",
+      "timestamp_utc": "2026-11-02T06:46:32.606774+00:00",
+      "attempt": 7,
+      "retry_index": 0,
+      "source_url": "https://www.fotmob.com/api/data/leagues?id=47&season=2021%2F2022",
+      "http_status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 877183,
+      "outcome": "OK",
+      "elapsed_seconds": 0.576
+    },
+    {
+      "endpoint": "leagueseasondeepstats",
+      "params": {
+        "id": 47,
+        "season": 16390,
+        "type": "players",
+        "stat": "goals"
+      },
+      "sample": "data/audit/raw_samples/deep_stats_2021_2022.json",
+      "timestamp_utc": "2026-11-02T06:46:33.317880+00:00",
+      "attempt": 8,
+      "retry_index": 0,
+      "source_url": "https://www.fotmob.com/api/data/leagueseasondeepstats?id=47&season=16390&type=players&stat=goals",
+      "http_status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 73153,
+      "outcome": "OK",
+      "elapsed_seconds": 0.569
+    },
+    {
+      "endpoint": "leagues",
+      "params": {
+        "id": 47,
+        "season": "2022/2023"
+      },
+      "sample": "data/audit/raw_samples/league_2022_2023.json",
+      "timestamp_utc": "2026-11-02T06:46:34.018048+00:00",
+      "attempt": 9,
+      "retry_index": 0,
+      "source_url": "https://www.fotmob.com/api/data/leagues?id=47&season=2022%2F2023",
+      "http_status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 883111,
+      "outcome": "OK",
+      "elapsed_seconds": 0.536
+    },
+    {
+      "endpoint": "leagueseasondeepstats",
+      "params": {
+        "id": 47,
+        "season": 17664,
+        "type": "players",
+        "stat": "goals"
+      },
+      "sample": "data/audit/raw_samples/deep_stats_2022_2023.json",
+      "timestamp_utc": "2026-11-02T06:46:34.718603+00:00",
+      "attempt": 10,
+      "retry_index": 0,
+      "source_url": "https://www.fotmob.com/api/data/leagueseasondeepstats?id=47&season=17664&type=players&stat=goals",
+      "http_status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 70895,
+      "outcome": "OK",
+      "elapsed_seconds": 0.64
+    },
+    {
+      "endpoint": "leagues",
+      "params": {
+        "id": 47,
+        "season": "2023/2024"
+      },
+      "sample": "data/audit/raw_samples/league_2023_2024.json",
+      "timestamp_utc": "2026-11-02T06:46:35.418953+00:00",
+      "attempt": 11,
+      "retry_index": 0,
+      "source_url": "https://www.fotmob.com/api/data/leagues?id=47&season=2023%2F2024",
+      "http_status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 882339,
+      "outcome": "OK",
+      "elapsed_seconds": 0.545
+    },
+    {
+      "endpoint": "leagueseasondeepstats",
+      "params": {
+        "id": 47,
+        "season": 20720,
+        "type": "players",
+        "stat": "goals"
+      },
+      "sample": "data/audit/raw_samples/deep_stats_2023_2024.json",
+      "timestamp_utc": "2026-11-02T06:46:36.119334+00:00",
+      "attempt": 12,
+      "retry_index": 0,
+      "source_url": "https://www.fotmob.com/api/data/leagueseasondeepstats?id=47&season=20720&type=players&stat=goals",
+      "http_status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 77007,
+      "outcome": "OK",
+      "elapsed_seconds": 1.073
+    },
+    {
+      "endpoint": "leagues",
+      "params": {
+        "id": 47,
+        "season": "2024/2025"
+      },
+      "sample": "data/audit/raw_samples/league_2024_2025.json",
+      "timestamp_utc": "2026-11-02T06:46:37.196154+00:00",
+      "attempt": 13,
+      "retry_index": 0,
+      "source_url": "https://www.fotmob.com/api/data/leagues?id=47&season=2024%2F2025",
+      "http_status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 882788,
+      "outcome": "OK",
+      "elapsed_seconds": 0.521
+    },
+    {
+      "endpoint": "leagueseasondeepstats",
+      "params": {
+        "id": 47,
+        "season": 23685,
+        "type": "players",
+        "stat": "goals"
+      },
+      "sample": "data/audit/raw_samples/deep_stats_2024_2025.json",
+      "timestamp_utc": "2026-11-02T06:46:37.896375+00:00",
+      "attempt": 14,
+      "retry_index": 0,
+      "source_url": "https://www.fotmob.com/api/data/leagueseasondeepstats?id=47&season=23685&type=players&stat=goals",
+      "http_status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 70980,
+      "outcome": "OK",
+      "elapsed_seconds": 0.31
+    },
+    {
+      "endpoint": "teams",
+      "params": {
+        "id": 8650
+      },
+      "sample": "data/audit/raw_samples/team.json",
+      "timestamp_utc": "2026-11-02T06:46:38.596602+00:00",
+      "attempt": 15,
+      "retry_index": 0,
+      "source_url": "https://www.fotmob.com/api/data/teams?id=8650",
+      "http_status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 817399,
+      "outcome": "OK",
+      "elapsed_seconds": 0.778
+    },
+    {
+      "endpoint": "playerData",
+      "params": {
+        "id": 286119
+      },
+      "sample": "data/audit/raw_samples/player_data.json",
+      "timestamp_utc": "2026-11-02T06:46:39.404530+00:00",
+      "attempt": 16,
+      "retry_index": 0,
+      "source_url": "https://www.fotmob.com/api/data/playerData?id=286119",
+      "http_status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 87592,
+      "outcome": "OK",
+      "elapsed_seconds": 0.03
+    },
+    {
+      "endpoint": "playerMatches",
+      "params": {
+        "playerId": 286119,
+        "parentLeagueId": 47
+      },
+      "sample": null,
+      "timestamp_utc": "2026-11-02T06:46:40.104684+00:00",
+      "attempt": 17,
+      "retry_index": 0,
+      "source_url": "https://www.fotmob.com/api/data/playerMatches?playerId=286119&parentLeagueId=47",
+      "http_status": 400,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 47,
+      "outcome": "FAILED",
+      "error": "HTTP 400",
+      "response_error": "Invalid or missing query parameters",
+      "elapsed_seconds": 0.098
+    },
+    {
+      "endpoint": "playerMatches",
+      "params": {
+        "playerId": 286119,
+        "before": 1596240000,
+        "parentLeagueId": 47
+      },
+      "sample": "data/audit/raw_samples/player_matches.json",
+      "timestamp_utc": "2026-11-02T06:46:40.805055+00:00",
+      "attempt": 18,
+      "retry_index": 0,
+      "source_url": "https://www.fotmob.com/api/data/playerMatches?playerId=286119&before=1596240000&parentLeagueId=47",
+      "http_status": 400,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 47,
+      "outcome": "FAILED",
+      "error": "HTTP 400",
+      "response_error": "Invalid or missing query parameters",
+      "elapsed_seconds": 0.067
+    },
+    {
+      "endpoint": "matchDetails",
+      "params": {
+        "matchId": "3055738"
+      },
+      "sample": "data/audit/raw_samples/match_details.json",
+      "timestamp_utc": "2026-11-02T06:46:41.505704+00:00",
+      "attempt": 19,
+      "retry_index": 0,
+      "source_url": "https://www.fotmob.com/api/data/matchDetails?matchId=3055738",
+      "http_status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_bytes": 140347,
+      "outcome": "OK",
+      "elapsed_seconds": 0.329
+    }
+  ]
+}

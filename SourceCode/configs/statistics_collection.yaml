@@ -1,0 +1,32 @@
+phase: phase_02b1_execution_03
+population_path: data/phase_02b1/population/historical_appeared_players.parquet
+metric_output_dir: data/phase_02b1/statistics
+report_dir: reports/phase_02b1
+source_dictionary: reports/phase_02b0/metric_dictionary_v2.csv
+dictionary_v3: reports/phase_02b1/metric_dictionary_v3.csv
+request_worker_count: 1
+max_http_attempts_per_batch: 50
+priority_groups: [GENERAL, ATTACK, EXPECTED, PASSING, DEFENDING, GOALKEEPING]
+leaderboard_specs:
+  - {stat: mins_played, metric: minutes_played, group: GENERAL, unit: minutes, aggregation: total, source_field: statValue.value}
+  - {stat: rating, metric: rating, group: GENERAL, unit: FotMob rating points, aggregation: rating, source_field: statValue.value}
+  - {stat: goals, metric: goals, group: ATTACK, unit: count, aggregation: total, source_field: statValue.value}
+  - {stat: goal_assist, metric: assists, group: ATTACK, unit: count, aggregation: total, source_field: statValue.value}
+  - {stat: total_scoring_att, metric: shots_per90, group: ATTACK, unit: count, aggregation: per90, source_field: statValue.value}
+  - {stat: ontarget_scoring_att, metric: shots_on_target_per90, group: ATTACK, unit: count, aggregation: per90, source_field: statValue.value}
+  - {stat: big_chance_created, metric: big_chances_created, group: ATTACK, unit: count, aggregation: total, source_field: statValue.value}
+  - {stat: expected_goals, metric: expected_goals, group: EXPECTED, unit: expected goals, aggregation: total, source_field: statValue.value}
+  - {stat: expected_assists, metric: expected_assists, group: EXPECTED, unit: expected assists, aggregation: total, source_field: statValue.value}
+  - {stat: accurate_pass, metric: accurate_passes_per90, group: PASSING, unit: count, aggregation: per90, source_field: statValue.value}
+  - {stat: total_att_assist, metric: chances_created, group: PASSING, unit: count, aggregation: total, source_field: statValue.value}
+  - {stat: accurate_long_balls, metric: accurate_long_passes_per90, group: PASSING, unit: count, aggregation: per90, source_field: statValue.value}
+  - {stat: total_tackle, metric: tackles_per90, group: DEFENDING, unit: count, aggregation: per90, source_field: statValue.value}
+  - {stat: interception, metric: interceptions_per90, group: DEFENDING, unit: count, aggregation: per90, source_field: statValue.value}
+  - {stat: effective_clearance, metric: clearances_per90, group: DEFENDING, unit: count, aggregation: per90, source_field: statValue.value}
+  - {stat: outfielder_block, metric: blocks_per90, group: DEFENDING, unit: count, aggregation: per90, source_field: statValue.value}
+  - {stat: ball_recovery, metric: recoveries_per90, group: DEFENDING, unit: count, aggregation: per90, source_field: statValue.value}
+  - {stat: saves, metric: saves, group: GOALKEEPING, unit: count, aggregation: total, source_field: substatValue.value, required_substat_title: Total saves}
+  - {stat: clean_sheet, metric: clean_sheets, group: GOALKEEPING, unit: count, aggregation: total, source_field: statValue.value}
+  - {stat: _save_percentage, metric: save_percentage, group: GOALKEEPING, unit: percent, aggregation: percentage, source_field: statValue.value}
+  - {stat: goals_conceded, metric: goals_conceded_per90, group: GOALKEEPING, unit: count, aggregation: per90, source_field: statValue.value}
+  - {stat: _goals_prevented, metric: goals_prevented, group: GOALKEEPING, unit: goal-equivalent, aggregation: total, source_field: statValue.value}

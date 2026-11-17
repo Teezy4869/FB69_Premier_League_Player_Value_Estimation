@@ -1,0 +1,1173 @@
+{
+  "registry_version": "3.0.0-remediation",
+  "generated_at_utc": "2026-11-03T04:23:54.672751+00:00",
+  "total_canonical_metrics": 53,
+  "rules": {
+    "accurate_long_passes": {
+      "canonical_metric": "accurate_long_passes",
+      "metric_group": "PASSING",
+      "unit": "count",
+      "aggregation_type": "total",
+      "primary_source_endpoint": "playerStats",
+      "fallback_source_endpoint": "leagueseasondeepstats",
+      "support_status": "SUPPORTED",
+      "compatible_source_fields": [
+        "accurate_long_passes.statValue.value",
+        "accurate_long_passes.substatValue.value",
+        "statsSection.accurate_long_passes"
+      ],
+      "rounding_tolerance": 0.001,
+      "conflict_policy": {
+        "rounding_difference": "RESOLVE_PREFER_PLAYERSTATS_HIGHER_PRECISION",
+        "definition_mismatch": "RETAIN_CONFLICTING_NULL",
+        "source_revision": "PREFER_PLAYERSTATS_POST_REVIEW_SNAPSHOT",
+        "unresolved": "CURATE_NULL_TRACE_CONFLICT"
+      },
+      "rationale": "Standard canonical metric with playerStats as primary source"
+    },
+    "accurate_long_passes_per90": {
+      "canonical_metric": "accurate_long_passes_per90",
+      "metric_group": "PASSING",
+      "unit": "count",
+      "aggregation_type": "per90",
+      "primary_source_endpoint": "playerStats",
+      "fallback_source_endpoint": "leagueseasondeepstats",
+      "support_status": "SUPPORTED",
+      "compatible_source_fields": [
+        "accurate_long_passes_per90.statValue.value",
+        "accurate_long_passes_per90.substatValue.value",
+        "statsSection.accurate_long_passes_per90"
+      ],
+      "rounding_tolerance": 0.001,
+      "conflict_policy": {
+        "rounding_difference": "RESOLVE_PREFER_PLAYERSTATS_HIGHER_PRECISION",
+        "definition_mismatch": "RETAIN_CONFLICTING_NULL",
+        "source_revision": "PREFER_PLAYERSTATS_POST_REVIEW_SNAPSHOT",
+        "unresolved": "CURATE_NULL_TRACE_CONFLICT"
+      },
+      "rationale": "Standard canonical metric with playerStats as primary source"
+    },
+    "accurate_passes": {
+      "canonical_metric": "accurate_passes",
+      "metric_group": "PASSING",
+      "unit": "count",
+      "aggregation_type": "total",
+      "primary_source_endpoint": "playerStats",
+      "fallback_source_endpoint": "leagueseasondeepstats",
+      "support_status": "SUPPORTED",
+      "compatible_source_fields": [
+        "accurate_passes.statValue.value",
+        "accurate_passes.substatValue.value",
+        "statsSection.accurate_passes"
+      ],
+      "rounding_tolerance": 0.001,
+      "conflict_policy": {
+        "rounding_difference": "RESOLVE_PREFER_PLAYERSTATS_HIGHER_PRECISION",
+        "definition_mismatch": "RETAIN_CONFLICTING_NULL",
+        "source_revision": "PREFER_PLAYERSTATS_POST_REVIEW_SNAPSHOT",
+        "unresolved": "CURATE_NULL_TRACE_CONFLICT"
+      },
+      "rationale": "Standard canonical metric with playerStats as primary source"
+    },
+    "accurate_passes_per90": {
+      "canonical_metric": "accurate_passes_per90",
+      "metric_group": "PASSING",
+      "unit": "count",
+      "aggregation_type": "per90",
+      "primary_source_endpoint": "playerStats",
+      "fallback_source_endpoint": "leagueseasondeepstats",
+      "support_status": "SUPPORTED",
+      "compatible_source_fields": [
+        "accurate_passes_per90.statValue.value",
+        "accurate_passes_per90.substatValue.value",
+        "statsSection.accurate_passes_per90"
+      ],
+      "rounding_tolerance": 0.001,
+      "conflict_policy": {
+        "rounding_difference": "RESOLVE_PREFER_PLAYERSTATS_HIGHER_PRECISION",
+        "definition_mismatch": "RETAIN_CONFLICTING_NULL",
+        "source_revision": "PREFER_PLAYERSTATS_POST_REVIEW_SNAPSHOT",
+        "unresolved": "CURATE_NULL_TRACE_CONFLICT"
+      },
+      "rationale": "Standard canonical metric with playerStats as primary source"
+    },
+    "aerials_won": {
+      "canonical_metric": "aerials_won",
+      "metric_group": "DEFENDING",
+      "unit": "count",
+      "aggregation_type": "total",
+      "primary_source_endpoint": "playerStats",
+      "fallback_source_endpoint": "leagueseasondeepstats",
+      "support_status": "SUPPORTED",
+      "compatible_source_fields": [
+        "aerials_won.statValue.value",
+        "aerials_won.substatValue.value",
+        "statsSection.aerials_won"
+      ],
+      "rounding_tolerance": 0.001,
+      "conflict_policy": {
+        "rounding_difference": "RESOLVE_PREFER_PLAYERSTATS_HIGHER_PRECISION",
+        "definition_mismatch": "RETAIN_CONFLICTING_NULL",
+        "source_revision": "PREFER_PLAYERSTATS_POST_REVIEW_SNAPSHOT",
+        "unresolved": "CURATE_NULL_TRACE_CONFLICT"
+      },
+      "rationale": "Standard canonical metric with playerStats as primary source"
+    },
+    "aerials_won_percent": {
+      "canonical_metric": "aerials_won_percent",
+      "metric_group": "DEFENDING",
+      "unit": "percent",
+      "aggregation_type": "percentage",
+      "primary_source_endpoint": "playerStats",
+      "fallback_source_endpoint": "leagueseasondeepstats",
+      "support_status": "SUPPORTED",
+      "compatible_source_fields": [
+        "aerials_won_percent.statValue.value",
+        "aerials_won_percent.substatValue.value",
+        "statsSection.aerials_won_percent"
+      ],
+      "rounding_tolerance": 0.001,
+      "conflict_policy": {
+        "rounding_difference": "RESOLVE_PREFER_PLAYERSTATS_HIGHER_PRECISION",
+        "definition_mismatch": "RETAIN_CONFLICTING_NULL",
+        "source_revision": "PREFER_PLAYERSTATS_POST_REVIEW_SNAPSHOT",
+        "unresolved": "CURATE_NULL_TRACE_CONFLICT"
+      },
+      "rationale": "Standard canonical metric with playerStats as primary source"
+    },
+    "appearances": {
+      "canonical_metric": "appearances",
+      "metric_group": "GENERAL",
+      "unit": "count",
+      "aggregation_type": "total",
+      "primary_source_endpoint": "playerStats",
+      "fallback_source_endpoint": "leagueseasondeepstats",
+      "support_status": "SUPPORTED",
+      "compatible_source_fields": [
+        "appearances.statValue.value",
+        "appearances.substatValue.value",
+        "statsSection.appearances"
+      ],
+      "rounding_tolerance": 0.001,
+      "conflict_policy": {
+        "rounding_difference": "RESOLVE_PREFER_PLAYERSTATS_HIGHER_PRECISION",
+        "definition_mismatch": "RETAIN_CONFLICTING_NULL",
+        "source_revision": "PREFER_PLAYERSTATS_POST_REVIEW_SNAPSHOT",
+        "unresolved": "CURATE_NULL_TRACE_CONFLICT"
+      },
+      "rationale": "Standard canonical metric with playerStats as primary source"
+    },
+    "assists": {
+      "canonical_metric": "assists",
+      "metric_group": "ATTACK",
+      "unit": "count",
+      "aggregation_type": "total",
+      "primary_source_endpoint": "playerStats",
+      "fallback_source_endpoint": "leagueseasondeepstats",
+      "support_status": "SUPPORTED",
+      "compatible_source_fields": [
+        "assists.statValue.value",
+        "assists.substatValue.value",
+        "statsSection.assists"
+      ],
+      "rounding_tolerance": 0.001,
+      "conflict_policy": {
+        "rounding_difference": "RESOLVE_PREFER_PLAYERSTATS_HIGHER_PRECISION",
+        "definition_mismatch": "RETAIN_CONFLICTING_NULL",
+        "source_revision": "PREFER_PLAYERSTATS_POST_REVIEW_SNAPSHOT",
+        "unresolved": "CURATE_NULL_TRACE_CONFLICT"
+      },
+      "rationale": "Standard canonical metric with playerStats as primary source"
+    },
+    "big_chances_created": {
+      "canonical_metric": "big_chances_created",
+      "metric_group": "ATTACK",
+      "unit": "count",
+      "aggregation_type": "total",
+      "primary_source_endpoint": "playerStats",
+      "fallback_source_endpoint": "leagueseasondeepstats",
+      "support_status": "SUPPORTED",
+      "compatible_source_fields": [
+        "big_chances_created.statValue.value",
+        "big_chances_created.substatValue.value",
+        "statsSection.big_chances_created"
+      ],
+      "rounding_tolerance": 0.001,
+      "conflict_policy": {
+        "rounding_difference": "RESOLVE_PREFER_PLAYERSTATS_HIGHER_PRECISION",
+        "definition_mismatch": "RETAIN_CONFLICTING_NULL",
+        "source_revision": "PREFER_PLAYERSTATS_POST_REVIEW_SNAPSHOT",
+        "unresolved": "CURATE_NULL_TRACE_CONFLICT"
+      },
+      "rationale": "Standard canonical metric with playerStats as primary source"
+    },
+    "blocked_shots": {
+      "canonical_metric": "blocked_shots",
+      "metric_group": "DEFENDING",
+      "unit": "count",
+      "aggregation_type": "total",
+      "primary_source_endpoint": "playerStats",
+      "fallback_source_endpoint": "leagueseasondeepstats",
+      "support_status": "SUPPORTED",
+      "compatible_source_fields": [
+        "blocked_shots.statValue.value",
+        "blocked_shots.substatValue.value",
+        "statsSection.blocked_shots"
+      ],
+      "rounding_tolerance": 0.001,
+      "conflict_policy": {
+        "rounding_difference": "RESOLVE_PREFER_PLAYERSTATS_HIGHER_PRECISION",
+        "definition_mismatch": "RETAIN_CONFLICTING_NULL",
+        "source_revision": "PREFER_PLAYERSTATS_POST_REVIEW_SNAPSHOT",
+        "unresolved": "CURATE_NULL_TRACE_CONFLICT"
+      },
+      "rationale": "Standard canonical metric with playerStats as primary source"
+    },
+    "blocks_per90": {
+      "canonical_metric": "blocks_per90",
+      "metric_group": "DEFENDING",
+      "unit": "count",
+      "aggregation_type": "per90",
+      "primary_source_endpoint": "playerStats",
+      "fallback_source_endpoint": "leagueseasondeepstats",
+      "support_status": "SUPPORTED",
+      "compatible_source_fields": [
+        "blocks_per90.statValue.value",
+        "blocks_per90.substatValue.value",
+        "statsSection.blocks_per90"
+      ],
+      "rounding_tolerance": 0.001,
+      "conflict_policy": {
+        "rounding_difference": "RESOLVE_PREFER_PLAYERSTATS_HIGHER_PRECISION",
+        "definition_mismatch": "RETAIN_CONFLICTING_NULL",
+        "source_revision": "PREFER_PLAYERSTATS_POST_REVIEW_SNAPSHOT",
+        "unresolved": "CURATE_NULL_TRACE_CONFLICT"
+      },
+      "rationale": "Standard canonical metric with playerStats as primary source"
+    },
+    "chances_created": {
+      "canonical_metric": "chances_created",
+      "metric_group": "PASSING",
+      "unit": "count",
+      "aggregation_type": "total",
+      "primary_source_endpoint": "playerStats",
+      "fallback_source_endpoint": "leagueseasondeepstats",
+      "support_status": "SUPPORTED",
+      "compatible_source_fields": [
+        "chances_created.statValue.value",
+        "chances_created.substatValue.value",
+        "statsSection.chances_created"
+      ],
+      "rounding_tolerance": 0.001,
+      "conflict_policy": {
+        "rounding_difference": "RESOLVE_PREFER_PLAYERSTATS_HIGHER_PRECISION",
+        "definition_mismatch": "RETAIN_CONFLICTING_NULL",
+        "source_revision": "PREFER_PLAYERSTATS_POST_REVIEW_SNAPSHOT",
+        "unresolved": "CURATE_NULL_TRACE_CONFLICT"
+      },
+      "rationale": "Standard canonical metric with playerStats as primary source"
+    },
+    "clean_sheets": {
+      "canonical_metric": "clean_sheets",
+      "metric_group": "GOALKEEPING",
+      "unit": "count",
+      "aggregation_type": "total",
+      "primary_source_endpoint": "playerStats",
+      "fallback_source_endpoint": "leagueseasondeepstats",
+      "support_status": "POSITION_RESTRICTED_GOALKEEPER",
+      "compatible_source_fields": [
+        "clean_sheets.statValue.value",
+        "clean_sheets.substatValue.value",
+        "statsSection.clean_sheets"
+      ],
+      "rounding_tolerance": 0.001,
+      "conflict_policy": {
+        "rounding_difference": "RESOLVE_PREFER_PLAYERSTATS_HIGHER_PRECISION",
+        "definition_mismatch": "RETAIN_CONFLICTING_NULL",
+        "source_revision": "PREFER_PLAYERSTATS_POST_REVIEW_SNAPSHOT",
+        "unresolved": "CURATE_NULL_TRACE_CONFLICT"
+      },
+      "rationale": "Applicable strictly to verified match lineup goalkeepers"
+    },
+    "clearances": {
+      "canonical_metric": "clearances",
+      "metric_group": "DEFENDING",
+      "unit": "count",
+      "aggregation_type": "total",
+      "primary_source_endpoint": "playerStats",
+      "fallback_source_endpoint": "leagueseasondeepstats",
+      "support_status": "SUPPORTED",
+      "compatible_source_fields": [
+        "clearances.statValue.value",
+        "clearances.substatValue.value",
+        "statsSection.clearances"
+      ],
+      "rounding_tolerance": 0.001,
+      "conflict_policy": {
+        "rounding_difference": "RESOLVE_PREFER_PLAYERSTATS_HIGHER_PRECISION",
+        "definition_mismatch": "RETAIN_CONFLICTING_NULL",
+        "source_revision": "PREFER_PLAYERSTATS_POST_REVIEW_SNAPSHOT",
+        "unresolved": "CURATE_NULL_TRACE_CONFLICT"
+      },
+      "rationale": "Standard canonical metric with playerStats as primary source"
+    },
+    "clearances_per90": {
+      "canonical_metric": "clearances_per90",
+      "metric_group": "DEFENDING",
+      "unit": "count",
+      "aggregation_type": "per90",
+      "primary_source_endpoint": "playerStats",
+      "fallback_source_endpoint": "leagueseasondeepstats",
+      "support_status": "SUPPORTED",
+      "compatible_source_fields": [
+        "clearances_per90.statValue.value",
+        "clearances_per90.substatValue.value",
+        "statsSection.clearances_per90"
+      ],
+      "rounding_tolerance": 0.001,
+      "conflict_policy": {
+        "rounding_difference": "RESOLVE_PREFER_PLAYERSTATS_HIGHER_PRECISION",
+        "definition_mismatch": "RETAIN_CONFLICTING_NULL",
+        "source_revision": "PREFER_PLAYERSTATS_POST_REVIEW_SNAPSHOT",
+        "unresolved": "CURATE_NULL_TRACE_CONFLICT"
+      },
+      "rationale": "Standard canonical metric with playerStats as primary source"
+    },
+    "cross_accuracy": {
+      "canonical_metric": "cross_accuracy",
+      "metric_group": "PASSING",
+      "unit": "percent",
+      "aggregation_type": "percentage",
+      "primary_source_endpoint": "playerStats",
+      "fallback_source_endpoint": "leagueseasondeepstats",
+      "support_status": "SUPPORTED",
+      "compatible_source_fields": [
+        "cross_accuracy.statValue.value",
+        "cross_accuracy.substatValue.value",
+        "statsSection.cross_accuracy"
+      ],
+      "rounding_tolerance": 0.001,
+      "conflict_policy": {
+        "rounding_difference": "RESOLVE_PREFER_PLAYERSTATS_HIGHER_PRECISION",
+        "definition_mismatch": "RETAIN_CONFLICTING_NULL",
+        "source_revision": "PREFER_PLAYERSTATS_POST_REVIEW_SNAPSHOT",
+        "unresolved": "CURATE_NULL_TRACE_CONFLICT"
+      },
+      "rationale": "Standard canonical metric with playerStats as primary source"
+    },
+    "dribbles_succeeded": {
+      "canonical_metric": "dribbles_succeeded",
+      "metric_group": "ATTACK",
+      "unit": "count",
+      "aggregation_type": "total",
+      "primary_source_endpoint": "playerStats",
+      "fallback_source_endpoint": "leagueseasondeepstats",
+      "support_status": "SUPPORTED",
+      "compatible_source_fields": [
+        "dribbles_succeeded.statValue.value",
+        "dribbles_succeeded.substatValue.value",
+        "statsSection.dribbles_succeeded"
+      ],
+      "rounding_tolerance": 0.001,
+      "conflict_policy": {
+        "rounding_difference": "RESOLVE_PREFER_PLAYERSTATS_HIGHER_PRECISION",
+        "definition_mismatch": "RETAIN_CONFLICTING_NULL",
+        "source_revision": "PREFER_PLAYERSTATS_POST_REVIEW_SNAPSHOT",
+        "unresolved": "CURATE_NULL_TRACE_CONFLICT"
+      },
+      "rationale": "Standard canonical metric with playerStats as primary source"
+    },
+    "duels_won": {
+      "canonical_metric": "duels_won",
+      "metric_group": "DEFENDING",
+      "unit": "count",
+      "aggregation_type": "total",
+      "primary_source_endpoint": "playerStats",
+      "fallback_source_endpoint": "leagueseasondeepstats",
+      "support_status": "SUPPORTED",
+      "compatible_source_fields": [
+        "duels_won.statValue.value",
+        "duels_won.substatValue.value",
+        "statsSection.duels_won"
+      ],
+      "rounding_tolerance": 0.001,
+      "conflict_policy": {
+        "rounding_difference": "RESOLVE_PREFER_PLAYERSTATS_HIGHER_PRECISION",
+        "definition_mismatch": "RETAIN_CONFLICTING_NULL",
+        "source_revision": "PREFER_PLAYERSTATS_POST_REVIEW_SNAPSHOT",
+        "unresolved": "CURATE_NULL_TRACE_CONFLICT"
+      },
+      "rationale": "Standard canonical metric with playerStats as primary source"
+    },
+    "duels_won_percent": {
+      "canonical_metric": "duels_won_percent",
+      "metric_group": "DEFENDING",
+      "unit": "percent",
+      "aggregation_type": "percentage",
+      "primary_source_endpoint": "playerStats",
+      "fallback_source_endpoint": "leagueseasondeepstats",
+      "support_status": "SUPPORTED",
+      "compatible_source_fields": [
+        "duels_won_percent.statValue.value",
+        "duels_won_percent.substatValue.value",
+        "statsSection.duels_won_percent"
+      ],
+      "rounding_tolerance": 0.001,
+      "conflict_policy": {
+        "rounding_difference": "RESOLVE_PREFER_PLAYERSTATS_HIGHER_PRECISION",
+        "definition_mismatch": "RETAIN_CONFLICTING_NULL",
+        "source_revision": "PREFER_PLAYERSTATS_POST_REVIEW_SNAPSHOT",
+        "unresolved": "CURATE_NULL_TRACE_CONFLICT"
+      },
+      "rationale": "Standard canonical metric with playerStats as primary source"
+    },
+    "expected_assists": {
+      "canonical_metric": "expected_assists",
+      "metric_group": "EXPECTED",
+      "unit": "expected assists",
+      "aggregation_type": "total",
+      "primary_source_endpoint": "playerStats",
+      "fallback_source_endpoint": "leagueseasondeepstats",
+      "support_status": "SUPPORTED_WITH_LEADERBOARD_FALLBACK",
+      "compatible_source_fields": [
+        "expected_assists.statValue.value",
+        "expected_assists.substatValue.value",
+        "statsSection.expected_assists"
+      ],
+      "rounding_tolerance": 0.051,
+      "conflict_policy": {
+        "rounding_difference": "RESOLVE_PREFER_PLAYERSTATS_HIGHER_PRECISION",
+        "definition_mismatch": "RETAIN_CONFLICTING_NULL",
+        "source_revision": "PREFER_PLAYERSTATS_POST_REVIEW_SNAPSHOT",
+        "unresolved": "CURATE_NULL_TRACE_CONFLICT"
+      },
+      "rationale": "playerStats is primary; leagueseasondeepstats leaderboard accepted as verified fallback when playerStats is MISSING"
+    },
+    "expected_goals": {
+      "canonical_metric": "expected_goals",
+      "metric_group": "EXPECTED",
+      "unit": "expected goals",
+      "aggregation_type": "total",
+      "primary_source_endpoint": "playerStats",
+      "fallback_source_endpoint": "leagueseasondeepstats",
+      "support_status": "SUPPORTED_WITH_LEADERBOARD_FALLBACK",
+      "compatible_source_fields": [
+        "expected_goals.statValue.value",
+        "expected_goals.substatValue.value",
+        "statsSection.expected_goals"
+      ],
+      "rounding_tolerance": 0.051,
+      "conflict_policy": {
+        "rounding_difference": "RESOLVE_PREFER_PLAYERSTATS_HIGHER_PRECISION",
+        "definition_mismatch": "RETAIN_CONFLICTING_NULL",
+        "source_revision": "PREFER_PLAYERSTATS_POST_REVIEW_SNAPSHOT",
+        "unresolved": "CURATE_NULL_TRACE_CONFLICT"
+      },
+      "rationale": "playerStats is primary; leagueseasondeepstats leaderboard accepted as verified fallback when playerStats is MISSING"
+    },
+    "expected_goals_on_target": {
+      "canonical_metric": "expected_goals_on_target",
+      "metric_group": "EXPECTED",
+      "unit": "expected goals",
+      "aggregation_type": "total",
+      "primary_source_endpoint": "playerStats",
+      "fallback_source_endpoint": "leagueseasondeepstats",
+      "support_status": "SUPPORTED",
+      "compatible_source_fields": [
+        "expected_goals_on_target.statValue.value",
+        "expected_goals_on_target.substatValue.value",
+        "statsSection.expected_goals_on_target"
+      ],
+      "rounding_tolerance": 0.051,
+      "conflict_policy": {
+        "rounding_difference": "RESOLVE_PREFER_PLAYERSTATS_HIGHER_PRECISION",
+        "definition_mismatch": "RETAIN_CONFLICTING_NULL",
+        "source_revision": "PREFER_PLAYERSTATS_POST_REVIEW_SNAPSHOT",
+        "unresolved": "CURATE_NULL_TRACE_CONFLICT"
+      },
+      "rationale": "Standard canonical metric with playerStats as primary source"
+    },
+    "fouls_committed": {
+      "canonical_metric": "fouls_committed",
+      "metric_group": "DEFENDING",
+      "unit": "count",
+      "aggregation_type": "total",
+      "primary_source_endpoint": "playerStats",
+      "fallback_source_endpoint": "leagueseasondeepstats",
+      "support_status": "SUPPORTED",
+      "compatible_source_fields": [
+        "fouls_committed.statValue.value",
+        "fouls_committed.substatValue.value",
+        "statsSection.fouls_committed"
+      ],
+      "rounding_tolerance": 0.001,
+      "conflict_policy": {
+        "rounding_difference": "RESOLVE_PREFER_PLAYERSTATS_HIGHER_PRECISION",
+        "definition_mismatch": "RETAIN_CONFLICTING_NULL",
+        "source_revision": "PREFER_PLAYERSTATS_POST_REVIEW_SNAPSHOT",
+        "unresolved": "CURATE_NULL_TRACE_CONFLICT"
+      },
+      "rationale": "Standard canonical metric with playerStats as primary source"
+    },
+    "fouls_won": {
+      "canonical_metric": "fouls_won",
+      "metric_group": "DEFENDING",
+      "unit": "count",
+      "aggregation_type": "total",
+      "primary_source_endpoint": "playerStats",
+      "fallback_source_endpoint": "leagueseasondeepstats",
+      "support_status": "SUPPORTED",
+      "compatible_source_fields": [
+        "fouls_won.statValue.value",
+        "fouls_won.substatValue.value",
+        "statsSection.fouls_won"
+      ],
+      "rounding_tolerance": 0.001,
+      "conflict_policy": {
+        "rounding_difference": "RESOLVE_PREFER_PLAYERSTATS_HIGHER_PRECISION",
+        "definition_mismatch": "RETAIN_CONFLICTING_NULL",
+        "source_revision": "PREFER_PLAYERSTATS_POST_REVIEW_SNAPSHOT",
+        "unresolved": "CURATE_NULL_TRACE_CONFLICT"
+      },
+      "rationale": "Standard canonical metric with playerStats as primary source"
+    },
+    "goals": {
+      "canonical_metric": "goals",
+      "metric_group": "ATTACK",
+      "unit": "count",
+      "aggregation_type": "total",
+      "primary_source_endpoint": "playerStats",
+      "fallback_source_endpoint": "leagueseasondeepstats",
+      "support_status": "SUPPORTED",
+      "compatible_source_fields": [
+        "goals.statValue.value",
+        "goals.substatValue.value",
+        "statsSection.goals"
+      ],
+      "rounding_tolerance": 0.001,
+      "conflict_policy": {
+        "rounding_difference": "RESOLVE_PREFER_PLAYERSTATS_HIGHER_PRECISION",
+        "definition_mismatch": "RETAIN_CONFLICTING_NULL",
+        "source_revision": "PREFER_PLAYERSTATS_POST_REVIEW_SNAPSHOT",
+        "unresolved": "CURATE_NULL_TRACE_CONFLICT"
+      },
+      "rationale": "Standard canonical metric with playerStats as primary source"
+    },
+    "goals_conceded": {
+      "canonical_metric": "goals_conceded",
+      "metric_group": "GOALKEEPING",
+      "unit": "count",
+      "aggregation_type": "total",
+      "primary_source_endpoint": "playerStats",
+      "fallback_source_endpoint": "leagueseasondeepstats",
+      "support_status": "POSITION_RESTRICTED_GOALKEEPER",
+      "compatible_source_fields": [
+        "goals_conceded.statValue.value",
+        "goals_conceded.substatValue.value",
+        "statsSection.goals_conceded"
+      ],
+      "rounding_tolerance": 0.001,
+      "conflict_policy": {
+        "rounding_difference": "RESOLVE_PREFER_PLAYERSTATS_HIGHER_PRECISION",
+        "definition_mismatch": "RETAIN_CONFLICTING_NULL",
+        "source_revision": "PREFER_PLAYERSTATS_POST_REVIEW_SNAPSHOT",
+        "unresolved": "CURATE_NULL_TRACE_CONFLICT"
+      },
+      "rationale": "Applicable strictly to verified match lineup goalkeepers"
+    },
+    "goals_conceded_per90": {
+      "canonical_metric": "goals_conceded_per90",
+      "metric_group": "GOALKEEPING",
+      "unit": "count",
+      "aggregation_type": "per90",
+      "primary_source_endpoint": "playerStats",
+      "fallback_source_endpoint": "leagueseasondeepstats",
+      "support_status": "POSITION_RESTRICTED_GOALKEEPER",
+      "compatible_source_fields": [
+        "goals_conceded_per90.statValue.value",
+        "goals_conceded_per90.substatValue.value",
+        "statsSection.goals_conceded_per90"
+      ],
+      "rounding_tolerance": 0.001,
+      "conflict_policy": {
+        "rounding_difference": "RESOLVE_PREFER_PLAYERSTATS_HIGHER_PRECISION",
+        "definition_mismatch": "RETAIN_CONFLICTING_NULL",
+        "source_revision": "PREFER_PLAYERSTATS_POST_REVIEW_SNAPSHOT",
+        "unresolved": "CURATE_NULL_TRACE_CONFLICT"
+      },
+      "rationale": "Applicable strictly to verified match lineup goalkeepers"
+    },
+    "goals_prevented": {
+      "canonical_metric": "goals_prevented",
+      "metric_group": "GOALKEEPING",
+      "unit": "goal-equivalent",
+      "aggregation_type": "total",
+      "primary_source_endpoint": "playerStats",
+      "fallback_source_endpoint": "leagueseasondeepstats",
+      "support_status": "POSITION_RESTRICTED_GOALKEEPER",
+      "compatible_source_fields": [
+        "goals_prevented.statValue.value",
+        "goals_prevented.substatValue.value",
+        "statsSection.goals_prevented"
+      ],
+      "rounding_tolerance": 0.001,
+      "conflict_policy": {
+        "rounding_difference": "RESOLVE_PREFER_PLAYERSTATS_HIGHER_PRECISION",
+        "definition_mismatch": "RETAIN_CONFLICTING_NULL",
+        "source_revision": "PREFER_PLAYERSTATS_POST_REVIEW_SNAPSHOT",
+        "unresolved": "CURATE_NULL_TRACE_CONFLICT"
+      },
+      "rationale": "Applicable strictly to verified match lineup goalkeepers"
+    },
+    "interceptions": {
+      "canonical_metric": "interceptions",
+      "metric_group": "DEFENDING",
+      "unit": "count",
+      "aggregation_type": "total",
+      "primary_source_endpoint": "playerStats",
+      "fallback_source_endpoint": "leagueseasondeepstats",
+      "support_status": "SUPPORTED",
+      "compatible_source_fields": [
+        "interceptions.statValue.value",
+        "interceptions.substatValue.value",
+        "statsSection.interceptions"
+      ],
+      "rounding_tolerance": 0.001,
+      "conflict_policy": {
+        "rounding_difference": "RESOLVE_PREFER_PLAYERSTATS_HIGHER_PRECISION",
+        "definition_mismatch": "RETAIN_CONFLICTING_NULL",
+        "source_revision": "PREFER_PLAYERSTATS_POST_REVIEW_SNAPSHOT",
+        "unresolved": "CURATE_NULL_TRACE_CONFLICT"
+      },
+      "rationale": "Standard canonical metric with playerStats as primary source"
+    },
+    "interceptions_per90": {
+      "canonical_metric": "interceptions_per90",
+      "metric_group": "DEFENDING",
+      "unit": "count",
+      "aggregation_type": "per90",
+      "primary_source_endpoint": "playerStats",
+      "fallback_source_endpoint": "leagueseasondeepstats",
+      "support_status": "SUPPORTED",
+      "compatible_source_fields": [
+        "interceptions_per90.statValue.value",
+        "interceptions_per90.substatValue.value",
+        "statsSection.interceptions_per90"
+      ],
+      "rounding_tolerance": 0.001,
+      "conflict_policy": {
+        "rounding_difference": "RESOLVE_PREFER_PLAYERSTATS_HIGHER_PRECISION",
+        "definition_mismatch": "RETAIN_CONFLICTING_NULL",
+        "source_revision": "PREFER_PLAYERSTATS_POST_REVIEW_SNAPSHOT",
+        "unresolved": "CURATE_NULL_TRACE_CONFLICT"
+      },
+      "rationale": "Standard canonical metric with playerStats as primary source"
+    },
+    "key_passes": {
+      "canonical_metric": "key_passes",
+      "metric_group": "PASSING",
+      "unit": "unknown",
+      "aggregation_type": "unknown",
+      "primary_source_endpoint": "playerStats",
+      "fallback_source_endpoint": "leagueseasondeepstats",
+      "support_status": "UNSUPPORTED",
+      "compatible_source_fields": [
+        "key_passes.statValue.value",
+        "key_passes.substatValue.value",
+        "statsSection.key_passes"
+      ],
+      "rounding_tolerance": 0.001,
+      "conflict_policy": {
+        "rounding_difference": "RESOLVE_PREFER_PLAYERSTATS_HIGHER_PRECISION",
+        "definition_mismatch": "RETAIN_CONFLICTING_NULL",
+        "source_revision": "PREFER_PLAYERSTATS_POST_REVIEW_SNAPSHOT",
+        "unresolved": "CURATE_NULL_TRACE_CONFLICT"
+      },
+      "rationale": "FotMob playerStats endpoint omits key_passes for EPL; chances_created is available instead"
+    },
+    "long_ball_accuracy": {
+      "canonical_metric": "long_ball_accuracy",
+      "metric_group": "PASSING",
+      "unit": "percent",
+      "aggregation_type": "percentage",
+      "primary_source_endpoint": "playerStats",
+      "fallback_source_endpoint": "leagueseasondeepstats",
+      "support_status": "SUPPORTED",
+      "compatible_source_fields": [
+        "long_ball_accuracy.statValue.value",
+        "long_ball_accuracy.substatValue.value",
+        "statsSection.long_ball_accuracy"
+      ],
+      "rounding_tolerance": 0.001,
+      "conflict_policy": {
+        "rounding_difference": "RESOLVE_PREFER_PLAYERSTATS_HIGHER_PRECISION",
+        "definition_mismatch": "RETAIN_CONFLICTING_NULL",
+        "source_revision": "PREFER_PLAYERSTATS_POST_REVIEW_SNAPSHOT",
+        "unresolved": "CURATE_NULL_TRACE_CONFLICT"
+      },
+      "rationale": "Standard canonical metric with playerStats as primary source"
+    },
+    "minutes_played": {
+      "canonical_metric": "minutes_played",
+      "metric_group": "GENERAL",
+      "unit": "minutes",
+      "aggregation_type": "total",
+      "primary_source_endpoint": "playerStats",
+      "fallback_source_endpoint": "leagueseasondeepstats",
+      "support_status": "SUPPORTED",
+      "compatible_source_fields": [
+        "minutes_played.statValue.value",
+        "minutes_played.substatValue.value",
+        "statsSection.minutes_played"
+      ],
+      "rounding_tolerance": 1.01,
+      "conflict_policy": {
+        "rounding_difference": "RESOLVE_PREFER_PLAYERSTATS_HIGHER_PRECISION",
+        "definition_mismatch": "RETAIN_CONFLICTING_NULL",
+        "source_revision": "PREFER_PLAYERSTATS_POST_REVIEW_SNAPSHOT",
+        "unresolved": "CURATE_NULL_TRACE_CONFLICT"
+      },
+      "rationale": "Standard canonical metric with playerStats as primary source"
+    },
+    "non_penalty_xg": {
+      "canonical_metric": "non_penalty_xg",
+      "metric_group": "EXPECTED",
+      "unit": "expected goals",
+      "aggregation_type": "total",
+      "primary_source_endpoint": "playerStats",
+      "fallback_source_endpoint": "leagueseasondeepstats",
+      "support_status": "SUPPORTED",
+      "compatible_source_fields": [
+        "non_penalty_xg.statValue.value",
+        "non_penalty_xg.substatValue.value",
+        "statsSection.non_penalty_xg"
+      ],
+      "rounding_tolerance": 0.051,
+      "conflict_policy": {
+        "rounding_difference": "RESOLVE_PREFER_PLAYERSTATS_HIGHER_PRECISION",
+        "definition_mismatch": "RETAIN_CONFLICTING_NULL",
+        "source_revision": "PREFER_PLAYERSTATS_POST_REVIEW_SNAPSHOT",
+        "unresolved": "CURATE_NULL_TRACE_CONFLICT"
+      },
+      "rationale": "Standard canonical metric with playerStats as primary source"
+    },
+    "passing_accuracy": {
+      "canonical_metric": "passing_accuracy",
+      "metric_group": "PASSING",
+      "unit": "percent",
+      "aggregation_type": "percentage",
+      "primary_source_endpoint": "playerStats",
+      "fallback_source_endpoint": "leagueseasondeepstats",
+      "support_status": "SUPPORTED",
+      "compatible_source_fields": [
+        "passing_accuracy.statValue.value",
+        "passing_accuracy.substatValue.value",
+        "statsSection.passing_accuracy"
+      ],
+      "rounding_tolerance": 0.001,
+      "conflict_policy": {
+        "rounding_difference": "RESOLVE_PREFER_PLAYERSTATS_HIGHER_PRECISION",
+        "definition_mismatch": "RETAIN_CONFLICTING_NULL",
+        "source_revision": "PREFER_PLAYERSTATS_POST_REVIEW_SNAPSHOT",
+        "unresolved": "CURATE_NULL_TRACE_CONFLICT"
+      },
+      "rationale": "Standard canonical metric with playerStats as primary source"
+    },
+    "penalty_saves": {
+      "canonical_metric": "penalty_saves",
+      "metric_group": "GOALKEEPING",
+      "unit": "count",
+      "aggregation_type": "total",
+      "primary_source_endpoint": "playerStats",
+      "fallback_source_endpoint": "leagueseasondeepstats",
+      "support_status": "POSITION_RESTRICTED_GOALKEEPER",
+      "compatible_source_fields": [
+        "penalty_saves.statValue.value",
+        "penalty_saves.substatValue.value",
+        "statsSection.penalty_saves"
+      ],
+      "rounding_tolerance": 0.001,
+      "conflict_policy": {
+        "rounding_difference": "RESOLVE_PREFER_PLAYERSTATS_HIGHER_PRECISION",
+        "definition_mismatch": "RETAIN_CONFLICTING_NULL",
+        "source_revision": "PREFER_PLAYERSTATS_POST_REVIEW_SNAPSHOT",
+        "unresolved": "CURATE_NULL_TRACE_CONFLICT"
+      },
+      "rationale": "Applicable strictly to verified match lineup goalkeepers"
+    },
+    "rating": {
+      "canonical_metric": "rating",
+      "metric_group": "GENERAL",
+      "unit": "FotMob rating points",
+      "aggregation_type": "rating",
+      "primary_source_endpoint": "playerStats",
+      "fallback_source_endpoint": "leagueseasondeepstats",
+      "support_status": "SUPPORTED",
+      "compatible_source_fields": [
+        "rating.statValue.value",
+        "rating.substatValue.value",
+        "statsSection.rating"
+      ],
+      "rounding_tolerance": 0.051,
+      "conflict_policy": {
+        "rounding_difference": "RESOLVE_PREFER_PLAYERSTATS_HIGHER_PRECISION",
+        "definition_mismatch": "RETAIN_CONFLICTING_NULL",
+        "source_revision": "PREFER_PLAYERSTATS_POST_REVIEW_SNAPSHOT",
+        "unresolved": "CURATE_NULL_TRACE_CONFLICT"
+      },
+      "rationale": "Standard canonical metric with playerStats as primary source"
+    },
+    "recoveries": {
+      "canonical_metric": "recoveries",
+      "metric_group": "DEFENDING",
+      "unit": "count",
+      "aggregation_type": "total",
+      "primary_source_endpoint": "playerStats",
+      "fallback_source_endpoint": "leagueseasondeepstats",
+      "support_status": "SUPPORTED",
+      "compatible_source_fields": [
+        "recoveries.statValue.value",
+        "recoveries.substatValue.value",
+        "statsSection.recoveries"
+      ],
+      "rounding_tolerance": 0.001,
+      "conflict_policy": {
+        "rounding_difference": "RESOLVE_PREFER_PLAYERSTATS_HIGHER_PRECISION",
+        "definition_mismatch": "RETAIN_CONFLICTING_NULL",
+        "source_revision": "PREFER_PLAYERSTATS_POST_REVIEW_SNAPSHOT",
+        "unresolved": "CURATE_NULL_TRACE_CONFLICT"
+      },
+      "rationale": "Standard canonical metric with playerStats as primary source"
+    },
+    "recoveries_per90": {
+      "canonical_metric": "recoveries_per90",
+      "metric_group": "DEFENDING",
+      "unit": "count",
+      "aggregation_type": "per90",
+      "primary_source_endpoint": "playerStats",
+      "fallback_source_endpoint": "leagueseasondeepstats",
+      "support_status": "SUPPORTED",
+      "compatible_source_fields": [
+        "recoveries_per90.statValue.value",
+        "recoveries_per90.substatValue.value",
+        "statsSection.recoveries_per90"
+      ],
+      "rounding_tolerance": 0.001,
+      "conflict_policy": {
+        "rounding_difference": "RESOLVE_PREFER_PLAYERSTATS_HIGHER_PRECISION",
+        "definition_mismatch": "RETAIN_CONFLICTING_NULL",
+        "source_revision": "PREFER_PLAYERSTATS_POST_REVIEW_SNAPSHOT",
+        "unresolved": "CURATE_NULL_TRACE_CONFLICT"
+      },
+      "rationale": "Standard canonical metric with playerStats as primary source"
+    },
+    "red_cards": {
+      "canonical_metric": "red_cards",
+      "metric_group": "GENERAL",
+      "unit": "count",
+      "aggregation_type": "total",
+      "primary_source_endpoint": "playerStats",
+      "fallback_source_endpoint": "leagueseasondeepstats",
+      "support_status": "SUPPORTED",
+      "compatible_source_fields": [
+        "red_cards.statValue.value",
+        "red_cards.substatValue.value",
+        "statsSection.red_cards"
+      ],
+      "rounding_tolerance": 0.001,
+      "conflict_policy": {
+        "rounding_difference": "RESOLVE_PREFER_PLAYERSTATS_HIGHER_PRECISION",
+        "definition_mismatch": "RETAIN_CONFLICTING_NULL",
+        "source_revision": "PREFER_PLAYERSTATS_POST_REVIEW_SNAPSHOT",
+        "unresolved": "CURATE_NULL_TRACE_CONFLICT"
+      },
+      "rationale": "Standard canonical metric with playerStats as primary source"
+    },
+    "save_percentage": {
+      "canonical_metric": "save_percentage",
+      "metric_group": "GOALKEEPING",
+      "unit": "percent",
+      "aggregation_type": "percentage",
+      "primary_source_endpoint": "playerStats",
+      "fallback_source_endpoint": "leagueseasondeepstats",
+      "support_status": "POSITION_RESTRICTED_GOALKEEPER",
+      "compatible_source_fields": [
+        "save_percentage.statValue.value",
+        "save_percentage.substatValue.value",
+        "statsSection.save_percentage"
+      ],
+      "rounding_tolerance": 0.001,
+      "conflict_policy": {
+        "rounding_difference": "RESOLVE_PREFER_PLAYERSTATS_HIGHER_PRECISION",
+        "definition_mismatch": "RETAIN_CONFLICTING_NULL",
+        "source_revision": "PREFER_PLAYERSTATS_POST_REVIEW_SNAPSHOT",
+        "unresolved": "CURATE_NULL_TRACE_CONFLICT"
+      },
+      "rationale": "Applicable strictly to verified match lineup goalkeepers"
+    },
+    "saves": {
+      "canonical_metric": "saves",
+      "metric_group": "GOALKEEPING",
+      "unit": "count",
+      "aggregation_type": "total",
+      "primary_source_endpoint": "playerStats",
+      "fallback_source_endpoint": "leagueseasondeepstats",
+      "support_status": "POSITION_RESTRICTED_GOALKEEPER",
+      "compatible_source_fields": [
+        "saves.statValue.value",
+        "saves.substatValue.value",
+        "statsSection.saves"
+      ],
+      "rounding_tolerance": 0.001,
+      "conflict_policy": {
+        "rounding_difference": "RESOLVE_PREFER_PLAYERSTATS_HIGHER_PRECISION",
+        "definition_mismatch": "RETAIN_CONFLICTING_NULL",
+        "source_revision": "PREFER_PLAYERSTATS_POST_REVIEW_SNAPSHOT",
+        "unresolved": "CURATE_NULL_TRACE_CONFLICT"
+      },
+      "rationale": "Applicable strictly to verified match lineup goalkeepers"
+    },
+    "shots": {
+      "canonical_metric": "shots",
+      "metric_group": "ATTACK",
+      "unit": "count",
+      "aggregation_type": "total",
+      "primary_source_endpoint": "playerStats",
+      "fallback_source_endpoint": "leagueseasondeepstats",
+      "support_status": "SUPPORTED",
+      "compatible_source_fields": [
+        "shots.statValue.value",
+        "shots.substatValue.value",
+        "statsSection.shots"
+      ],
+      "rounding_tolerance": 0.001,
+      "conflict_policy": {
+        "rounding_difference": "RESOLVE_PREFER_PLAYERSTATS_HIGHER_PRECISION",
+        "definition_mismatch": "RETAIN_CONFLICTING_NULL",
+        "source_revision": "PREFER_PLAYERSTATS_POST_REVIEW_SNAPSHOT",
+        "unresolved": "CURATE_NULL_TRACE_CONFLICT"
+      },
+      "rationale": "Standard canonical metric with playerStats as primary source"
+    },
+    "shots_on_target": {
+      "canonical_metric": "shots_on_target",
+      "metric_group": "ATTACK",
+      "unit": "count",
+      "aggregation_type": "total",
+      "primary_source_endpoint": "playerStats",
+      "fallback_source_endpoint": "leagueseasondeepstats",
+      "support_status": "SUPPORTED",
+      "compatible_source_fields": [
+        "shots_on_target.statValue.value",
+        "shots_on_target.substatValue.value",
+        "statsSection.shots_on_target"
+      ],
+      "rounding_tolerance": 0.001,
+      "conflict_policy": {
+        "rounding_difference": "RESOLVE_PREFER_PLAYERSTATS_HIGHER_PRECISION",
+        "definition_mismatch": "RETAIN_CONFLICTING_NULL",
+        "source_revision": "PREFER_PLAYERSTATS_POST_REVIEW_SNAPSHOT",
+        "unresolved": "CURATE_NULL_TRACE_CONFLICT"
+      },
+      "rationale": "Standard canonical metric with playerStats as primary source"
+    },
+    "shots_on_target_per90": {
+      "canonical_metric": "shots_on_target_per90",
+      "metric_group": "ATTACK",
+      "unit": "count",
+      "aggregation_type": "per90",
+      "primary_source_endpoint": "playerStats",
+      "fallback_source_endpoint": "leagueseasondeepstats",
+      "support_status": "SUPPORTED",
+      "compatible_source_fields": [
+        "shots_on_target_per90.statValue.value",
+        "shots_on_target_per90.substatValue.value",
+        "statsSection.shots_on_target_per90"
+      ],
+      "rounding_tolerance": 0.001,
+      "conflict_policy": {
+        "rounding_difference": "RESOLVE_PREFER_PLAYERSTATS_HIGHER_PRECISION",
+        "definition_mismatch": "RETAIN_CONFLICTING_NULL",
+        "source_revision": "PREFER_PLAYERSTATS_POST_REVIEW_SNAPSHOT",
+        "unresolved": "CURATE_NULL_TRACE_CONFLICT"
+      },
+      "rationale": "Standard canonical metric with playerStats as primary source"
+    },
+    "shots_per90": {
+      "canonical_metric": "shots_per90",
+      "metric_group": "ATTACK",
+      "unit": "count",
+      "aggregation_type": "per90",
+      "primary_source_endpoint": "playerStats",
+      "fallback_source_endpoint": "leagueseasondeepstats",
+      "support_status": "SUPPORTED",
+      "compatible_source_fields": [
+        "shots_per90.statValue.value",
+        "shots_per90.substatValue.value",
+        "statsSection.shots_per90"
+      ],
+      "rounding_tolerance": 0.001,
+      "conflict_policy": {
+        "rounding_difference": "RESOLVE_PREFER_PLAYERSTATS_HIGHER_PRECISION",
+        "definition_mismatch": "RETAIN_CONFLICTING_NULL",
+        "source_revision": "PREFER_PLAYERSTATS_POST_REVIEW_SNAPSHOT",
+        "unresolved": "CURATE_NULL_TRACE_CONFLICT"
+      },
+      "rationale": "Standard canonical metric with playerStats as primary source"
+    },
+    "starts": {
+      "canonical_metric": "starts",
+      "metric_group": "GENERAL",
+      "unit": "count",
+      "aggregation_type": "total",
+      "primary_source_endpoint": "playerStats",
+      "fallback_source_endpoint": "leagueseasondeepstats",
+      "support_status": "SUPPORTED",
+      "compatible_source_fields": [
+        "starts.statValue.value",
+        "starts.substatValue.value",
+        "statsSection.starts"
+      ],
+      "rounding_tolerance": 0.001,
+      "conflict_policy": {
+        "rounding_difference": "RESOLVE_PREFER_PLAYERSTATS_HIGHER_PRECISION",
+        "definition_mismatch": "RETAIN_CONFLICTING_NULL",
+        "source_revision": "PREFER_PLAYERSTATS_POST_REVIEW_SNAPSHOT",
+        "unresolved": "CURATE_NULL_TRACE_CONFLICT"
+      },
+      "rationale": "Standard canonical metric with playerStats as primary source"
+    },
+    "successful_crosses": {
+      "canonical_metric": "successful_crosses",
+      "metric_group": "PASSING",
+      "unit": "count",
+      "aggregation_type": "total",
+      "primary_source_endpoint": "playerStats",
+      "fallback_source_endpoint": "leagueseasondeepstats",
+      "support_status": "SUPPORTED",
+      "compatible_source_fields": [
+        "successful_crosses.statValue.value",
+        "successful_crosses.substatValue.value",
+        "statsSection.successful_crosses"
+      ],
+      "rounding_tolerance": 0.001,
+      "conflict_policy": {
+        "rounding_difference": "RESOLVE_PREFER_PLAYERSTATS_HIGHER_PRECISION",
+        "definition_mismatch": "RETAIN_CONFLICTING_NULL",
+        "source_revision": "PREFER_PLAYERSTATS_POST_REVIEW_SNAPSHOT",
+        "unresolved": "CURATE_NULL_TRACE_CONFLICT"
+      },
+      "rationale": "Standard canonical metric with playerStats as primary source"
+    },
+    "tackles": {
+      "canonical_metric": "tackles",
+      "metric_group": "DEFENDING",
+      "unit": "count",
+      "aggregation_type": "total",
+      "primary_source_endpoint": "playerStats",
+      "fallback_source_endpoint": "leagueseasondeepstats",
+      "support_status": "SUPPORTED",
+      "compatible_source_fields": [
+        "tackles.statValue.value",
+        "tackles.substatValue.value",
+        "statsSection.tackles"
+      ],
+      "rounding_tolerance": 0.001,
+      "conflict_policy": {
+        "rounding_difference": "RESOLVE_PREFER_PLAYERSTATS_HIGHER_PRECISION",
+        "definition_mismatch": "RETAIN_CONFLICTING_NULL",
+        "source_revision": "PREFER_PLAYERSTATS_POST_REVIEW_SNAPSHOT",
+        "unresolved": "CURATE_NULL_TRACE_CONFLICT"
+      },
+      "rationale": "Standard canonical metric with playerStats as primary source"
+    },
+    "tackles_per90": {
+      "canonical_metric": "tackles_per90",
+      "metric_group": "DEFENDING",
+      "unit": "count",
+      "aggregation_type": "per90",
+      "primary_source_endpoint": "playerStats",
+      "fallback_source_endpoint": "leagueseasondeepstats",
+      "support_status": "SUPPORTED",
+      "compatible_source_fields": [
+        "tackles_per90.statValue.value",
+        "tackles_per90.substatValue.value",
+        "statsSection.tackles_per90"
+      ],
+      "rounding_tolerance": 0.001,
+      "conflict_policy": {
+        "rounding_difference": "RESOLVE_PREFER_PLAYERSTATS_HIGHER_PRECISION",
+        "definition_mismatch": "RETAIN_CONFLICTING_NULL",
+        "source_revision": "PREFER_PLAYERSTATS_POST_REVIEW_SNAPSHOT",
+        "unresolved": "CURATE_NULL_TRACE_CONFLICT"
+      },
+      "rationale": "Standard canonical metric with playerStats as primary source"
+    },
+    "touches": {
+      "canonical_metric": "touches",
+      "metric_group": "GENERAL",
+      "unit": "count",
+      "aggregation_type": "total",
+      "primary_source_endpoint": "playerStats",
+      "fallback_source_endpoint": "leagueseasondeepstats",
+      "support_status": "SUPPORTED",
+      "compatible_source_fields": [
+        "touches.statValue.value",
+        "touches.substatValue.value",
+        "statsSection.touches"
+      ],
+      "rounding_tolerance": 0.001,
+      "conflict_policy": {
+        "rounding_difference": "RESOLVE_PREFER_PLAYERSTATS_HIGHER_PRECISION",
+        "definition_mismatch": "RETAIN_CONFLICTING_NULL",
+        "source_revision": "PREFER_PLAYERSTATS_POST_REVIEW_SNAPSHOT",
+        "unresolved": "CURATE_NULL_TRACE_CONFLICT"
+      },
+      "rationale": "Standard canonical metric with playerStats as primary source"
+    },
+    "touches_opposition_box": {
+      "canonical_metric": "touches_opposition_box",
+      "metric_group": "ATTACK",
+      "unit": "count",
+      "aggregation_type": "total",
+      "primary_source_endpoint": "playerStats",
+      "fallback_source_endpoint": "leagueseasondeepstats",
+      "support_status": "SUPPORTED",
+      "compatible_source_fields": [
+        "touches_opposition_box.statValue.value",
+        "touches_opposition_box.substatValue.value",
+        "statsSection.touches_opposition_box"
+      ],
+      "rounding_tolerance": 0.001,
+      "conflict_policy": {
+        "rounding_difference": "RESOLVE_PREFER_PLAYERSTATS_HIGHER_PRECISION",
+        "definition_mismatch": "RETAIN_CONFLICTING_NULL",
+        "source_revision": "PREFER_PLAYERSTATS_POST_REVIEW_SNAPSHOT",
+        "unresolved": "CURATE_NULL_TRACE_CONFLICT"
+      },
+      "rationale": "Standard canonical metric with playerStats as primary source"
+    },
+    "yellow_cards": {
+      "canonical_metric": "yellow_cards",
+      "metric_group": "GENERAL",
+      "unit": "count",
+      "aggregation_type": "total",
+      "primary_source_endpoint": "playerStats",
+      "fallback_source_endpoint": "leagueseasondeepstats",
+      "support_status": "SUPPORTED",
+      "compatible_source_fields": [
+        "yellow_cards.statValue.value",
+        "yellow_cards.substatValue.value",
+        "statsSection.yellow_cards"
+      ],
+      "rounding_tolerance": 0.001,
+      "conflict_policy": {
+        "rounding_difference": "RESOLVE_PREFER_PLAYERSTATS_HIGHER_PRECISION",
+        "definition_mismatch": "RETAIN_CONFLICTING_NULL",
+        "source_revision": "PREFER_PLAYERSTATS_POST_REVIEW_SNAPSHOT",
+        "unresolved": "CURATE_NULL_TRACE_CONFLICT"
+      },
+      "rationale": "Standard canonical metric with playerStats as primary source"
+    }
+  }
+}

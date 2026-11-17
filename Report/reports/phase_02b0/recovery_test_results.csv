@@ -1,0 +1,7 @@
+scenario,status,observed,expected,evidence,note
+injected_checkpoint_interruption,PASS,10,10,saved live response replay,Ten committed checkpoints survive interruption
+resume_equals_uninterrupted,PASS,23,23,saved live response replay,"Logical key, status, scope and SHA-256 agree"
+checkpoint_cache_hits,PASS,10,10,saved live response replay,Previously committed requests were not fetched again
+duplicate_request_keys,PASS,0,0,replayed checkpoints,One committed observation per logical request
+normalization_idempotency,PASS,7,7,isolated Phase 2A normalizer output,Seven table logical hashes stable over two runs
+partial_output_recovery,PASS,7,7,isolated Phase 2A normalizer output,Corrupted test output rebuilt from preserved raw

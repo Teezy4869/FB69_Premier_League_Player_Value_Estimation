@@ -1,0 +1,67 @@
+{
+ "dataset": "data/releases/fb69_player_season_integrated_rs5_v1/player_season_integrated_rs5_v1.parquet",
+ "sha256_verified": true,
+ "scope_id": "rs5_v1",
+ "scope_check": {
+  "season": {
+   "2020/2021": 524,
+   "2021/2022": 537,
+   "2022/2023": 554,
+   "2023/2024": 570,
+   "2024/2025": 562
+  },
+  "season_id": {
+   "15382": 524,
+   "16390": 537,
+   "17664": 554,
+   "20720": 570,
+   "23685": 562
+  }
+ },
+ "scope_check_derived_position_season_table": {
+  "season": {
+   "2020/2021": 4,
+   "2021/2022": 4,
+   "2022/2023": 4,
+   "2023/2024": 4,
+   "2024/2025": 4
+  }
+ },
+ "rows": 2747,
+ "usable_targets": 2697,
+ "features_analysed": 53,
+ "identity_sensitivity_rows": 533,
+ "bootstrap": {
+  "replicates": 500,
+  "seed": 43,
+  "unit": "canonical_player_id"
+ },
+ "thresholds": {
+  "min_n": 30,
+  "strong_pair": 0.8,
+  "redundancy_cluster": 0.9
+ },
+ "top_spearman": {
+  "m_clean_sheets": 0.671,
+  "m_rating": 0.5814,
+  "m_expected_assists": 0.557,
+  "m_minutes_played": 0.5368,
+  "m_appearances": 0.5328,
+  "m_starts": 0.5275,
+  "m_saves": 0.5275,
+  "m_shots": 0.5147,
+  "m_goals": 0.5003,
+  "m_touches_opposition_box": 0.495
+ },
+ "strong_pairs_outfield": 54,
+ "strong_pairs_goalkeeper": 8,
+ "redundancy_clusters_outfield": 4,
+ "max_abs_identity_sensitivity_difference": 0.09243839661056819,
+ "temporal_caveat": "RD-03: the target is the latest valuation on or before season end (mostly mid-season); the metrics cover the whole season. Descriptive association only, not causation.",
+ "dataset_sha256_after": "4d94ec73cfb9d72421fb2bbb1d7976bcf29f8a4f6cc985435955e574b072eedd",
+ "versions": {
+  "python": "3.14.6",
+  "pandas": "3.1.0",
+  "numpy": "2.5.4"
+ }
+}

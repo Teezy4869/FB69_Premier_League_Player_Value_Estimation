@@ -1,0 +1,4 @@
+population,rows,players,usable_targets,target_missing_pct,target_p25_eur,target_median_eur,target_p75_eur,target_p90_eur,age_median,starts_median,zero_start_pct,null_metrics_median,GK_pct,DEF_pct,MID_pct,FWD_pct,2020/21_pct,2021/22_pct,2022/23_pct,2023/24_pct,2024/25_pct
+main dataset,2747,1228,2697,1.82017,5e+06,1.3e+07,2.5e+07,4.5e+07,26.39,14,11.7947,12,7.49909,34.0371,30.5424,27.9214,19.0754,19.5486,20.1675,20.7499,20.4587
+P4-B01 subset,533,300,505,5.25328,2e+06,8e+06,2.2e+07,3.5e+07,25,7,22.3265,13,9.56848,35.0844,29.0807,26.2664,20.6379,21.7636,17.636,19.137,20.8255
+main without P4-B01 (sensitivity only),2214,928,2192,0.993677,6e+06,1.5e+07,2.8e+07,4.77e+07,26.645,15,9.25926,11,7.0009,33.785,30.8943,28.3198,18.6992,19.0154,20.7769,21.1382,20.3704

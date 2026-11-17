@@ -1,0 +1,107 @@
+{
+ "dataset": "data/releases/fb69_player_season_integrated_rs5_v1/player_season_integrated_rs5_v1.parquet",
+ "sha256": "4d94ec73cfb9d72421fb2bbb1d7976bcf29f8a4f6cc985435955e574b072eedd",
+ "scope_check": {
+  "season": {
+   "2020/2021": 524,
+   "2021/2022": 537,
+   "2022/2023": 554,
+   "2023/2024": 570,
+   "2024/2025": 562
+  },
+  "season_id": {
+   "15382": 524,
+   "16390": 537,
+   "17664": 554,
+   "20720": 570,
+   "23685": 562
+  }
+ },
+ "scope_check_derived_season_table": {
+  "season": {
+   "2020/2021": 1,
+   "2021/2022": 1,
+   "2022/2023": 1,
+   "2023/2024": 1,
+   "2024/2025": 1
+  }
+ },
+ "overview": {
+  "rows": 2747,
+  "columns": 175,
+  "unique_players": 1228,
+  "player_season_records": 2747,
+  "usable_targets": 2697,
+  "missing_targets": 50,
+  "target_coverage_pct": 98.18,
+  "seasons": 5,
+  "seasons_equal_scope": true,
+  "duplicated_full_rows": 0,
+  "duplicated_primary_keys": 0,
+  "null_primary_keys": 0
+ },
+ "missingness": {
+  "metric_null_cells": 48043,
+  "metric_cells": 145591,
+  "metric_null_pct": 33.0,
+  "all_null_cells": 59755,
+  "all_cells": 480725,
+  "all_null_pct": 12.43,
+  "columns_with_nulls": 75,
+  "metrics_with_nulls": 53
+ },
+ "population_context_outside_dataset": {
+  "player_seasons": 3438,
+  "confirmed_appeared": 2747,
+  "unverified": 691,
+  "unknown_player_matches": 20184
+ },
+ "type_mismatches_vs_dictionary": [],
+ "column_patterns": {
+  "dictionary_order_equals_schema": true,
+  "metrics_without_status": [],
+  "statuses_without_metric": [],
+  "non_snake_case_columns": [],
+  "prefixed_columns": {
+   "m_": 53,
+   "s_": 53,
+   "target_": 16,
+   "temporal_": 8,
+   "identity_": 8
+  }
+ },
+ "constant_columns": [
+  "population_status",
+  "population_category",
+  "classification_reason",
+  "profile_status",
+  "target_selection_rule_version",
+  "identity_human_reviewed",
+  "matching_version",
+  "temporal_league_games_in_season",
+  "dataset_version",
+  "research_scope_id",
+  "fotmob_source_version",
+  "transfermarkt_source_version",
+  "m_key_passes",
+  "s_key_passes"
+ ],
+ "single_value_with_nulls_columns": [
+  "target_currency",
+  "target_source_file_sha256",
+  "identity_adjudicator"
+ ],
+ "near_constant_columns": [
+  "identity_match_status",
+  "s_appearances"
+ ],
+ "columns_with_invalid_values": [],
+ "unexpected_categorical_values": [],
+ "environment": {
+  "python": "3.13.13",
+  "pandas": "3.1.0",
+  "numpy": "2.5.4",
+  "pyarrow": "24.0.0",
+  "duckdb": "2.0.0"
+ }
+}

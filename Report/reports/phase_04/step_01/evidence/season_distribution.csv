@@ -1,0 +1,6 @@
+season,rows,unique_players,usable_targets,missing_targets,share_of_rows_pct,target_coverage_pct,returning_from_previous_season
+2020/2021,524,524,515,9,19.08,98.28,
+2021/2022,537,537,528,9,19.55,98.32,349.0
+2022/2023,554,554,542,12,20.17,97.83,337.0
+2023/2024,570,570,567,3,20.75,99.47,350.0
+2024/2025,562,562,545,17,20.46,96.98,352.0

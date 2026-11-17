@@ -1,0 +1,53 @@
+,,features
+coverage,medium,29
+coverage,high,13
+coverage,low,11
+reliability_class,reliable with caveat,25
+reliability_class,"reliable values, limited coverage",15
+reliability_class,uncertain: source-reported,6
+reliability_class,pending owner decision (RD-04),5
+reliability_class,"source-reported, internally consistent",2
+temporal,RD-03 only,39
+temporal,RD-03 + small denominators (P4-B05),9
+temporal,RD-03 + incomplete window (RD-04),5
+position_relevance,general,38
+position_relevance,position-specific,8
+position_relevance,GK only,7
+tail,moderate/none,43
+tail,heavy,10
+redundancy,low,21
+redundancy,high,16
+redundancy,medium,9
+redundancy,n/a (GK matrix),7
+interpretability_judgment,high,31
+interpretability_judgment,medium,21
+interpretability_judgment,low (composite source score),1
+association,moderate,21
+association,weak,15
+association,strong,9
+association,none,8
+beyond_playing_time,retained,21
+beyond_playing_time,partly retained,18
+beyond_playing_time,mostly playing time,13
+beyond_playing_time,n/a (is the control),1
+identity_sensitivity,robust,48
+identity_sensitivity,sensitive,5
+usefulness_judgment,promising,18
+usefulness_judgment,limited descriptive association,12
+usefulness_judgment,unknown until RD-04 is decided,5
+usefulness_judgment,mostly a playing-time proxy,5
+usefulness_judgment,limited,4
+usefulness_judgment,promising as the playing-time axis; highly redundant within the group,3
+usefulness_judgment,promising but incomplete,3
+usefulness_judgment,promising for goalkeepers,2
+usefulness_judgment,promising (non-monotonic; interacts with playing time),1
+phase5_recommendation,consider (core candidate),13
+phase5_recommendation,"low expected value; keep available, do not prioritise",12
+phase5_recommendation,conditional: reliability assessment (ISS-29),6
+phase5_recommendation,conditional: owner decision (RD-04),5
+phase5_recommendation,consider only with playing-time context,5
+phase5_recommendation,consider one representation of playing time,3
+phase5_recommendation,consider with missingness handling (P4-B07),3
+phase5_recommendation,consider in a goalkeeper-specific design,3
+phase5_recommendation,"conditional: ISS-29, internal consistency shown (owner may reclassify)",2
+phase5_recommendation,consider; needs a non-linear representation,1

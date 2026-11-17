@@ -1,0 +1,45 @@
+feature,kind,rows_with_minutes,null_rows,recorded_zeros,min_observed,median_minutes_when_null,median_minutes_when_observed,null_rows_under_450_minutes_pct,count_metric_without_recorded_zero
+m_appearances,season count/total,2548,0,0,1,,1244,,False
+m_starts,season count/total,2548,0,324,0,,1244,,False
+m_goals,season count/total,2548,0,1158,0,,1244,,False
+m_assists,season count/total,2548,0,1222,0,,1244,,False
+m_shots,season count/total,2548,324,86,0,14,1455,100,False
+m_shots_on_target,season count/total,2548,650,0,1,90,1657.5,77.3846,True
+m_shots_per90,per-90 rate,2548,324,86,0,14,1455,100,False
+m_shots_on_target_per90,per-90 rate,2548,650,0,0.0272068,90,1657.5,77.3846,False
+m_big_chances_created,season count/total,2548,1017,0,1,310,1789,57.7188,True
+m_dribbles_succeeded,season count/total,2548,482,0,1,35,1556,87.5519,True
+m_touches_opposition_box,season count/total,2548,383,0,1,21,1492,97.9112,True
+m_expected_goals,season total (model-based),2548,302,25,0,18.5,1439,95.3642,False
+m_non_penalty_xg,season total (model-based),2548,410,0,0.01,23,1519.5,96.5854,False
+m_expected_assists,season total (model-based),2548,38,255,0,1,1264,100,False
+m_expected_goals_on_target,season total (model-based),2548,661,0,0.01,91,1664,76.8533,False
+m_accurate_passes,season count/total,2548,324,0,2,14,1455,100,True
+m_accurate_passes_per90,per-90 rate,2548,325,0,4,14,1455,99.6923,False
+m_accurate_long_passes,season count/total,2548,416,0,1,23.5,1523,96.1538,True
+m_accurate_long_passes_per90,per-90 rate,2548,416,0,0.0447094,23.5,1523,96.1538,False
+m_chances_created,season count/total,2548,459,0,1,31,1555,94.1176,True
+m_successful_crosses,season count/total,2548,948,0,1,294,1698.5,57.8059,True
+m_passing_accuracy,percentage (source-reported),2548,324,0,44.4,14,1455,100,False
+m_long_ball_accuracy,percentage (source-reported),2548,416,0,6.2,23.5,1523,96.1538,False
+m_cross_accuracy,percentage (source-reported),2548,948,0,3.2,294,1698.5,57.8059,False
+m_touches,season count/total,2548,324,0,7,14,1455,100,True
+m_tackles,season count/total,2548,345,0,1,17,1461,100,True
+m_tackles_per90,per-90 rate,2548,345,0,0.0972622,17,1461,100,False
+m_interceptions,season count/total,2548,425,0,1,24,1529,94.5882,True
+m_interceptions_per90,per-90 rate,2548,425,0,0.0292303,24,1529,94.5882,False
+m_recoveries,season count/total,2548,328,0,1,14,1456,100,True
+m_recoveries_per90,per-90 rate,2548,328,0,0.552147,14,1456,100,False
+m_blocked_shots,season count/total,2548,754,0,1,140,1663.5,69.2308,True
+m_blocks_per90,per-90 rate,2548,754,0,0.0276074,140,1663.5,69.2308,False
+m_clearances,season count/total,2548,2017,0,1,1166,1504,29.8959,True
+m_clearances_per90,per-90 rate,2548,2017,0,0.0395604,1166,1504,29.8959,False
+m_aerials_won,season count/total,2548,398,0,1,22.5,1502,96.4824,True
+m_aerials_won_percent,percentage (source-reported),2548,398,0,4.3,22.5,1502,96.4824,False
+m_duels_won,season count/total,2548,326,0,1,14,1455.5,100,True
+m_duels_won_percent,percentage (source-reported),2548,326,0,13.6,14,1455.5,100,False
+m_yellow_cards,season count/total,2548,324,380,0,14,1455,100,False
+m_red_cards,season count/total,2548,324,2009,0,14,1455,100,False
+m_fouls_committed,season count/total,2548,362,0,1,19,1479,100,True
+m_fouls_won,season count/total,2548,392,0,1,22,1500,98.2143,True
+m_rating,average rating (0-10),2548,152,0,4.47,5,1337,91.4474,False

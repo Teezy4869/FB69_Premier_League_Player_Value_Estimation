@@ -1,0 +1,199 @@
+{
+ "definitions": {
+  "pct_targets_older_than_90_days": "numerator: usable targets (target_usable) with target_valuation_age_days > 90; denominator: usable targets",
+  "pct_appearances_after_valuation": "numerator: confirmed FotMob appearances (STARTED or SUBSTITUTED_ON) of usable-target player-seasons dated after target_valuation_date; denominator: all confirmed appearances of those player-seasons. Recomputed from FotMob match dates",
+  "valuation_age_days": "target_season_end_date - target_valuation_date",
+  "pct_minutes_after_valuation": "minutes after valuation / (minutes before or on + after), usable rows with per-match minutes"
+ },
+ "overall": {
+  "usable_targets": 2697,
+  "targets_older_than_90_days": 1527,
+  "pct_targets_older_than_90_days": 56.62,
+  "appearances_after_valuation": 24286,
+  "appearances": 55073,
+  "pct_appearances_after_valuation": 44.1,
+  "temporal_columns_agree_with_recomputation": true,
+  "pct_minutes_after_valuation": 43.66,
+  "age_days_quantiles": {
+   "0.0": 2.0,
+   "0.1": 66.0,
+   "0.25": 66.0,
+   "0.5": 150.0,
+   "0.75": 160.0,
+   "0.9": 206.0,
+   "1.0": 731.0
+  },
+  "staleness_bins": {
+   "61-90": 1030,
+   "91-180": 1140,
+   ">180": 387,
+   "0-30": 27,
+   "31-60": 113
+  },
+  "targets_over_365_days": 12,
+  "valuation_after_cutoff": 0,
+  "valuations_before_season_start": 18,
+  "alignment_class": {
+   "MIXED": 2136,
+   "ALL_GAMES_ON_OR_BEFORE_VALUATION": 337,
+   "ALL_GAMES_AFTER_VALUATION": 224
+  }
+ },
+ "by_season": {
+  "2020/2021": {
+   "usable_targets": 515,
+   "targets_older_than_90_days": 15,
+   "pct_targets_older_than_90_days": 2.91,
+   "median_age_days": 66.0,
+   "appearances_after_valuation": 2585,
+   "appearances": 10379,
+   "pct_appearances_after_valuation": 24.91,
+   "mean_share_of_each_players_games_after_valuation_pct": 25.7,
+   "league_games_after_valuation_median": 94.0,
+   "rows_all_games_after_valuation": 17,
+   "rows_all_games_before": 86
+  },
+  "2021/2022": {
+   "usable_targets": 528,
+   "targets_older_than_90_days": 412,
+   "pct_targets_older_than_90_days": 78.03,
+   "median_age_days": 150.0,
+   "appearances_after_valuation": 5081,
+   "appearances": 10459,
+   "pct_appearances_after_valuation": 48.58,
+   "mean_share_of_each_players_games_after_valuation_pct": 47.69,
+   "league_games_after_valuation_median": 211.0,
+   "rows_all_games_after_valuation": 51,
+   "rows_all_games_before": 62
+  },
+  "2022/2023": {
+   "usable_targets": 542,
+   "targets_older_than_90_days": 363,
+   "pct_targets_older_than_90_days": 66.97,
+   "median_age_days": 206.0,
+   "appearances_after_valuation": 6201,
+   "appearances": 11332,
+   "pct_appearances_after_valuation": 54.72,
+   "mean_share_of_each_players_games_after_valuation_pct": 53.99,
+   "league_games_after_valuation_median": 254.0,
+   "rows_all_games_after_valuation": 55,
+   "rows_all_games_before": 46
+  },
+  "2023/2024": {
+   "usable_targets": 567,
+   "targets_older_than_90_days": 412,
+   "pct_targets_older_than_90_days": 72.66,
+   "median_age_days": 152.0,
+   "appearances_after_valuation": 5329,
+   "appearances": 11378,
+   "pct_appearances_after_valuation": 46.84,
+   "mean_share_of_each_players_games_after_valuation_pct": 46.86,
+   "league_games_after_valuation_median": 211.0,
+   "rows_all_games_after_valuation": 55,
+   "rows_all_games_before": 75
+  },
+  "2024/2025": {
+   "usable_targets": 545,
+   "targets_older_than_90_days": 325,
+   "pct_targets_older_than_90_days": 59.63,
+   "median_age_days": 160.0,
+   "appearances_after_valuation": 5090,
+   "appearances": 11525,
+   "pct_appearances_after_valuation": 44.16,
+   "mean_share_of_each_players_games_after_valuation_pct": 44.61,
+   "league_games_after_valuation_median": 221.0,
+   "rows_all_games_after_valuation": 46,
+   "rows_all_games_before": 68
+  }
+ },
+ "season_cutoffs": {
+  "2020/2021": {
+   "cutoff": "2021-05-23",
+   "last_completed_match": "2021-05-23",
+   "first_completed_match": "2020-09-12",
+   "config_first_match": "2020-09-12",
+   "last_match_equals_cutoff": true,
+   "dataset_cutoff_matches_scope": true
+  },
+  "2021/2022": {
+   "cutoff": "2022-05-22",
+   "last_completed_match": "2022-05-22",
+   "first_completed_match": "2021-08-13",
+   "config_first_match": "2021-08-13",
+   "last_match_equals_cutoff": true,
+   "dataset_cutoff_matches_scope": true
+  },
+  "2022/2023": {
+   "cutoff": "2023-05-28",
+   "last_completed_match": "2023-05-28",
+   "first_completed_match": "2022-08-05",
+   "config_first_match": "2022-08-05",
+   "last_match_equals_cutoff": true,
+   "dataset_cutoff_matches_scope": true
+  },
+  "2023/2024": {
+   "cutoff": "2024-05-19",
+   "last_completed_match": "2024-05-19",
+   "first_completed_match": "2023-08-11",
+   "config_first_match": "2023-08-11",
+   "last_match_equals_cutoff": true,
+   "dataset_cutoff_matches_scope": true
+  },
+  "2024/2025": {
+   "cutoff": "2025-05-25",
+   "last_completed_match": "2025-05-25",
+   "first_completed_match": "2024-08-16",
+   "config_first_match": "2024-08-16",
+   "last_match_equals_cutoff": true,
+   "dataset_cutoff_matches_scope": true
+  }
+ },
+ "appearances_after_cutoff": 0,
+ "valuation_date_by_month": {
+  "2019-05": 1,
+  "2020-10": 7,
+  "2020-12": 8,
+  "2021-01": 1,
+  "2021-03": 495,
+  "2021-04": 2,
+  "2021-05": 5,
+  "2021-06": 1,
+  "2021-08": 1,
+  "2021-10": 8,
+  "2021-11": 1,
+  "2021-12": 395,
+  "2022-01": 2,
+  "2022-03": 98,
+  "2022-04": 1,
+  "2022-05": 17,
+  "2022-06": 1,
+  "2022-10": 6,
+  "2022-11": 348,
+  "2022-12": 8,
+  "2023-03": 174,
+  "2023-04": 3,
+  "2023-05": 2,
+  "2023-06": 2,
+  "2023-10": 3,
+  "2023-12": 414,
+  "2024-03": 154,
+  "2024-05": 3,
+  "2024-06": 2,
+  "2024-12": 314,
+  "2025-03": 217,
+  "2025-04": 3
+ },
+ "feature_collection_window_utc": {
+  "first": "2026-11-02T07:46:46.209052+00:00",
+  "last": "2026-11-03T01:54:05.669381+00:00"
+ },
+ "feature_window_status_counts": {
+  "FULL_EPL_SEASON_VERIFIED": 144,
+  "NOT_VERIFIABLE_FROM_MATCH_DATA": 98,
+  "NO_SEASON_VALUES": 9,
+  "DISAGREES_WITH_MATCH_SUM": 5,
+  "PARTIAL_MATCH_COVERAGE": 4,
+  "RARE_EVENT_CONSISTENT": 5
+ },
+ "objective_a_note": "Prediction time under A is the season end. All FotMob features are season totals through the last match, which is on the cutoff date, so they are available at prediction time. The target, however, is the latest published valuation, typically months earlier; features include matches the valuation could not reflect."
+}

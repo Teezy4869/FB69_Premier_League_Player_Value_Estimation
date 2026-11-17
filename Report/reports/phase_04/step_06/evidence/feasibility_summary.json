@@ -1,0 +1,87 @@
+{
+ "dataset": "data/releases/fb69_player_season_integrated_rs5_v1/player_season_integrated_rs5_v1.parquet",
+ "sha256_verified": true,
+ "scope_id": "rs5_v1",
+ "scope_check": {
+  "season": {
+   "2020/2021": 524,
+   "2021/2022": 537,
+   "2022/2023": 554,
+   "2023/2024": 570,
+   "2024/2025": 562
+  },
+  "season_id": {
+   "15382": 524,
+   "16390": 537,
+   "17664": 554,
+   "20720": 570,
+   "23685": 562
+  }
+ },
+ "scope_check_derived_usable_rows": {
+  "season": {
+   "2020/2021": 515,
+   "2021/2022": 528,
+   "2022/2023": 542,
+   "2023/2024": 567,
+   "2024/2025": 545
+  }
+ },
+ "evidence_inputs": [
+  "reports/phase_04/step_02/evidence",
+  "reports/phase_04/step_03/evidence",
+  "reports/phase_04/step_04/evidence",
+  "reports/phase_04/step_05/evidence"
+ ],
+ "rules": {
+  "coverage": "High: <=10% null on applicable rows and values in 5 seasons; Medium: <=30% and 5 seasons; Low: >30% or fewer than 5 seasons",
+  "association": "|pooled Spearman| >= 0.5 strong, >= 0.3 moderate, >= 0.1 weak, else none (Phase 4.3)",
+  "beyond_playing_time": "|partial Spearman given starts| >= 0.25 retained, 0.10-0.25 partly retained, < 0.10 mostly playing time",
+  "redundancy": "max |Spearman| with another outfield feature >= 0.9 high, >= 0.8 medium, else low (outfield matrix, Phase 4.3)",
+  "position": "GK only, or outfield within-position Spearman range >= 0.25: position-specific; else general",
+  "identity": "|change in Spearman without P4-B01| >= 0.05 sensitive, else robust",
+  "tail": "values beyond 3 IQR > 2% of observed values: heavy tail; else moderate/none",
+  "interpretability": "judgment: {\"age (years)\": \"high\", \"season count/total\": \"high\", \"per-90 rate\": \"medium\", \"percentage (source-reported)\": \"medium\", \"season total (model-based)\": \"medium\", \"average rating (0-10)\": \"low (composite source score)\"}",
+  "usefulness": "judgment by explicit rules in feasibility.usefulness()"
+ },
+ "recommendations": {
+  "consider (core candidate)": 13,
+  "low expected value; keep available, do not prioritise": 12,
+  "conditional: reliability assessment (ISS-29)": 6,
+  "conditional: owner decision (RD-04)": 5,
+  "consider only with playing-time context": 5,
+  "consider one representation of playing time": 3,
+  "consider with missingness handling (P4-B07)": 3,
+  "consider in a goalkeeper-specific design": 3,
+  "conditional: ISS-29, internal consistency shown (owner may reclassify)": 2,
+  "consider; needs a non-linear representation": 1
+ },
+ "random_split_leakage": {
+  "test_share": 0.2,
+  "expected_test_rows_with_player_in_train_pct": 76.2352243233222,
+  "players_with_multiple_seasons": 679,
+  "rows_of_multi_season_players": 2180
+ },
+ "status_cells": {
+  "OBSERVED": 91289,
+  "MISSING": 27361,
+  "UNVERIFIED_POSITION": 17899,
+  "OBSERVED_ZERO": 5762,
+  "UNSUPPORTED": 2747,
+  "OBSERVED_FALLBACK_LEADERBOARD": 402,
+  "OBSERVED_SOURCE_REVISED": 95,
+  "CONFLICTING": 36
+ },
+ "constant_status_columns": [
+  "s_key_passes"
+ ],
+ "no_model_trained": true,
+ "no_feature_engineered": true,
+ "no_split_executed": true,
+ "dataset_sha256_after": "4d94ec73cfb9d72421fb2bbb1d7976bcf29f8a4f6cc985435955e574b072eedd",
+ "versions": {
+  "python": "3.14.6",
+  "pandas": "3.1.0",
+  "numpy": "2.5.4"
+ }
+}

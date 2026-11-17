@@ -1,0 +1,6 @@
+{
+  "leaderboard_list": {"statsData": [{"id": 10, "teamId": 1, "position": 30, "statValue": {"name": "goals", "value": 2}}, {"id": 10, "teamId": 2, "position": 30, "statValue": {"name": "goals", "value": 1}}, {"id": 20, "teamId": 2, "position": 40, "statValue": {"name": "goals", "value": 1}}], "statsList": [{"name": "goals", "title": "Top scorer", "category": "Top Stat"}]},
+  "leaderboard_dict": {"statsData": {"players": [{"id": 30, "teamId": 3, "statValue": {"name": "saves", "value": 5}}]}},
+  "profile": {"id": 10, "name": "Example Player", "birthDate": {"utcTime": "1990-01-01T00:00:00Z"}, "primaryTeam": {"teamId": 99, "teamName": "Current Club"}, "positionDescription": {"primaryPosition": {"label": "Striker"}}, "statSeasons": [{"seasonName": "2019/2020", "tournaments": [{"name": "Premier League", "tournamentId": 47, "entryId": "7-0", "hasDeepStats": true}]}]},
+  "player_stats": {"topStatCard": {"items": [{"localizedTitleId": "matches_uppercase", "statValue": "30", "statFormat": "number"}]}, "statsSection": {"items": [{"items": [{"localizedTitleId": "successful_passes_accuracy", "statValue": "82.5", "statFormat": "percent"}]}]}}
+}

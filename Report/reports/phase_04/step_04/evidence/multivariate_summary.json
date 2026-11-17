@@ -1,0 +1,78 @@
+{
+ "dataset": "data/releases/fb69_player_season_integrated_rs5_v1/player_season_integrated_rs5_v1.parquet",
+ "sha256_verified": true,
+ "scope_id": "rs5_v1",
+ "scope_check": {
+  "season": {
+   "2020/2021": 524,
+   "2021/2022": 537,
+   "2022/2023": 554,
+   "2023/2024": 570,
+   "2024/2025": 562
+  },
+  "season_id": {
+   "15382": 524,
+   "16390": 537,
+   "17664": 554,
+   "20720": 570,
+   "23685": 562
+  }
+ },
+ "scope_check_derived_season_population": {
+  "season": {
+   "2020/2021": 1,
+   "2021/2022": 1,
+   "2022/2023": 1,
+   "2023/2024": 1,
+   "2024/2025": 1
+  }
+ },
+ "rows": 2747,
+ "usable_targets": 2697,
+ "groupings": {
+  "starts_group": [
+   "0 starts",
+   "1-9 starts",
+   "10-18 starts",
+   "19-28 starts",
+   "29-38 starts"
+  ],
+  "usage_group": [
+   "mainly substitute (<50% started)",
+   "mixed (50-89% started)",
+   "starter (>=90% started)"
+  ],
+  "age_band": [
+   "<=21",
+   "22-24",
+   "25-27",
+   "28-30",
+   "31+"
+  ],
+  "minutes_band": [
+   "1-89",
+   "90-449",
+   "450-899",
+   "900+"
+  ]
+ },
+ "min_n": 30,
+ "position_median_target_eur": {
+  "GK": 6000000.0,
+  "DEF": 12000000.0,
+  "MID": 15000000.0,
+  "FWD": 15000000.0
+ },
+ "stratified_last_to_first_ratio_median": 1.6262626262626263,
+ "stratified_cells_with_ratio": 6,
+ "temporal_caveats": [
+  "RD-03: the target is the latest valuation on or before season end (mostly mid-season); the metrics cover the whole season. Descriptive association only, not causation.",
+  "ISS-21/ISS-22: each season's targets come mainly from one league-wide valuation batch at a different distance from season end; season level differences mix market movement and batch timing."
+ ],
+ "dataset_sha256_after": "4d94ec73cfb9d72421fb2bbb1d7976bcf29f8a4f6cc985435955e574b072eedd",
+ "versions": {
+  "python": "3.14.6",
+  "pandas": "3.1.0",
+  "numpy": "2.5.4"
+ }
+}

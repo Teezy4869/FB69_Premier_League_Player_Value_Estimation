@@ -1,0 +1,123 @@
+column,eligibility_category,reason
+canonical_player_id,IDENTITY_METADATA,IDENTITY_METADATA: P4-A05
+season,IDENTITY_METADATA,IDENTITY_METADATA: P4-A05
+season_id,IDENTITY_METADATA,IDENTITY_METADATA: P4-A05
+fotmob_player_id,IDENTITY_METADATA,IDENTITY_METADATA: P4-A05
+transfermarkt_player_id,IDENTITY_METADATA,IDENTITY_METADATA: P4-A05
+fotmob_player_name,IDENTITY_METADATA,IDENTITY_METADATA: P4-A05
+fotmob_profile_name,IDENTITY_METADATA,IDENTITY_METADATA: P4-A05
+fotmob_birth_date,IDENTITY_METADATA,IDENTITY_METADATA: P4-A05
+nationality_profile_present_day,EXCLUDED_PREDICTOR,EXCLUDED_PREDICTOR: P4-A04
+population_status,IDENTITY_METADATA,IDENTITY_METADATA: P4-A05
+population_category,IDENTITY_METADATA,IDENTITY_METADATA: P4-A05
+classification_reason,IDENTITY_METADATA,IDENTITY_METADATA: P4-A05
+profile_status,IDENTITY_METADATA,IDENTITY_METADATA: P4-A05
+confirmed_appearance_count,IDENTITY_METADATA,IDENTITY_METADATA: P4-A05
+started_match_count,IDENTITY_METADATA,IDENTITY_METADATA: P4-A05
+sub_in_match_count,IDENTITY_METADATA,IDENTITY_METADATA: P4-A05
+unresolved_substitute_count,IDENTITY_METADATA,IDENTITY_METADATA: P4-A05
+confirmed_team_ids,CONDITIONAL_PREDICTOR,Club context: owner decision RS5-12 pending; described as counts only
+confirmed_team_count,CONDITIONAL_PREDICTOR,Club context: owner decision RS5-12 pending; described as counts only
+associated_team_count,CONDITIONAL_PREDICTOR,Club context: owner decision RS5-12 pending; described as counts only
+associated_team_ids,CONDITIONAL_PREDICTOR,Club context: owner decision RS5-12 pending; described as counts only
+associated_team_names,CONDITIONAL_PREDICTOR,Club context: owner decision RS5-12 pending; described as counts only
+is_multi_club,CONDITIONAL_PREDICTOR,Club context: owner decision RS5-12 pending; described as counts only
+multi_club_status,CONDITIONAL_PREDICTOR,Club context: owner decision RS5-12 pending; described as counts only
+multi_club_class,CONDITIONAL_PREDICTOR,Club context: owner decision RS5-12 pending; described as counts only
+position_group_season,CANDIDATE_PREDICTOR,"Categorical context; used as a grouping variable (whole-season modal position, P4-B04)"
+target_market_value,TARGET,TARGET: P4-A03
+target_currency,TARGET,TARGET: P4-A03
+target_status,TARGET,TARGET: P4-A03
+target_missing_reason,TARGET,TARGET: P4-A03
+target_valuation_date,TARGET,TARGET: P4-A03
+target_season_end_date,TARGET,TARGET: P4-A03
+target_valuation_age_days,TARGET,TARGET: P4-A03
+target_staleness_bucket,TARGET,TARGET: P4-A03
+target_usable,TARGET,TARGET: P4-A03
+target_source_record_reference,TARGET,TARGET: P4-A03
+target_source_file_sha256,TARGET,TARGET: P4-A03
+target_source_row_number,TARGET,TARGET: P4-A03
+target_selection_rule_version,TARGET,TARGET: P4-A03
+target_audit_previous_value,TARGET,TARGET: P4-A03
+target_audit_previous_valuation_date,TARGET,TARGET: P4-A03
+target_audit_ratio_to_previous_value,TARGET,TARGET: P4-A03
+crosswalk_status,IDENTITY_METADATA,IDENTITY_METADATA: P4-A05
+crosswalk_method,IDENTITY_METADATA,IDENTITY_METADATA: P4-A05
+identity_evidence_tier,IDENTITY_METADATA,IDENTITY_METADATA: P4-A05
+identity_rs5_validation_label,IDENTITY_METADATA,IDENTITY_METADATA: P4-A05
+identity_review_status,IDENTITY_METADATA,IDENTITY_METADATA: P4-A05
+identity_human_reviewed,IDENTITY_METADATA,IDENTITY_METADATA: P4-A05
+identity_adjudicator,IDENTITY_METADATA,IDENTITY_METADATA: P4-A05
+identity_adjudication_confidence,IDENTITY_METADATA,IDENTITY_METADATA: P4-A05
+identity_adjudication_basis,IDENTITY_METADATA,IDENTITY_METADATA: P4-A05
+matching_version,IDENTITY_METADATA,IDENTITY_METADATA: P4-A05
+identity_match_status,IDENTITY_METADATA,IDENTITY_METADATA: P4-A05
+temporal_player_games_in_season,TEMPORAL_AUDIT,TEMPORAL_AUDIT: P4-A03;RD-03
+temporal_player_games_on_valuation_date,TEMPORAL_AUDIT,TEMPORAL_AUDIT: P4-A03;RD-03
+temporal_player_games_after_valuation,TEMPORAL_AUDIT,TEMPORAL_AUDIT: P4-A03;RD-03
+temporal_league_games_in_season,TEMPORAL_AUDIT,TEMPORAL_AUDIT: P4-A03;RD-03
+temporal_league_games_after_valuation,TEMPORAL_AUDIT,TEMPORAL_AUDIT: P4-A03;RD-03
+temporal_minutes_before_or_on_valuation,TEMPORAL_AUDIT,TEMPORAL_AUDIT: P4-A03;RD-03
+temporal_minutes_after_valuation,TEMPORAL_AUDIT,TEMPORAL_AUDIT: P4-A03;RD-03
+temporal_alignment_class,TEMPORAL_AUDIT,TEMPORAL_AUDIT: P4-A03;RD-03
+missing_feature_count,STATUS_MISSINGNESS,STATUS_MISSINGNESS: ISS-27
+dataset_version,IDENTITY_METADATA,IDENTITY_METADATA: P4-A05
+research_scope_id,IDENTITY_METADATA,IDENTITY_METADATA: P4-A05
+fotmob_source_version,IDENTITY_METADATA,IDENTITY_METADATA: P4-A05
+transfermarkt_source_version,IDENTITY_METADATA,IDENTITY_METADATA: P4-A05
+provenance_profile_raw_path,IDENTITY_METADATA,IDENTITY_METADATA: P4-A05
+provenance_stats_raw_path,IDENTITY_METADATA,IDENTITY_METADATA: P4-A05
+m_key_passes,EXCLUDED_PREDICTOR,EXCLUDED_PREDICTOR: ISS-28
+s_accurate_long_passes,STATUS_MISSINGNESS,"Status column: read to interpret availability, never analysed as a numeric metric (P4-D01)"
+s_accurate_long_passes_per90,STATUS_MISSINGNESS,"Status column: read to interpret availability, never analysed as a numeric metric (P4-D01)"
+s_accurate_passes,STATUS_MISSINGNESS,"Status column: read to interpret availability, never analysed as a numeric metric (P4-D01)"
+s_accurate_passes_per90,STATUS_MISSINGNESS,"Status column: read to interpret availability, never analysed as a numeric metric (P4-D01)"
+s_aerials_won,STATUS_MISSINGNESS,"Status column: read to interpret availability, never analysed as a numeric metric (P4-D01)"
+s_aerials_won_percent,STATUS_MISSINGNESS,"Status column: read to interpret availability, never analysed as a numeric metric (P4-D01)"
+s_appearances,STATUS_MISSINGNESS,"Status column: read to interpret availability, never analysed as a numeric metric (P4-D01)"
+s_assists,STATUS_MISSINGNESS,"Status column: read to interpret availability, never analysed as a numeric metric (P4-D01)"
+s_big_chances_created,STATUS_MISSINGNESS,"Status column: read to interpret availability, never analysed as a numeric metric (P4-D01)"
+s_blocked_shots,STATUS_MISSINGNESS,"Status column: read to interpret availability, never analysed as a numeric metric (P4-D01)"
+s_blocks_per90,STATUS_MISSINGNESS,"Status column: read to interpret availability, never analysed as a numeric metric (P4-D01)"
+s_chances_created,STATUS_MISSINGNESS,"Status column: read to interpret availability, never analysed as a numeric metric (P4-D01)"
+s_clean_sheets,STATUS_MISSINGNESS,"Status column: read to interpret availability, never analysed as a numeric metric (P4-D01)"
+s_clearances,STATUS_MISSINGNESS,"Status column: read to interpret availability, never analysed as a numeric metric (P4-D01)"
+s_clearances_per90,STATUS_MISSINGNESS,"Status column: read to interpret availability, never analysed as a numeric metric (P4-D01)"
+s_cross_accuracy,STATUS_MISSINGNESS,"Status column: read to interpret availability, never analysed as a numeric metric (P4-D01)"
+s_dribbles_succeeded,STATUS_MISSINGNESS,"Status column: read to interpret availability, never analysed as a numeric metric (P4-D01)"
+s_duels_won,STATUS_MISSINGNESS,"Status column: read to interpret availability, never analysed as a numeric metric (P4-D01)"
+s_duels_won_percent,STATUS_MISSINGNESS,"Status column: read to interpret availability, never analysed as a numeric metric (P4-D01)"
+s_expected_assists,STATUS_MISSINGNESS,"Status column: read to interpret availability, never analysed as a numeric metric (P4-D01)"
+s_expected_goals,STATUS_MISSINGNESS,"Status column: read to interpret availability, never analysed as a numeric metric (P4-D01)"
+s_expected_goals_on_target,STATUS_MISSINGNESS,"Status column: read to interpret availability, never analysed as a numeric metric (P4-D01)"
+s_fouls_committed,STATUS_MISSINGNESS,"Status column: read to interpret availability, never analysed as a numeric metric (P4-D01)"
+s_fouls_won,STATUS_MISSINGNESS,"Status column: read to interpret availability, never analysed as a numeric metric (P4-D01)"
+s_goals,STATUS_MISSINGNESS,"Status column: read to interpret availability, never analysed as a numeric metric (P4-D01)"
+s_goals_conceded,STATUS_MISSINGNESS,"Status column: read to interpret availability, never analysed as a numeric metric (P4-D01)"
+s_goals_conceded_per90,STATUS_MISSINGNESS,"Status column: read to interpret availability, never analysed as a numeric metric (P4-D01)"
+s_goals_prevented,STATUS_MISSINGNESS,"Status column: read to interpret availability, never analysed as a numeric metric (P4-D01)"
+s_interceptions,STATUS_MISSINGNESS,"Status column: read to interpret availability, never analysed as a numeric metric (P4-D01)"
+s_interceptions_per90,STATUS_MISSINGNESS,"Status column: read to interpret availability, never analysed as a numeric metric (P4-D01)"
+s_key_passes,EXCLUDED_PREDICTOR,"Status column: read to interpret availability, never analysed as a numeric metric (P4-D01)"
+s_long_ball_accuracy,STATUS_MISSINGNESS,"Status column: read to interpret availability, never analysed as a numeric metric (P4-D01)"
+s_minutes_played,STATUS_MISSINGNESS,"Status column: read to interpret availability, never analysed as a numeric metric (P4-D01)"
+s_non_penalty_xg,STATUS_MISSINGNESS,"Status column: read to interpret availability, never analysed as a numeric metric (P4-D01)"
+s_passing_accuracy,STATUS_MISSINGNESS,"Status column: read to interpret availability, never analysed as a numeric metric (P4-D01)"
+s_penalty_saves,STATUS_MISSINGNESS,"Status column: read to interpret availability, never analysed as a numeric metric (P4-D01)"
+s_rating,STATUS_MISSINGNESS,"Status column: read to interpret availability, never analysed as a numeric metric (P4-D01)"
+s_recoveries,STATUS_MISSINGNESS,"Status column: read to interpret availability, never analysed as a numeric metric (P4-D01)"
+s_recoveries_per90,STATUS_MISSINGNESS,"Status column: read to interpret availability, never analysed as a numeric metric (P4-D01)"
+s_red_cards,STATUS_MISSINGNESS,"Status column: read to interpret availability, never analysed as a numeric metric (P4-D01)"
+s_save_percentage,STATUS_MISSINGNESS,"Status column: read to interpret availability, never analysed as a numeric metric (P4-D01)"
+s_saves,STATUS_MISSINGNESS,"Status column: read to interpret availability, never analysed as a numeric metric (P4-D01)"
+s_shots,STATUS_MISSINGNESS,"Status column: read to interpret availability, never analysed as a numeric metric (P4-D01)"
+s_shots_on_target,STATUS_MISSINGNESS,"Status column: read to interpret availability, never analysed as a numeric metric (P4-D01)"
+s_shots_on_target_per90,STATUS_MISSINGNESS,"Status column: read to interpret availability, never analysed as a numeric metric (P4-D01)"
+s_shots_per90,STATUS_MISSINGNESS,"Status column: read to interpret availability, never analysed as a numeric metric (P4-D01)"
+s_starts,STATUS_MISSINGNESS,"Status column: read to interpret availability, never analysed as a numeric metric (P4-D01)"
+s_successful_crosses,STATUS_MISSINGNESS,"Status column: read to interpret availability, never analysed as a numeric metric (P4-D01)"
+s_tackles,STATUS_MISSINGNESS,"Status column: read to interpret availability, never analysed as a numeric metric (P4-D01)"
+s_tackles_per90,STATUS_MISSINGNESS,"Status column: read to interpret availability, never analysed as a numeric metric (P4-D01)"
+s_touches,STATUS_MISSINGNESS,"Status column: read to interpret availability, never analysed as a numeric metric (P4-D01)"
+s_touches_opposition_box,STATUS_MISSINGNESS,"Status column: read to interpret availability, never analysed as a numeric metric (P4-D01)"
+s_yellow_cards,STATUS_MISSINGNESS,"Status column: read to interpret availability, never analysed as a numeric metric (P4-D01)"

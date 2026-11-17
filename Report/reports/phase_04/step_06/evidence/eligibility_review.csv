@@ -1,0 +1,10 @@
+subtype,columns,examples,phase_4_6_reading
+CANDIDATE_PREDICTOR,41,"age_at_season_end_years, position_group_season, m_accurate_long_passes, m_accurate_long_passes_per90",Candidates with warnings; assessed in the matrix; no change
+CONDITIONAL_PREDICTOR: owner decision (RD-04),5,"m_clearances, m_clearances_per90, m_expected_goals_on_target, m_goals_prevented",Remain pending; 4.5 evidence summarised for the owner
+CONDITIONAL_PREDICTOR: owner decision (RS5-12),8,"confirmed_team_ids, confirmed_team_count, associated_team_count, associated_team_ids",Remain pending; temporally ambiguous (4.5)
+CONDITIONAL_PREDICTOR: reliability assessment (ISS-29),8,"m_aerials_won_percent, m_clean_sheets, m_cross_accuracy, m_duels_won_percent","Assessed in 4.5: 2 internally consistent, 6 unverifiable; classification unchanged"
+EXCLUDED_PREDICTOR,3,"nationality_profile_present_day, m_key_passes, s_key_passes","m_key_passes, s_key_passes, nationality_profile_present_day: remain excluded"
+IDENTITY_METADATA,33,"canonical_player_id, season, season_id, fotmob_player_id",Never predictors (group keys and sensitivity grouping only)
+STATUS_MISSINGNESS,53,"missing_feature_count, s_accurate_long_passes, s_accurate_long_passes_per90, s_accurate_passes",Not numeric performance features; possible role as missingness indicators (P4-D01)
+TARGET,16,"target_market_value, target_currency, target_status, target_missing_reason",Never predictors
+TEMPORAL_AUDIT,8,"temporal_player_games_in_season, temporal_player_games_on_valuation_date, temporal_player_games_after_valuation, temporal_league_games_in_season",Never predictors (audit only; see P4-D05)

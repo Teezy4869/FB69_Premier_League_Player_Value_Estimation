@@ -1,0 +1,12 @@
+phase: phase_02b0
+lineup_request_budget: 12
+lineup_sample_seed: 6902
+lineup_windows: [EARLY, MID, LATE]
+raw_dir: data/phase_02b0/raw
+report_dir: reports/phase_02b0
+log_path: logs/phase_02b0_requests.jsonl
+legacy_raw_dir: data/pilot/raw
+request_contract: fotmob-data-v1
+player_matches_probe_budget: 2
+player_matches_probe_dir: data/phase_02b0/player_matches_probes
+player_matches_probe_log_path: logs/phase_02b0_player_matches_requests.jsonl

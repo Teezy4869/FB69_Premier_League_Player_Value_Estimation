@@ -1,0 +1,78 @@
+# Phase 5 model input and evaluation configuration (step 02). Decisions: reports/phase_05/step_00/PHASE5_EVALUATION_PROTOCOL.md.
+# Fixed before any model result is seen. Changing any value requires an owner decision and a new config_version.
+config_version: phase5_model_v1
+
+population:
+  positions: [DEF, MID, FWD]        # GK excluded from the model (owner decision 2026-11-15)
+  require_target_usable: true
+
+target:
+  column: target_market_value
+  transform: natural_log            # model target = ln(EUR); MAE on this scale: exp(MAE) = typical ratio error
+
+previous_value:
+  source: data/phase_05/previous_value/season_start_prev_value_v1/season_start_prev_value.parquet
+  rule_version: latest_valid_strictly_before_first_match_v1
+
+features:
+  categorical: [position_group_season]
+  numeric_from_release:
+    - m_minutes_played
+    - age_at_season_end_years
+    - m_goals
+    - m_non_penalty_xg
+    - m_shots_per90
+    - m_assists
+    - m_expected_assists
+    - m_big_chances_created
+    - m_accurate_passes_per90
+    - m_accurate_long_passes_per90
+    - m_passing_accuracy
+    - m_long_ball_accuracy
+    - m_rating
+  derived_per90:                    # total * 90 / m_minutes_played; null if total or minutes null, or minutes == 0
+    m_touches_per90: m_touches
+    m_dribbles_succeeded_per90: m_dribbles_succeeded
+    m_successful_crosses_per90: m_successful_crosses
+  previous_value: [log_prev_value, has_prev_value]
+
+report_groups:
+  - position_group_season
+  - season
+  - has_prev_value                  # returning vs new
+  - minutes_900_plus                # m_minutes_played >= 900
+  - identity_sensitive              # P4-B01 mask (src/phase4/bivariate.py)
+  - target_before_season_start      # 15 rows, reported separately (owner decision 2026-11-15)
+
+evaluation:
+  primary:
+    method: repeated_stratified_group_kfold
+    group: canonical_player_id
+    n_splits: 5
+    n_repeats: 5
+    seeds: [0, 1, 2, 3, 4]
+    stratify: log_target_quantile_bins
+    n_bins: 5
+  supplementary:
+    method: forward_chaining
+    # train on all seasons before the test season; first test season needs at least one training season
+    test_seasons: ["2021/2022", "2022/2023", "2023/2024", "2024/2025"]
+  tuning:
+    method: nested_grid_search
+    inner_cv: group_kfold
+    inner_n_splits: 3
+    scoring: mean_absolute_error
+    grid:
+      n_estimators: [200, 500]
+      learning_rate: [0.05]
+      num_leaves: [15, 31]
+      min_child_samples: [20, 50]
+    fixed:
+      subsample: 1.0
+      colsample_bytree: 1.0
+      random_state: 0
+      verbose: -1
+  metrics:
+    primary: mae_log
+    secondary: [rmse_log, mdape_eur]
+  reference: persistence           # prediction = log_prev_value; empty where has_prev_value is false

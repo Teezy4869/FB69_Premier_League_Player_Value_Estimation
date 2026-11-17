@@ -1,0 +1,6 @@
+topic,source_a,source_b,explanation
+Limited-coverage features,"4.2: 21 (> 20% null on applicable rows or a season below 50% coverage, all features incl. RD-04 and ISS-29)","4.5: 15 in class 'reliable values, limited coverage' (RD-04 and ISS-29 features have their own classes)",Different definitions
+Multi-season players,"4.0/4.1: 687 players, 2,206 rows (all rows)","4.6: 679 players, 2,180 rows (rows with a usable target)",Different populations
+Players,"4.0/4.1: 1,228 (all rows)","4.3/4.6: 1,196 (rows with a usable target)",Different populations
+Rows without detailed statistics,4.2: 317 outfield rows with minutes but no detailed statistics,"4.5: 317 outfield rows with 0 starts, all without detailed statistics","Same rows, two descriptions"
+Association labels,4.3: strength from |Spearman| plus a bootstrap interval ('no clear association' when it contains 0),4.6: strength from |Spearman| only ('none' below 0.1),Different rules; both give 9 strong; weak/none counts differ

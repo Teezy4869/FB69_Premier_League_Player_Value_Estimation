@@ -1,0 +1,19 @@
+{
+  "competition": "English Premier League",
+  "league_id_candidate": 47,
+  "seasons": ["2019/2020", "2020/2021", "2021/2022", "2022/2023", "2023/2024", "2024/2025"],
+  "api_base_url": "https://www.fotmob.com/api/data",
+  "request_timeout_seconds": 15,
+  "min_request_interval_seconds": 0.7,
+  "max_retries": 1,
+  "backoff_seconds": 2,
+  "request_budget": 25,
+  "max_response_bytes": 3000000,
+  "sample_max_bytes": 80000,
+  "user_agent": "FB69ResearchAvailabilityAudit/0.1 (academic data availability research)",
+  "output_directories": {
+    "reports": "reports/phase_01",
+    "raw_samples": "data/audit/raw_samples",
+    "logs": "logs"
+  }
+}

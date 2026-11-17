@@ -1,0 +1,65 @@
+{
+ "fotmob_release": {
+  "files_checked": 38,
+  "mismatches": 0,
+  "manifest_sha256": "9aa00b227b2dbf9a6004258ff94c25e825d7c5cfd45a365cb94f5f98863fbf93"
+ },
+ "tm_raw_mismatches": [],
+ "tm_normalized_mismatches": [],
+ "v1_output_mismatches": [],
+ "v1_input_mismatches": [],
+ "v1_code_mismatches": [],
+ "v1_review_snapshot_sha256": {
+  "matching_review_queue.csv": "be8d71e3e6ad0a231bbab8b7007214f9029caf69c6b1a8ecf1ea67c184491f16",
+  "validation_sample_for_labeling.csv": "9641b3feb93d0c62c7334390650a5e89cf2b7c6391c96619a8edbaf81481170e"
+ },
+ "fresh_run_identical": {
+  "player_crosswalk.parquet": {
+   "rows": 1343,
+   "identical_rows": true,
+   "identical_bytes": true
+  },
+  "matching_candidates.parquet": {
+   "rows": 2807,
+   "identical_rows": true,
+   "identical_bytes": true
+  },
+  "matching_review_queue.csv": true,
+  "validation_sample_for_labeling.csv": true,
+  "unresolved_identities.csv": true
+ },
+ "counts": {
+  "identities": 1343,
+  "distinct_confirmed_players": 1343,
+  "confirmed_rows": 3262,
+  "auto_exact": 1299,
+  "unresolved": 44,
+  "mapped_rows": 3161,
+  "unresolved_rows": 101,
+  "duplicate_fotmob": 0,
+  "duplicate_canonical": 0,
+  "duplicate_tm": 0,
+  "season_row_mismatches": 0
+ },
+ "queue_reconciliation": {
+  "queue_rows": 93,
+  "queue_identities": 44,
+  "unresolved_identities": 44,
+  "identity_sets_equal": true,
+  "duplicate_queue_ids": 0,
+  "rows_per_identity_distribution": {
+   "1": 16,
+   "2": 15,
+   "3": 8,
+   "4": 2,
+   "5": 3
+  },
+  "player_season_rows_from_crosswalk": 101,
+  "candidates_hidden_by_top5_cap": 1
+ },
+ "birth_dates_from_raw": {
+  "auto_exact_raw_dob_mismatches": [],
+  "fotmob_raw_time_not_midnight_utc": 0,
+  "fotmob_raw_vs_normalized_differences": 0
+ }
+}

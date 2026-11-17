@@ -1,0 +1,469 @@
+{
+ "generated_at_utc": "2026-11-07T13:53:50.224127+00:00",
+ "scope_id": "rs5_v1",
+ "environment": {
+  "python": "3.14.6",
+  "pyarrow": "24.0.0",
+  "duckdb": "2.0.0"
+ },
+ "historical_inputs": {
+  "fotmob_v3_1": {
+   "files_checked": 38,
+   "mismatches": 0,
+   "manifest_sha256": "9aa00b227b2dbf9a6004258ff94c25e825d7c5cfd45a365cb94f5f98863fbf93"
+  },
+  "transfermarkt_raw_7_files_hash_ok": true
+ },
+ "files_compared": 69,
+ "all_identical": true,
+ "failed": [],
+ "manifest_checks": [
+  {
+   "manifest": "fotmob_epl_2020_2025_rs5_v1/metadata/release_manifest.json",
+   "outputs_ok": true,
+   "bad": [],
+   "source_manifest_ok": true
+  },
+  {
+   "manifest": "target_rs5_v1__matching_v2_1/target_manifest.json",
+   "outputs_ok": true,
+   "inputs_ok": true,
+   "code_hash_drift": [
+    "src/research_scope/build_targets_rs5.py"
+   ]
+  },
+  {
+   "manifest": "target_rs5_v1__matching_v2_1_rs5/target_manifest.json",
+   "outputs_ok": true,
+   "inputs_ok": true,
+   "code_hash_drift": []
+  },
+  {
+   "manifest": "entity_resolution/crosswalk_rs5_manifest.json",
+   "outputs_ok": true,
+   "code_hash_drift": []
+  },
+  {
+   "manifest": "fb69_player_season_integrated_rs5_v1/integration_manifest.json",
+   "outputs_ok": true,
+   "inputs_ok": true,
+   "code_hash_drift": []
+  }
+ ],
+ "results": [
+  {
+   "stage": "1 FotMob rs5",
+   "file": "README.md",
+   "identical": true,
+   "comparison": "bytes"
+  },
+  {
+   "stage": "1 FotMob rs5",
+   "file": "curated/confirmed_appeared_player_seasons.parquet",
+   "identical": true,
+   "comparison": "bytes"
+  },
+  {
+   "stage": "1 FotMob rs5",
+   "file": "curated/player_season_metrics_wide.parquet",
+   "identical": true,
+   "comparison": "bytes"
+  },
+  {
+   "stage": "1 FotMob rs5",
+   "file": "manifests/metric_dictionary_rs5.csv",
+   "identical": true,
+   "comparison": "bytes"
+  },
+  {
+   "stage": "1 FotMob rs5",
+   "file": "manifests/metric_eligibility_registry.csv",
+   "identical": true,
+   "comparison": "bytes"
+  },
+  {
+   "stage": "1 FotMob rs5",
+   "file": "manifests/metric_reconciliation_registry_v3.json",
+   "identical": true,
+   "comparison": "JSON without timestamps"
+  },
+  {
+   "stage": "1 FotMob rs5",
+   "file": "metadata/canonical_summary_rs5.json",
+   "identical": true,
+   "comparison": "JSON without timestamps"
+  },
+  {
+   "stage": "1 FotMob rs5",
+   "file": "metadata/data_dictionary_rs5.csv",
+   "identical": true,
+   "comparison": "bytes"
+  },
+  {
+   "stage": "1 FotMob rs5",
+   "file": "normalized/complete_player_season_classification.parquet",
+   "identical": true,
+   "comparison": "bytes"
+  },
+  {
+   "stage": "1 FotMob rs5",
+   "file": "normalized/confirmed_appeared_player_seasons.parquet",
+   "identical": true,
+   "comparison": "bytes"
+  },
+  {
+   "stage": "1 FotMob rs5",
+   "file": "normalized/confirmed_non_appeared_player_seasons.parquet",
+   "identical": true,
+   "comparison": "bytes"
+  },
+  {
+   "stage": "1 FotMob rs5",
+   "file": "normalized/historical_position_observations.parquet",
+   "identical": true,
+   "comparison": "bytes"
+  },
+  {
+   "stage": "1 FotMob rs5",
+   "file": "normalized/matches.parquet",
+   "identical": true,
+   "comparison": "bytes"
+  },
+  {
+   "stage": "1 FotMob rs5",
+   "file": "normalized/metric_observations.parquet",
+   "identical": true,
+   "comparison": "bytes"
+  },
+  {
+   "stage": "1 FotMob rs5",
+   "file": "normalized/player_match_appearances.parquet",
+   "identical": true,
+   "comparison": "bytes"
+  },
+  {
+   "stage": "1 FotMob rs5",
+   "file": "normalized/player_seasons.parquet",
+   "identical": true,
+   "comparison": "bytes"
+  },
+  {
+   "stage": "1 FotMob rs5",
+   "file": "normalized/player_team_seasons.parquet",
+   "identical": true,
+   "comparison": "bytes"
+  },
+  {
+   "stage": "1 FotMob rs5",
+   "file": "normalized/players.parquet",
+   "identical": true,
+   "comparison": "bytes"
+  },
+  {
+   "stage": "1 FotMob rs5",
+   "file": "normalized/seasons.parquet",
+   "identical": true,
+   "comparison": "bytes"
+  },
+  {
+   "stage": "1 FotMob rs5",
+   "file": "normalized/substitution_evidence_registry.parquet",
+   "identical": true,
+   "comparison": "bytes"
+  },
+  {
+   "stage": "1 FotMob rs5",
+   "file": "normalized/teams.parquet",
+   "identical": true,
+   "comparison": "bytes"
+  },
+  {
+   "stage": "1 FotMob rs5",
+   "file": "normalized/unverified_player_seasons.parquet",
+   "identical": true,
+   "comparison": "bytes"
+  },
+  {
+   "stage": "1 FotMob rs5",
+   "file": "quality_reports/appearance_coverage.csv",
+   "identical": true,
+   "comparison": "bytes"
+  },
+  {
+   "stage": "1 FotMob rs5",
+   "file": "quality_reports/appearance_coverage_rs5.csv",
+   "identical": true,
+   "comparison": "bytes"
+  },
+  {
+   "stage": "1 FotMob rs5",
+   "file": "quality_reports/cross_season_feature_coverage.csv",
+   "identical": true,
+   "comparison": "bytes"
+  },
+  {
+   "stage": "1 FotMob rs5",
+   "file": "quality_reports/historical_xg_xa_coverage_quality.csv",
+   "identical": true,
+   "comparison": "bytes"
+  },
+  {
+   "stage": "1 FotMob rs5",
+   "file": "quality_reports/metric_coverage_summary_rs5.csv",
+   "identical": true,
+   "comparison": "bytes"
+  },
+  {
+   "stage": "1 FotMob rs5",
+   "file": "quality_reports/metric_reconciliation_report.csv",
+   "identical": true,
+   "comparison": "bytes"
+  },
+  {
+   "stage": "1 FotMob rs5",
+   "file": "quality_reports/population_reconciliation.csv",
+   "identical": true,
+   "comparison": "bytes"
+  },
+  {
+   "stage": "1 FotMob rs5",
+   "file": "quality_reports/population_reconciliation_rs5.csv",
+   "identical": true,
+   "comparison": "bytes"
+  },
+  {
+   "stage": "1 FotMob rs5",
+   "file": "quality_reports/raw_integrity_report.csv",
+   "identical": true,
+   "comparison": "bytes"
+  },
+  {
+   "stage": "1 FotMob rs5",
+   "file": "quality_reports/referential_integrity_report_rs5.csv",
+   "identical": true,
+   "comparison": "bytes"
+  },
+  {
+   "stage": "1 FotMob rs5",
+   "file": "quality_reports/season_2020_2021_acceptance.md",
+   "identical": true,
+   "comparison": "bytes"
+  },
+  {
+   "stage": "1 FotMob rs5",
+   "file": "quality_reports/season_2021_2022_acceptance.md",
+   "identical": true,
+   "comparison": "bytes"
+  },
+  {
+   "stage": "1 FotMob rs5",
+   "file": "quality_reports/season_2022_2023_acceptance.md",
+   "identical": true,
+   "comparison": "bytes"
+  },
+  {
+   "stage": "1 FotMob rs5",
+   "file": "quality_reports/season_2023_2024_acceptance.md",
+   "identical": true,
+   "comparison": "bytes"
+  },
+  {
+   "stage": "1 FotMob rs5",
+   "file": "quality_reports/season_2024_2025_acceptance.md",
+   "identical": true,
+   "comparison": "bytes"
+  },
+  {
+   "stage": "2 target (matching_v2_1)",
+   "file": "player_season_target.parquet",
+   "identical": true,
+   "comparison": "bytes"
+  },
+  {
+   "stage": "2 target (matching_v2_1)",
+   "file": "same_date_valuation_conflicts.csv",
+   "identical": true,
+   "comparison": "bytes"
+  },
+  {
+   "stage": "2 target (matching_v2_1)",
+   "file": "target_data_dictionary.csv",
+   "identical": true,
+   "comparison": "bytes"
+  },
+  {
+   "stage": "2 target (matching_v2_1)",
+   "file": "target_previous_valuation_audit.parquet",
+   "identical": true,
+   "comparison": "bytes"
+  },
+  {
+   "stage": "2 target (matching_v2_1)",
+   "file": "temporal_alignment_by_player_season.parquet",
+   "identical": true,
+   "comparison": "bytes"
+  },
+  {
+   "stage": "3 crosswalk",
+   "file": "matching_candidates.parquet",
+   "identical": true,
+   "comparison": "bytes"
+  },
+  {
+   "stage": "3 crosswalk",
+   "file": "player_crosswalk.parquet",
+   "identical": true,
+   "comparison": "bytes"
+  },
+  {
+   "stage": "3 crosswalk",
+   "file": "review_snapshot/automated_adjudications_in_scope.csv",
+   "identical": true,
+   "comparison": "bytes"
+  },
+  {
+   "stage": "3 crosswalk",
+   "file": "review_snapshot/matching_review_queue.csv",
+   "identical": true,
+   "comparison": "bytes"
+  },
+  {
+   "stage": "3 crosswalk",
+   "file": "review_snapshot/validation_sample_for_labeling.csv",
+   "identical": true,
+   "comparison": "bytes"
+  },
+  {
+   "stage": "3 crosswalk",
+   "file": "team_crosswalk.csv",
+   "identical": true,
+   "comparison": "bytes"
+  },
+  {
+   "stage": "3 crosswalk",
+   "file": "unresolved_identities.csv",
+   "identical": true,
+   "comparison": "bytes"
+  },
+  {
+   "stage": "3 review inputs",
+   "file": "automated_adjudications_in_scope.csv",
+   "identical": true,
+   "comparison": "bytes"
+  },
+  {
+   "stage": "3 review inputs",
+   "file": "matching_review_queue.csv",
+   "identical": true,
+   "comparison": "bytes"
+  },
+  {
+   "stage": "3 review inputs",
+   "file": "validation_sample_for_labeling.csv",
+   "identical": true,
+   "comparison": "bytes"
+  },
+  {
+   "stage": "3 validation labels",
+   "file": "matching_v2_1_rs5_identity_validation.csv",
+   "identical": true,
+   "comparison": "bytes"
+  },
+  {
+   "stage": "4 target (matching_v2_1_rs5)",
+   "file": "player_season_target.parquet",
+   "identical": true,
+   "comparison": "bytes"
+  },
+  {
+   "stage": "4 target (matching_v2_1_rs5)",
+   "file": "same_date_valuation_conflicts.csv",
+   "identical": true,
+   "comparison": "bytes"
+  },
+  {
+   "stage": "4 target (matching_v2_1_rs5)",
+   "file": "target_data_dictionary.csv",
+   "identical": true,
+   "comparison": "bytes"
+  },
+  {
+   "stage": "4 target (matching_v2_1_rs5)",
+   "file": "target_previous_valuation_audit.parquet",
+   "identical": true,
+   "comparison": "bytes"
+  },
+  {
+   "stage": "4 target (matching_v2_1_rs5)",
+   "file": "temporal_alignment_by_player_season.parquet",
+   "identical": true,
+   "comparison": "bytes"
+  },
+  {
+   "stage": "5 integration",
+   "file": "player_season_integrated_rs5_v1.parquet",
+   "identical": true,
+   "comparison": "bytes"
+  },
+  {
+   "stage": "5 integration",
+   "file": "player_team_season_evidence.parquet",
+   "identical": true,
+   "comparison": "bytes"
+  },
+  {
+   "stage": "5 integration",
+   "file": "data_dictionary.csv",
+   "identical": true,
+   "comparison": "bytes"
+  },
+  {
+   "stage": "6 audit",
+   "file": "audit_summary.json",
+   "identical": true,
+   "comparison": "JSON without dataset path (temporary)"
+  },
+  {
+   "stage": "6 audit",
+   "file": "feature_reliability.csv",
+   "identical": true,
+   "comparison": "bytes"
+  },
+  {
+   "stage": "6 audit",
+   "file": "feature_window_audit_rs5.csv",
+   "identical": true,
+   "comparison": "bytes"
+  },
+  {
+   "stage": "6 audit",
+   "file": "leakage_audit.csv",
+   "identical": true,
+   "comparison": "bytes"
+  },
+  {
+   "stage": "6 audit",
+   "file": "metric_distribution_by_season.csv",
+   "identical": true,
+   "comparison": "bytes"
+  },
+  {
+   "stage": "6 audit",
+   "file": "missingness_by_feature_season.csv",
+   "identical": true,
+   "comparison": "bytes"
+  },
+  {
+   "stage": "6 audit",
+   "file": "quality_audit.json",
+   "identical": true,
+   "comparison": "bytes"
+  },
+  {
+   "stage": "6 audit",
+   "file": "temporal_audit.json",
+   "identical": true,
+   "comparison": "bytes"
+  }
+ ]
+}

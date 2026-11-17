@@ -1,0 +1,8 @@
+season_label,season_id,baseline_confirmed_appeared,remediated_confirmed_appeared,baseline_unverified,remediated_unverified,baseline_confirmed_non_appeared,remediated_confirmed_non_appeared,baseline_conflicting,remediated_conflicting,total_player_seasons,reconciliation_status
+2019/2020,14022,515,515,10,0,89,99,0,0,614,BALANCED_EXACT
+2020/2021,15382,524,524,99,0,18,117,0,0,641,BALANCED_EXACT
+2021/2022,16390,537,537,107,0,35,142,0,0,679,BALANCED_EXACT
+2022/2023,17664,554,554,103,0,42,145,0,0,699,BALANCED_EXACT
+2023/2024,20720,570,570,144,0,20,164,0,0,734,BALANCED_EXACT
+2024/2025,23685,562,562,123,0,0,123,0,0,685,BALANCED_EXACT
+TOTAL_ALL_SEASONS,ALL,3262,3262,586,0,204,790,0,0,4052,BALANCED_EXACT

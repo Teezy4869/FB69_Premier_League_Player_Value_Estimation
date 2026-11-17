@@ -1,0 +1,5 @@
+cluster,size,members,min_abs_spearman_within,median_abs_spearman_within
+1,7,"m_appearances, m_starts, m_minutes_played, m_accurate_passes, m_touches, m_recoveries, m_duels_won",0.722812,0.898157
+2,5,"m_shots, m_shots_on_target, m_expected_goals, m_non_penalty_xg, m_expected_goals_on_target",0.839665,0.914017
+3,2,"m_shots_per90, m_shots_on_target_per90",0.902646,0.902646
+4,2,"m_expected_assists, m_chances_created",0.929408,0.929408

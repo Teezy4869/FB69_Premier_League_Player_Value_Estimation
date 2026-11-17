@@ -1,0 +1,2 @@
+task_id,request_key,season_label,stage,resource_type,decision,schema_status,scope_status,error_classification,raw_path,capture_id,missing_value_count,note
+tsk_9507b3c0625e8928ee4c1e713a4008e015e38582fcb655c00075d32ccb19cbfc,,2022/2023,C,SEASON_STATS_GATE,VALIDATED,,,,,,0,All appended playerStats tasks validated; unresolved metric conflicts remain flagged

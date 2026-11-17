@@ -1,0 +1,7 @@
+{
+  "request_budget": 64,
+  "deep_stats_probes": ["goals", "mins_played", "saves"],
+  "profile_samples_per_season": ["outfield_top_goals", "goalkeeper_top_saves"],
+  "match_detail_seasons": ["2019/2020", "2024/2025"],
+  "sample_max_bytes": 80000
+}

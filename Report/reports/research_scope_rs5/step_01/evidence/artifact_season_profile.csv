@@ -1,0 +1,37 @@
+﻿artifact,rows,columns,season_columns,rows_by_season,rows_in_excluded_seasons,season_dependency
+data/releases/fotmob_epl_2019_2025_v3_1/curated/confirmed_appeared_player_seasons.parquet,3262,114,season_label|season_id,"{""2019/2020"": 515, ""2020/2021"": 524, ""2021/2022"": 537, ""2022/2023"": 554, ""2023/2024"": 570, ""2024/2025"": 562}",515,SEASON_GRAIN
+data/releases/fotmob_epl_2019_2025_v3_1/curated/player_season_metrics_wide.parquet,4052,114,season_label|season_id,"{""2019/2020"": 614, ""2020/2021"": 641, ""2021/2022"": 679, ""2022/2023"": 699, ""2023/2024"": 734, ""2024/2025"": 685}",614,SEASON_GRAIN
+data/releases/fotmob_epl_2019_2025_v3_1/normalized/complete_player_season_classification.parquet,4052,20,season_label|season_id,"{""2019/2020"": 614, ""2020/2021"": 641, ""2021/2022"": 679, ""2022/2023"": 699, ""2023/2024"": 734, ""2024/2025"": 685}",614,SEASON_GRAIN
+data/releases/fotmob_epl_2019_2025_v3_1/normalized/confirmed_appeared_player_seasons.parquet,3262,20,season_label|season_id,"{""2019/2020"": 515, ""2020/2021"": 524, ""2021/2022"": 537, ""2022/2023"": 554, ""2023/2024"": 570, ""2024/2025"": 562}",515,SEASON_GRAIN
+data/releases/fotmob_epl_2019_2025_v3_1/normalized/confirmed_non_appeared_player_seasons.parquet,0,20,season_label|season_id,{},0,SEASON_GRAIN
+data/releases/fotmob_epl_2019_2025_v3_1/normalized/historical_position_observations.parquet,151475,11,season_id,"{""14022"": 27994, ""15382"": 24183, ""16390"": 25387, ""17664"": 25807, ""20720"": 24556, ""23685"": 23548}",27994,SEASON_GRAIN
+data/releases/fotmob_epl_2019_2025_v3_1/normalized/matches.parquet,2281,16,season_label|season_id,"{""2019/2020"": 380, ""2020/2021"": 380, ""2021/2022"": 380, ""2022/2023"": 380, ""2023/2024"": 381, ""2024/2025"": 380}",380,SEASON_GRAIN
+data/releases/fotmob_epl_2019_2025_v3_1/normalized/metric_observations.parquet,207043,28,season_label|season_id,"{""2019/2020"": 32087, ""2020/2021"": 33367, ""2021/2022"": 34263, ""2022/2023"": 35263, ""2023/2024"": 36262, ""2024/2025"": 35801}",32087,SEASON_GRAIN
+data/releases/fotmob_epl_2019_2025_v3_1/normalized/player_match_appearances.parquet,89392,24,season_label|season_id,"{""2019/2020"": 14034, ""2020/2021"": 14643, ""2021/2022"": 15162, ""2022/2023"": 15185, ""2023/2024"": 15180, ""2024/2025"": 15188}",14034,SEASON_GRAIN
+data/releases/fotmob_epl_2019_2025_v3_1/normalized/player_seasons.parquet,4052,10,season_label|season_id,"{""2019/2020"": 614, ""2020/2021"": 641, ""2021/2022"": 679, ""2022/2023"": 699, ""2023/2024"": 734, ""2024/2025"": 685}",614,SEASON_GRAIN
+data/releases/fotmob_epl_2019_2025_v3_1/normalized/player_team_seasons.parquet,4135,9,season_label|season_id,"{""2019/2020"": 621, ""2020/2021"": 652, ""2021/2022"": 691, ""2022/2023"": 723, ""2023/2024"": 746, ""2024/2025"": 702}",621,SEASON_GRAIN
+data/releases/fotmob_epl_2019_2025_v3_1/normalized/players.parquet,1757,11,,{},,NO_SEASON_COLUMN
+data/releases/fotmob_epl_2019_2025_v3_1/normalized/seasons.parquet,6,6,season_label|season_id,"{""2019/2020"": 1, ""2020/2021"": 1, ""2021/2022"": 1, ""2022/2023"": 1, ""2023/2024"": 1, ""2024/2025"": 1}",1,SEASON_GRAIN
+data/releases/fotmob_epl_2019_2025_v3_1/normalized/substitution_evidence_registry.parquet,89392,16,season_label|season_id,"{""2019/2020"": 14034, ""2020/2021"": 14643, ""2021/2022"": 15162, ""2022/2023"": 15185, ""2023/2024"": 15180, ""2024/2025"": 15188}",14034,SEASON_GRAIN
+data/releases/fotmob_epl_2019_2025_v3_1/normalized/teams.parquet,120,6,season_label|season_id,"{""2019/2020"": 20, ""2020/2021"": 20, ""2021/2022"": 20, ""2022/2023"": 20, ""2023/2024"": 20, ""2024/2025"": 20}",20,SEASON_GRAIN
+data/releases/fotmob_epl_2019_2025_v3_1/normalized/unverified_player_seasons.parquet,790,20,season_label|season_id,"{""2019/2020"": 99, ""2020/2021"": 117, ""2021/2022"": 142, ""2022/2023"": 145, ""2023/2024"": 164, ""2024/2025"": 123}",99,SEASON_GRAIN
+data/transfermarkt/curated/tm_r2_20260905/tm_clubs.parquet,796,9,,{},,NO_SEASON_COLUMN
+data/transfermarkt/curated/tm_r2_20260905/tm_competitions.parquet,65,12,,{},,NO_SEASON_COLUMN
+data/transfermarkt/curated/tm_r2_20260905/tm_player_club_seasons.parquet,7599,12,season_label|season_start_year,"{""2012/2013"": 536, ""2013/2014"": 559, ""2014/2015"": 527, ""2015/2016"": 560, ""2016/2017"": 543, ""2017/2018"": 528, ""2018/2019"": 506, ""2019/2020"": 519, ""2020/2021"": 530, ""2021/2022"": 517, ""2022/2023"": 569, ""2023/2024"": 580, ""2024/2025"": 574, ""2025/2026"": 551}",519,SEASON_GRAIN
+data/transfermarkt/curated/tm_r2_20260905/tm_players.parquet,50149,21,,{},,NO_SEASON_COLUMN
+data/transfermarkt/curated/tm_r2_20260905/tm_transfers.parquet,175165,14,,{},,NO_SEASON_COLUMN
+data/transfermarkt/curated/tm_r2_20260905/tm_valuation_history.parquet,656301,18,,{},,NO_SEASON_COLUMN
+data/transfermarkt/staging/tm_r2_20260905/stg_appearances.parquet,1894350,22,,{},,NO_SEASON_COLUMN
+data/transfermarkt/staging/tm_r2_20260905/stg_clubs.parquet,796,27,,{},,NO_SEASON_COLUMN
+data/transfermarkt/staging/tm_r2_20260905/stg_competitions.parquet,65,15,,{},,NO_SEASON_COLUMN
+data/transfermarkt/staging/tm_r2_20260905/stg_games.parquet,88958,33,season,"{""2005"": 64, ""2007"": 31, ""2009"": 64, ""2011"": 31, ""2012"": 5700, ""2013"": 5826, ""2014"": 5836, ""2015"": 5759, ""2016"": 5699, ""2017"": 5660, ""2018"": 5723, ""2019"": 5469, ""2020"": 5564, ""2021"": 5939, ""2022"": 6008, ""2023"": 5951, ""2024"": 10036, ""2025"": 9598}",5469,SEASON_GRAIN
+data/transfermarkt/staging/tm_r2_20260905/stg_player_valuations.parquet,656301,11,,{},,NO_SEASON_COLUMN
+data/transfermarkt/staging/tm_r2_20260905/stg_players.parquet,50149,37,,{},,NO_SEASON_COLUMN
+data/transfermarkt/staging/tm_r2_20260905/stg_transfers.parquet,175165,16,,{},,NO_SEASON_COLUMN
+data/phase_03/entity_resolution/matching_v2_1__reviews_none/matching_candidates.parquet,2807,34,,{},,NO_SEASON_COLUMN
+data/phase_03/entity_resolution/matching_v2_1__reviews_none/player_crosswalk.parquet,1343,21,,{},,NO_SEASON_COLUMN
+data/phase_03/targets/target_v1__matching_v2_1/player_season_target.parquet,3262,26,season|season_id,"{""2019/2020"": 515, ""2020/2021"": 524, ""2021/2022"": 537, ""2022/2023"": 554, ""2023/2024"": 570, ""2024/2025"": 562}",515,SEASON_GRAIN
+reports/phase_03/step_04/audit_4_1/evidence/target_quality_flags.parquet,3262,18,season,"{""2019/2020"": 515, ""2020/2021"": 524, ""2021/2022"": 537, ""2022/2023"": 554, ""2023/2024"": 570, ""2024/2025"": 562}",515,SEASON_GRAIN
+reports/phase_03/step_04/audit_4_1/evidence/temporal_alignment_by_player_season.parquet,3262,27,season,"{""2019/2020"": 515, ""2020/2021"": 524, ""2021/2022"": 537, ""2022/2023"": 554, ""2023/2024"": 570, ""2024/2025"": 562}",515,SEASON_GRAIN
+data/releases/fb69_player_season_integrated_v1/player_season_integrated_v1.parquet,3262,180,season|season_id,"{""2019/2020"": 515, ""2020/2021"": 524, ""2021/2022"": 537, ""2022/2023"": 554, ""2023/2024"": 570, ""2024/2025"": 562}",515,SEASON_GRAIN
+data/releases/fb69_player_season_integrated_v1/player_team_season_evidence.parquet,3342,9,season,"{""2019/2020"": 522, ""2020/2021"": 535, ""2021/2022"": 549, ""2022/2023"": 575, ""2023/2024"": 582, ""2024/2025"": 579}",522,SEASON_GRAIN

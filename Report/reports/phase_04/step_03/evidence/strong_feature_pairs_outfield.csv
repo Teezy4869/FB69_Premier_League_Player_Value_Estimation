@@ -1,0 +1,55 @@
+feature_a,feature_b,spearman,pearson_raw,n_pairs,relation
+m_starts,m_minutes_played,0.99451,0.995655,2541,playing-time measures
+m_expected_goals,m_non_penalty_xg,0.991967,0.98221,2138,"overlapping definition (shots, goals and xG)"
+m_accurate_passes,m_touches,0.971237,0.955312,2224,same metric family (Passing and possession)
+m_appearances,m_minutes_played,0.941396,0.925357,2541,playing-time measures
+m_touches,m_recoveries,0.938591,0.900289,2220,season totals of different actions (shared dependence on playing time)
+m_minutes_played,m_touches,0.931677,0.896607,2224,volume metric scales with playing time
+m_expected_assists,m_chances_created,0.929408,0.939108,2089,overlapping definition (chance creation and xA)
+m_shots,m_shots_on_target,0.928779,0.952233,1898,"overlapping definition (shots, goals and xG)"
+m_shots,m_expected_goals,0.92587,0.908065,2139,"overlapping definition (shots, goals and xG)"
+m_shots,m_non_penalty_xg,0.925381,0.905562,2138,"overlapping definition (shots, goals and xG)"
+m_appearances,m_starts,0.925319,0.909574,2541,playing-time measures
+m_starts,m_touches,0.924294,0.888246,2224,volume metric scales with playing time
+m_shots_on_target,m_expected_goals_on_target,0.917793,0.949171,1884,"overlapping definition (shots, goals and xG)"
+m_minutes_played,m_duels_won,0.914538,0.87612,2222,volume metric scales with playing time
+m_expected_goals,m_expected_goals_on_target,0.91024,0.964565,1887,"overlapping definition (shots, goals and xG)"
+m_starts,m_duels_won,0.906765,0.869301,2222,volume metric scales with playing time
+m_shots_on_target,m_expected_goals,0.905609,0.936737,1898,"overlapping definition (shots, goals and xG)"
+m_minutes_played,m_recoveries,0.903787,0.866125,2220,volume metric scales with playing time
+m_shots_per90,m_shots_on_target_per90,0.902646,0.879709,1898,same metric family (Attacking)
+m_shots_on_target,m_non_penalty_xg,0.900757,0.929599,1897,"overlapping definition (shots, goals and xG)"
+m_starts,m_recoveries,0.898157,0.861285,2220,volume metric scales with playing time
+m_non_penalty_xg,m_expected_goals_on_target,0.896198,0.938146,1886,"overlapping definition (shots, goals and xG)"
+m_shots,m_touches_opposition_box,0.89565,0.891767,2165,same metric family (Attacking)
+m_accurate_passes,m_recoveries,0.89383,0.819023,2220,season totals of different actions (shared dependence on playing time)
+m_touches_opposition_box,m_non_penalty_xg,0.886618,0.87784,2118,season totals of different actions (shared dependence on playing time)
+m_accurate_passes,m_accurate_long_passes,0.884437,0.818677,2132,same metric family (Passing and possession)
+m_touches_opposition_box,m_expected_goals,0.880596,0.865485,2119,season totals of different actions (shared dependence on playing time)
+m_goals,m_expected_goals_on_target,0.879388,0.95152,1887,"overlapping definition (shots, goals and xG)"
+m_tackles,m_recoveries,0.875907,0.824749,2200,same metric family (Defensive)
+m_recoveries,m_duels_won,0.864436,0.802711,2219,same metric family (Defensive)
+m_touches,m_duels_won,0.864322,0.782598,2222,season totals of different actions (shared dependence on playing time)
+m_accurate_long_passes,m_touches,0.855738,0.794811,2132,same metric family (Passing and possession)
+m_appearances,m_duels_won,0.854842,0.813024,2222,volume metric scales with playing time
+m_minutes_played,m_accurate_passes,0.851817,0.774278,2224,volume metric scales with playing time
+m_goals,m_expected_goals,0.845865,0.929582,2246,"overlapping definition (shots, goals and xG)"
+m_starts,m_accurate_passes,0.845621,0.765692,2224,volume metric scales with playing time
+m_shots_on_target,m_touches_opposition_box,0.84435,0.870595,1891,same metric family (Attacking)
+m_shots,m_expected_goals_on_target,0.839665,0.881381,1887,"overlapping definition (shots, goals and xG)"
+m_interceptions,m_recoveries,0.839139,0.80234,2122,same metric family (Defensive)
+m_touches,m_tackles,0.837904,0.752356,2203,season totals of different actions (shared dependence on playing time)
+m_tackles,m_duels_won,0.837299,0.790689,2203,same metric family (Defensive)
+m_goals,m_non_penalty_xg,0.836565,0.908725,2138,"overlapping definition (shots, goals and xG)"
+m_blocked_shots,m_clearances,0.836301,0.865834,430,same metric family (Defensive)
+m_duels_won,m_fouls_committed,0.835388,0.800221,2184,season totals of different actions (shared dependence on playing time)
+m_goals,m_shots_on_target,0.828314,0.916936,1898,"overlapping definition (shots, goals and xG)"
+m_accurate_long_passes,m_recoveries,0.819046,0.734604,2131,season totals of different actions (shared dependence on playing time)
+m_appearances,m_touches,0.818221,0.774597,2224,volume metric scales with playing time
+m_big_chances_created,m_expected_assists,0.815166,0.877069,1531,overlapping definition (chance creation and xA)
+m_appearances,m_expected_assists,0.813274,0.633196,2505,volume metric scales with playing time
+m_touches,m_interceptions,0.813152,0.749339,2123,season totals of different actions (shared dependence on playing time)
+m_tackles,m_interceptions,0.810721,0.743686,2111,same metric family (Defensive)
+m_appearances,m_recoveries,0.80577,0.760698,2220,volume metric scales with playing time
+m_accurate_passes,m_interceptions,0.805114,0.693137,2123,season totals of different actions (shared dependence on playing time)
+m_goals,m_shots,0.801896,0.863696,2224,"overlapping definition (shots, goals and xG)"

@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0",
+  "generated_on": "2026-11-04",
+  "step": "phase_3_step_1",
+  "code_version": null,
+  "code_version_note": "Project is not a git repository.",
+  "gates": {
+    "G0": {
+      "decision": "CONDITIONAL_PASS",
+      "step_prompt_criteria_met": "7 of 7",
+      "remaining_condition": "CLAUDE.md section 12 also requires six verified season cutoff configurations. Dates are evidenced and match frozen fixtures, but only 2 of 6 have a direct official league source and seasons.yaml is not created yet (Step 4 deliverable).",
+      "blocks": ["Step 4"],
+      "does_not_block": ["Step 2", "Step 3"]
+    },
+    "G1": {
+      "decision": "CONDITIONAL_PASS",
+      "conditions_requiring_owner_approval": [
+        "Approve the specific source and snapshot below.",
+        "Accept the rights position: CC0 is declared by the dataset maintainer, while Transfermarkt's own terms could not be retrieved and upstream rights are unverified.",
+        "Accept that the data was originally collected by the maintainer's scraper and API pipelines, with FB69 doing no scraping."
+      ],
+      "blocks": ["Step 2"]
+    }
+  },
+  "fotmob_input": {
+    "path": "data/releases/fotmob_epl_2019_2025_v3_1",
+    "manifest_sha256": "9aa00b227b2dbf9a6004258ff94c25e825d7c5cfd45a365cb94f5f98863fbf93",
+    "population_table": "curated/confirmed_appeared_player_seasons.parquet",
+    "population_table_sha256": "7be1751966e8a377a1b8dedb275e903e0d76187ff11dc5503429a620d8dcd890",
+    "confirmed_rows_expected": 3262,
+    "confirmed_rows_actual": 3262,
+    "unique_player_season_keys": 3262,
+    "unique_players": 1343,
+    "unverified_rows": 790,
+    "release_quality_status": "CONDITIONAL_GO"
+  },
+  "selected_source": {
+    "status": "RECOMMENDED_PENDING_OWNER_APPROVAL",
+    "name": "dcaribou/transfermarkt-datasets",
+    "repository": "https://github.com/dcaribou/transfermarkt-datasets",
+    "repository_commit": "e44f186d6f06dd8452aaf54c7921ba66c961f637",
+    "license_declared": "CC0-1.0",
+    "update_status": "paused; player_valuations end 2026-06-12",
+    "distribution": "Cloudflare R2 gzipped CSV files",
+    "base_url": "https://pub-e682421888d945d684bcae8890b0ec20.r2.dev/data/",
+    "mutable_urls": true,
+    "pin_method": "SHA-256 comparison at download; stop on mismatch",
+    "fallback_not_automatic": "Kaggle davidcariboo/player-scores version 679",
+    "files": [
+      {"name": "player_valuations.csv.gz", "bytes": 7197935, "sha256": "608e32e5ad2231074f3505c469ad727be66d7e6efda6af918afd85379439631d", "rows": 656301},
+      {"name": "players.csv.gz", "bytes": 4389958, "sha256": "d22e407981d5b51a79bf8ff59835729f3526f7dc3495a6d8ed2f852ed2e86403", "rows": 50149},
+      {"name": "transfers.csv.gz", "bytes": 5809514, "sha256": "90326983daf7e6ac7aabdfe62b90936d9bf1dd2171e53dec75c3751eb1620a83", "rows": 175165},
+      {"name": "clubs.csv.gz", "bytes": 51281, "sha256": "aa57ab56e87faffaea1e8697439a32caf10116d8f2f2dfb3a57193c0bb1d641b", "rows": 796},
+      {"name": "competitions.csv.gz", "bytes": 2242, "sha256": "8924ddfbc0e9989f4a42a3c32ebb6faa671614625086d7fa84353f955352ea88", "rows": 65},
+      {"name": "appearances.csv.gz", "bytes": 45253638, "sha256": "e096c2b158fc3d52c4550526c4d4850dd62f31007652f4bcae112eadb1646802", "rows": 1894350},
+      {"name": "games.csv.gz", "bytes": 4995595, "sha256": null, "rows": null, "etag": "9d56854283f5d47601688ffbd3baaedd", "note": "HEAD only; not downloaded or inspected in Step 1"}
+    ]
+  },
+  "feasibility": {
+    "historical_valuations": "VERIFIED_FROM_RECORDS",
+    "valuation_date_range": ["2000-01-20", "2026-06-12"],
+    "duplicate_player_date_keys": 0,
+    "six_season_coverage_tm_epl_population": {
+      "scope": "TM players with a GB1 appearance in the season window; not the FotMob population",
+      "player_seasons": 3228,
+      "with_valuation_on_or_before_cutoff": 3169,
+      "coverage_pct": 98.2,
+      "only_after_cutoff": 47,
+      "no_valuation": 12
+    },
+    "staleness_days_bins": {"0-30": 26, "31-60": 108, "61-90": 1030, "91-180": 1626, ">180": 379},
+    "fotmob_population_target_coverage": "UNKNOWN_UNTIL_STEP_4",
+    "identity": {
+      "shared_id_bridge": false,
+      "tm_epl_dob_missing": 0,
+      "fotmob_dob_missing": 0,
+      "cross_source_match_rate": "UNKNOWN_UNTIL_STEP_3"
+    }
+  },
+  "not_verified": [
+    "DuckDB catalog and column types",
+    "Transfermarkt terms of use",
+    "games, club_games, game_events, game_lineups schemas",
+    "Content equality with Kaggle v679 (sizes match exactly for 6 files; hashes not compared)",
+    "EUR unit beyond the source's own column name and documentation",
+    "Cause of the TM appearance shortfall in 2019/20 to 2021/22"
+  ],
+  "owner_decisions_required": {
+    "before_step_2": ["D1 source and snapshot approval", "D2 rights position", "D3 project-local .venv and duckdb dependency"],
+    "before_step_4": ["D4 target timing issue"],
+    "optional": ["D5 git initialization"]
+  }
+}

@@ -1,0 +1,28 @@
+{
+ "files_compared": 411,
+ "changed": [],
+ "removed": [],
+ "added": [
+  "src/phase3/step4_1_audit.py",
+  "src/phase3/step4_1_followups.py"
+ ],
+ "protected_file_count": 10,
+ "protected_byte_identical_to_backup": {
+  "data/phase_02b1/remediation/player_match_appearances_provisional.parquet": true,
+  "data/phase_02b1/remediation/complete_player_season_classification_v3.parquet": true,
+  "data/phase_02b1/remediation/confirmed_appeared_player_seasons_v3.parquet": true,
+  "data/phase_02b1/remediation/unverified_player_seasons_v3.parquet": true,
+  "data/phase_02b1/remediation/non_appeared_player_seasons_v3.parquet": true,
+  "data/phase_02b1/remediation/substitution_evidence_registry.parquet": true,
+  "reports/phase_02b1_remediation/appearance_resolution_audit.csv": true,
+  "reports/phase_02b1_remediation/appearance_coverage_v3.csv": true,
+  "reports/phase_02b1_remediation/population_reconciliation_v3.csv": true,
+  "data/phase_02b1/remediation/curated/player_season_metrics_wide_provisional.parquet": true
+ },
+ "all_protected_identical": true,
+ "fotmob_release": {
+  "files_checked": 38,
+  "mismatches": 0,
+  "manifest_sha256": "9aa00b227b2dbf9a6004258ff94c25e825d7c5cfd45a365cb94f5f98863fbf93"
+ }
+}

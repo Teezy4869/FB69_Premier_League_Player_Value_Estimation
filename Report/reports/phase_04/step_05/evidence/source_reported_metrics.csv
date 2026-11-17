@@ -1,0 +1,9 @@
+metric,applicable_rows,values,null_pct,outside_0_100,values_at_0_or_100_pct,check_result,verifiable_in_dataset
+m_aerials_won_percent,2541,2150,15.3876,0,1.16279,Denominator (aerial duels contested) not in the dataset; not verifiable,False
+m_cross_accuracy,2541,1600,37.0327,0,2.1875,Denominator (crosses attempted) not in the dataset; not verifiable,False
+m_duels_won_percent,2541,2222,12.5541,0,0.135014,Denominator (duels contested) not in the dataset; not verifiable,False
+m_long_ball_accuracy,2541,2132,16.096,0,1.92308,Denominator (long balls attempted) not in the dataset; not verifiable,False
+m_passing_accuracy,2541,2224,12.4754,0,0.044964,Denominator (passes attempted) not in the dataset; not verifiable,False
+m_save_percentage,206,197,4.36893,0,1.01523,Consistent with saves / (saves + goals conceded) on every GK row (max difference 0.05 pp),True
+m_clean_sheets,206,198,3.8835,,,Bound clean sheets <= appearances holds; per-match clean sheets not in the dataset,False
+m_goals_conceded_per90,206,198,3.8835,,,Identical to goals conceded x 90 / lineup minutes on every GK row with a value,True

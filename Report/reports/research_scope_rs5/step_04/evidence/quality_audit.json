@@ -1,0 +1,443 @@
+{
+ "structural": {
+  "rows": 2747,
+  "columns": 175,
+  "duplicate_keys": 0,
+  "duplicate_full_rows": 0,
+  "invalid_values": {
+   "negative_metric_values": {},
+   "percent_outside_0_100": {},
+   "rating_outside_0_10": 0,
+   "starts_greater_than_appearances": 6,
+   "appearances_over_38": 0,
+   "minutes_per_appearance_over_120": 0,
+   "shots_on_target_greater_than_shots": 0,
+   "goals_greater_than_shots": 0,
+   "age_outside_15_45": 0,
+   "target_not_positive": 0,
+   "m_appearances_differs_from_confirmed_appearances": 0
+  },
+  "categories": {
+   "position_group_season": {
+    "DEF": 935,
+    "MID": 839,
+    "FWD": 767,
+    "GK": 206
+   },
+   "target_status": {
+    "VALID": 1170,
+    "STALE_TARGET": 1527,
+    "TARGET_MISSING": 50
+   },
+   "multi_club_class": {
+    "SINGLE_CLUB": 2674,
+    "MULTI_CLUB_CONFIRMED_APPEARANCES": 54,
+    "MULTI_CLUB_SQUAD_ONLY": 19
+   },
+   "temporal_alignment_class": {
+    "MIXED": 2136,
+    "ALL_GAMES_ON_OR_BEFORE_VALUATION": 337,
+    "NO_VALUATION_SELECTED": 50,
+    "ALL_GAMES_AFTER_VALUATION": 224
+   },
+   "crosswalk_status": {
+    "AUTO_EXACT": 2663,
+    "AUTO_ADJUDICATED": 82,
+    "REVIEW_REQUIRED": 2
+   },
+   "target_currency": {
+    "EUR": 2697,
+    "NULL": 50
+   }
+  },
+  "dtypes": {
+   "canonical_player_id": "str",
+   "season": "str",
+   "season_id": "str",
+   "fotmob_player_id": "str",
+   "transfermarkt_player_id": "str",
+   "fotmob_player_name": "str",
+   "fotmob_profile_name": "str",
+   "fotmob_birth_date": "str",
+   "nationality_profile_present_day": "str",
+   "population_status": "str",
+   "population_category": "str",
+   "classification_reason": "str",
+   "profile_status": "str",
+   "confirmed_appearance_count": "int64",
+   "started_match_count": "int64",
+   "sub_in_match_count": "int64",
+   "unresolved_substitute_count": "int64",
+   "confirmed_team_ids": "str",
+   "confirmed_team_count": "int64",
+   "associated_team_count": "int64",
+   "associated_team_ids": "str",
+   "associated_team_names": "str",
+   "is_multi_club": "bool",
+   "multi_club_status": "str",
+   "multi_club_class": "str",
+   "age_at_season_end_years": "float64",
+   "position_group_season": "str",
+   "target_market_value": "float64",
+   "target_currency": "str",
+   "target_status": "str",
+   "target_missing_reason": "str",
+   "target_valuation_date": "object",
+   "target_season_end_date": "object",
+   "target_valuation_age_days": "float64",
+   "target_staleness_bucket": "str",
+   "target_usable": "bool",
+   "target_source_record_reference": "str",
+   "target_source_file_sha256": "str",
+   "target_source_row_number": "float64",
+   "target_selection_rule_version": "str",
+   "target_audit_previous_value": "float64",
+   "target_audit_previous_valuation_date": "object",
+   "target_audit_ratio_to_previous_value": "float64",
+   "crosswalk_status": "str",
+   "crosswalk_method": "str",
+   "identity_evidence_tier": "str",
+   "identity_rs5_validation_label": "str",
+   "identity_review_status": "str",
+   "identity_human_reviewed": "bool",
+   "identity_adjudicator": "str",
+   "identity_adjudication_confidence": "str",
+   "identity_adjudication_basis": "str",
+   "matching_version": "str",
+   "identity_match_status": "str",
+   "temporal_player_games_in_season": "int32",
+   "temporal_player_games_on_valuation_date": "float64",
+   "temporal_player_games_after_valuation": "float64",
+   "temporal_league_games_in_season": "int32",
+   "temporal_league_games_after_valuation": "float64",
+   "temporal_minutes_before_or_on_valuation": "float64",
+   "temporal_minutes_after_valuation": "float64",
+   "temporal_alignment_class": "str",
+   "missing_feature_count": "int32",
+   "dataset_version": "str",
+   "research_scope_id": "str",
+   "fotmob_source_version": "str",
+   "transfermarkt_source_version": "str",
+   "provenance_profile_raw_path": "str",
+   "provenance_stats_raw_path": "str"
+  }
+ },
+ "completeness": {
+  "null_metric_cells": 48043,
+  "metric_cells": 145591,
+  "null_metric_cell_pct": 33.0,
+  "missing_feature_count_distribution": {
+   "count": 2747.0,
+   "mean": 17.49,
+   "std": 12.37,
+   "min": 8.0,
+   "25%": 10.0,
+   "50%": 12.0,
+   "75%": 17.0,
+   "max": 52.0
+  },
+  "mean_null_metrics_usable_target": 17.03,
+  "mean_null_metrics_missing_target": 42.1,
+  "mean_null_metrics_by_position": {
+   "DEF": 15.01,
+   "FWD": 17.92,
+   "GK": 34.49,
+   "MID": 15.69
+  },
+  "mean_null_metrics_by_season": {
+   "2020/2021": 17.41,
+   "2021/2022": 17.14,
+   "2022/2023": 17.91,
+   "2023/2024": 18.29,
+   "2024/2025": 16.68
+  },
+  "per_player_mean_null_metrics_quantiles": {
+   "0.1": 9.8,
+   "0.25": 10.47,
+   "0.5": 13.0,
+   "0.75": 28.0,
+   "0.9": 46.0
+  },
+  "null_pct_by_metric_group": {
+   "ATTACK": 22.67,
+   "DEFENDING": 29.86,
+   "EXPECTED": 18.2,
+   "GENERAL": 7.96,
+   "GOALKEEPING": 93.19,
+   "PASSING": 28.63
+  },
+  "missing_targets": 50,
+  "missing_target_reasons": {
+   "ONLY_VALUATIONS_AFTER_CUTOFF": 37,
+   "NO_VALUATION_HISTORY": 11,
+   "NO_ELIGIBLE_IDENTITY_MATCH": 2
+  },
+  "metrics_without_values_in_some_season": [
+   "clearances",
+   "clearances_per90",
+   "key_passes"
+  ]
+ },
+ "statistical": {
+  "season_level_shifts": [
+   {
+    "metric": "clearances",
+    "coverage_pct_by_season": [
+     0.0,
+     6.1,
+     0.0,
+     8.9,
+     79.5
+    ],
+    "median_by_season": [
+     null,
+     21.0,
+     null,
+     20.0,
+     21.0
+    ],
+    "coverage_range_pp": 79.5,
+    "median_max_over_min": 1.05
+   },
+   {
+    "metric": "clearances_per90",
+    "coverage_pct_by_season": [
+     0.0,
+     6.1,
+     0.0,
+     8.9,
+     79.5
+    ],
+    "median_by_season": [
+     null,
+     1.364,
+     null,
+     1.529,
+     1.614
+    ],
+    "coverage_range_pp": 79.5,
+    "median_max_over_min": 1.18
+   }
+  ],
+  "extreme_values_total": 885,
+  "target_by_season": {
+   "2020/2021": {
+    "count": 515.0,
+    "mean": 16877961.2,
+    "std": 19080975.9,
+    "min": 100000.0,
+    "25%": 4000000.0,
+    "50%": 10000000.0,
+    "75%": 22000000.0,
+    "max": 120000000.0
+   },
+   "2021/2022": {
+    "count": 528.0,
+    "mean": 17205492.4,
+    "std": 18671994.9,
+    "min": 200000.0,
+    "25%": 3500000.0,
+    "50%": 10000000.0,
+    "75%": 22000000.0,
+    "max": 100000000.0
+   },
+   "2022/2023": {
+    "count": 542.0,
+    "mean": 19610655.0,
+    "std": 19540143.1,
+    "min": 100000.0,
+    "25%": 6000000.0,
+    "50%": 15000000.0,
+    "75%": 25000000.0,
+    "max": 170000000.0
+   },
+   "2023/2024": {
+    "count": 567.0,
+    "mean": 20129276.9,
+    "std": 21787138.1,
+    "min": 100000.0,
+    "25%": 4500000.0,
+    "50%": 13000000.0,
+    "75%": 28000000.0,
+    "max": 180000000.0
+   },
+   "2024/2025": {
+    "count": 545.0,
+    "mean": 22244816.5,
+    "std": 22237818.8,
+    "min": 200000.0,
+    "25%": 8000000.0,
+    "50%": 17000000.0,
+    "75%": 30000000.0,
+    "max": 200000000.0
+   }
+  },
+  "age_by_season": {
+   "2020/2021": {
+    "count": 524.0,
+    "mean": 26.82,
+    "std": 4.33,
+    "min": 17.16,
+    "25%": 23.61,
+    "50%": 26.85,
+    "75%": 29.86,
+    "max": 39.65
+   },
+   "2021/2022": {
+    "count": 537.0,
+    "mean": 26.77,
+    "std": 4.4,
+    "min": 17.59,
+    "25%": 23.41,
+    "50%": 26.58,
+    "75%": 30.03,
+    "max": 40.65
+   },
+   "2022/2023": {
+    "count": 554.0,
+    "mean": 26.62,
+    "std": 4.42,
+    "min": 16.19,
+    "25%": 23.41,
+    "50%": 26.38,
+    "75%": 29.91,
+    "max": 38.68
+   },
+   "2023/2024": {
+    "count": 570.0,
+    "mean": 26.22,
+    "std": 4.47,
+    "min": 16.77,
+    "25%": 22.71,
+    "50%": 26.14,
+    "75%": 29.43,
+    "max": 39.66
+   },
+   "2024/2025": {
+    "count": 562.0,
+    "mean": 26.35,
+    "std": 4.52,
+    "min": 15.87,
+    "25%": 23.13,
+    "50%": 26.12,
+    "75%": 29.14,
+    "max": 40.1
+   }
+  }
+ },
+ "reliability": {
+  "status_cells": {
+   "CONFLICTING": 36,
+   "MISSING": 27361,
+   "OBSERVED": 91289,
+   "OBSERVED_FALLBACK_LEADERBOARD": 402,
+   "OBSERVED_SOURCE_REVISED": 95,
+   "OBSERVED_ZERO": 5762,
+   "UNSUPPORTED": 2747,
+   "UNVERIFIED_POSITION": 17899
+  },
+  "unexpected_status_values": [],
+  "metric_value_status_inconsistencies": {},
+  "rows_with_unresolved_substitute_matches": 2120,
+  "unresolved_substitute_matches": 16814,
+  "fotmob_unknown_player_match_records_in_scope": 20184,
+  "unverified_player_seasons_outside_population": 691,
+  "rows_with_any_conflicting_metric": 34,
+  "profile_status": {
+   "VERIFIED_ID": 2747
+  },
+  "birth_date_missing": 0
+ },
+ "feature_window_recheck": {
+  "rows": 265,
+  "identical_to_historical_in_scope_rows": true,
+  "seasons": [
+   "2020/2021",
+   "2021/2022",
+   "2022/2023",
+   "2023/2024",
+   "2024/2025"
+  ]
+ },
+ "indirect_window_evidence": {
+  "accurate_long_passes_per90": {
+   "check": "equals accurate_long_passes * 90 / minutes_played (tolerance 0.01 + 2%)",
+   "compared": 2132,
+   "agree_pct": 100.0,
+   "consistent": true
+  },
+  "accurate_passes_per90": {
+   "check": "equals accurate_passes * 90 / minutes_played (tolerance 0.01 + 2%)",
+   "compared": 2223,
+   "agree_pct": 100.0,
+   "consistent": true
+  },
+  "blocks_per90": {
+   "check": "equals blocked_shots * 90 / minutes_played (tolerance 0.01 + 2%)",
+   "compared": 1794,
+   "agree_pct": 100.0,
+   "consistent": true
+  },
+  "clearances_per90": {
+   "check": "equals clearances * 90 / minutes_played (tolerance 0.01 + 2%)",
+   "compared": 531,
+   "agree_pct": 100.0,
+   "consistent": true
+  },
+  "goals_conceded_per90": {
+   "check": "equals goals_conceded * 90 / minutes_played",
+   "compared": 0,
+   "agree_pct": null,
+   "consistent": false,
+   "note": "No row has both the rate and minutes (goalkeepers mostly lack minutes)"
+  },
+  "interceptions_per90": {
+   "check": "equals interceptions * 90 / minutes_played (tolerance 0.01 + 2%)",
+   "compared": 2123,
+   "agree_pct": 100.0,
+   "consistent": true
+  },
+  "recoveries_per90": {
+   "check": "equals recoveries * 90 / minutes_played (tolerance 0.01 + 2%)",
+   "compared": 2220,
+   "agree_pct": 100.0,
+   "consistent": true
+  },
+  "shots_on_target_per90": {
+   "check": "equals shots_on_target * 90 / minutes_played (tolerance 0.01 + 2%)",
+   "compared": 1898,
+   "agree_pct": 100.0,
+   "consistent": true
+  },
+  "shots_per90": {
+   "check": "equals shots * 90 / minutes_played (tolerance 0.01 + 2%)",
+   "compared": 2224,
+   "agree_pct": 100.0,
+   "consistent": true
+  },
+  "tackles_per90": {
+   "check": "equals tackles * 90 / minutes_played (tolerance 0.01 + 2%)",
+   "compared": 2203,
+   "agree_pct": 100.0,
+   "consistent": true
+  },
+  "starts": {
+   "check": "equals confirmed STARTED lineup count",
+   "compared": 2746,
+   "agree_pct": 99.53,
+   "consistent": true
+  },
+  "yellow_cards": {
+   "check": "within 1 of Transfermarkt EPL total (independent source)",
+   "compared": 2412,
+   "agree_pct": 95.9,
+   "consistent": true
+  },
+  "red_cards": {
+   "check": "within 1 of Transfermarkt EPL total (independent source)",
+   "compared": 2412,
+   "agree_pct": 99.92,
+   "consistent": true
+  }
+ }
+}

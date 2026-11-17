@@ -1,0 +1,5 @@
+id,severity,status,affected,description,disposition
+FAF2-01,MEDIUM,OPEN,23604 player-matches; 790 player-seasons,Substitute non-entry lacks independently complete source coverage; retained as UNKNOWN/UNVERIFIED.,Separate from confirmed population; controlled integration may proceed with explicit exclusion/flag.
+FAF2-02,MEDIUM,OPEN,36 metric conflicts,Definition/source conflicts remain unresolved and curated values are null.,Retain raw values and conflict registry; exclude from unjustified curated use.
+FAF2-03,MEDIUM,OPEN,12 xG/xA season-metric windows,No independently verified observation start/end dates; 2019/20 partial coverage suspected.,Use coverage-quality indicator; do not treat values as verified full-season totals.
+FAF2-04,LOW,OPEN,legacy v3 generator,Historical generator retains unsupported zero-UNKNOWN assumptions.,Keep solely for v3 reproduction; use corrected v3.1 generator for future builds.

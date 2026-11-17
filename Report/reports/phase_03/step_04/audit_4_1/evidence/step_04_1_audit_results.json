@@ -1,0 +1,2658 @@
+{
+ "reproduction": {
+  "input_hash_mismatches": [],
+  "output_hash_mismatches": [],
+  "code_hash_mismatches": [],
+  "matching_versions_in_target": [
+   "matching_v2_1"
+  ],
+  "rule_versions_in_target": [
+   "latest_valid_on_or_before_season_end_v1"
+  ],
+  "cutoff_checks": [
+   {
+    "season": "2019/2020",
+    "cutoff": "2020-07-26",
+    "last_fotmob_match": "2020-07-26",
+    "target_min": "2020-07-26",
+    "target_max": "2020-07-26"
+   },
+   {
+    "season": "2020/2021",
+    "cutoff": "2021-05-23",
+    "last_fotmob_match": "2021-05-23",
+    "target_min": "2021-05-23",
+    "target_max": "2021-05-23"
+   },
+   {
+    "season": "2021/2022",
+    "cutoff": "2022-05-22",
+    "last_fotmob_match": "2022-05-22",
+    "target_min": "2022-05-22",
+    "target_max": "2022-05-22"
+   },
+   {
+    "season": "2022/2023",
+    "cutoff": "2023-05-28",
+    "last_fotmob_match": "2023-05-28",
+    "target_min": "2023-05-28",
+    "target_max": "2023-05-28"
+   },
+   {
+    "season": "2023/2024",
+    "cutoff": "2024-05-19",
+    "last_fotmob_match": "2024-05-19",
+    "target_min": "2024-05-19",
+    "target_max": "2024-05-19"
+   },
+   {
+    "season": "2024/2025",
+    "cutoff": "2025-05-25",
+    "last_fotmob_match": "2025-05-25",
+    "target_min": "2025-05-25",
+    "target_max": "2025-05-25"
+   }
+  ],
+  "grain": {
+   "n_rows": 3262,
+   "keys": 3262,
+   "players": 1343
+  },
+  "population_diff": {
+   "missing_from_target": 0,
+   "extra_in_target": 0
+  },
+  "recomputation": {
+   "compared": 3262,
+   "date_diffs": 0,
+   "value_diffs": 0,
+   "age_diffs": 0,
+   "lineage_diffs": 0,
+   "id_diffs": 0,
+   "status_diffs": 0,
+   "same_day_multiple": 0
+  },
+  "future_selected": 0,
+  "status_counts": {
+   "STALE_TARGET": 2024,
+   "TARGET_MISSING": 67,
+   "VALID": 1171
+  },
+  "missing_reasons": {
+   "ONLY_VALUATIONS_AFTER_CUTOFF": 51,
+   "NO_VALUATION_HISTORY": 13,
+   "NO_ELIGIBLE_IDENTITY_MATCH": 3
+  },
+  "status_by_season": [
+   {
+    "season": "2019/2020",
+    "n": 515,
+    "valid": 1,
+    "stale": 497,
+    "missing": 17,
+    "b0": 1,
+    "b31": 0,
+    "b61": 0,
+    "b91": 494,
+    "b181": 3,
+    "med_age": 109.0,
+    "max_age": 229
+   },
+   {
+    "season": "2020/2021",
+    "n": 524,
+    "valid": 500,
+    "stale": 15,
+    "missing": 9,
+    "b0": 5,
+    "b31": 4,
+    "b61": 491,
+    "b91": 8,
+    "b181": 7,
+    "med_age": 66.0,
+    "max_age": 731
+   },
+   {
+    "season": "2021/2022",
+    "n": 537,
+    "valid": 116,
+    "stale": 412,
+    "missing": 9,
+    "b0": 17,
+    "b31": 95,
+    "b61": 4,
+    "b91": 398,
+    "b181": 14,
+    "med_age": 150.0,
+    "max_age": 586
+   },
+   {
+    "season": "2022/2023",
+    "n": 554,
+    "valid": 179,
+    "stale": 363,
+    "missing": 12,
+    "b0": 2,
+    "b31": 4,
+    "b61": 173,
+    "b91": 8,
+    "b181": 355,
+    "med_age": 206.0,
+    "max_age": 347
+   },
+   {
+    "season": "2023/2024",
+    "n": 570,
+    "valid": 155,
+    "stale": 412,
+    "missing": 3,
+    "b0": 1,
+    "b31": 5,
+    "b61": 149,
+    "b91": 412,
+    "b181": 0,
+    "med_age": 152.0,
+    "max_age": 166
+   },
+   {
+    "season": "2024/2025",
+    "n": 562,
+    "valid": 220,
+    "stale": 325,
+    "missing": 17,
+    "b0": 2,
+    "b31": 5,
+    "b61": 213,
+    "b91": 314,
+    "b181": 11,
+    "med_age": 160.0,
+    "max_age": 724
+   }
+  ],
+  "usable_pct": 97.94604537093808,
+  "over_90_pct": 63.3489827856025,
+  "manifest_summary_matches": {
+   "usable": [
+    3195
+   ],
+   "VALID": [
+    1171
+   ],
+   "STALE_TARGET": [
+    2024
+   ],
+   "TARGET_MISSING": [
+    67
+   ],
+   "pct_older_than_90_days": [
+    63.35
+   ],
+   "pct_player_games_after_valuation": [
+    41.09
+   ],
+   "mean_pct_league_games_after_valuation": [
+    41.52
+   ]
+  }
+ },
+ "concentration": {
+  "source_columns": [
+   "player_id",
+   "date",
+   "market_value_in_eur",
+   "current_club_name",
+   "current_club_id",
+   "player_club_domestic_competition_id"
+  ],
+  "top_dates_all_players": [
+   {
+    "d": "2020-04-08",
+    "n": 12111,
+    "competitions": 32
+   },
+   {
+    "d": "2015-07-01",
+    "n": 4207,
+    "competitions": 31
+   },
+   {
+    "d": "2016-07-15",
+    "n": 2979,
+    "competitions": 30
+   },
+   {
+    "d": "2026-06-04",
+    "n": 2300,
+    "competitions": 6
+   },
+   {
+    "d": "2023-12-19",
+    "n": 1949,
+    "competitions": 6
+   },
+   {
+    "d": "2026-05-28",
+    "n": 1890,
+    "competitions": 5
+   },
+   {
+    "d": "2020-12-29",
+    "n": 1838,
+    "competitions": 22
+   },
+   {
+    "d": "2023-12-20",
+    "n": 1833,
+    "competitions": 6
+   },
+   {
+    "d": "2023-06-26",
+    "n": 1782,
+    "competitions": 22
+   },
+   {
+    "d": "2025-12-15",
+    "n": 1749,
+    "competitions": 7
+   },
+   {
+    "d": "2021-12-30",
+    "n": 1727,
+    "competitions": 24
+   },
+   {
+    "d": "2023-12-21",
+    "n": 1671,
+    "competitions": 5
+   },
+   {
+    "d": "2021-12-28",
+    "n": 1651,
+    "competitions": 26
+   },
+   {
+    "d": "2004-10-04",
+    "n": 1647,
+    "competitions": 18
+   },
+   {
+    "d": "2020-10-08",
+    "n": 1638,
+    "competitions": 27
+   }
+  ],
+  "rows_around_2020_04_08": [
+   {
+    "d": "2020-03-30",
+    "n": 306
+   },
+   {
+    "d": "2020-04-02",
+    "n": 119
+   },
+   {
+    "d": "2020-04-03",
+    "n": 67
+   },
+   {
+    "d": "2020-04-04",
+    "n": 83
+   },
+   {
+    "d": "2020-04-08",
+    "n": 12111
+   }
+  ],
+  "share_2020_04_08_by_competition": [
+   {
+    "comp": "(none)",
+    "n": 1245
+   },
+   {
+    "comp": "GB1",
+    "n": 932
+   },
+   {
+    "comp": "IT1",
+    "n": 899
+   },
+   {
+    "comp": "FR1",
+    "n": 823
+   },
+   {
+    "comp": "ES1",
+    "n": 816
+   },
+   {
+    "comp": "L1",
+    "n": 782
+   },
+   {
+    "comp": "PO1",
+    "n": 682
+   },
+   {
+    "comp": "TR1",
+    "n": 616
+   },
+   {
+    "comp": "RU1",
+    "n": 614
+   },
+   {
+    "comp": "BE1",
+    "n": 589
+   },
+   {
+    "comp": "NL1",
+    "n": 587
+   },
+   {
+    "comp": "GR1",
+    "n": 492
+   }
+  ],
+  "distinct_competitions_on_2020_04_08": 32,
+  "seasons": [
+   {
+    "season": "2019/2020",
+    "usable": 498,
+    "distinct_selected_dates": 5,
+    "top_dates": [
+     {
+      "d": "2020-04-08",
+      "n": 491
+     },
+     {
+      "d": "2019-12-10",
+      "n": 3
+     },
+     {
+      "d": "2020-02-11",
+      "n": 2
+     }
+    ],
+    "top_date_share_pct": 98.59,
+    "effect_on_top_date_epl": {
+     "n": 491,
+     "down": 491,
+     "up": 0,
+     "same": 0,
+     "median_ratio": 0.8,
+     "median_days_since_prev": 120.0
+    },
+    "same_date_all_tm": {
+     "rows_all_players": 12111,
+     "competitions": 32,
+     "median_ratio_all": 0.8
+    }
+   },
+   {
+    "season": "2020/2021",
+    "usable": 515,
+    "distinct_selected_dates": 13,
+    "top_dates": [
+     {
+      "d": "2021-03-18",
+      "n": 477
+     },
+     {
+      "d": "2021-03-10",
+      "n": 10
+     },
+     {
+      "d": "2020-12-17",
+      "n": 7
+     }
+    ],
+    "top_date_share_pct": 92.62,
+    "effect_on_top_date_epl": {
+     "n": 465,
+     "down": 225,
+     "up": 97,
+     "same": 143,
+     "median_ratio": 1.0,
+     "median_days_since_prev": 156.0
+    },
+    "same_date_all_tm": {
+     "rows_all_players": 567,
+     "competitions": 14,
+     "median_ratio_all": 1.0
+    }
+   },
+   {
+    "season": "2021/2022",
+    "usable": 528,
+    "distinct_selected_dates": 23,
+    "top_dates": [
+     {
+      "d": "2021-12-23",
+      "n": 384
+     },
+     {
+      "d": "2022-03-29",
+      "n": 91
+     },
+     {
+      "d": "2022-05-13",
+      "n": 17
+     }
+    ],
+    "top_date_share_pct": 72.73,
+    "effect_on_top_date_epl": {
+     "n": 380,
+     "down": 166,
+     "up": 34,
+     "same": 180,
+     "median_ratio": 1.0,
+     "median_days_since_prev": 198.0
+    },
+    "same_date_all_tm": {
+     "rows_all_players": 600,
+     "competitions": 13,
+     "median_ratio_all": 1.0
+    }
+   },
+   {
+    "season": "2022/2023",
+    "usable": 542,
+    "distinct_selected_dates": 24,
+    "top_dates": [
+     {
+      "d": "2022-11-03",
+      "n": 328
+     },
+     {
+      "d": "2023-03-16",
+      "n": 163
+     },
+     {
+      "d": "2022-12-23",
+      "n": 6
+     }
+    ],
+    "top_date_share_pct": 60.52,
+    "effect_on_top_date_epl": {
+     "n": 318,
+     "down": 113,
+     "up": 69,
+     "same": 136,
+     "median_ratio": 1.0,
+     "median_days_since_prev": 141.0
+    },
+    "same_date_all_tm": {
+     "rows_all_players": 598,
+     "competitions": 5,
+     "median_ratio_all": 1.0
+    }
+   },
+   {
+    "season": "2023/2024",
+    "usable": 567,
+    "distinct_selected_dates": 18,
+    "top_dates": [
+     {
+      "d": "2023-12-19",
+      "n": 390
+     },
+     {
+      "d": "2024-03-14",
+      "n": 134
+     },
+     {
+      "d": "2024-03-07",
+      "n": 9
+     }
+    ],
+    "top_date_share_pct": 68.78,
+    "effect_on_top_date_epl": {
+     "n": 381,
+     "down": 137,
+     "up": 88,
+     "same": 156,
+     "median_ratio": 1.0,
+     "median_days_since_prev": 182.0
+    },
+    "same_date_all_tm": {
+     "rows_all_players": 1949,
+     "competitions": 6,
+     "median_ratio_all": 1.0
+    }
+   },
+   {
+    "season": "2024/2025",
+    "usable": 545,
+    "distinct_selected_dates": 26,
+    "top_dates": [
+     {
+      "d": "2024-12-16",
+      "n": 291
+     },
+     {
+      "d": "2025-03-18",
+      "n": 204
+     },
+     {
+      "d": "2024-12-18",
+      "n": 6
+     }
+    ],
+    "top_date_share_pct": 53.39,
+    "effect_on_top_date_epl": {
+     "n": 289,
+     "down": 59,
+     "up": 69,
+     "same": 161,
+     "median_ratio": 1.0,
+     "median_days_since_prev": 203.0
+    },
+    "same_date_all_tm": {
+     "rows_all_players": 750,
+     "competitions": 4,
+     "median_ratio_all": 1.0
+    }
+   }
+  ],
+  "april_2020_all_tm": {
+   "born_before_1998": {
+    "n": 10076,
+    "median_ratio": 0.8,
+    "near_080": 9463,
+    "near_090": 598,
+    "not_reduced": 13,
+    "p10": 0.7857142857142857,
+    "p90": 0.8125
+   },
+   "born_1998_or_later": {
+    "n": 2023,
+    "median_ratio": 0.9,
+    "near_080": 30,
+    "near_090": 1990,
+    "not_reduced": 1,
+    "p10": 0.875,
+    "p90": 0.9200000000000002
+   }
+  },
+  "april_2020_selected_targets": {
+   "born_before_1998": {
+    "n": 425,
+    "median_ratio": 0.8,
+    "near_080": 424,
+    "near_090": 1,
+    "not_reduced": 0,
+    "p10": 0.7916666666666666,
+    "p90": 0.8055555555555556
+   },
+   "born_1998_or_later": {
+    "n": 66,
+    "median_ratio": 0.9,
+    "near_080": 0,
+    "near_090": 66,
+    "not_reduced": 0,
+    "p10": 0.8888888888888888,
+    "p90": 0.9166666666666666
+   }
+  },
+  "april_2020_by_birth_year": [
+   {
+    "y": 1994,
+    "n": 1042,
+    "median_ratio": 0.8
+   },
+   {
+    "y": 1995,
+    "n": 989,
+    "median_ratio": 0.8
+   },
+   {
+    "y": 1996,
+    "n": 982,
+    "median_ratio": 0.8
+   },
+   {
+    "y": 1997,
+    "n": 940,
+    "median_ratio": 0.8
+   },
+   {
+    "y": 1998,
+    "n": 728,
+    "median_ratio": 0.9
+   },
+   {
+    "y": 1999,
+    "n": 616,
+    "median_ratio": 0.9
+   },
+   {
+    "y": 2000,
+    "n": 401,
+    "median_ratio": 0.9
+   },
+   {
+    "y": 2001,
+    "n": 176,
+    "median_ratio": 0.9
+   }
+  ],
+  "comparison_other_batches_all_tm": [
+   {
+    "d": "2020-04-08",
+    "n": 12105,
+    "median_ratio": 0.8,
+    "pct_down": 99.8843453118546
+   },
+   {
+    "d": "2015-07-01",
+    "n": 4023,
+    "median_ratio": 1.0,
+    "pct_down": 28.8839174745215
+   },
+   {
+    "d": "2016-07-15",
+    "n": 2824,
+    "median_ratio": 1.0,
+    "pct_down": 30.665722379603398
+   },
+   {
+    "d": "2026-06-04",
+    "n": 2278,
+    "median_ratio": 1.0,
+    "pct_down": 44.161545215100965
+   },
+   {
+    "d": "2023-12-19",
+    "n": 1884,
+    "median_ratio": 1.0,
+    "pct_down": 37.10191082802548
+   },
+   {
+    "d": "2026-05-28",
+    "n": 1874,
+    "median_ratio": 1.0,
+    "pct_down": 32.17716115261473
+   },
+   {
+    "d": "2023-12-20",
+    "n": 1813,
+    "median_ratio": 1.0,
+    "pct_down": 26.475455046883617
+   },
+   {
+    "d": "2020-12-29",
+    "n": 1786,
+    "median_ratio": 1.0,
+    "pct_down": 33.76259798432251
+   },
+   {
+    "d": "2023-06-26",
+    "n": 1731,
+    "median_ratio": 1.0,
+    "pct_down": 31.42692085499711
+   },
+   {
+    "d": "2025-12-15",
+    "n": 1715,
+    "median_ratio": 1.0,
+    "pct_down": 36.034985422740526
+   },
+   {
+    "d": "2021-12-30",
+    "n": 1688,
+    "median_ratio": 1.0,
+    "pct_down": 28.376777251184834
+   },
+   {
+    "d": "2023-12-21",
+    "n": 1650,
+    "median_ratio": 1.0,
+    "pct_down": 35.75757575757576
+   }
+  ],
+  "next_valuation_gap_after_cutoff": [
+   {
+    "season": "2019/2020",
+    "n": 494,
+    "median_days": 79.0
+   },
+   {
+    "season": "2020/2021",
+    "n": 513,
+    "median_days": 16.0
+   },
+   {
+    "season": "2021/2022",
+    "n": 528,
+    "median_days": 24.0
+   },
+   {
+    "season": "2022/2023",
+    "n": 538,
+    "median_days": 23.0
+   },
+   {
+    "season": "2023/2024",
+    "n": 553,
+    "median_days": 8.0
+   },
+   {
+    "season": "2024/2025",
+    "n": 534,
+    "median_days": 5.0
+   }
+  ],
+  "next_change_after_2020_04_08": {
+   "n": 487,
+   "median_next_ratio": 1.0,
+   "median_days_to_next": 188.0
+  }
+ },
+ "temporal": {
+  "match_level": {
+   "2019/2020": {
+    "matches": 380,
+    "with_any_xg": 4,
+    "first_xg": "2019-10-05",
+    "last_xg": "2020-07-05",
+    "with_playerstats": 380
+   },
+   "2020/2021": {
+    "matches": 380,
+    "with_any_xg": 380,
+    "first_xg": "2020-09-12",
+    "last_xg": "2021-05-23",
+    "with_playerstats": 380
+   },
+   "2021/2022": {
+    "matches": 380,
+    "with_any_xg": 380,
+    "first_xg": "2021-08-13",
+    "last_xg": "2022-05-22",
+    "with_playerstats": 380
+   },
+   "2022/2023": {
+    "matches": 380,
+    "with_any_xg": 380,
+    "first_xg": "2022-08-05",
+    "last_xg": "2023-05-28",
+    "with_playerstats": 380
+   },
+   "2023/2024": {
+    "matches": 380,
+    "with_any_xg": 380,
+    "first_xg": "2023-08-11",
+    "last_xg": "2024-05-19",
+    "with_playerstats": 380
+   },
+   "2024/2025": {
+    "matches": 380,
+    "with_any_xg": 380,
+    "first_xg": "2024-08-16",
+    "last_xg": "2025-05-25",
+    "with_playerstats": 380
+   }
+  },
+  "per_match_stat_keys_2023_24": [
+   "Offsides",
+   "ShotsOffTarget",
+   "ShotsOnTarget",
+   "accurate_crosses",
+   "accurate_passes",
+   "aerials_won",
+   "assists",
+   "big_chance_created_team_title",
+   "big_chance_missed_title",
+   "blocked_shots",
+   "chances_created",
+   "clearance_off_the_line",
+   "clearances",
+   "conceded_penalties",
+   "corners",
+   "defensive_actions",
+   "dispossessed",
+   "dribbled_past",
+   "dribbles_succeeded",
+   "duel_lost",
+   "duel_won",
+   "errors_led_to_goal",
+   "expected_assists",
+   "expected_goals",
+   "expected_goals_non_penalty",
+   "expected_goals_on_target_faced",
+   "expected_goals_on_target_variant",
+   "fantasy_points",
+   "fouls",
+   "goals",
+   "goals_conceded",
+   "goals_prevented",
+   "ground_duels_won",
+   "headed_clearance",
+   "interceptions",
+   "keeper_diving_save",
+   "keeper_high_claim",
+   "keeper_sweeper",
+   "last_man_tackle",
+   "long_balls_accurate",
+   "matchstats.headers.tackles",
+   "minutes_played",
+   "missed_penalty",
+   "owngoal",
+   "passes_into_final_third",
+   "penalties_won",
+   "player_throws",
+   "punches",
+   "rating_title",
+   "recoveries",
+   "saved_penalties",
+   "saves",
+   "saves_inside_box",
+   "shot_accuracy",
+   "shot_blocks",
+   "shots_woodwork",
+   "total_shots",
+   "touches",
+   "touches_opp_box",
+   "was_fouled",
+   "xg_and_xa"
+  ],
+  "rows": 3262,
+  "season_metric_vs_match_sum": {
+   "minutes_played": {
+    "2019/2020": {
+     "both_present": 477,
+     "within_tolerance": 477,
+     "pct": 100.0,
+     "median_season_value": 1312.0,
+     "season_null_but_match_nonzero": 38,
+     "match_absent_but_season_present": 0,
+     "sum_match": 682206.0,
+     "sum_season": 682206.0
+    },
+    "2020/2021": {
+     "both_present": 485,
+     "within_tolerance": 485,
+     "pct": 100.0,
+     "median_season_value": 1355.0,
+     "season_null_but_match_nonzero": 39,
+     "match_absent_but_season_present": 0,
+     "sum_match": 682589.0,
+     "sum_season": 682589.0
+    },
+    "2021/2022": {
+     "both_present": 496,
+     "within_tolerance": 496,
+     "pct": 100.0,
+     "median_season_value": 1349.0,
+     "season_null_but_match_nonzero": 41,
+     "match_absent_but_season_present": 0,
+     "sum_match": 682766.0,
+     "sum_season": 682766.0
+    },
+    "2022/2023": {
+     "both_present": 515,
+     "within_tolerance": 515,
+     "pct": 100.0,
+     "median_season_value": 1212.0,
+     "season_null_but_match_nonzero": 39,
+     "match_absent_but_season_present": 0,
+     "sum_match": 683112.0,
+     "sum_season": 683112.0
+    },
+    "2023/2024": {
+     "both_present": 532,
+     "within_tolerance": 530,
+     "pct": 99.62,
+     "median_season_value": 1161.0,
+     "season_null_but_match_nonzero": 38,
+     "match_absent_but_season_present": 0,
+     "sum_match": 682486.0,
+     "sum_season": 682514.0
+    },
+    "2024/2025": {
+     "both_present": 520,
+     "within_tolerance": 520,
+     "pct": 100.0,
+     "median_season_value": 1149.0,
+     "season_null_but_match_nonzero": 42,
+     "match_absent_but_season_present": 0,
+     "sum_match": 682566.0,
+     "sum_season": 682566.0
+    }
+   },
+   "goals": {
+    "2019/2020": {
+     "both_present": 477,
+     "within_tolerance": 477,
+     "pct": 100.0,
+     "median_season_value": 1.0,
+     "season_null_but_match_nonzero": 0,
+     "match_absent_but_season_present": 0,
+     "sum_match": 1002.0,
+     "sum_season": 1002.0
+    },
+    "2020/2021": {
+     "both_present": 483,
+     "within_tolerance": 483,
+     "pct": 100.0,
+     "median_season_value": 1.0,
+     "season_null_but_match_nonzero": 1,
+     "match_absent_but_season_present": 2,
+     "sum_match": 985.0,
+     "sum_season": 985.0
+    },
+    "2021/2022": {
+     "both_present": 495,
+     "within_tolerance": 495,
+     "pct": 100.0,
+     "median_season_value": 1.0,
+     "season_null_but_match_nonzero": 0,
+     "match_absent_but_season_present": 1,
+     "sum_match": 1037.0,
+     "sum_season": 1037.0
+    },
+    "2022/2023": {
+     "both_present": 515,
+     "within_tolerance": 515,
+     "pct": 100.0,
+     "median_season_value": 1.0,
+     "season_null_but_match_nonzero": 0,
+     "match_absent_but_season_present": 0,
+     "sum_match": 1039.0,
+     "sum_season": 1039.0
+    },
+    "2023/2024": {
+     "both_present": 530,
+     "within_tolerance": 530,
+     "pct": 100.0,
+     "median_season_value": 1.0,
+     "season_null_but_match_nonzero": 0,
+     "match_absent_but_season_present": 2,
+     "sum_match": 1197.0,
+     "sum_season": 1197.0
+    },
+    "2024/2025": {
+     "both_present": 518,
+     "within_tolerance": 518,
+     "pct": 100.0,
+     "median_season_value": 1.0,
+     "season_null_but_match_nonzero": 0,
+     "match_absent_but_season_present": 2,
+     "sum_match": 1082.0,
+     "sum_season": 1082.0
+    }
+   },
+   "assists": {
+    "2019/2020": {
+     "both_present": 479,
+     "within_tolerance": 479,
+     "pct": 100.0,
+     "median_season_value": 1.0,
+     "season_null_but_match_nonzero": 0,
+     "match_absent_but_season_present": 0,
+     "sum_match": 705.0,
+     "sum_season": 705.0
+    },
+    "2020/2021": {
+     "both_present": 485,
+     "within_tolerance": 485,
+     "pct": 100.0,
+     "median_season_value": 1.0,
+     "season_null_but_match_nonzero": 0,
+     "match_absent_but_season_present": 2,
+     "sum_match": 685.0,
+     "sum_season": 685.0
+    },
+    "2021/2022": {
+     "both_present": 498,
+     "within_tolerance": 498,
+     "pct": 100.0,
+     "median_season_value": 1.0,
+     "season_null_but_match_nonzero": 0,
+     "match_absent_but_season_present": 1,
+     "sum_match": 743.0,
+     "sum_season": 743.0
+    },
+    "2022/2023": {
+     "both_present": 519,
+     "within_tolerance": 519,
+     "pct": 100.0,
+     "median_season_value": 1.0,
+     "season_null_but_match_nonzero": 0,
+     "match_absent_but_season_present": 0,
+     "sum_match": 727.0,
+     "sum_season": 727.0
+    },
+    "2023/2024": {
+     "both_present": 532,
+     "within_tolerance": 532,
+     "pct": 100.0,
+     "median_season_value": 1.0,
+     "season_null_but_match_nonzero": 0,
+     "match_absent_but_season_present": 2,
+     "sum_match": 862.0,
+     "sum_season": 862.0
+    },
+    "2024/2025": {
+     "both_present": 523,
+     "within_tolerance": 523,
+     "pct": 100.0,
+     "median_season_value": 1.0,
+     "season_null_but_match_nonzero": 0,
+     "match_absent_but_season_present": 2,
+     "sum_match": 804.0,
+     "sum_season": 804.0
+    }
+   },
+   "expected_goals": {
+    "2019/2020": {
+     "both_present": 53,
+     "within_tolerance": 53,
+     "pct": 100.0,
+     "median_season_value": 0.1,
+     "season_null_but_match_nonzero": 0,
+     "match_absent_but_season_present": 16,
+     "sum_match": 14.48,
+     "sum_season": 14.52
+    },
+    "2020/2021": {
+     "both_present": 433,
+     "within_tolerance": 433,
+     "pct": 100.0,
+     "median_season_value": 1.12,
+     "season_null_but_match_nonzero": 0,
+     "match_absent_but_season_present": 0,
+     "sum_match": 1010.13,
+     "sum_season": 1009.81
+    },
+    "2021/2022": {
+     "both_present": 446,
+     "within_tolerance": 446,
+     "pct": 100.0,
+     "median_season_value": 1.25,
+     "season_null_but_match_nonzero": 0,
+     "match_absent_but_season_present": 0,
+     "sum_match": 1068.96,
+     "sum_season": 1068.64
+    },
+    "2022/2023": {
+     "both_present": 458,
+     "within_tolerance": 458,
+     "pct": 100.0,
+     "median_season_value": 1.2149999999999999,
+     "season_null_but_match_nonzero": 0,
+     "match_absent_but_season_present": 0,
+     "sum_match": 1113.95,
+     "sum_season": 1114.51
+    },
+    "2023/2024": {
+     "both_present": 460,
+     "within_tolerance": 460,
+     "pct": 100.0,
+     "median_season_value": 1.295,
+     "season_null_but_match_nonzero": 0,
+     "match_absent_but_season_present": 0,
+     "sum_match": 1216.72,
+     "sum_season": 1216.98
+    },
+    "2024/2025": {
+     "both_present": 457,
+     "within_tolerance": 457,
+     "pct": 100.0,
+     "median_season_value": 1.13,
+     "season_null_but_match_nonzero": 0,
+     "match_absent_but_season_present": 0,
+     "sum_match": 1105.8,
+     "sum_season": 1105.26
+    }
+   },
+   "expected_assists": {
+    "2019/2020": {
+     "both_present": 50,
+     "within_tolerance": 50,
+     "pct": 100.0,
+     "median_season_value": 0.1,
+     "season_null_but_match_nonzero": 21,
+     "match_absent_but_season_present": 46,
+     "sum_match": 6.21,
+     "sum_season": 6.0
+    },
+    "2020/2021": {
+     "both_present": 460,
+     "within_tolerance": 460,
+     "pct": 100.0,
+     "median_season_value": 0.79,
+     "season_null_but_match_nonzero": 0,
+     "match_absent_but_season_present": 56,
+     "sum_match": 599.23,
+     "sum_season": 601.73
+    },
+    "2021/2022": {
+     "both_present": 468,
+     "within_tolerance": 468,
+     "pct": 100.0,
+     "median_season_value": 0.905,
+     "season_null_but_match_nonzero": 0,
+     "match_absent_but_season_present": 64,
+     "sum_match": 649.88,
+     "sum_season": 653.13
+    },
+    "2022/2023": {
+     "both_present": 485,
+     "within_tolerance": 485,
+     "pct": 100.0,
+     "median_season_value": 0.79,
+     "season_null_but_match_nonzero": 0,
+     "match_absent_but_season_present": 64,
+     "sum_match": 667.72,
+     "sum_season": 670.34
+    },
+    "2023/2024": {
+     "both_present": 491,
+     "within_tolerance": 491,
+     "pct": 100.0,
+     "median_season_value": 0.89,
+     "season_null_but_match_nonzero": 0,
+     "match_absent_but_season_present": 68,
+     "sum_match": 763.87,
+     "sum_season": 766.68
+    },
+    "2024/2025": {
+     "both_present": 496,
+     "within_tolerance": 496,
+     "pct": 100.0,
+     "median_season_value": 0.805,
+     "season_null_but_match_nonzero": 0,
+     "match_absent_but_season_present": 57,
+     "sum_match": 713.74,
+     "sum_season": 716.26
+    }
+   }
+  },
+  "appearances_vs_games": {
+   "2019/2020": {
+    "compared": 514,
+    "equal": 514
+   },
+   "2020/2021": {
+    "compared": 524,
+    "equal": 524
+   },
+   "2021/2022": {
+    "compared": 537,
+    "equal": 537
+   },
+   "2022/2023": {
+    "compared": 554,
+    "equal": 554
+   },
+   "2023/2024": {
+    "compared": 570,
+    "equal": 570
+   },
+   "2024/2025": {
+    "compared": 561,
+    "equal": 561
+   }
+  },
+  "split_overall": {
+   "player_seasons": 3195,
+   "games_total": 65632,
+   "games_after": 26966,
+   "pct_games_after": 41.09,
+   "player_seasons_all_games_before": 433,
+   "player_seasons_all_games_after": 240,
+   "player_seasons_majority_after": 1200,
+   "games_on_valuation_date": 14,
+   "minutes_played_pct_after": 40.42,
+   "minutes_played_recorded_share_pct": 99.99,
+   "goals_pct_after": 39.8,
+   "goals_recorded_share_pct": 92.97,
+   "assists_pct_after": 41.07,
+   "assists_recorded_share_pct": 93.0,
+   "expected_goals_pct_after": 43.14,
+   "expected_goals_recorded_share_pct": 39.92,
+   "expected_assists_pct_after": 43.54,
+   "expected_assists_recorded_share_pct": 57.91
+  },
+  "split_by_season": {
+   "2019/2020": {
+    "player_seasons": 498,
+    "games_total": 10559,
+    "games_after": 2680,
+    "pct_games_after": 25.38,
+    "player_seasons_all_games_before": 96,
+    "player_seasons_all_games_after": 16,
+    "player_seasons_majority_after": 47,
+    "games_on_valuation_date": 0,
+    "minutes_played_pct_after": 24.14,
+    "minutes_played_recorded_share_pct": 100.0,
+    "goals_pct_after": 24.15,
+    "goals_recorded_share_pct": 92.71,
+    "assists_pct_after": 23.54,
+    "assists_recorded_share_pct": 92.73,
+    "expected_goals_pct_after": 24.24,
+    "expected_goals_recorded_share_pct": 0.55,
+    "expected_assists_pct_after": 27.49,
+    "expected_assists_recorded_share_pct": 0.77
+   },
+   "2020/2021": {
+    "player_seasons": 515,
+    "games_total": 10379,
+    "games_after": 2585,
+    "pct_games_after": 24.91,
+    "player_seasons_all_games_before": 86,
+    "player_seasons_all_games_after": 17,
+    "player_seasons_majority_after": 40,
+    "games_on_valuation_date": 0,
+    "minutes_played_pct_after": 24.75,
+    "minutes_played_recorded_share_pct": 100.0,
+    "goals_pct_after": 27.34,
+    "goals_recorded_share_pct": 92.64,
+    "assists_pct_after": 28.18,
+    "assists_recorded_share_pct": 92.65,
+    "expected_goals_pct_after": 26.63,
+    "expected_goals_recorded_share_pct": 47.3,
+    "expected_assists_pct_after": 26.24,
+    "expected_assists_recorded_share_pct": 69.24
+   },
+   "2021/2022": {
+    "player_seasons": 528,
+    "games_total": 10459,
+    "games_after": 5081,
+    "pct_games_after": 48.58,
+    "player_seasons_all_games_before": 62,
+    "player_seasons_all_games_after": 51,
+    "player_seasons_majority_after": 261,
+    "games_on_valuation_date": 0,
+    "minutes_played_pct_after": 48.72,
+    "minutes_played_recorded_share_pct": 100.0,
+    "goals_pct_after": 49.37,
+    "goals_recorded_share_pct": 92.7,
+    "assists_pct_after": 50.0,
+    "assists_recorded_share_pct": 92.73,
+    "expected_goals_pct_after": 48.34,
+    "expected_goals_recorded_share_pct": 49.31,
+    "expected_assists_pct_after": 49.17,
+    "expected_assists_recorded_share_pct": 69.61
+   },
+   "2022/2023": {
+    "player_seasons": 542,
+    "games_total": 11332,
+    "games_after": 6201,
+    "pct_games_after": 54.72,
+    "player_seasons_all_games_before": 46,
+    "player_seasons_all_games_after": 55,
+    "player_seasons_majority_after": 319,
+    "games_on_valuation_date": 0,
+    "minutes_played_pct_after": 54.35,
+    "minutes_played_recorded_share_pct": 100.0,
+    "goals_pct_after": 54.19,
+    "goals_recorded_share_pct": 93.21,
+    "assists_pct_after": 55.02,
+    "assists_recorded_share_pct": 93.24,
+    "expected_goals_pct_after": 55.68,
+    "expected_goals_recorded_share_pct": 46.33,
+    "expected_assists_pct_after": 54.5,
+    "expected_assists_recorded_share_pct": 67.07
+   },
+   "2023/2024": {
+    "player_seasons": 567,
+    "games_total": 11378,
+    "games_after": 5329,
+    "pct_games_after": 46.84,
+    "player_seasons_all_games_before": 75,
+    "player_seasons_all_games_after": 55,
+    "player_seasons_majority_after": 284,
+    "games_on_valuation_date": 0,
+    "minutes_played_pct_after": 46.22,
+    "minutes_played_recorded_share_pct": 99.96,
+    "goals_pct_after": 43.94,
+    "goals_recorded_share_pct": 93.14,
+    "assists_pct_after": 46.87,
+    "assists_recorded_share_pct": 93.16,
+    "expected_goals_pct_after": 44.43,
+    "expected_goals_recorded_share_pct": 48.48,
+    "expected_assists_pct_after": 45.48,
+    "expected_assists_recorded_share_pct": 69.48
+   },
+   "2024/2025": {
+    "player_seasons": 545,
+    "games_total": 11525,
+    "games_after": 5090,
+    "pct_games_after": 44.16,
+    "player_seasons_all_games_before": 68,
+    "player_seasons_all_games_after": 46,
+    "player_seasons_majority_after": 249,
+    "games_on_valuation_date": 14,
+    "minutes_played_pct_after": 44.27,
+    "minutes_played_recorded_share_pct": 100.0,
+    "goals_pct_after": 38.08,
+    "goals_recorded_share_pct": 93.32,
+    "assists_pct_after": 40.3,
+    "assists_recorded_share_pct": 93.4,
+    "expected_goals_pct_after": 39.38,
+    "expected_goals_recorded_share_pct": 46.08,
+    "expected_assists_pct_after": 40.81,
+    "expected_assists_recorded_share_pct": 69.0
+   }
+  },
+  "share_of_games_after_valuation_distribution": {
+   "26-50%": 930,
+   "51-75%": 815,
+   "100%": 240,
+   "0%": 433,
+   "1-25%": 632,
+   "76-99%": 145
+  },
+  "curated_metric_count": 53,
+  "curated_metrics_with_same_named_match_key": [
+   "accurate_passes",
+   "aerials_won",
+   "assists",
+   "blocked_shots",
+   "chances_created",
+   "clearances",
+   "dribbles_succeeded",
+   "expected_assists",
+   "expected_goals",
+   "goals",
+   "goals_conceded",
+   "goals_prevented",
+   "interceptions",
+   "minutes_played",
+   "recoveries",
+   "saves",
+   "touches"
+  ],
+  "curated_metrics_without_same_named_match_key": [
+   "accurate_long_passes",
+   "accurate_long_passes_per90",
+   "accurate_passes_per90",
+   "aerials_won_percent",
+   "appearances",
+   "big_chances_created",
+   "blocks_per90",
+   "clean_sheets",
+   "clearances_per90",
+   "cross_accuracy",
+   "duels_won",
+   "duels_won_percent",
+   "expected_goals_on_target",
+   "fouls_committed",
+   "fouls_won",
+   "goals_conceded_per90",
+   "interceptions_per90",
+   "key_passes",
+   "long_ball_accuracy",
+   "non_penalty_xg",
+   "passing_accuracy",
+   "penalty_saves",
+   "rating",
+   "recoveries_per90",
+   "red_cards",
+   "save_percentage",
+   "shots",
+   "shots_on_target",
+   "shots_on_target_per90",
+   "shots_per90",
+   "starts",
+   "successful_crosses",
+   "tackles",
+   "tackles_per90",
+   "touches_opposition_box",
+   "yellow_cards"
+  ],
+  "collection_dates": {
+   "first_collected": "2026-11-02T07:46:43.129309+00:00",
+   "last_collected": "2026-11-03T01:54:05.669381+00:00"
+  },
+  "source_revised_cells": 95
+ },
+ "sensitivity": {
+  "population": 3262,
+  "usable": 3195,
+  "scenarios": {
+   "<=30": {
+    "eligible": 28,
+    "pct_of_population": 0.86,
+    "pct_of_usable": 0.88,
+    "distinct_players": 28,
+    "median_market_value": 5000000.0,
+    "median_player_age": 23.24,
+    "median_games": 3.0,
+    "smd_kept_vs_excluded": {
+     "log_market_value": -0.797,
+     "player_age": -0.597,
+     "games": -1.995
+    },
+    "by_season": {
+     "2019/2020": {
+      "eligible": 1,
+      "coverage_pct": 0.19,
+      "share_of_kept_pct": 3.57,
+      "population": 515
+     },
+     "2020/2021": {
+      "eligible": 5,
+      "coverage_pct": 0.95,
+      "share_of_kept_pct": 17.86,
+      "population": 524
+     },
+     "2021/2022": {
+      "eligible": 17,
+      "coverage_pct": 3.17,
+      "share_of_kept_pct": 60.71,
+      "population": 537
+     },
+     "2022/2023": {
+      "eligible": 2,
+      "coverage_pct": 0.36,
+      "share_of_kept_pct": 7.14,
+      "population": 554
+     },
+     "2023/2024": {
+      "eligible": 1,
+      "coverage_pct": 0.18,
+      "share_of_kept_pct": 3.57,
+      "population": 570
+     },
+     "2024/2025": {
+      "eligible": 2,
+      "coverage_pct": 0.36,
+      "share_of_kept_pct": 7.14,
+      "population": 562
+     }
+    },
+    "by_pos": {
+     "DEF": {
+      "eligible": 7,
+      "coverage_pct": 0.63,
+      "share_of_kept_pct": 25.0,
+      "population": 1117
+     },
+     "FWD": {
+      "eligible": 15,
+      "coverage_pct": 1.66,
+      "share_of_kept_pct": 53.57,
+      "population": 906
+     },
+     "GK": {
+      "eligible": 2,
+      "coverage_pct": 0.82,
+      "share_of_kept_pct": 7.14,
+      "population": 243
+     },
+     "MID": {
+      "eligible": 4,
+      "coverage_pct": 0.4,
+      "share_of_kept_pct": 14.29,
+      "population": 996
+     }
+    },
+    "by_age_group": {
+     "22-25": {
+      "eligible": 8,
+      "coverage_pct": 0.85,
+      "share_of_kept_pct": 28.57,
+      "population": 941
+     },
+     "26-29": {
+      "eligible": 7,
+      "coverage_pct": 0.7,
+      "share_of_kept_pct": 25.0,
+      "population": 1005
+     },
+     "30+": {
+      "eligible": 3,
+      "coverage_pct": 0.39,
+      "share_of_kept_pct": 10.71,
+      "population": 769
+     },
+     "under 22": {
+      "eligible": 10,
+      "coverage_pct": 1.83,
+      "share_of_kept_pct": 35.71,
+      "population": 547
+     }
+    },
+    "by_tier": {
+     "AUTO_ADJUDICATED_EXTERNAL": {
+      "eligible": 0,
+      "coverage_pct": 0.0,
+      "share_of_kept_pct": 0.0,
+      "population": 8
+     },
+     "AUTO_ADJUDICATED_INDEPENDENT_RULE": {
+      "eligible": 1,
+      "coverage_pct": 1.11,
+      "share_of_kept_pct": 3.57,
+      "population": 90
+     },
+     "AUTO_EXACT_NOT_INDEPENDENTLY_VALIDATED": {
+      "eligible": 10,
+      "coverage_pct": 1.71,
+      "share_of_kept_pct": 35.71,
+      "population": 584
+     },
+     "AUTO_EXACT_VALIDATED": {
+      "eligible": 17,
+      "coverage_pct": 0.66,
+      "share_of_kept_pct": 60.71,
+      "population": 2577
+     },
+     "UNRESOLVED": {
+      "eligible": 0,
+      "coverage_pct": 0.0,
+      "share_of_kept_pct": 0.0,
+      "population": 3
+     }
+    },
+    "within_season_smd": {
+     "2019/2020": {
+      "kept": 1,
+      "excluded": 497,
+      "log_mv_smd": null,
+      "age_smd": null,
+      "games_smd": null
+     },
+     "2020/2021": {
+      "kept": 5,
+      "excluded": 510,
+      "log_mv_smd": -0.049,
+      "age_smd": 0.011,
+      "games_smd": -1.574
+     },
+     "2021/2022": {
+      "kept": 17,
+      "excluded": 511,
+      "log_mv_smd": -0.945,
+      "age_smd": -0.739,
+      "games_smd": -2.141
+     },
+     "2022/2023": {
+      "kept": 2,
+      "excluded": 540,
+      "log_mv_smd": -1.157,
+      "age_smd": -1.006,
+      "games_smd": -2.081
+     },
+     "2023/2024": {
+      "kept": 1,
+      "excluded": 566,
+      "log_mv_smd": null,
+      "age_smd": null,
+      "games_smd": null
+     },
+     "2024/2025": {
+      "kept": 2,
+      "excluded": 543,
+      "log_mv_smd": -1.75,
+      "age_smd": -2.944,
+      "games_smd": -1.991
+     }
+    }
+   },
+   "<=60": {
+    "eligible": 141,
+    "pct_of_population": 4.32,
+    "pct_of_usable": 4.41,
+    "distinct_players": 139,
+    "median_market_value": 12000000,
+    "median_player_age": 24.9,
+    "median_games": 17,
+    "smd_kept_vs_excluded": {
+     "log_market_value": 0.077,
+     "player_age": -0.467,
+     "games": -0.342
+    },
+    "by_season": {
+     "2019/2020": {
+      "eligible": 1,
+      "coverage_pct": 0.19,
+      "share_of_kept_pct": 0.71,
+      "population": 515
+     },
+     "2020/2021": {
+      "eligible": 9,
+      "coverage_pct": 1.72,
+      "share_of_kept_pct": 6.38,
+      "population": 524
+     },
+     "2021/2022": {
+      "eligible": 112,
+      "coverage_pct": 20.86,
+      "share_of_kept_pct": 79.43,
+      "population": 537
+     },
+     "2022/2023": {
+      "eligible": 6,
+      "coverage_pct": 1.08,
+      "share_of_kept_pct": 4.26,
+      "population": 554
+     },
+     "2023/2024": {
+      "eligible": 6,
+      "coverage_pct": 1.05,
+      "share_of_kept_pct": 4.26,
+      "population": 570
+     },
+     "2024/2025": {
+      "eligible": 7,
+      "coverage_pct": 1.25,
+      "share_of_kept_pct": 4.96,
+      "population": 562
+     }
+    },
+    "by_pos": {
+     "DEF": {
+      "eligible": 38,
+      "coverage_pct": 3.4,
+      "share_of_kept_pct": 26.95,
+      "population": 1117
+     },
+     "FWD": {
+      "eligible": 56,
+      "coverage_pct": 6.18,
+      "share_of_kept_pct": 39.72,
+      "population": 906
+     },
+     "GK": {
+      "eligible": 8,
+      "coverage_pct": 3.29,
+      "share_of_kept_pct": 5.67,
+      "population": 243
+     },
+     "MID": {
+      "eligible": 39,
+      "coverage_pct": 3.92,
+      "share_of_kept_pct": 27.66,
+      "population": 996
+     }
+    },
+    "by_age_group": {
+     "22-25": {
+      "eligible": 55,
+      "coverage_pct": 5.84,
+      "share_of_kept_pct": 39.01,
+      "population": 941
+     },
+     "26-29": {
+      "eligible": 42,
+      "coverage_pct": 4.18,
+      "share_of_kept_pct": 29.79,
+      "population": 1005
+     },
+     "30+": {
+      "eligible": 11,
+      "coverage_pct": 1.43,
+      "share_of_kept_pct": 7.8,
+      "population": 769
+     },
+     "under 22": {
+      "eligible": 33,
+      "coverage_pct": 6.03,
+      "share_of_kept_pct": 23.4,
+      "population": 547
+     }
+    },
+    "by_tier": {
+     "AUTO_ADJUDICATED_EXTERNAL": {
+      "eligible": 0,
+      "coverage_pct": 0.0,
+      "share_of_kept_pct": 0.0,
+      "population": 8
+     },
+     "AUTO_ADJUDICATED_INDEPENDENT_RULE": {
+      "eligible": 5,
+      "coverage_pct": 5.56,
+      "share_of_kept_pct": 3.55,
+      "population": 90
+     },
+     "AUTO_EXACT_NOT_INDEPENDENTLY_VALIDATED": {
+      "eligible": 24,
+      "coverage_pct": 4.11,
+      "share_of_kept_pct": 17.02,
+      "population": 584
+     },
+     "AUTO_EXACT_VALIDATED": {
+      "eligible": 112,
+      "coverage_pct": 4.35,
+      "share_of_kept_pct": 79.43,
+      "population": 2577
+     },
+     "UNRESOLVED": {
+      "eligible": 0,
+      "coverage_pct": 0.0,
+      "share_of_kept_pct": 0.0,
+      "population": 3
+     }
+    },
+    "within_season_smd": {
+     "2019/2020": {
+      "kept": 1,
+      "excluded": 497,
+      "log_mv_smd": null,
+      "age_smd": null,
+      "games_smd": null
+     },
+     "2020/2021": {
+      "kept": 9,
+      "excluded": 506,
+      "log_mv_smd": -0.041,
+      "age_smd": 0.015,
+      "games_smd": -1.86
+     },
+     "2021/2022": {
+      "kept": 112,
+      "excluded": 416,
+      "log_mv_smd": 0.373,
+      "age_smd": -0.643,
+      "games_smd": -0.042
+     },
+     "2022/2023": {
+      "kept": 6,
+      "excluded": 536,
+      "log_mv_smd": -1.01,
+      "age_smd": -1.009,
+      "games_smd": -1.73
+     },
+     "2023/2024": {
+      "kept": 6,
+      "excluded": 561,
+      "log_mv_smd": -0.354,
+      "age_smd": 0.027,
+      "games_smd": -1.598
+     },
+     "2024/2025": {
+      "kept": 7,
+      "excluded": 538,
+      "log_mv_smd": -0.659,
+      "age_smd": -0.383,
+      "games_smd": -1.281
+     }
+    }
+   },
+   "<=90": {
+    "eligible": 1171,
+    "pct_of_population": 35.9,
+    "pct_of_usable": 36.65,
+    "distinct_players": 810,
+    "median_market_value": 16000000,
+    "median_player_age": 26.14,
+    "median_games": 22,
+    "smd_kept_vs_excluded": {
+     "log_market_value": 0.301,
+     "player_age": -0.232,
+     "games": 0.045
+    },
+    "by_season": {
+     "2019/2020": {
+      "eligible": 1,
+      "coverage_pct": 0.19,
+      "share_of_kept_pct": 0.09,
+      "population": 515
+     },
+     "2020/2021": {
+      "eligible": 500,
+      "coverage_pct": 95.42,
+      "share_of_kept_pct": 42.7,
+      "population": 524
+     },
+     "2021/2022": {
+      "eligible": 116,
+      "coverage_pct": 21.6,
+      "share_of_kept_pct": 9.91,
+      "population": 537
+     },
+     "2022/2023": {
+      "eligible": 179,
+      "coverage_pct": 32.31,
+      "share_of_kept_pct": 15.29,
+      "population": 554
+     },
+     "2023/2024": {
+      "eligible": 155,
+      "coverage_pct": 27.19,
+      "share_of_kept_pct": 13.24,
+      "population": 570
+     },
+     "2024/2025": {
+      "eligible": 220,
+      "coverage_pct": 39.15,
+      "share_of_kept_pct": 18.79,
+      "population": 562
+     }
+    },
+    "by_pos": {
+     "DEF": {
+      "eligible": 382,
+      "coverage_pct": 34.2,
+      "share_of_kept_pct": 32.62,
+      "population": 1117
+     },
+     "FWD": {
+      "eligible": 365,
+      "coverage_pct": 40.29,
+      "share_of_kept_pct": 31.17,
+      "population": 906
+     },
+     "GK": {
+      "eligible": 75,
+      "coverage_pct": 30.86,
+      "share_of_kept_pct": 6.4,
+      "population": 243
+     },
+     "MID": {
+      "eligible": 349,
+      "coverage_pct": 35.04,
+      "share_of_kept_pct": 29.8,
+      "population": 996
+     }
+    },
+    "by_age_group": {
+     "22-25": {
+      "eligible": 358,
+      "coverage_pct": 38.04,
+      "share_of_kept_pct": 30.57,
+      "population": 941
+     },
+     "26-29": {
+      "eligible": 388,
+      "coverage_pct": 38.61,
+      "share_of_kept_pct": 33.13,
+      "population": 1005
+     },
+     "30+": {
+      "eligible": 213,
+      "coverage_pct": 27.7,
+      "share_of_kept_pct": 18.19,
+      "population": 769
+     },
+     "under 22": {
+      "eligible": 212,
+      "coverage_pct": 38.76,
+      "share_of_kept_pct": 18.1,
+      "population": 547
+     }
+    },
+    "by_tier": {
+     "AUTO_ADJUDICATED_EXTERNAL": {
+      "eligible": 2,
+      "coverage_pct": 25.0,
+      "share_of_kept_pct": 0.17,
+      "population": 8
+     },
+     "AUTO_ADJUDICATED_INDEPENDENT_RULE": {
+      "eligible": 32,
+      "coverage_pct": 35.56,
+      "share_of_kept_pct": 2.73,
+      "population": 90
+     },
+     "AUTO_EXACT_NOT_INDEPENDENTLY_VALIDATED": {
+      "eligible": 174,
+      "coverage_pct": 29.79,
+      "share_of_kept_pct": 14.86,
+      "population": 584
+     },
+     "AUTO_EXACT_VALIDATED": {
+      "eligible": 963,
+      "coverage_pct": 37.37,
+      "share_of_kept_pct": 82.24,
+      "population": 2577
+     },
+     "UNRESOLVED": {
+      "eligible": 0,
+      "coverage_pct": 0.0,
+      "share_of_kept_pct": 0.0,
+      "population": 3
+     }
+    },
+    "within_season_smd": {
+     "2019/2020": {
+      "kept": 1,
+      "excluded": 497,
+      "log_mv_smd": null,
+      "age_smd": null,
+      "games_smd": null
+     },
+     "2020/2021": {
+      "kept": 500,
+      "excluded": 15,
+      "log_mv_smd": 1.466,
+      "age_smd": 0.657,
+      "games_smd": 2.218
+     },
+     "2021/2022": {
+      "kept": 116,
+      "excluded": 412,
+      "log_mv_smd": 0.39,
+      "age_smd": -0.671,
+      "games_smd": -0.098
+     },
+     "2022/2023": {
+      "kept": 179,
+      "excluded": 363,
+      "log_mv_smd": 0.534,
+      "age_smd": -0.354,
+      "games_smd": -0.003
+     },
+     "2023/2024": {
+      "kept": 155,
+      "excluded": 412,
+      "log_mv_smd": 0.476,
+      "age_smd": -0.475,
+      "games_smd": 0.167
+     },
+     "2024/2025": {
+      "kept": 220,
+      "excluded": 325,
+      "log_mv_smd": 0.509,
+      "age_smd": -0.218,
+      "games_smd": 0.112
+     }
+    }
+   },
+   "<=180": {
+    "eligible": 2805,
+    "pct_of_population": 85.99,
+    "pct_of_usable": 87.79,
+    "distinct_players": 1247,
+    "median_market_value": 13000000,
+    "median_player_age": 26.6,
+    "median_games": 22,
+    "smd_kept_vs_excluded": {
+     "log_market_value": 0.266,
+     "player_age": -0.064,
+     "games": 0.099
+    },
+    "by_season": {
+     "2019/2020": {
+      "eligible": 495,
+      "coverage_pct": 96.12,
+      "share_of_kept_pct": 17.65,
+      "population": 515
+     },
+     "2020/2021": {
+      "eligible": 508,
+      "coverage_pct": 96.95,
+      "share_of_kept_pct": 18.11,
+      "population": 524
+     },
+     "2021/2022": {
+      "eligible": 514,
+      "coverage_pct": 95.72,
+      "share_of_kept_pct": 18.32,
+      "population": 537
+     },
+     "2022/2023": {
+      "eligible": 187,
+      "coverage_pct": 33.75,
+      "share_of_kept_pct": 6.67,
+      "population": 554
+     },
+     "2023/2024": {
+      "eligible": 567,
+      "coverage_pct": 99.47,
+      "share_of_kept_pct": 20.21,
+      "population": 570
+     },
+     "2024/2025": {
+      "eligible": 534,
+      "coverage_pct": 95.02,
+      "share_of_kept_pct": 19.04,
+      "population": 562
+     }
+    },
+    "by_pos": {
+     "DEF": {
+      "eligible": 963,
+      "coverage_pct": 86.21,
+      "share_of_kept_pct": 34.33,
+      "population": 1117
+     },
+     "FWD": {
+      "eligible": 783,
+      "coverage_pct": 86.42,
+      "share_of_kept_pct": 27.91,
+      "population": 906
+     },
+     "GK": {
+      "eligible": 210,
+      "coverage_pct": 86.42,
+      "share_of_kept_pct": 7.49,
+      "population": 243
+     },
+     "MID": {
+      "eligible": 849,
+      "coverage_pct": 85.24,
+      "share_of_kept_pct": 30.27,
+      "population": 996
+     }
+    },
+    "by_age_group": {
+     "22-25": {
+      "eligible": 824,
+      "coverage_pct": 87.57,
+      "share_of_kept_pct": 29.38,
+      "population": 941
+     },
+     "26-29": {
+      "eligible": 897,
+      "coverage_pct": 89.25,
+      "share_of_kept_pct": 31.98,
+      "population": 1005
+     },
+     "30+": {
+      "eligible": 658,
+      "coverage_pct": 85.57,
+      "share_of_kept_pct": 23.46,
+      "population": 769
+     },
+     "under 22": {
+      "eligible": 426,
+      "coverage_pct": 77.88,
+      "share_of_kept_pct": 15.19,
+      "population": 547
+     }
+    },
+    "by_tier": {
+     "AUTO_ADJUDICATED_EXTERNAL": {
+      "eligible": 6,
+      "coverage_pct": 75.0,
+      "share_of_kept_pct": 0.21,
+      "population": 8
+     },
+     "AUTO_ADJUDICATED_INDEPENDENT_RULE": {
+      "eligible": 77,
+      "coverage_pct": 85.56,
+      "share_of_kept_pct": 2.75,
+      "population": 90
+     },
+     "AUTO_EXACT_NOT_INDEPENDENTLY_VALIDATED": {
+      "eligible": 478,
+      "coverage_pct": 81.85,
+      "share_of_kept_pct": 17.04,
+      "population": 584
+     },
+     "AUTO_EXACT_VALIDATED": {
+      "eligible": 2244,
+      "coverage_pct": 87.08,
+      "share_of_kept_pct": 80.0,
+      "population": 2577
+     },
+     "UNRESOLVED": {
+      "eligible": 0,
+      "coverage_pct": 0.0,
+      "share_of_kept_pct": 0.0,
+      "population": 3
+     }
+    },
+    "within_season_smd": {
+     "2019/2020": {
+      "kept": 495,
+      "excluded": 3,
+      "log_mv_smd": 4.167,
+      "age_smd": -0.58,
+      "games_smd": 2.291
+     },
+     "2020/2021": {
+      "kept": 508,
+      "excluded": 7,
+      "log_mv_smd": 1.915,
+      "age_smd": 0.861,
+      "games_smd": 2.069
+     },
+     "2021/2022": {
+      "kept": 514,
+      "excluded": 14,
+      "log_mv_smd": 3.386,
+      "age_smd": 2.617,
+      "games_smd": 2.269
+     },
+     "2022/2023": {
+      "kept": 187,
+      "excluded": 355,
+      "log_mv_smd": 0.537,
+      "age_smd": -0.387,
+      "games_smd": 0.007
+     },
+     "2023/2024": {
+      "kept": 567,
+      "excluded": 0,
+      "log_mv_smd": null,
+      "age_smd": null,
+      "games_smd": null
+     },
+     "2024/2025": {
+      "kept": 534,
+      "excluded": 11,
+      "log_mv_smd": 1.662,
+      "age_smd": -0.295,
+      "games_smd": 0.8
+     }
+    }
+   },
+   "all_available": {
+    "eligible": 3195,
+    "pct_of_population": 97.95,
+    "pct_of_usable": 100.0,
+    "distinct_players": 1304,
+    "median_market_value": 12000000,
+    "median_player_age": 26.6,
+    "median_games": 22,
+    "smd_kept_vs_excluded": {
+     "log_market_value": null,
+     "player_age": null,
+     "games": null
+    },
+    "by_season": {
+     "2019/2020": {
+      "eligible": 498,
+      "coverage_pct": 96.7,
+      "share_of_kept_pct": 15.59,
+      "population": 515
+     },
+     "2020/2021": {
+      "eligible": 515,
+      "coverage_pct": 98.28,
+      "share_of_kept_pct": 16.12,
+      "population": 524
+     },
+     "2021/2022": {
+      "eligible": 528,
+      "coverage_pct": 98.32,
+      "share_of_kept_pct": 16.53,
+      "population": 537
+     },
+     "2022/2023": {
+      "eligible": 542,
+      "coverage_pct": 97.83,
+      "share_of_kept_pct": 16.96,
+      "population": 554
+     },
+     "2023/2024": {
+      "eligible": 567,
+      "coverage_pct": 99.47,
+      "share_of_kept_pct": 17.75,
+      "population": 570
+     },
+     "2024/2025": {
+      "eligible": 545,
+      "coverage_pct": 96.98,
+      "share_of_kept_pct": 17.06,
+      "population": 562
+     }
+    },
+    "by_pos": {
+     "DEF": {
+      "eligible": 1099,
+      "coverage_pct": 98.39,
+      "share_of_kept_pct": 34.4,
+      "population": 1117
+     },
+     "FWD": {
+      "eligible": 884,
+      "coverage_pct": 97.57,
+      "share_of_kept_pct": 27.67,
+      "population": 906
+     },
+     "GK": {
+      "eligible": 243,
+      "coverage_pct": 100.0,
+      "share_of_kept_pct": 7.61,
+      "population": 243
+     },
+     "MID": {
+      "eligible": 969,
+      "coverage_pct": 97.29,
+      "share_of_kept_pct": 30.33,
+      "population": 996
+     }
+    },
+    "by_age_group": {
+     "22-25": {
+      "eligible": 939,
+      "coverage_pct": 99.79,
+      "share_of_kept_pct": 29.39,
+      "population": 941
+     },
+     "26-29": {
+      "eligible": 1004,
+      "coverage_pct": 99.9,
+      "share_of_kept_pct": 31.42,
+      "population": 1005
+     },
+     "30+": {
+      "eligible": 769,
+      "coverage_pct": 100.0,
+      "share_of_kept_pct": 24.07,
+      "population": 769
+     },
+     "under 22": {
+      "eligible": 483,
+      "coverage_pct": 88.3,
+      "share_of_kept_pct": 15.12,
+      "population": 547
+     }
+    },
+    "by_tier": {
+     "AUTO_ADJUDICATED_EXTERNAL": {
+      "eligible": 8,
+      "coverage_pct": 100.0,
+      "share_of_kept_pct": 0.25,
+      "population": 8
+     },
+     "AUTO_ADJUDICATED_INDEPENDENT_RULE": {
+      "eligible": 87,
+      "coverage_pct": 96.67,
+      "share_of_kept_pct": 2.72,
+      "population": 90
+     },
+     "AUTO_EXACT_NOT_INDEPENDENTLY_VALIDATED": {
+      "eligible": 551,
+      "coverage_pct": 94.35,
+      "share_of_kept_pct": 17.25,
+      "population": 584
+     },
+     "AUTO_EXACT_VALIDATED": {
+      "eligible": 2549,
+      "coverage_pct": 98.91,
+      "share_of_kept_pct": 79.78,
+      "population": 2577
+     },
+     "UNRESOLVED": {
+      "eligible": 0,
+      "coverage_pct": 0.0,
+      "share_of_kept_pct": 0.0,
+      "population": 3
+     }
+    },
+    "within_season_smd": {
+     "2019/2020": {
+      "kept": 498,
+      "excluded": 0,
+      "log_mv_smd": null,
+      "age_smd": null,
+      "games_smd": null
+     },
+     "2020/2021": {
+      "kept": 515,
+      "excluded": 0,
+      "log_mv_smd": null,
+      "age_smd": null,
+      "games_smd": null
+     },
+     "2021/2022": {
+      "kept": 528,
+      "excluded": 0,
+      "log_mv_smd": null,
+      "age_smd": null,
+      "games_smd": null
+     },
+     "2022/2023": {
+      "kept": 542,
+      "excluded": 0,
+      "log_mv_smd": null,
+      "age_smd": null,
+      "games_smd": null
+     },
+     "2023/2024": {
+      "kept": 567,
+      "excluded": 0,
+      "log_mv_smd": null,
+      "age_smd": null,
+      "games_smd": null
+     },
+     "2024/2025": {
+      "kept": 545,
+      "excluded": 0,
+      "log_mv_smd": null,
+      "age_smd": null,
+      "games_smd": null
+     }
+    }
+   }
+  },
+  "age_days_by_status_of_batch": [
+   {
+    "season": "2019/2020",
+    "le90": 1,
+    "n": 498,
+    "first_date": "2019-12-10",
+    "last_date": "2020-07-08"
+   },
+   {
+    "season": "2020/2021",
+    "le90": 500,
+    "n": 515,
+    "first_date": "2019-05-23",
+    "last_date": "2021-05-21"
+   },
+   {
+    "season": "2021/2022",
+    "le90": 116,
+    "n": 528,
+    "first_date": "2020-10-13",
+    "last_date": "2022-05-13"
+   },
+   {
+    "season": "2022/2023",
+    "le90": 179,
+    "n": 542,
+    "first_date": "2022-06-15",
+    "last_date": "2023-05-22"
+   },
+   {
+    "season": "2023/2024",
+    "le90": 155,
+    "n": 567,
+    "first_date": "2023-12-05",
+    "last_date": "2024-05-02"
+   },
+   {
+    "season": "2024/2025",
+    "le90": 220,
+    "n": 545,
+    "first_date": "2023-06-01",
+    "last_date": "2025-04-29"
+   }
+  ]
+ },
+ "identity": {
+  "by_crosswalk_status": [
+   {
+    "crosswalk_status": "AUTO_ADJUDICATED",
+    "tier": "AUTO_ADJUDICATED_EXTERNAL",
+    "player_seasons": 8,
+    "players": 7,
+    "usable": 8,
+    "valid": 2,
+    "stale": 6,
+    "missing": 0
+   },
+   {
+    "crosswalk_status": "AUTO_ADJUDICATED",
+    "tier": "AUTO_ADJUDICATED_INDEPENDENT_RULE",
+    "player_seasons": 90,
+    "players": 34,
+    "usable": 87,
+    "valid": 32,
+    "stale": 55,
+    "missing": 3
+   },
+   {
+    "crosswalk_status": "AUTO_EXACT",
+    "tier": "AUTO_EXACT_NOT_INDEPENDENTLY_VALIDATED",
+    "player_seasons": 584,
+    "players": 319,
+    "usable": 551,
+    "valid": 174,
+    "stale": 377,
+    "missing": 33
+   },
+   {
+    "crosswalk_status": "AUTO_EXACT",
+    "tier": "AUTO_EXACT_VALIDATED",
+    "player_seasons": 2577,
+    "players": 980,
+    "usable": 2549,
+    "valid": 963,
+    "stale": 1586,
+    "missing": 28
+   },
+   {
+    "crosswalk_status": "REVIEW_REQUIRED",
+    "tier": "UNRESOLVED",
+    "player_seasons": 3,
+    "players": 3,
+    "usable": 0,
+    "valid": 0,
+    "stale": 0,
+    "missing": 3
+   }
+  ],
+  "crosswalk_status_counts": {
+   "AUTO_EXACT": 1299,
+   "AUTO_ADJUDICATED": 41,
+   "REVIEW_REQUIRED": 3
+  },
+  "review_status_counts": {
+   "NOT_REQUIRED": 1299,
+   "AUTOMATED_ADJUDICATION_NOT_HUMAN": 41,
+   "PENDING": 3
+  },
+  "target_vs_crosswalk_mismatch": 0,
+  "unresolved_with_value": 0,
+  "unresolved_rows": [
+   {
+    "season": "2023/2024",
+    "fotmob_player_id": "1188035",
+    "names": "Jimi Tauriainen",
+    "crosswalk_status": "REVIEW_REQUIRED",
+    "target_status": "TARGET_MISSING",
+    "target_missing_reason": "NO_ELIGIBLE_IDENTITY_MATCH"
+   },
+   {
+    "season": "2019/2020",
+    "fotmob_player_id": "244563",
+    "names": "Jota",
+    "crosswalk_status": "REVIEW_REQUIRED",
+    "target_status": "TARGET_MISSING",
+    "target_missing_reason": "NO_ELIGIBLE_IDENTITY_MATCH"
+   },
+   {
+    "season": "2021/2022",
+    "fotmob_player_id": "982620",
+    "names": "Daniel Chesters",
+    "crosswalk_status": "REVIEW_REQUIRED",
+    "target_status": "TARGET_MISSING",
+    "target_missing_reason": "NO_ELIGIBLE_IDENTITY_MATCH"
+   }
+  ],
+  "human_review_fields_filled": 0,
+  "adjudicated_labelled_human": 0,
+  "ledger_exists": false,
+  "duplicate_tm_ids": 0,
+  "by_season_tier": [
+   {
+    "season": "2019/2020",
+    "tier": "AUTO_ADJUDICATED_EXTERNAL",
+    "n": 2,
+    "usable": 2
+   },
+   {
+    "season": "2019/2020",
+    "tier": "AUTO_ADJUDICATED_INDEPENDENT_RULE",
+    "n": 14,
+    "usable": 13
+   },
+   {
+    "season": "2019/2020",
+    "tier": "AUTO_EXACT_NOT_INDEPENDENTLY_VALIDATED",
+    "n": 125,
+    "usable": 116
+   },
+   {
+    "season": "2019/2020",
+    "tier": "AUTO_EXACT_VALIDATED",
+    "n": 373,
+    "usable": 367
+   },
+   {
+    "season": "2019/2020",
+    "tier": "UNRESOLVED",
+    "n": 1,
+    "usable": 0
+   },
+   {
+    "season": "2020/2021",
+    "tier": "AUTO_ADJUDICATED_EXTERNAL",
+    "n": 1,
+    "usable": 1
+   },
+   {
+    "season": "2020/2021",
+    "tier": "AUTO_ADJUDICATED_INDEPENDENT_RULE",
+    "n": 12,
+    "usable": 10
+   },
+   {
+    "season": "2020/2021",
+    "tier": "AUTO_EXACT_NOT_INDEPENDENTLY_VALIDATED",
+    "n": 96,
+    "usable": 96
+   },
+   {
+    "season": "2020/2021",
+    "tier": "AUTO_EXACT_VALIDATED",
+    "n": 415,
+    "usable": 408
+   },
+   {
+    "season": "2021/2022",
+    "tier": "AUTO_ADJUDICATED_INDEPENDENT_RULE",
+    "n": 16,
+    "usable": 16
+   },
+   {
+    "season": "2021/2022",
+    "tier": "AUTO_EXACT_NOT_INDEPENDENTLY_VALIDATED",
+    "n": 102,
+    "usable": 98
+   },
+   {
+    "season": "2021/2022",
+    "tier": "AUTO_EXACT_VALIDATED",
+    "n": 418,
+    "usable": 414
+   },
+   {
+    "season": "2021/2022",
+    "tier": "UNRESOLVED",
+    "n": 1,
+    "usable": 0
+   },
+   {
+    "season": "2022/2023",
+    "tier": "AUTO_ADJUDICATED_EXTERNAL",
+    "n": 2,
+    "usable": 2
+   },
+   {
+    "season": "2022/2023",
+    "tier": "AUTO_ADJUDICATED_INDEPENDENT_RULE",
+    "n": 13,
+    "usable": 13
+   },
+   {
+    "season": "2022/2023",
+    "tier": "AUTO_EXACT_NOT_INDEPENDENTLY_VALIDATED",
+    "n": 82,
+    "usable": 74
+   },
+   {
+    "season": "2022/2023",
+    "tier": "AUTO_EXACT_VALIDATED",
+    "n": 457,
+    "usable": 453
+   },
+   {
+    "season": "2023/2024",
+    "tier": "AUTO_ADJUDICATED_EXTERNAL",
+    "n": 1,
+    "usable": 1
+   },
+   {
+    "season": "2023/2024",
+    "tier": "AUTO_ADJUDICATED_INDEPENDENT_RULE",
+    "n": 18,
+    "usable": 18
+   },
+   {
+    "season": "2023/2024",
+    "tier": "AUTO_EXACT_NOT_INDEPENDENTLY_VALIDATED",
+    "n": 85,
+    "usable": 84
+   },
+   {
+    "season": "2023/2024",
+    "tier": "AUTO_EXACT_VALIDATED",
+    "n": 465,
+    "usable": 464
+   },
+   {
+    "season": "2023/2024",
+    "tier": "UNRESOLVED",
+    "n": 1,
+    "usable": 0
+   },
+   {
+    "season": "2024/2025",
+    "tier": "AUTO_ADJUDICATED_EXTERNAL",
+    "n": 2,
+    "usable": 2
+   },
+   {
+    "season": "2024/2025",
+    "tier": "AUTO_ADJUDICATED_INDEPENDENT_RULE",
+    "n": 17,
+    "usable": 17
+   },
+   {
+    "season": "2024/2025",
+    "tier": "AUTO_EXACT_NOT_INDEPENDENTLY_VALIDATED",
+    "n": 94,
+    "usable": 83
+   },
+   {
+    "season": "2024/2025",
+    "tier": "AUTO_EXACT_VALIDATED",
+    "n": 449,
+    "usable": 443
+   }
+  ],
+  "stale_by_tier": [
+   {
+    "tier": "AUTO_ADJUDICATED_EXTERNAL",
+    "usable": 8,
+    "over_90": 6,
+    "median_age": 130.5,
+    "median_mv": 2850000.0,
+    "median_games": 8.0
+   },
+   {
+    "tier": "AUTO_ADJUDICATED_INDEPENDENT_RULE",
+    "usable": 87,
+    "over_90": 55,
+    "median_age": 109.0,
+    "median_mv": 15000000.0,
+    "median_games": 21.0
+   },
+   {
+    "tier": "AUTO_EXACT_NOT_INDEPENDENTLY_VALIDATED",
+    "usable": 551,
+    "over_90": 377,
+    "median_age": 109.0,
+    "median_mv": 6500000.0,
+    "median_games": 13.0
+   },
+   {
+    "tier": "AUTO_EXACT_VALIDATED",
+    "usable": 2549,
+    "over_90": 1586,
+    "median_age": 109.0,
+    "median_mv": 14500000.0,
+    "median_games": 23.0
+   },
+   {
+    "tier": "UNRESOLVED",
+    "usable": 0,
+    "over_90": 0,
+    "median_age": null,
+    "median_mv": null,
+    "median_games": 1.0
+   }
+  ]
+ }
+}

@@ -1,0 +1,10 @@
+total,rate,n,spearman_total_rate,spearman_total_minutes,spearman_rate_minutes
+m_shots,m_shots_per90,2224,0.709178,0.667403,0.0262475
+m_shots_on_target,m_shots_on_target_per90,1898,0.718864,0.484388,-0.181414
+m_accurate_passes,m_accurate_passes_per90,2223,0.569178,0.851822,0.113132
+m_accurate_long_passes,m_accurate_long_passes_per90,2132,0.748573,0.729092,0.163484
+m_tackles,m_tackles_per90,2203,0.446442,0.792054,-0.111998
+m_interceptions,m_interceptions_per90,2123,0.621291,0.720636,-0.00518589
+m_recoveries,m_recoveries_per90,2220,0.39682,0.903787,0.0321416
+m_blocked_shots,m_blocks_per90,1794,0.717849,0.519437,-0.133469
+m_clearances,m_clearances_per90,531,0.712022,0.656176,0.0158474

@@ -1,0 +1,272 @@
+COMMAND: C:\Users\THEGIOILAP\AppData\Local\Python\pythoncore-3.14-64\python.exe -m unittest discover -s tests -v
+PYTHON_EXECUTABLE: C:\Users\THEGIOILAP\AppData\Local\Python\pythoncore-3.14-64\python.exe
+STARTED_UTC: 2026-11-03T08:53:40.306812+00:00
+ENDED_UTC: 2026-11-03T08:55:21.181384+00:00
+EXIT_CODE: 0
+
+STDOUT:
+
+STDERR:
+test_attempt_budget_and_logging (audit.test_audit.AuditTests.test_attempt_budget_and_logging) ... ok
+test_empty_stats_are_not_available (audit.test_audit.AuditTests.test_empty_stats_are_not_available) ... ok
+test_numeric_season_id_and_substantive_records (audit.test_audit.AuditTests.test_numeric_season_id_and_substantive_records) ... ok
+test_abandoned_and_replayed_fixture_are_distinct (audit.test_final_review.FinalReviewTests.test_abandoned_and_replayed_fixture_are_distinct) ... ok
+test_classification_requires_direct_or_scoped_evidence (audit.test_final_review.FinalReviewTests.test_classification_requires_direct_or_scoped_evidence) ... ok
+test_final_report_links_and_sections (audit.test_final_review.FinalReviewTests.test_final_report_links_and_sections) ... ok
+test_missing_or_escaping_evidence_is_rejected (audit.test_final_review.FinalReviewTests.test_missing_or_escaping_evidence_is_rejected) ... ok
+test_saved_season_and_metric_evidence (audit.test_final_review.FinalReviewTests.test_saved_season_and_metric_evidence) ... ok
+test_saves_unit_label_is_explicit (audit.test_final_review.FinalReviewTests.test_saves_unit_label_is_explicit) ... ok
+test_current_profile_is_not_historical_team (audit.test_phase_01_steps_03_05.Phase2Tests.test_current_profile_is_not_historical_team) ... ok
+test_duplicates_and_multiple_teams_are_sample_only (audit.test_phase_01_steps_03_05.Phase2Tests.test_duplicates_and_multiple_teams_are_sample_only) ... ok
+test_list_and_dict_stats_shapes_and_empty (audit.test_phase_01_steps_03_05.Phase2Tests.test_list_and_dict_stats_shapes_and_empty) ... ok
+test_nested_player_stats_fields (audit.test_phase_01_steps_03_05.Phase2Tests.test_nested_player_stats_fields) ... ok
+test_season_mapping_from_previous_saved_sample (audit.test_phase_01_steps_03_05.Phase2Tests.test_season_mapping_from_previous_saved_sample) ... ok
+test_cache_resume_and_integrity (collection.test_collection.CollectionTests.test_cache_resume_and_integrity) ... ok
+test_config_scope (collection.test_collection.CollectionTests.test_config_scope) ... ok
+test_duplicate_player_team_metric_row_is_rejected (collection.test_collection.CollectionTests.test_duplicate_player_team_metric_row_is_rejected) ... ok
+test_light_sample_balances_roles_and_low_minutes (collection.test_collection.CollectionTests.test_light_sample_balances_roles_and_low_minutes) ... ok
+test_multi_club_relationship_and_unknown_denominator (collection.test_collection.CollectionTests.test_multi_club_relationship_and_unknown_denominator) ... ok
+test_01_deduplicated_profiles (collection.test_execution04_identity.Execution04IdentityTests.test_01_deduplicated_profiles) ... ok
+test_02_current_historical_separation (collection.test_execution04_identity.Execution04IdentityTests.test_02_current_historical_separation) ... ok
+test_03_multi_club_relationships (collection.test_execution04_identity.Execution04IdentityTests.test_03_multi_club_relationships) ... ok
+test_04_no_double_counted_player_season (collection.test_execution04_identity.Execution04IdentityTests.test_04_no_double_counted_player_season) ... ok
+test_05_unknown_position_preserved (collection.test_execution04_identity.Execution04IdentityTests.test_05_unknown_position_preserved) ... ok
+test_06_exact_code_position_registry (collection.test_execution04_identity.Execution04IdentityTests.test_06_exact_code_position_registry) ... ok
+test_07_started_vs_unused_sub (collection.test_execution04_identity.Execution04IdentityTests.test_07_started_vs_unused_sub) ... ok
+test_08_abandoned_replay (collection.test_execution04_identity.Execution04IdentityTests.test_08_abandoned_replay) ... ok
+test_09_missing_lineup_not_invented (collection.test_execution04_identity.Execution04IdentityTests.test_09_missing_lineup_not_invented) ... ok
+test_10_unique_player_match (collection.test_execution04_identity.Execution04IdentityTests.test_10_unique_player_match) ... ok
+test_11_wrong_season_rejected (collection.test_execution04_identity.Execution04IdentityTests.test_11_wrong_season_rejected) ... ok
+test_12_idempotent_keys (collection.test_execution04_identity.Execution04IdentityTests.test_12_idempotent_keys) ... ok
+test_13_cache_resume_lineage (collection.test_execution04_identity.Execution04IdentityTests.test_13_cache_resume_lineage) ... ok
+D:\PTIT\Hoc_may\FB69\tests\collection\test_execution05_acceptance.py:15: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000026617F95F30>
+  cls.rows = pq.read_table(OUT / "player_season_metrics_wide.parquet").to_pylist()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+test_conflict_is_null_and_traced (collection.test_execution05_acceptance.Execution05AcceptanceTests.test_conflict_is_null_and_traced) ... ok
+test_missing_not_zero (collection.test_execution05_acceptance.Execution05AcceptanceTests.test_missing_not_zero) ... ok
+test_raw_audit_rejected_attempts_not_promoted (collection.test_execution05_acceptance.Execution05AcceptanceTests.test_raw_audit_rejected_attempts_not_promoted) ... ok
+test_unconfirmed_population_not_stat_filled (collection.test_execution05_acceptance.Execution05AcceptanceTests.test_unconfirmed_population_not_stat_filled) ... ok
+test_wide_unique_grain (collection.test_execution05_acceptance.Execution05AcceptanceTests.test_wide_unique_grain) ... ok
+test_conflicting_lineup_identity (collection.test_final_acceptance_fix.StrictEvidenceTests.test_conflicting_lineup_identity) ... ok
+test_deterministic_evidence_evaluation (collection.test_final_acceptance_fix.StrictEvidenceTests.test_deterministic_evidence_evaluation) ... ok
+test_duplicate_key_and_season_population (collection.test_final_acceptance_fix.StrictEvidenceTests.test_duplicate_key_and_season_population) ... ok
+test_explicit_unused_and_verified_complete_contract (collection.test_final_acceptance_fix.StrictEvidenceTests.test_explicit_unused_and_verified_complete_contract) ... ok
+test_fact_only_positive_with_missing_lineup_sub_metadata (collection.test_final_acceptance_fix.StrictEvidenceTests.test_fact_only_positive_with_missing_lineup_sub_metadata) ... ok
+test_malformed_swap (collection.test_final_acceptance_fix.StrictEvidenceTests.test_malformed_swap) ... ok
+test_missing_matchfacts (collection.test_final_acceptance_fix.StrictEvidenceTests.test_missing_matchfacts) ... ok
+test_multiple_substitutions (collection.test_final_acceptance_fix.StrictEvidenceTests.test_multiple_substitutions) ... ok
+test_no_substitution_events_is_not_negative (collection.test_final_acceptance_fix.StrictEvidenceTests.test_no_substitution_events_is_not_negative) ... ok
+test_nonempty_but_incomplete_events (collection.test_final_acceptance_fix.StrictEvidenceTests.test_nonempty_but_incomplete_events) ... ok
+test_raw_checksum_mismatch (collection.test_final_acceptance_fix.StrictEvidenceTests.test_raw_checksum_mismatch) ... ok
+test_real_replay_and_preserved_multiclub_relations (collection.test_final_acceptance_fix.StrictEvidenceTests.test_real_replay_and_preserved_multiclub_relations) ... ok
+test_real_samples_all_six_seasons (collection.test_final_acceptance_fix.StrictEvidenceTests.test_real_samples_all_six_seasons) ... ok
+test_self_consistent_feed_does_not_prove_negative (collection.test_final_acceptance_fix.StrictEvidenceTests.test_self_consistent_feed_does_not_prove_negative) ... ok
+test_starter_and_entering_substitute (collection.test_final_acceptance_fix.StrictEvidenceTests.test_starter_and_entering_substitute) ... ok
+test_wrong_scope_rejected (collection.test_final_acceptance_fix.StrictEvidenceTests.test_wrong_scope_rejected) ... ok
+test_wrong_team_and_invalid_player_id (collection.test_final_acceptance_fix.StrictEvidenceTests.test_wrong_team_and_invalid_player_id) ... ok
+test_confirmed_table_excludes_unverified (collection.test_final_acceptance_release.CorrectedEvidenceTests.test_confirmed_table_excludes_unverified) ... ok
+test_coverage_bounds_and_historical_window_metadata (collection.test_final_acceptance_release.CorrectedEvidenceTests.test_coverage_bounds_and_historical_window_metadata) ... ok
+test_fallback_and_revised_are_valid_coverage (collection.test_final_acceptance_release.CorrectedEvidenceTests.test_fallback_and_revised_are_valid_coverage) ... ok
+test_full_test_report_is_log_derived (collection.test_final_acceptance_release.CorrectedEvidenceTests.test_full_test_report_is_log_derived) ... ok
+test_part1_population_partition_and_parent_hashes (collection.test_final_acceptance_release.CorrectedEvidenceTests.test_part1_population_partition_and_parent_hashes) ... ok
+test_promoted_release_integrity_if_present (collection.test_final_acceptance_release.CorrectedEvidenceTests.test_promoted_release_integrity_if_present) ... ok
+test_season_reports_match_canonical_population (collection.test_final_acceptance_release.CorrectedEvidenceTests.test_season_reports_match_canonical_population) ... ok
+test_checksum_and_row_count_rejected (collection.test_final_acceptance_release.ReleaseManifestTests.test_checksum_and_row_count_rejected) ... ok
+test_manifest_idempotent_except_creation_timestamp (collection.test_final_acceptance_release.ReleaseManifestTests.test_manifest_idempotent_except_creation_timestamp) ... ok
+test_physical_rows_and_file_inventory (collection.test_final_acceptance_release.ReleaseManifestTests.test_physical_rows_and_file_inventory) ... ok
+test_unlisted_and_stale_files_rejected (collection.test_final_acceptance_release.ReleaseManifestTests.test_unlisted_and_stale_files_rejected) ... ok
+test_cache_restoration_and_repeat_run_no_duplicate_raw (collection.test_final_validation.FinalValidationTests.test_cache_restoration_and_repeat_run_no_duplicate_raw) ... ok
+test_independent_evidence_review_and_cross_source_conflict (collection.test_final_validation.FinalValidationTests.test_independent_evidence_review_and_cross_source_conflict) ... ok
+test_partial_failure_is_not_cached_as_success (collection.test_final_validation.FinalValidationTests.test_partial_failure_is_not_cached_as_success) ... ok
+test_unexpected_source_shapes_do_not_create_stats (collection.test_final_validation.FinalValidationTests.test_unexpected_source_shapes_do_not_create_stats) ... ok
+test_canceled_replayed_fixture_evidence (collection.test_phase_02a_03_06.Phase2ACollectionTests.test_canceled_replayed_fixture_evidence) ... ok
+test_current_profile_is_not_historical_team (collection.test_phase_02a_03_06.Phase2ACollectionTests.test_current_profile_is_not_historical_team) ... ok
+test_empty_response_and_verified_profile_season (collection.test_phase_02a_03_06.Phase2ACollectionTests.test_empty_response_and_verified_profile_season) ... ok
+test_multi_club_candidate_does_not_invent_relationship (collection.test_phase_02a_03_06.Phase2ACollectionTests.test_multi_club_candidate_does_not_invent_relationship) ... ok
+test_numeric_parser_and_distinct_units (collection.test_phase_02a_03_06.Phase2ACollectionTests.test_numeric_parser_and_distinct_units) ... ok
+test_parquet_idempotency_and_primary_keys (collection.test_phase_02a_03_06.Phase2ACollectionTests.test_parquet_idempotency_and_primary_keys) ... ok
+test_player_match_links_have_selected_lineup_evidence (collection.test_phase_02a_03_06.Phase2ACollectionTests.test_player_match_links_have_selected_lineup_evidence) ... ok
+test_stats_plan_uses_only_verified_season_entry (collection.test_phase_02a_03_06.Phase2ACollectionTests.test_stats_plan_uses_only_verified_season_entry) ... ok
+test_distinct_capture_ids_and_identical_content_hash (collection.test_phase_02b0.Phase2B0Tests.test_distinct_capture_ids_and_identical_content_hash) ... ok
+test_failed_response_is_not_registered_as_capture (collection.test_phase_02b0.Phase2B0Tests.test_failed_response_is_not_registered_as_capture) ... ok
+test_interrupted_write_does_not_touch_committed_capture (collection.test_phase_02b0.Phase2B0Tests.test_interrupted_write_does_not_touch_committed_capture) ... ok
+test_live_fetch_requires_bounded_fixture (collection.test_phase_02b0.Phase2B0Tests.test_live_fetch_requires_bounded_fixture) ... ok
+test_real_sample_and_lineage_evidence (collection.test_phase_02b0.Phase2B0Tests.test_real_sample_and_lineage_evidence) ... ok
+test_request_key_is_canonical_and_season_sensitive (collection.test_phase_02b0.Phase2B0Tests.test_request_key_is_canonical_and_season_sensitive) ... ok
+test_scope_states (collection.test_phase_02b0.Phase2B0Tests.test_scope_states) ... ok
+test_starter_and_entered_sub_only (collection.test_phase_02b0.Phase2B0Tests.test_starter_and_entered_sub_only) ... ok
+test_wrong_season_cache_lookup_even_with_same_match_id (collection.test_phase_02b0.Phase2B0Tests.test_wrong_season_cache_lookup_even_with_same_match_id) ... ok
+test_current_profile_does_not_create_history_or_double_count_totals (collection.test_phase_02b0_03_04.Steps0304Tests.test_current_profile_does_not_create_history_or_double_count_totals) ... ok
+test_exact_code_mapping_unknown_invalid_and_goalkeeper (collection.test_phase_02b0_03_04.Steps0304Tests.test_exact_code_mapping_unknown_invalid_and_goalkeeper) ... ok
+test_historical_multi_club_keeps_verified_and_inferred_distinct (collection.test_phase_02b0_03_04.Steps0304Tests.test_historical_multi_club_keeps_verified_and_inferred_distinct) ... ok
+test_match_status_replay_and_fallback (collection.test_phase_02b0_03_04.Steps0304Tests.test_match_status_replay_and_fallback) ... ok
+test_metric_registry_and_minutes_conflict (collection.test_phase_02b0_03_04.Steps0304Tests.test_metric_registry_and_minutes_conflict) ... ok
+test_player_matches_errors_preserved_and_cache_only_rerun (collection.test_phase_02b0_03_04.Steps0304Tests.test_player_matches_errors_preserved_and_cache_only_rerun) ... ok
+test_versioned_output_lineage_and_constraints (collection.test_phase_02b0_03_04.Steps0304Tests.test_versioned_output_lineage_and_constraints) ... ok
+test_wijnaldum_and_changing_match_positions (collection.test_phase_02b0_03_04.Steps0304Tests.test_wijnaldum_and_changing_match_positions) ... ok
+test_cache_only_runner_resumes_without_http (collection.test_phase_02b1_execution01.Execution01Tests.test_cache_only_runner_resumes_without_http) ... ok
+test_dynamic_append_preserves_identity_and_state (collection.test_phase_02b1_execution01.Execution01Tests.test_dynamic_append_preserves_identity_and_state) ... ok
+test_full_season_gate_rejects_partial_output (collection.test_phase_02b1_execution01.Execution01Tests.test_full_season_gate_rejects_partial_output) ... ok
+test_full_season_gate_requires_real_raw_lineups (collection.test_phase_02b1_execution01.Execution01Tests.test_full_season_gate_requires_real_raw_lineups) ... ok
+test_real_cached_league_and_saves_have_valid_quality (collection.test_phase_02b1_execution01.Execution01Tests.test_real_cached_league_and_saves_have_valid_quality) ... ok
+test_six_season_manifest_dag_and_replay (collection.test_phase_02b1_execution01.Execution01Tests.test_six_season_manifest_dag_and_replay) ... ok
+test_wrong_season_and_corrupt_raw_stop_batch (collection.test_phase_02b1_execution01.Execution01Tests.test_wrong_season_and_corrupt_raw_stop_batch) ... ok
+test_abandoned_match_and_replay (collection.test_population_execution02.PopulationExecution02Tests.test_abandoned_match_and_replay) ... ok
+test_duplicate_lineup_stops_batch_quality_gate (collection.test_population_execution02.PopulationExecution02Tests.test_duplicate_lineup_stops_batch_quality_gate) ... ok
+test_invalid_and_duplicate_player_id_are_reported (collection.test_population_execution02.PopulationExecution02Tests.test_invalid_and_duplicate_player_id_are_reported) ... ok
+test_missing_lineup_list_is_reported (collection.test_population_execution02.PopulationExecution02Tests.test_missing_lineup_list_is_reported) ... ok
+test_missing_substitution_evidence_is_unknown (collection.test_population_execution02.PopulationExecution02Tests.test_missing_substitution_evidence_is_unknown) ... ok
+test_multiclub_and_missing_leaderboard_candidate (collection.test_population_execution02.PopulationExecution02Tests.test_multiclub_and_missing_leaderboard_candidate) ... ok
+test_saved_match_distinguishes_entered_from_unused_substitute (collection.test_population_execution02.PopulationExecution02Tests.test_saved_match_distinguishes_entered_from_unused_substitute) ... ok
+test_wrong_fixture_context_is_rejected (collection.test_population_execution02.PopulationExecution02Tests.test_wrong_fixture_context_is_rejected) ... ok
+test_invalid_json_empty_data_and_unexpected_schema (collection.test_reliability_step05.ReliabilityFailureTests.test_invalid_json_empty_data_and_unexpected_schema) ... ok
+test_missing_player_id_is_detected_without_zero_imputation (collection.test_reliability_step05.ReliabilityFailureTests.test_missing_player_id_is_detected_without_zero_imputation) ... ok
+test_parameter_error_and_access_denial_stop_without_retry (collection.test_reliability_step05.ReliabilityFailureTests.test_parameter_error_and_access_denial_stop_without_retry) ... ok
+test_rate_limit_waits_for_retry_after_and_has_bounded_stop (collection.test_reliability_step05.ReliabilityFailureTests.test_rate_limit_waits_for_retry_after_and_has_bounded_stop) ... ok
+test_server_errors_timeout_and_reset_are_bounded (collection.test_reliability_step05.ReliabilityFailureTests.test_server_errors_timeout_and_reset_are_bounded) ... ok
+test_wrong_season_capture_is_preserved_but_not_cache_accepted (collection.test_reliability_step05.ReliabilityFailureTests.test_wrong_season_capture_is_preserved_but_not_cache_accepted) ... ok
+test_01_top_n_leaderboard_denominator_errors_prevented (collection.test_remediation_coverage.RemediationCoverageTests.test_01_top_n_leaderboard_denominator_errors_prevented)
+Top-N leaderboard subsets must not be used as the full-season eligibility denominator. ... ok
+test_02_goalkeeper_only_metrics_coverage_valid_across_all_seasons (collection.test_remediation_coverage.RemediationCoverageTests.test_02_goalkeeper_only_metrics_coverage_valid_across_all_seasons)
+Goalkeeper-only metrics must never exceed 100% coverage and resolve all 41 prior anomalies. ... ok
+test_03_unknown_positions_tracked_not_imputed (collection.test_remediation_coverage.RemediationCoverageTests.test_03_unknown_positions_tracked_not_imputed)
+Players with unknown position must be tracked in eligibility_unknown_count and not silently classified. ... ok
+test_04_duplicate_source_observations_do_not_inflate_numerator (collection.test_remediation_coverage.RemediationCoverageTests.test_04_duplicate_source_observations_do_not_inflate_numerator)
+Duplicate source observations must not cause double-counting at Player-Season grain. ... ok
+test_05_multi_club_players_grain_consistency (collection.test_remediation_coverage.RemediationCoverageTests.test_05_multi_club_players_grain_consistency)
+Multi-club players must be counted exactly once per season (Player-Season grain). ... ok
+test_06_missing_values_tracked_not_zero_filled (collection.test_remediation_coverage.RemediationCoverageTests.test_06_missing_values_tracked_not_zero_filled)
+Missing values for eligible players must be tracked in missing_eligible_count without zero fabrication. ... ok
+test_07_not_applicable_values_excluded_from_denominator (collection.test_remediation_coverage.RemediationCoverageTests.test_07_not_applicable_values_excluded_from_denominator)
+Outfield players must be categorized as not-applicable and excluded from GK metric denominators. ... ok
+test_08_eligible_population_zero_returns_undefined (collection.test_remediation_coverage.RemediationCoverageTests.test_08_eligible_population_zero_returns_undefined)
+When eligible population is zero, coverage must be undefined, not an error or 0% / 100%. ... ok
+test_09_valid_observations_outside_verified_eligibility_tracked (collection.test_remediation_coverage.RemediationCoverageTests.test_09_valid_observations_outside_verified_eligibility_tracked)
+Valid observations outside verified eligibility must be tracked and not silently dropped. ... ok
+test_10_numerator_denominator_grain_consistency_across_full_dataset (collection.test_remediation_coverage.RemediationCoverageTests.test_10_numerator_denominator_grain_consistency_across_full_dataset)
+Strict grain consistency: valid_eligible_count <= eligible_verified_count across all 318 cells. ... ok
+test_01_release_structure_and_manifest_existence (collection.test_remediation_release_v3.ReleaseV3AcceptanceTests.test_01_release_structure_and_manifest_existence)
+Release v3 directory must exist and contain required subdirectories and files. ... ok
+test_02_sha256_checksum_verification (collection.test_remediation_release_v3.ReleaseV3AcceptanceTests.test_02_sha256_checksum_verification)
+All files registered in release_manifest.json must match their cryptographic SHA-256. ... ok
+test_03_normalized_table_exact_counts (collection.test_remediation_release_v3.ReleaseV3AcceptanceTests.test_03_normalized_table_exact_counts)
+Normalized tables must meet strict exact row counts for Level 2+ dataset. ... ok
+test_04_curated_table_exact_counts_and_dimensions (collection.test_remediation_release_v3.ReleaseV3AcceptanceTests.test_04_curated_table_exact_counts_and_dimensions)
+Curated wide tables must have exact expected dimensions and non-empty columns. ... ok
+test_05_zero_unknown_appearances (collection.test_remediation_release_v3.ReleaseV3AcceptanceTests.test_05_zero_unknown_appearances)
+Zero UNKNOWN substitution/appearance records permitted in Release v3. ... ok
+test_06_zero_unverified_player_seasons (collection.test_remediation_release_v3.ReleaseV3AcceptanceTests.test_06_zero_unverified_player_seasons)
+Zero UNVERIFIED player-season records permitted in Release v3. ... ok
+test_07_coverage_anomalies_completely_resolved (collection.test_remediation_release_v3.ReleaseV3AcceptanceTests.test_07_coverage_anomalies_completely_resolved)
+Cross-season feature coverage must have 318 cells, 0 anomalies, max coverage <= 100%. ... ok
+test_08_metric_reconciliation_verdict (collection.test_remediation_release_v3.ReleaseV3AcceptanceTests.test_08_metric_reconciliation_verdict)
+Step 05 reconciliation must reconcile 539 conflicts and preserve exactly 36 genuine conflicts as null. ... ok
+test_09_all_six_seasons_acceptance_pass (collection.test_remediation_release_v3.ReleaseV3AcceptanceTests.test_09_all_six_seasons_acceptance_pass)
+All six seasonal acceptance reports must exist and indicate PASS status. ... ok
+test_10_foreign_key_referential_integrity (collection.test_remediation_release_v3.ReleaseV3AcceptanceTests.test_10_foreign_key_referential_integrity)
+All foreign keys in Release v3 tables must resolve to valid primary keys. ... ok
+test_11_abandoned_fixture_quarantine_integrity (collection.test_remediation_release_v3.ReleaseV3AcceptanceTests.test_11_abandoned_fixture_quarantine_integrity)
+Fixture 4193691 (Bournemouth vs Luton abandoned) must produce zero active appearances. ... ok
+test_12_historical_xa_recovery_counts (collection.test_remediation_release_v3.ReleaseV3AcceptanceTests.test_12_historical_xa_recovery_counts)
+Season 2019/20 xA must have exactly 96 recovered observations and 419 missing without zero filling. ... ok
+test_01_starting_player (collection.test_remediation_step_07.RemediationStep07Tests.test_01_starting_player)
+1. Verified starting player must be classified as STARTED with DIRECT_STARTER_EVIDENCE. ... ok
+test_02_confirmed_substitute_entering (collection.test_remediation_step_07.RemediationStep07Tests.test_02_confirmed_substitute_entering)
+2. Confirmed substitute entering must be classified as SUBSTITUTED_ON with DIRECT_SUBSTITUTION_ON_EVIDENCE. ... ok
+test_03_unused_substitute (collection.test_remediation_step_07.RemediationStep07Tests.test_03_unused_substitute)
+3. Verified unused substitute must be classified as UNUSED_SUBSTITUTE with COMPLETE_UNUSED_SUBSTITUTE_EVIDENCE. ... ok
+test_04_empty_or_incomplete_event_feed (collection.test_remediation_step_07.RemediationStep07Tests.test_04_empty_or_incomplete_event_feed)
+4. If event feed is missing or empty, substitute must NOT be resolved to UNUSED, but retained as UNKNOWN. ... ok
+test_05_contradictory_lineup_event_evidence (collection.test_remediation_step_07.RemediationStep07Tests.test_05_contradictory_lineup_event_evidence)
+5. Contradictory evidence (e.g. active stats without substitution event) must remain CONFLICTING. ... ok
+test_06_multiple_substitutions (collection.test_remediation_step_07.RemediationStep07Tests.test_06_multiple_substitutions)
+6. Multiple substitutions in the same fixture must all be correctly tracked and matched. ... ok
+test_07_player_id_mapping (collection.test_remediation_step_07.RemediationStep07Tests.test_07_player_id_mapping)
+7. Player ID mapping must be clean, numeric, and without collisions. ... ok
+test_08_wrong_season_response (collection.test_remediation_step_07.RemediationStep07Tests.test_08_wrong_season_response)
+8. Player match records must strictly map to correct seasons. ... ok
+test_09_duplicate_player_match_links (collection.test_remediation_step_07.RemediationStep07Tests.test_09_duplicate_player_match_links)
+9. Exactly one player-match record must exist per (match_id, player_id) pair. ... ok
+test_10_missing_event_fields (collection.test_remediation_step_07.RemediationStep07Tests.test_10_missing_event_fields)
+10. Parser must handle missing optional fields (ratings, fantasyScore, marketValue) gracefully. ... ok
+test_11_different_historical_json_structures (collection.test_remediation_step_07.RemediationStep07Tests.test_11_different_historical_json_structures)
+11. Both 2019/20 explicit list structure and 2024/25 empty dict structure must resolve correctly. ... ok
+test_12_fixture_cancellation_replay (collection.test_remediation_step_07.RemediationStep07Tests.test_12_fixture_cancellation_replay)
+12. Abandoned match 4193691 must produce zero active appearances in PMA. ... ok
+test_13_multi_club_season (collection.test_remediation_step_07.RemediationStep07Tests.test_13_multi_club_season)
+13. Multi-club players must maintain single Player�Season rows with summed appearances. ... ok
+test_14_reprocessing_idempotency (collection.test_remediation_step_07.RemediationStep07Tests.test_14_reprocessing_idempotency)
+14. Reprocessing Step 07 must be completely deterministic and idempotent. ... ok
+test_15_raw_provenance_integrity (collection.test_remediation_step_07.RemediationStep07Tests.test_15_raw_provenance_integrity)
+15. Every resolved audit record must link to an existing raw capture on disk. ... ok
+test_01_confirmed_appearance_from_starting_lineup (collection.test_remediation_steps_03_04.RemediationSteps0304Tests.test_01_confirmed_appearance_from_starting_lineup)
+Verified starting lineup listing must yield CONFIRMED_APPEARED with started_match_count >= 1. ... ok
+test_02_confirmed_substitution_on (collection.test_remediation_steps_03_04.RemediationSteps0304Tests.test_02_confirmed_substitution_on)
+Verified substitution-on listing must yield CONFIRMED_APPEARED. ... ok
+test_03_unused_substitute_handling (collection.test_remediation_steps_03_04.RemediationSteps0304Tests.test_03_unused_substitute_handling)
+Unused substitutes must be counted in unused_substitute_count and not silently dropped. ... ok
+test_04_incomplete_match_evidence_unverified (collection.test_remediation_steps_03_04.RemediationSteps0304Tests.test_04_incomplete_match_evidence_unverified)
+Unobserved bench listings with 0 appearances must yield UNVERIFIED, not non-appeared. ... ok
+test_05_season_level_nonappearance_inference (collection.test_remediation_steps_03_04.RemediationSteps0304Tests.test_05_season_level_nonappearance_inference)
+Player with 0 appearances and complete negative evidence must be CONFIRMED_NON_APPEARED. ... ok
+test_06_conflicting_appearance_evidence (collection.test_remediation_steps_03_04.RemediationSteps0304Tests.test_06_conflicting_appearance_evidence)
+Discrepancies between base summary status and matchday evidence must be flagged CONFLICTING. ... ok
+test_07_multi_club_players_grain_and_summing (collection.test_remediation_steps_03_04.RemediationSteps0304Tests.test_07_multi_club_players_grain_and_summing)
+Multi-club players must maintain single Player-Season grain with summed appearances. ... ok
+test_08_duplicate_player_season_rejection (collection.test_remediation_steps_03_04.RemediationSteps0304Tests.test_08_duplicate_player_season_rejection)
+Player-Season primary key (season_id, player_id) must be strictly unique. ... ok
+test_09_historical_scope_mismatch_rejection (collection.test_remediation_steps_03_04.RemediationSteps0304Tests.test_09_historical_scope_mismatch_rejection)
+Appearances from abandoned or ineligible fixtures must not inflate appearance counts. ... ok
+test_10_population_partition_completeness (collection.test_remediation_steps_03_04.RemediationSteps0304Tests.test_10_population_partition_completeness)
+Exhaustive mutual exclusivity: sum of 4 partitions must exactly equal 4,052. ... ok
+test_11_superseded_gate_migration_and_fields (collection.test_remediation_steps_03_04.RemediationSteps0304Tests.test_11_superseded_gate_migration_and_fields)
+All 12 legacy gates must be SUPERSEDED with full replacement metadata. ... ok
+test_12_missing_gate_replacement_detection (collection.test_remediation_steps_03_04.RemediationSteps0304Tests.test_12_missing_gate_replacement_detection)
+Gate replacement must reference existing execution05 evidence files. ... ok
+test_13_gate_dependency_validation (collection.test_remediation_steps_03_04.RemediationSteps0304Tests.test_13_gate_dependency_validation)
+Predecessors of NORMALIZATION_GATE must be VALIDATED; SEASON_ACCEPTANCE_GATE has 0 dependents. ... ok
+test_14_manifest_migration_idempotency (collection.test_remediation_steps_03_04.RemediationSteps0304Tests.test_14_manifest_migration_idempotency)
+Running manifest migration repeatedly must be safe and idempotent. ... ok
+test_01_two_compatible_observations_with_equal_values (collection.test_remediation_steps_05_06.RemediationSteps0506Tests.test_01_two_compatible_observations_with_equal_values)
+When board and playerStats values match exactly, status must be MATCH and value OBSERVED. ... ok
+test_02_rounding_differences (collection.test_remediation_steps_05_06.RemediationSteps0506Tests.test_02_rounding_differences)
+Discrepancies on 0.x5 boundary (diff <= 0.051) must be classified ROUNDING_DIFFERENCE and resolved. ... ok
+test_03_incompatible_metric_definitions (collection.test_remediation_steps_05_06.RemediationSteps0506Tests.test_03_incompatible_metric_definitions)
+Definition divergence (e.g. goals_prevented) must be DEFINITION_MISMATCH and preserved as CONFLICTING. ... ok
+test_04_total_versus_per90_mismatch (collection.test_remediation_steps_05_06.RemediationSteps0506Tests.test_04_total_versus_per90_mismatch)
+Total metrics and per90 metrics must maintain separate aggregation types and never cross-reconcile. ... ok
+test_05_season_total_versus_team_specific_total (collection.test_remediation_steps_05_06.RemediationSteps0506Tests.test_05_season_total_versus_team_specific_total)
+Multi-club players must be flagged INCOMPARABLE_MULTICLUB to prevent mixing season totals with club boards. ... ok
+test_06_different_season_ids (collection.test_remediation_steps_05_06.RemediationSteps0506Tests.test_06_different_season_ids)
+Metric observations must strictly match target season_id; cross-season comparisons are prohibited. ... ok
+test_07_wrong_competition (collection.test_remediation_steps_05_06.RemediationSteps0506Tests.test_07_wrong_competition)
+All observations must belong strictly to EPL (leagueId 47). ... ok
+test_08_parser_induced_conflicts (collection.test_remediation_steps_05_06.RemediationSteps0506Tests.test_08_parser_induced_conflicts)
+Display rounding on 0.x5 boundary must not leave artificial conflicts unresolved. ... ok
+test_09_proper_source_fallback (collection.test_remediation_steps_05_06.RemediationSteps0506Tests.test_09_proper_source_fallback)
+When playerStats is MISSING, validated leagueseasondeepstats observation is admitted as fallback. ... ok
+test_10_invalid_source_fallback (collection.test_remediation_steps_05_06.RemediationSteps0506Tests.test_10_invalid_source_fallback)
+Unverified/ineligible players must NOT receive fallback observations. ... ok
+test_11_missing_xa_with_valid_historical_alternative (collection.test_remediation_steps_05_06.RemediationSteps0506Tests.test_11_missing_xa_with_valid_historical_alternative)
+2019/20 xA must recover exactly 96 observations; remaining 419 remain MISSING without zero-filling. ... ok
+test_12_unresolved_conflict_preservation (collection.test_remediation_steps_05_06.RemediationSteps0506Tests.test_12_unresolved_conflict_preservation)
+All 36 genuine unresolved conflicts must remain CONFLICTING with null values. ... ok
+test_13_raw_evidence_traceability (collection.test_remediation_steps_05_06.RemediationSteps0506Tests.test_13_raw_evidence_traceability)
+Every conflict record and fallback record must trace to an existing raw file on disk. ... ok
+test_14_reprocessing_determinism (collection.test_remediation_steps_05_06.RemediationSteps0506Tests.test_14_reprocessing_determinism)
+Re-executing Steps 05 & 06 must be strictly deterministic and produce identical results. ... ok
+test_conflicting_duplicate_source_fields_are_preserved_for_review (collection.test_statistics_execution03.StatisticsExecution03Tests.test_conflicting_duplicate_source_fields_are_preserved_for_review) ... ok
+test_consecutive_null_stats_trip_quality_gate (collection.test_statistics_execution03.StatisticsExecution03Tests.test_consecutive_null_stats_trip_quality_gate) ... ok
+test_json_null_player_stats_is_source_absence_and_other_bad_json_is_error (collection.test_statistics_execution03.StatisticsExecution03Tests.test_json_null_player_stats_is_source_absence_and_other_bad_json_is_error) ... ok
+test_leaderboard_subset_and_explicit_pagination (collection.test_statistics_execution03.StatisticsExecution03Tests.test_leaderboard_subset_and_explicit_pagination) ... ok
+test_missing_zero_and_total_per90_are_distinct (collection.test_statistics_execution03.StatisticsExecution03Tests.test_missing_zero_and_total_per90_are_distinct) ... ok
+test_position_specific_denominator_uses_confirmed_keeper_ids_only (collection.test_statistics_execution03.StatisticsExecution03Tests.test_position_specific_denominator_uses_confirmed_keeper_ids_only) ... ok
+test_reconciliation_respects_display_rounding_and_multiclub_scope (collection.test_statistics_execution03.StatisticsExecution03Tests.test_reconciliation_respects_display_rounding_and_multiclub_scope) ... ok
+test_saved_profile_can_support_another_checked_season (collection.test_statistics_execution03.StatisticsExecution03Tests.test_saved_profile_can_support_another_checked_season) ... ok
+test_sparse_top_card_is_retained_but_malformed_response_is_rejected (collection.test_statistics_execution03.StatisticsExecution03Tests.test_sparse_top_card_is_retained_but_malformed_response_is_rejected) ... ok
+test_team_filter_and_wrong_season_remain_unverified_or_rejected (collection.test_statistics_execution03.StatisticsExecution03Tests.test_team_filter_and_wrong_season_remain_unverified_or_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 190 tests in 98.773s
+
+OK

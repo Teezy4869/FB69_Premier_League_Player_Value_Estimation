@@ -1,0 +1,70 @@
+# FB69 official research scope. Single source of truth for which seasons may enter research data.
+# Every rs5 pipeline, validator and test reads this file through src/research_scope/scope.py.
+# Season cutoff DATES are not repeated here: they stay in the approved cutoff config referenced below.
+scope_id: rs5_v1
+scope_version: 1
+decided_by: project owner
+decision_id: D9
+decision_date: "2026-11-07"
+decision: >-
+  The official research scope is five EPL seasons, 2020/21 to 2024/25. 2019/20 is permanently excluded.
+supersedes:
+  D7: >-
+    D7 (keep 2019/20 with flags and a with/without sensitivity analysis) no longer applies to research data.
+    2019/20 is not kept, flagged, or compared. No separate 2019/20 workstream exists.
+
+# Labels use the source format of FotMob v3.1 and the Phase 3 cutoff config ("2020/2021").
+# season_id is FotMob's tournament season id; tm_season_start_year is Transfermarkt's games.season.
+official_seasons:
+  - {season: "2020/2021", season_id: "15382", tm_season_start_year: 2020}
+  - {season: "2021/2022", season_id: "16390", tm_season_start_year: 2021}
+  - {season: "2022/2023", season_id: "17664", tm_season_start_year: 2022}
+  - {season: "2023/2024", season_id: "20720", tm_season_start_year: 2023}
+  - {season: "2024/2025", season_id: "23685", tm_season_start_year: 2024}
+
+# Excluded seasons must never appear in research outputs. They are listed so validators can reject them by
+# every identifier form a row might carry (label, FotMob id, Transfermarkt start year).
+excluded_seasons:
+  - season: "2019/2020"
+    season_id: "14022"
+    tm_season_start_year: 2019
+    reason: >-
+      Owner decision D9. Context only (not a modeling argument): 491 of 498 usable 2019/20 targets sit on the
+      2020-04-08 pandemic re-valuation batch (Phase 3 ISS-19), and its xG family covers 4 of 380 matches (ISS-20).
+    excluded_from: [EDA, feature_selection, feature_engineering, preprocessing, model_training, validation, testing, model_evaluation, sensitivity_analysis, comparative_analysis]
+
+research_objective:
+  id: A
+  name: End-of-season estimation
+  decision_id: D6
+  unchanged_by_this_scope: true
+
+season_cutoff_policy:
+  # The approved cutoff config is reused, not copied. Only the official seasons are read from it.
+  cutoff_config: configs/phase_03_seasons.yaml
+  cutoff: season_end
+  selection_rule_version: latest_valid_on_or_before_season_end_v1
+  decision_ids: [D4, D6]
+  stale_label_days_is_exclusion_rule: false
+
+# Historical artifacts that the rs5 work reads but must never modify.
+historical_inputs:
+  fotmob_release: data/releases/fotmob_epl_2019_2025_v3_1
+  transfermarkt_snapshot: tm_r2_20260905
+  historical_crosswalk_run: data/phase_03/entity_resolution/matching_v2_1__reviews_none
+  historical_target_run: data/phase_03/targets/target_v1__matching_v2_1
+  historical_integrated_release: data/releases/fb69_player_season_integrated_v1
+
+# Holdout season (owner decision D10, 2026-11-16). NOT an official research season: it is deliberately absent from
+# official_seasons, so every existing rs5 validator keeps rejecting it from development outputs.
+# Use: score the frozen final model ONCE. Never use for EDA, features, preprocessing, tuning or thresholds.
+holdout_seasons:
+  - season: "2025/2026"
+    season_id: null              # FotMob tournament season id: to be verified before use
+    tm_season_start_year: 2025
+    decision_id: D10
+    decision_date: "2026-11-16"
+    role: holdout_only
+    status: PENDING_DATA         # cutoff dates, FotMob and Transfermarkt coverage not yet verified
+    note: >-
+      Replaces the 2024/25 hold-out of ODR-14, which was used as development data in Phase 5.

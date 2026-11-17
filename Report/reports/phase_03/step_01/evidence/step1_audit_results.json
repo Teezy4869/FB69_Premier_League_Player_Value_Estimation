@@ -1,0 +1,2235 @@
+{
+ "generated_at_utc": "2026-11-04T11:11:48.449012+00:00",
+ "duckdb_version": "2.0.0",
+ "fotmob": {
+  "manifest_verification": {
+   "manifest_sha256": "9aa00b227b2dbf9a6004258ff94c25e825d7c5cfd45a365cb94f5f98863fbf93",
+   "dataset_version": "fotmob_epl_2019_2025_v3_1",
+   "parent_release_version": "fotmob_epl_2019_2025_v3",
+   "created_at_utc": "2026-11-03T08:46:50.103980+00:00",
+   "quality_status": "CONDITIONAL_GO",
+   "listed_files": 38,
+   "files_on_disk": 39,
+   "missing_from_disk": [],
+   "unlisted_on_disk": [
+    "metadata/release_manifest.json"
+   ],
+   "sha256_mismatches": [],
+   "byte_mismatches": [],
+   "row_mismatches": [],
+   "key_file_sha256": {
+    "curated/confirmed_appeared_player_seasons.parquet": "7be1751966e8a377a1b8dedb275e903e0d76187ff11dc5503429a620d8dcd890",
+    "curated/player_season_metrics_wide.parquet": "b3de37627a132ddd0cf95d413a310cc8fba1b15670247ba1b00a2b3e7d82e35e",
+    "normalized/complete_player_season_classification.parquet": "4d95b97f018c6c59f0e5efbeb04c26162a240be5646b4744e3161dde5a2fb433",
+    "normalized/confirmed_appeared_player_seasons.parquet": "70d0d3d12d7a3f9b71c84a9bfaaa9a5b94e9d5782f15ad1380df825cbd1edb66",
+    "normalized/confirmed_non_appeared_player_seasons.parquet": "f38bf6ec45c905f0bdb29683d7d46d5451ee2114ee9cd02ceae0dc7db0be222e",
+    "normalized/historical_position_observations.parquet": "3ffc696c3fb1d42605c30bb6746d14e33f477a18c57a67555690cb698baeaa43",
+    "normalized/matches.parquet": "b9b93392f757f4dd741d2a0a220c285686e2a01f17ee10a6aa11c9096b22caf5",
+    "normalized/metric_observations.parquet": "f6bce66e0040a1ba5635f1e09dd96ec5b15f3945c093460f72dd5266d96f4f8d",
+    "normalized/player_match_appearances.parquet": "5c4edb3124b7723162dc7d816a7e781cbf4ead440ba371fc18ebe0ef330905d6",
+    "normalized/player_seasons.parquet": "ae0746dc56bff28f3b9b59a43d8b0c7b6ebaf0fd1d41ad6c4ca7c7045fdeff2d",
+    "normalized/player_team_seasons.parquet": "69957c87d08bece1c79f92b02cc80147821d72818d5eed34765bb5a8b5e1a05b",
+    "normalized/players.parquet": "fae45cba4e8a1aa37197db799cba2b5ee54731e936545fad0d488acbca0d3c9a",
+    "normalized/seasons.parquet": "0f5280d446989c625ece2974731379eddc40ab824950ba1e4065e4915a706722",
+    "normalized/substitution_evidence_registry.parquet": "e9ab9835753d1cea17dcd88f9397b5f91fa11776ca132d45a9847c4c03a883d6",
+    "normalized/teams.parquet": "d00072ea74685f9c50cc7cb27bdc71047ea10fc5ceaaf38790f3f4190c0e5258",
+    "normalized/unverified_player_seasons.parquet": "97ea49a616b0f14ac8f85af460cbb560f0fff81f8904696d23d8d73f7b197c36"
+   }
+  },
+  "table_row_counts": {
+   "cur": 3262,
+   "wide": 4052,
+   "conf": 3262,
+   "nonapp": 0,
+   "unv": 790,
+   "cls": 4052,
+   "ps": 4052,
+   "pts": 4135,
+   "pl": 1757,
+   "se": 6,
+   "te": 120,
+   "ma": 2281
+  },
+  "population_by_season": [
+   {
+    "season_label": "2019/2020",
+    "confirmed_appeared": 515,
+    "other": 0,
+    "unverified": 99,
+    "total": 614
+   },
+   {
+    "season_label": "2020/2021",
+    "confirmed_appeared": 524,
+    "other": 0,
+    "unverified": 117,
+    "total": 641
+   },
+   {
+    "season_label": "2021/2022",
+    "confirmed_appeared": 537,
+    "other": 0,
+    "unverified": 142,
+    "total": 679
+   },
+   {
+    "season_label": "2022/2023",
+    "confirmed_appeared": 554,
+    "other": 0,
+    "unverified": 145,
+    "total": 699
+   },
+   {
+    "season_label": "2023/2024",
+    "confirmed_appeared": 570,
+    "other": 0,
+    "unverified": 164,
+    "total": 734
+   },
+   {
+    "season_label": "2024/2025",
+    "confirmed_appeared": 562,
+    "other": 0,
+    "unverified": 123,
+    "total": 685
+   }
+  ],
+  "curated_by_season": [
+   {
+    "season_label": "2019/2020",
+    "n": 515,
+    "players": 515
+   },
+   {
+    "season_label": "2020/2021",
+    "n": 524,
+    "players": 524
+   },
+   {
+    "season_label": "2021/2022",
+    "n": 537,
+    "players": 537
+   },
+   {
+    "season_label": "2022/2023",
+    "n": 554,
+    "players": 554
+   },
+   {
+    "season_label": "2023/2024",
+    "n": 570,
+    "players": 570
+   },
+   {
+    "season_label": "2024/2025",
+    "n": 562,
+    "players": 562
+   }
+  ],
+  "status_encodings": {
+   "curated.population_status": [
+    {
+     "v": "APPEARED",
+     "n": 3262
+    }
+   ],
+   "wide.population_status": [
+    {
+     "v": "APPEARED",
+     "n": 3262
+    },
+    {
+     "v": "UNKNOWN_PARTICIPATION",
+     "n": 790
+    }
+   ],
+   "classification.population_category": [
+    {
+     "v": "CONFIRMED_APPEARED",
+     "n": 3262
+    },
+    {
+     "v": "UNVERIFIED",
+     "n": 790
+    }
+   ],
+   "player_seasons.evidence_status": [
+    {
+     "v": "APPEARED",
+     "n": 3262
+    },
+    {
+     "v": "UNKNOWN_PARTICIPATION",
+     "n": 790
+    }
+   ],
+   "classification_reason": [
+    {
+     "c": "CONFIRMED_APPEARED",
+     "v": "POSITIVE_MATCH_EVIDENCE",
+     "n": 3262
+    },
+    {
+     "c": "UNVERIFIED",
+     "v": "SEASON_WIDE_NEGATIVE_COVERAGE_UNPROVEN",
+     "n": 790
+    }
+   ]
+  },
+  "key_uniqueness": {
+   "cur": {
+    "n_rows": 3262,
+    "n_keys": 3262,
+    "null_keys": 0,
+    "non_numeric_player_ids": 0
+   },
+   "conf": {
+    "n_rows": 3262,
+    "n_keys": 3262,
+    "null_keys": 0,
+    "non_numeric_player_ids": 0
+   },
+   "unv": {
+    "n_rows": 790,
+    "n_keys": 790,
+    "null_keys": 0,
+    "non_numeric_player_ids": 0
+   },
+   "cls": {
+    "n_rows": 4052,
+    "n_keys": 4052,
+    "null_keys": 0,
+    "non_numeric_player_ids": 0
+   },
+   "ps": {
+    "n_rows": 4052,
+    "n_keys": 4052,
+    "null_keys": 0,
+    "non_numeric_player_ids": 0
+   },
+   "wide": {
+    "n_rows": 4052,
+    "n_keys": 4052,
+    "null_keys": 0,
+    "non_numeric_player_ids": 0
+   }
+  },
+  "players_primary_key": {
+   "n_rows": 1757,
+   "n_keys": 1757
+  },
+  "population_set_reconciliation": {
+   "curated_minus_confirmed": 0,
+   "confirmed_minus_curated": 0,
+   "confirmed_minus_classification_confirmed": 0,
+   "confirmed_intersect_unverified": 0,
+   "wide_appeared_minus_curated": 0,
+   "confirmed_without_players_row": 0,
+   "confirmed_zero_appearance_rows": 0
+  },
+  "unique_confirmed_players": 1343,
+  "seasons_per_confirmed_player": [
+   {
+    "seasons": 1,
+    "players": 569
+   },
+   {
+    "seasons": 2,
+    "players": 259
+   },
+   {
+    "seasons": 3,
+    "players": 183
+   },
+   {
+    "seasons": 4,
+    "players": 145
+   },
+   {
+    "seasons": 5,
+    "players": 76
+   },
+   {
+    "seasons": 6,
+    "players": 111
+   }
+  ],
+  "multi_club": {
+   "by_season": [
+    {
+     "season_label": "2019/2020",
+     "multi": 7,
+     "confirmed_team_count_ge2": 7,
+     "max_teams": 2
+    },
+    {
+     "season_label": "2020/2021",
+     "multi": 11,
+     "confirmed_team_count_ge2": 8,
+     "max_teams": 2
+    },
+    {
+     "season_label": "2021/2022",
+     "multi": 12,
+     "confirmed_team_count_ge2": 9,
+     "max_teams": 2
+    },
+    {
+     "season_label": "2022/2023",
+     "multi": 21,
+     "confirmed_team_count_ge2": 15,
+     "max_teams": 2
+    },
+    {
+     "season_label": "2023/2024",
+     "multi": 12,
+     "confirmed_team_count_ge2": 10,
+     "max_teams": 2
+    },
+    {
+     "season_label": "2024/2025",
+     "multi": 17,
+     "confirmed_team_count_ge2": 12,
+     "max_teams": 2
+    }
+   ],
+   "status_values": [
+    {
+     "v": "SINGLE_CLUB",
+     "n": 3182
+    },
+    {
+     "v": "MULTI_CLUB",
+     "n": 80
+    }
+   ],
+   "pts_rows_for_confirmed_population": 3342,
+   "pts_confirmed_appeared_rows": 3323,
+   "pts_membership_status": [
+    {
+     "v": "APPEARED",
+     "w": "CONFIRMED",
+     "n": 3323
+    },
+    {
+     "v": "UNVERIFIED",
+     "w": "UNRESOLVED",
+     "n": 19
+    }
+   ]
+  },
+  "identity_confirmed": {
+   "identities": 1343,
+   "null_counts": {
+    "player_id": 0,
+    "lineup_name": 70,
+    "profile_name": 0,
+    "birth_date": 0,
+    "nationality_code": 0,
+    "nationality_name": 0,
+    "current_team_id": 1343,
+    "current_position": 0,
+    "profile_status": 0,
+    "profile_raw_path": 0,
+    "profile_collected_at_utc": 0
+   },
+   "birth_date_invalid": 0,
+   "birth_date_range": [
+    "1981-09-28",
+    "2009-07-10"
+   ],
+   "profile_status": {
+    "VERIFIED_ID": 1343
+   },
+   "current_position_top": [
+    [
+     "Center Back",
+     211
+    ],
+    [
+     "Striker",
+     166
+    ],
+    [
+     "Defensive Midfielder",
+     156
+    ],
+    [
+     "Attacking Midfielder",
+     95
+    ],
+    [
+     "Left Winger",
+     88
+    ],
+    [
+     "Right Winger",
+     83
+    ],
+    [
+     "Keeper",
+     81
+    ],
+    [
+     "defender",
+     78
+    ],
+    [
+     "Left Back",
+     71
+    ],
+    [
+     "Right Back",
+     67
+    ],
+    [
+     "midfielder",
+     64
+    ],
+    [
+     "Central Midfielder",
+     64
+    ]
+   ],
+   "profile_collected_range": [
+    "2026-11-02T07:57:21.831839+00:00",
+    "2026-11-03T01:36:48.109555+00:00"
+   ],
+   "lineup_vs_profile_name_differs": 171,
+   "names_with_replacement_char": 0,
+   "names_with_mojibake_marker": 0,
+   "names_non_ascii": 229,
+   "same_normalized_name_multiple_ids": 1,
+   "ids_in_name_collisions": 2,
+   "same_name_and_dob_multiple_ids": 0,
+   "profile_raw_files_missing": 0
+  },
+  "names_per_season_stability": {
+   "n_ids": 1343,
+   "ids_with_multiple_names": 51
+  },
+  "season_match_dates": [
+   {
+    "season_label": "2019/2020",
+    "rows_in_table": 380,
+    "completed": 380,
+    "first_match_utc": "2019-08-09T19:00:00Z",
+    "last_match_utc": "2020-07-26T15:00:00Z",
+    "non_completed": 0
+   },
+   {
+    "season_label": "2020/2021",
+    "rows_in_table": 380,
+    "completed": 380,
+    "first_match_utc": "2020-09-12T11:30:00Z",
+    "last_match_utc": "2021-05-23T15:00:00Z",
+    "non_completed": 0
+   },
+   {
+    "season_label": "2021/2022",
+    "rows_in_table": 380,
+    "completed": 380,
+    "first_match_utc": "2021-08-13T19:00:00Z",
+    "last_match_utc": "2022-05-22T15:00:00Z",
+    "non_completed": 0
+   },
+   {
+    "season_label": "2022/2023",
+    "rows_in_table": 380,
+    "completed": 380,
+    "first_match_utc": "2022-08-05T19:00:00Z",
+    "last_match_utc": "2023-05-28T15:30:00Z",
+    "non_completed": 0
+   },
+   {
+    "season_label": "2023/2024",
+    "rows_in_table": 381,
+    "completed": 380,
+    "first_match_utc": "2023-08-11T19:00:00Z",
+    "last_match_utc": "2024-05-19T15:00:00Z",
+    "non_completed": 1
+   },
+   {
+    "season_label": "2024/2025",
+    "rows_in_table": 380,
+    "completed": 380,
+    "first_match_utc": "2024-08-16T19:00:00Z",
+    "last_match_utc": "2025-05-25T15:00:00Z",
+    "non_completed": 0
+   }
+  ],
+  "non_completed_matches": [
+   {
+    "season_label": "2023/2024",
+    "match_id": "4193691",
+    "match_date_utc": "2023-12-16T15:00:00Z",
+    "status_reason": "Abandoned",
+    "match_status": "CANCELLED_OR_ABANDONED"
+   }
+  ],
+  "teams_distinct": {
+   "team_ids": 27,
+   "team_names": 27,
+   "team_seasons": 120
+  },
+  "features": {
+   "total_columns": 114,
+   "metric_columns": 53,
+   "status_columns": 53,
+   "metric_types": {
+    "double": 53
+   },
+   "other_columns": [
+    "season_id",
+    "season_label",
+    "player_id",
+    "population_status",
+    "profile_raw_path",
+    "confirmed_team_ids",
+    "confirmed_team_count",
+    "stats_raw_path"
+   ],
+   "metric_names": [
+    "m_accurate_long_passes",
+    "m_accurate_long_passes_per90",
+    "m_accurate_passes",
+    "m_accurate_passes_per90",
+    "m_aerials_won",
+    "m_aerials_won_percent",
+    "m_appearances",
+    "m_assists",
+    "m_big_chances_created",
+    "m_blocked_shots",
+    "m_blocks_per90",
+    "m_chances_created",
+    "m_clean_sheets",
+    "m_clearances",
+    "m_clearances_per90",
+    "m_cross_accuracy",
+    "m_dribbles_succeeded",
+    "m_duels_won",
+    "m_duels_won_percent",
+    "m_expected_assists",
+    "m_expected_goals",
+    "m_expected_goals_on_target",
+    "m_fouls_committed",
+    "m_fouls_won",
+    "m_goals",
+    "m_goals_conceded",
+    "m_goals_conceded_per90",
+    "m_goals_prevented",
+    "m_interceptions",
+    "m_interceptions_per90",
+    "m_key_passes",
+    "m_long_ball_accuracy",
+    "m_minutes_played",
+    "m_non_penalty_xg",
+    "m_passing_accuracy",
+    "m_penalty_saves",
+    "m_rating",
+    "m_recoveries",
+    "m_recoveries_per90",
+    "m_red_cards",
+    "m_save_percentage",
+    "m_saves",
+    "m_shots",
+    "m_shots_on_target",
+    "m_shots_on_target_per90",
+    "m_shots_per90",
+    "m_starts",
+    "m_successful_crosses",
+    "m_tackles",
+    "m_tackles_per90",
+    "m_touches",
+    "m_touches_opposition_box",
+    "m_yellow_cards"
+   ],
+   "status_vocabulary_cell_counts": {
+    "OBSERVED": 107247,
+    "MISSING": 33621,
+    "CONFLICTING": 36,
+    "OBSERVED_ZERO": 6853,
+    "UNVERIFIED_POSITION": 21272,
+    "OBSERVED_FALLBACK_LEADERBOARD": 500,
+    "OBSERVED_SOURCE_REVISED": 95,
+    "UNSUPPORTED": 3262
+   },
+   "zero_converted_check_minutes": {
+    "nulls": 237,
+    "zeros": 0
+   }
+  }
+ },
+ "fotmob_metric_coverage": [
+  {
+   "metric": "m_accurate_long_passes",
+   "2019/2020": 453,
+   "2020/2021": 454,
+   "2021/2022": 467,
+   "2022/2023": 465,
+   "2023/2024": 468,
+   "2024/2025": 475,
+   "null_total": 480,
+   "observed_total": 2782
+  },
+  {
+   "metric": "m_accurate_long_passes_per90",
+   "2019/2020": 453,
+   "2020/2021": 454,
+   "2021/2022": 467,
+   "2022/2023": 465,
+   "2023/2024": 468,
+   "2024/2025": 475,
+   "null_total": 480,
+   "observed_total": 2782
+  },
+  {
+   "metric": "m_accurate_passes",
+   "2019/2020": 469,
+   "2020/2021": 472,
+   "2021/2022": 485,
+   "2022/2023": 486,
+   "2023/2024": 488,
+   "2024/2025": 491,
+   "null_total": 371,
+   "observed_total": 2891
+  },
+  {
+   "metric": "m_accurate_passes_per90",
+   "2019/2020": 469,
+   "2020/2021": 472,
+   "2021/2022": 485,
+   "2022/2023": 486,
+   "2023/2024": 488,
+   "2024/2025": 490,
+   "null_total": 372,
+   "observed_total": 2890
+  },
+  {
+   "metric": "m_aerials_won",
+   "2019/2020": 421,
+   "2020/2021": 416,
+   "2021/2022": 431,
+   "2022/2023": 435,
+   "2023/2024": 436,
+   "2024/2025": 432,
+   "null_total": 691,
+   "observed_total": 2571
+  },
+  {
+   "metric": "m_aerials_won_percent",
+   "2019/2020": 421,
+   "2020/2021": 416,
+   "2021/2022": 431,
+   "2022/2023": 435,
+   "2023/2024": 436,
+   "2024/2025": 432,
+   "null_total": 691,
+   "observed_total": 2571
+  },
+  {
+   "metric": "m_appearances",
+   "2019/2020": 514,
+   "2020/2021": 524,
+   "2021/2022": 537,
+   "2022/2023": 554,
+   "2023/2024": 570,
+   "2024/2025": 561,
+   "null_total": 2,
+   "observed_total": 3260
+  },
+  {
+   "metric": "m_assists",
+   "2019/2020": 479,
+   "2020/2021": 487,
+   "2021/2022": 499,
+   "2022/2023": 519,
+   "2023/2024": 534,
+   "2024/2025": 525,
+   "null_total": 219,
+   "observed_total": 1604
+  },
+  {
+   "metric": "m_big_chances_created",
+   "2019/2020": 296,
+   "2020/2021": 287,
+   "2021/2022": 302,
+   "2022/2023": 301,
+   "2023/2024": 320,
+   "2024/2025": 321,
+   "null_total": 1435,
+   "observed_total": 1827
+  },
+  {
+   "metric": "m_blocked_shots",
+   "2019/2020": 341,
+   "2020/2021": 335,
+   "2021/2022": 361,
+   "2022/2023": 366,
+   "2023/2024": 376,
+   "2024/2025": 356,
+   "null_total": 1127,
+   "observed_total": 2135
+  },
+  {
+   "metric": "m_blocks_per90",
+   "2019/2020": 341,
+   "2020/2021": 335,
+   "2021/2022": 361,
+   "2022/2023": 366,
+   "2023/2024": 376,
+   "2024/2025": 356,
+   "null_total": 1127,
+   "observed_total": 2135
+  },
+  {
+   "metric": "m_chances_created",
+   "2019/2020": 415,
+   "2020/2021": 413,
+   "2021/2022": 425,
+   "2022/2023": 436,
+   "2023/2024": 442,
+   "2024/2025": 438,
+   "null_total": 693,
+   "observed_total": 2569
+  },
+  {
+   "metric": "m_clean_sheets",
+   "2019/2020": 37,
+   "2020/2021": 39,
+   "2021/2022": 41,
+   "2022/2023": 39,
+   "2023/2024": 38,
+   "2024/2025": 41,
+   "null_total": 3027,
+   "observed_total": 185
+  },
+  {
+   "metric": "m_clearances",
+   "2019/2020": 31,
+   "2020/2021": 0,
+   "2021/2022": 33,
+   "2022/2023": 0,
+   "2023/2024": 51,
+   "2024/2025": 447,
+   "null_total": 2700,
+   "observed_total": 562
+  },
+  {
+   "metric": "m_clearances_per90",
+   "2019/2020": 31,
+   "2020/2021": 0,
+   "2021/2022": 33,
+   "2022/2023": 0,
+   "2023/2024": 51,
+   "2024/2025": 447,
+   "null_total": 2700,
+   "observed_total": 562
+  },
+  {
+   "metric": "m_cross_accuracy",
+   "2019/2020": 316,
+   "2020/2021": 315,
+   "2021/2022": 320,
+   "2022/2023": 322,
+   "2023/2024": 319,
+   "2024/2025": 324,
+   "null_total": 1346,
+   "observed_total": 1916
+  },
+  {
+   "metric": "m_dribbles_succeeded",
+   "2019/2020": 413,
+   "2020/2021": 399,
+   "2021/2022": 410,
+   "2022/2023": 425,
+   "2023/2024": 421,
+   "2024/2025": 411,
+   "null_total": 783,
+   "observed_total": 2479
+  },
+  {
+   "metric": "m_duels_won",
+   "2019/2020": 431,
+   "2020/2021": 432,
+   "2021/2022": 443,
+   "2022/2023": 447,
+   "2023/2024": 450,
+   "2024/2025": 450,
+   "null_total": 609,
+   "observed_total": 2653
+  },
+  {
+   "metric": "m_duels_won_percent",
+   "2019/2020": 431,
+   "2020/2021": 432,
+   "2021/2022": 443,
+   "2022/2023": 447,
+   "2023/2024": 450,
+   "2024/2025": 450,
+   "null_total": 609,
+   "observed_total": 2653
+  },
+  {
+   "metric": "m_expected_assists",
+   "2019/2020": 96,
+   "2020/2021": 516,
+   "2021/2022": 532,
+   "2022/2023": 549,
+   "2023/2024": 559,
+   "2024/2025": 553,
+   "null_total": 457,
+   "observed_total": 2346
+  },
+  {
+   "metric": "m_expected_goals",
+   "2019/2020": 69,
+   "2020/2021": 433,
+   "2021/2022": 446,
+   "2022/2023": 458,
+   "2023/2024": 460,
+   "2024/2025": 457,
+   "null_total": 939,
+   "observed_total": 2172
+  },
+  {
+   "metric": "m_expected_goals_on_target",
+   "2019/2020": 36,
+   "2020/2021": 366,
+   "2021/2022": 378,
+   "2022/2023": 378,
+   "2023/2024": 390,
+   "2024/2025": 375,
+   "null_total": 1339,
+   "observed_total": 1923
+  },
+  {
+   "metric": "m_fouls_committed",
+   "2019/2020": 425,
+   "2020/2021": 427,
+   "2021/2022": 434,
+   "2022/2023": 442,
+   "2023/2024": 445,
+   "2024/2025": 438,
+   "null_total": 651,
+   "observed_total": 2611
+  },
+  {
+   "metric": "m_fouls_won",
+   "2019/2020": 417,
+   "2020/2021": 417,
+   "2021/2022": 428,
+   "2022/2023": 436,
+   "2023/2024": 441,
+   "2024/2025": 434,
+   "null_total": 689,
+   "observed_total": 2573
+  },
+  {
+   "metric": "m_goals",
+   "2019/2020": 477,
+   "2020/2021": 485,
+   "2021/2022": 496,
+   "2022/2023": 515,
+   "2023/2024": 532,
+   "2024/2025": 520,
+   "null_total": 237,
+   "observed_total": 1652
+  },
+  {
+   "metric": "m_goals_conceded",
+   "2019/2020": 37,
+   "2020/2021": 39,
+   "2021/2022": 41,
+   "2022/2023": 39,
+   "2023/2024": 38,
+   "2024/2025": 41,
+   "null_total": 3027,
+   "observed_total": 232
+  },
+  {
+   "metric": "m_goals_conceded_per90",
+   "2019/2020": 37,
+   "2020/2021": 39,
+   "2021/2022": 41,
+   "2022/2023": 39,
+   "2023/2024": 38,
+   "2024/2025": 41,
+   "null_total": 3027,
+   "observed_total": 232
+  },
+  {
+   "metric": "m_goals_prevented",
+   "2019/2020": 0,
+   "2020/2021": 38,
+   "2021/2022": 41,
+   "2022/2023": 39,
+   "2023/2024": 36,
+   "2024/2025": 26,
+   "null_total": 3082,
+   "observed_total": 180
+  },
+  {
+   "metric": "m_interceptions",
+   "2019/2020": 415,
+   "2020/2021": 412,
+   "2021/2022": 423,
+   "2022/2023": 424,
+   "2023/2024": 435,
+   "2024/2025": 429,
+   "null_total": 724,
+   "observed_total": 2538
+  },
+  {
+   "metric": "m_interceptions_per90",
+   "2019/2020": 415,
+   "2020/2021": 412,
+   "2021/2022": 423,
+   "2022/2023": 424,
+   "2023/2024": 435,
+   "2024/2025": 429,
+   "null_total": 724,
+   "observed_total": 2538
+  },
+  {
+   "metric": "m_key_passes",
+   "2019/2020": 0,
+   "2020/2021": 0,
+   "2021/2022": 0,
+   "2022/2023": 0,
+   "2023/2024": 0,
+   "2024/2025": 0,
+   "null_total": 3262,
+   "observed_total": 0
+  },
+  {
+   "metric": "m_long_ball_accuracy",
+   "2019/2020": 453,
+   "2020/2021": 454,
+   "2021/2022": 467,
+   "2022/2023": 465,
+   "2023/2024": 468,
+   "2024/2025": 475,
+   "null_total": 480,
+   "observed_total": 2782
+  },
+  {
+   "metric": "m_minutes_played",
+   "2019/2020": 477,
+   "2020/2021": 485,
+   "2021/2022": 496,
+   "2022/2023": 515,
+   "2023/2024": 532,
+   "2024/2025": 520,
+   "null_total": 237,
+   "observed_total": 3022
+  },
+  {
+   "metric": "m_non_penalty_xg",
+   "2019/2020": 67,
+   "2020/2021": 416,
+   "2021/2022": 424,
+   "2022/2023": 435,
+   "2023/2024": 433,
+   "2024/2025": 430,
+   "null_total": 1057,
+   "observed_total": 2205
+  },
+  {
+   "metric": "m_passing_accuracy",
+   "2019/2020": 469,
+   "2020/2021": 472,
+   "2021/2022": 485,
+   "2022/2023": 486,
+   "2023/2024": 488,
+   "2024/2025": 491,
+   "null_total": 371,
+   "observed_total": 2891
+  },
+  {
+   "metric": "m_penalty_saves",
+   "2019/2020": 28,
+   "2020/2021": 27,
+   "2021/2022": 26,
+   "2022/2023": 30,
+   "2023/2024": 30,
+   "2024/2025": 28,
+   "null_total": 3093,
+   "observed_total": 67
+  },
+  {
+   "metric": "m_rating",
+   "2019/2020": 496,
+   "2020/2021": 505,
+   "2021/2022": 516,
+   "2022/2023": 526,
+   "2023/2024": 531,
+   "2024/2025": 512,
+   "null_total": 176,
+   "observed_total": 3028
+  },
+  {
+   "metric": "m_recoveries",
+   "2019/2020": 431,
+   "2020/2021": 430,
+   "2021/2022": 444,
+   "2022/2023": 446,
+   "2023/2024": 450,
+   "2024/2025": 450,
+   "null_total": 611,
+   "observed_total": 2651
+  },
+  {
+   "metric": "m_recoveries_per90",
+   "2019/2020": 431,
+   "2020/2021": 430,
+   "2021/2022": 444,
+   "2022/2023": 446,
+   "2023/2024": 450,
+   "2024/2025": 450,
+   "null_total": 611,
+   "observed_total": 2651
+  },
+  {
+   "metric": "m_red_cards",
+   "2019/2020": 469,
+   "2020/2021": 472,
+   "2021/2022": 485,
+   "2022/2023": 486,
+   "2023/2024": 488,
+   "2024/2025": 491,
+   "null_total": 371,
+   "observed_total": 260
+  },
+  {
+   "metric": "m_save_percentage",
+   "2019/2020": 36,
+   "2020/2021": 38,
+   "2021/2022": 41,
+   "2022/2023": 39,
+   "2023/2024": 38,
+   "2024/2025": 41,
+   "null_total": 3029,
+   "observed_total": 233
+  },
+  {
+   "metric": "m_saves",
+   "2019/2020": 37,
+   "2020/2021": 39,
+   "2021/2022": 41,
+   "2022/2023": 39,
+   "2023/2024": 38,
+   "2024/2025": 41,
+   "null_total": 3027,
+   "observed_total": 233
+  },
+  {
+   "metric": "m_shots",
+   "2019/2020": 432,
+   "2020/2021": 433,
+   "2021/2022": 444,
+   "2022/2023": 447,
+   "2023/2024": 450,
+   "2024/2025": 450,
+   "null_total": 606,
+   "observed_total": 2548
+  },
+  {
+   "metric": "m_shots_on_target",
+   "2019/2020": 354,
+   "2020/2021": 368,
+   "2021/2022": 379,
+   "2022/2023": 384,
+   "2023/2024": 390,
+   "2024/2025": 377,
+   "null_total": 1010,
+   "observed_total": 2252
+  },
+  {
+   "metric": "m_shots_on_target_per90",
+   "2019/2020": 354,
+   "2020/2021": 368,
+   "2021/2022": 379,
+   "2022/2023": 384,
+   "2023/2024": 390,
+   "2024/2025": 377,
+   "null_total": 1010,
+   "observed_total": 2252
+  },
+  {
+   "metric": "m_shots_per90",
+   "2019/2020": 432,
+   "2020/2021": 433,
+   "2021/2022": 444,
+   "2022/2023": 447,
+   "2023/2024": 450,
+   "2024/2025": 450,
+   "null_total": 606,
+   "observed_total": 2548
+  },
+  {
+   "metric": "m_starts",
+   "2019/2020": 514,
+   "2020/2021": 524,
+   "2021/2022": 537,
+   "2022/2023": 554,
+   "2023/2024": 570,
+   "2024/2025": 561,
+   "null_total": 2,
+   "observed_total": 2891
+  },
+  {
+   "metric": "m_successful_crosses",
+   "2019/2020": 316,
+   "2020/2021": 315,
+   "2021/2022": 320,
+   "2022/2023": 322,
+   "2023/2024": 319,
+   "2024/2025": 324,
+   "null_total": 1346,
+   "observed_total": 1916
+  },
+  {
+   "metric": "m_tackles",
+   "2019/2020": 425,
+   "2020/2021": 427,
+   "2021/2022": 437,
+   "2022/2023": 441,
+   "2023/2024": 449,
+   "2024/2025": 449,
+   "null_total": 634,
+   "observed_total": 2628
+  },
+  {
+   "metric": "m_tackles_per90",
+   "2019/2020": 425,
+   "2020/2021": 427,
+   "2021/2022": 437,
+   "2022/2023": 441,
+   "2023/2024": 449,
+   "2024/2025": 449,
+   "null_total": 634,
+   "observed_total": 2628
+  },
+  {
+   "metric": "m_touches",
+   "2019/2020": 432,
+   "2020/2021": 433,
+   "2021/2022": 444,
+   "2022/2023": 447,
+   "2023/2024": 450,
+   "2024/2025": 450,
+   "null_total": 606,
+   "observed_total": 2656
+  },
+  {
+   "metric": "m_touches_opposition_box",
+   "2019/2020": 414,
+   "2020/2021": 417,
+   "2021/2022": 426,
+   "2022/2023": 438,
+   "2023/2024": 445,
+   "2024/2025": 439,
+   "null_total": 683,
+   "observed_total": 2579
+  },
+  {
+   "metric": "m_yellow_cards",
+   "2019/2020": 469,
+   "2020/2021": 472,
+   "2021/2022": 485,
+   "2022/2023": 486,
+   "2023/2024": 488,
+   "2024/2025": 491,
+   "null_total": 371,
+   "observed_total": 2302
+  }
+ ],
+ "transfermarkt": {
+  "files": {
+   "player_valuations": {
+    "gz_bytes": 7197935,
+    "gz_sha256": "608e32e5ad2231074f3505c469ad727be66d7e6efda6af918afd85379439631d",
+    "decompressed_bytes": 39647280,
+    "decompressed_sha256": "9caf4ff707905f71463a04253c5ac640b3ff9575e07912fd7c50365697efa47d",
+    "rows": 656301,
+    "columns": [
+     "player_id",
+     "date",
+     "market_value_in_eur",
+     "current_club_name",
+     "current_club_id",
+     "player_club_domestic_competition_id"
+    ],
+    "null_counts": {
+     "player_id": 0,
+     "date": 0,
+     "market_value_in_eur": 0,
+     "current_club_name": 0,
+     "current_club_id": 0,
+     "player_club_domestic_competition_id": 92973
+    }
+   },
+   "players": {
+    "gz_bytes": 4389958,
+    "gz_sha256": "d22e407981d5b51a79bf8ff59835729f3526f7dc3495a6d8ed2f852ed2e86403",
+    "decompressed_bytes": 19624138,
+    "decompressed_sha256": "b94216cf2ff8777b5eddd4fd91402c19e757b366fbdeb4f4437580c302ff2d66",
+    "rows": 50149,
+    "columns": [
+     "player_id",
+     "first_name",
+     "last_name",
+     "name",
+     "last_season",
+     "current_club_id",
+     "player_code",
+     "country_of_birth",
+     "city_of_birth",
+     "country_of_citizenship",
+     "date_of_birth",
+     "sub_position",
+     "position",
+     "foot",
+     "height_in_cm",
+     "contract_expiration_date",
+     "agent_name",
+     "image_url",
+     "international_caps",
+     "international_goals",
+     "current_national_team_id",
+     "url",
+     "current_club_domestic_competition_id",
+     "current_club_name",
+     "market_value_in_eur",
+     "highest_market_value_in_eur"
+    ],
+    "null_counts": {
+     "player_id": 0,
+     "first_name": 3164,
+     "last_name": 0,
+     "name": 0,
+     "last_season": 0,
+     "current_club_id": 0,
+     "player_code": 0,
+     "country_of_birth": 5885,
+     "city_of_birth": 5608,
+     "country_of_citizenship": 269,
+     "date_of_birth": 49,
+     "sub_position": 586,
+     "position": 0,
+     "foot": 5893,
+     "height_in_cm": 4365,
+     "contract_expiration_date": 18569,
+     "agent_name": 23296,
+     "image_url": 0,
+     "international_caps": 30793,
+     "international_goals": 30793,
+     "current_national_team_id": 46889,
+     "url": 0,
+     "current_club_domestic_competition_id": 2986,
+     "current_club_name": 2986,
+     "market_value_in_eur": 8621,
+     "highest_market_value_in_eur": 8621
+    }
+   },
+   "transfers": {
+    "gz_bytes": 5809514,
+    "gz_sha256": "90326983daf7e6ac7aabdfe62b90936d9bf1dd2171e53dec75c3751eb1620a83",
+    "decompressed_bytes": 18112063,
+    "decompressed_sha256": "5331311c6ec68c2c7a9c22979aff7d6f6fd2cefd96201d1bcfb35998a9d244ae",
+    "rows": 175165,
+    "columns": [
+     "player_id",
+     "transfer_date",
+     "transfer_season",
+     "from_club_id",
+     "to_club_id",
+     "from_club_name",
+     "to_club_name",
+     "transfer_fee",
+     "market_value_in_eur",
+     "player_name"
+    ],
+    "null_counts": {
+     "player_id": 0,
+     "transfer_date": 0,
+     "transfer_season": 0,
+     "from_club_id": 0,
+     "to_club_id": 0,
+     "from_club_name": 0,
+     "to_club_name": 0,
+     "transfer_fee": 61526,
+     "market_value_in_eur": 68160,
+     "player_name": 0
+    }
+   },
+   "clubs": {
+    "gz_bytes": 51281,
+    "gz_sha256": "aa57ab56e87faffaea1e8697439a32caf10116d8f2f2dfb3a57193c0bb1d641b",
+    "decompressed_bytes": 208374,
+    "decompressed_sha256": "26dc6113d8206246145add2c7a318a657b3995fccdb0c9004d65ca6ae5e5968b",
+    "rows": 796,
+    "columns": [
+     "club_id",
+     "club_code",
+     "name",
+     "domestic_competition_id",
+     "total_market_value",
+     "squad_size",
+     "average_age",
+     "foreigners_number",
+     "foreigners_percentage",
+     "national_team_players",
+     "stadium_name",
+     "stadium_seats",
+     "net_transfer_record",
+     "coach_name",
+     "last_season",
+     "filename",
+     "url"
+    ],
+    "null_counts": {
+     "club_id": 0,
+     "club_code": 0,
+     "name": 0,
+     "domestic_competition_id": 0,
+     "total_market_value": 796,
+     "squad_size": 0,
+     "average_age": 38,
+     "foreigners_number": 0,
+     "foreigners_percentage": 60,
+     "national_team_players": 0,
+     "stadium_name": 0,
+     "stadium_seats": 0,
+     "net_transfer_record": 0,
+     "coach_name": 393,
+     "last_season": 0,
+     "filename": 0,
+     "url": 0
+    }
+   },
+   "competitions": {
+    "gz_bytes": 2242,
+    "gz_sha256": "8924ddfbc0e9989f4a42a3c32ebb6faa671614625086d7fa84353f955352ea88",
+    "decompressed_bytes": 12247,
+    "decompressed_sha256": "fadaf2992e01f8450d8d419006b0f533bbd6742163f4a0c5ee6a157fae7b791e",
+    "rows": 65,
+    "columns": [
+     "competition_id",
+     "competition_code",
+     "name",
+     "sub_type",
+     "type",
+     "country_id",
+     "country_name",
+     "domestic_league_code",
+     "confederation",
+     "total_clubs",
+     "url"
+    ],
+    "null_counts": {
+     "competition_id": 0,
+     "competition_code": 0,
+     "name": 0,
+     "sub_type": 0,
+     "type": 0,
+     "country_id": 0,
+     "country_name": 12,
+     "domestic_league_code": 12,
+     "confederation": 0,
+     "total_clubs": 15,
+     "url": 0
+    }
+   },
+   "appearances": {
+    "gz_bytes": 45253638,
+    "gz_sha256": "e096c2b158fc3d52c4550526c4d4850dd62f31007652f4bcae112eadb1646802",
+    "decompressed_bytes": 198398405,
+    "decompressed_sha256": "c4ba5327f9005e4a9914c0f78c3b07132ef2cf1a4babda379bbf54ffd207ebec",
+    "rows": 1894350,
+    "columns": [
+     "appearance_id",
+     "game_id",
+     "player_id",
+     "player_club_id",
+     "player_current_club_id",
+     "date",
+     "player_name",
+     "competition_id",
+     "yellow_cards",
+     "red_cards",
+     "goals",
+     "assists",
+     "minutes_played"
+    ],
+    "null_counts": {
+     "appearance_id": 0,
+     "game_id": 0,
+     "player_id": 0,
+     "player_club_id": 0,
+     "player_current_club_id": 0,
+     "date": 0,
+     "player_name": 2,
+     "competition_id": 0,
+     "yellow_cards": 0,
+     "red_cards": 0,
+     "goals": 0,
+     "assists": 0,
+     "minutes_played": 0
+    }
+   }
+  },
+  "valuations": {
+   "n_rows": 656301,
+   "players": 41528,
+   "keys": 656301,
+   "bad_dates": 0,
+   "min_date": "2000-01-20",
+   "max_date": "2026-06-12",
+   "null_or_bad_values": 0,
+   "nonpositive_values": 1,
+   "non_integer_values": 0,
+   "min_value": 0.0,
+   "max_value": 200000000.0,
+   "median_value": 500000.0,
+   "bad_player_ids": 0,
+   "club_name_unknown": 3199,
+   "club_id_null": 0,
+   "comp_null": 92973,
+   "duplicate_key_groups": 0,
+   "conflicting_key_groups": 0,
+   "future_dated_vs_snapshot": 0,
+   "orphan_rows_no_player": 0,
+   "players_without_valuations": 8621,
+   "rows_by_year": [
+    {
+     "y": 2000,
+     "n": 1,
+     "players": 1,
+     "dates": 1
+    },
+    {
+     "y": 2001,
+     "n": 1,
+     "players": 1,
+     "dates": 1
+    },
+    {
+     "y": 2003,
+     "n": 2,
+     "players": 2,
+     "dates": 2
+    },
+    {
+     "y": 2004,
+     "n": 2305,
+     "players": 1793,
+     "dates": 83
+    },
+    {
+     "y": 2005,
+     "n": 2439,
+     "players": 1652,
+     "dates": 297
+    },
+    {
+     "y": 2006,
+     "n": 2673,
+     "players": 1928,
+     "dates": 264
+    },
+    {
+     "y": 2007,
+     "n": 5617,
+     "players": 3678,
+     "dates": 220
+    },
+    {
+     "y": 2008,
+     "n": 9305,
+     "players": 5333,
+     "dates": 266
+    },
+    {
+     "y": 2009,
+     "n": 12067,
+     "players": 6737,
+     "dates": 262
+    },
+    {
+     "y": 2010,
+     "n": 13795,
+     "players": 7958,
+     "dates": 273
+    },
+    {
+     "y": 2011,
+     "n": 17788,
+     "players": 9483,
+     "dates": 207
+    },
+    {
+     "y": 2012,
+     "n": 19714,
+     "players": 11341,
+     "dates": 335
+    },
+    {
+     "y": 2013,
+     "n": 22636,
+     "players": 12842,
+     "dates": 274
+    },
+    {
+     "y": 2014,
+     "n": 23707,
+     "players": 13904,
+     "dates": 252
+    },
+    {
+     "y": 2015,
+     "n": 30479,
+     "players": 16473,
+     "dates": 289
+    },
+    {
+     "y": 2016,
+     "n": 34653,
+     "players": 17794,
+     "dates": 278
+    },
+    {
+     "y": 2017,
+     "n": 35923,
+     "players": 19155,
+     "dates": 268
+    },
+    {
+     "y": 2018,
+     "n": 41097,
+     "players": 20162,
+     "dates": 298
+    },
+    {
+     "y": 2019,
+     "n": 46088,
+     "players": 22116,
+     "dates": 281
+    },
+    {
+     "y": 2020,
+     "n": 48749,
+     "players": 22807,
+     "dates": 252
+    },
+    {
+     "y": 2021,
+     "n": 58412,
+     "players": 25650,
+     "dates": 292
+    },
+    {
+     "y": 2022,
+     "n": 59564,
+     "players": 26848,
+     "dates": 267
+    },
+    {
+     "y": 2023,
+     "n": 57576,
+     "players": 27890,
+     "dates": 249
+    },
+    {
+     "y": 2024,
+     "n": 45376,
+     "players": 19628,
+     "dates": 221
+    },
+    {
+     "y": 2025,
+     "n": 45482,
+     "players": 18951,
+     "dates": 219
+    },
+    {
+     "y": 2026,
+     "n": 20852,
+     "players": 16711,
+     "dates": 98
+    }
+   ],
+   "rows_by_month_2019_2025": [
+    {
+     "ym": "2019-07",
+     "n": 871,
+     "players": 871
+    },
+    {
+     "ym": "2019-08",
+     "n": 1436,
+     "players": 1436
+    },
+    {
+     "ym": "2019-09",
+     "n": 2640,
+     "players": 2639
+    },
+    {
+     "ym": "2019-10",
+     "n": 1473,
+     "players": 1473
+    },
+    {
+     "ym": "2019-11",
+     "n": 1108,
+     "players": 1108
+    },
+    {
+     "ym": "2019-12",
+     "n": 12226,
+     "players": 12226
+    },
+    {
+     "ym": "2020-01",
+     "n": 2730,
+     "players": 2729
+    },
+    {
+     "ym": "2020-02",
+     "n": 3023,
+     "players": 3022
+    },
+    {
+     "ym": "2020-03",
+     "n": 1255,
+     "players": 1254
+    },
+    {
+     "ym": "2020-04",
+     "n": 12416,
+     "players": 12243
+    },
+    {
+     "ym": "2020-05",
+     "n": 99,
+     "players": 99
+    },
+    {
+     "ym": "2020-06",
+     "n": 2602,
+     "players": 2601
+    },
+    {
+     "ym": "2020-07",
+     "n": 4004,
+     "players": 4003
+    },
+    {
+     "ym": "2020-08",
+     "n": 4790,
+     "players": 4787
+    },
+    {
+     "ym": "2020-09",
+     "n": 1552,
+     "players": 1552
+    },
+    {
+     "ym": "2020-10",
+     "n": 6007,
+     "players": 6005
+    },
+    {
+     "ym": "2020-11",
+     "n": 1875,
+     "players": 1874
+    },
+    {
+     "ym": "2020-12",
+     "n": 8396,
+     "players": 8391
+    },
+    {
+     "ym": "2021-01",
+     "n": 6406,
+     "players": 6403
+    },
+    {
+     "ym": "2021-02",
+     "n": 3009,
+     "players": 3009
+    },
+    {
+     "ym": "2021-03",
+     "n": 3853,
+     "players": 3852
+    },
+    {
+     "ym": "2021-04",
+     "n": 1323,
+     "players": 1323
+    },
+    {
+     "ym": "2021-05",
+     "n": 4912,
+     "players": 4912
+    },
+    {
+     "ym": "2021-06",
+     "n": 14743,
+     "players": 14722
+    },
+    {
+     "ym": "2021-07",
+     "n": 1204,
+     "players": 1204
+    },
+    {
+     "ym": "2021-08",
+     "n": 829,
+     "players": 829
+    },
+    {
+     "ym": "2021-09",
+     "n": 909,
+     "players": 908
+    },
+    {
+     "ym": "2021-10",
+     "n": 5006,
+     "players": 5006
+    },
+    {
+     "ym": "2021-11",
+     "n": 2013,
+     "players": 2012
+    },
+    {
+     "ym": "2021-12",
+     "n": 14205,
+     "players": 14202
+    },
+    {
+     "ym": "2022-01",
+     "n": 5089,
+     "players": 5089
+    },
+    {
+     "ym": "2022-02",
+     "n": 858,
+     "players": 858
+    },
+    {
+     "ym": "2022-03",
+     "n": 2445,
+     "players": 2445
+    },
+    {
+     "ym": "2022-04",
+     "n": 2262,
+     "players": 2260
+    },
+    {
+     "ym": "2022-05",
+     "n": 4371,
+     "players": 4370
+    },
+    {
+     "ym": "2022-06",
+     "n": 16581,
+     "players": 16566
+    },
+    {
+     "ym": "2022-07",
+     "n": 984,
+     "players": 984
+    },
+    {
+     "ym": "2022-08",
+     "n": 1367,
+     "players": 1367
+    },
+    {
+     "ym": "2022-09",
+     "n": 3498,
+     "players": 3498
+    },
+    {
+     "ym": "2022-10",
+     "n": 3262,
+     "players": 3261
+    },
+    {
+     "ym": "2022-11",
+     "n": 9698,
+     "players": 9692
+    },
+    {
+     "ym": "2022-12",
+     "n": 9149,
+     "players": 9130
+    },
+    {
+     "ym": "2023-01",
+     "n": 1455,
+     "players": 1455
+    },
+    {
+     "ym": "2023-02",
+     "n": 1226,
+     "players": 1226
+    },
+    {
+     "ym": "2023-03",
+     "n": 3347,
+     "players": 3346
+    },
+    {
+     "ym": "2023-04",
+     "n": 2524,
+     "players": 2524
+    },
+    {
+     "ym": "2023-05",
+     "n": 2086,
+     "players": 2086
+    },
+    {
+     "ym": "2023-06",
+     "n": 19543,
+     "players": 19524
+    },
+    {
+     "ym": "2023-07",
+     "n": 2969,
+     "players": 2969
+    },
+    {
+     "ym": "2023-08",
+     "n": 887,
+     "players": 887
+    },
+    {
+     "ym": "2023-09",
+     "n": 2316,
+     "players": 2315
+    },
+    {
+     "ym": "2023-10",
+     "n": 3889,
+     "players": 3889
+    },
+    {
+     "ym": "2023-11",
+     "n": 1492,
+     "players": 1491
+    },
+    {
+     "ym": "2023-12",
+     "n": 15842,
+     "players": 15839
+    },
+    {
+     "ym": "2024-01",
+     "n": 909,
+     "players": 909
+    },
+    {
+     "ym": "2024-02",
+     "n": 781,
+     "players": 781
+    },
+    {
+     "ym": "2024-03",
+     "n": 4255,
+     "players": 4255
+    },
+    {
+     "ym": "2024-04",
+     "n": 209,
+     "players": 209
+    },
+    {
+     "ym": "2024-05",
+     "n": 4724,
+     "players": 4724
+    },
+    {
+     "ym": "2024-06",
+     "n": 13349,
+     "players": 13348
+    },
+    {
+     "ym": "2024-07",
+     "n": 261,
+     "players": 261
+    },
+    {
+     "ym": "2024-08",
+     "n": 146,
+     "players": 146
+    },
+    {
+     "ym": "2024-09",
+     "n": 1931,
+     "players": 1931
+    },
+    {
+     "ym": "2024-10",
+     "n": 2420,
+     "players": 2420
+    },
+    {
+     "ym": "2024-11",
+     "n": 779,
+     "players": 779
+    },
+    {
+     "ym": "2024-12",
+     "n": 15612,
+     "players": 15607
+    },
+    {
+     "ym": "2025-01",
+     "n": 630,
+     "players": 630
+    },
+    {
+     "ym": "2025-02",
+     "n": 75,
+     "players": 75
+    },
+    {
+     "ym": "2025-03",
+     "n": 2905,
+     "players": 2905
+    },
+    {
+     "ym": "2025-04",
+     "n": 1162,
+     "players": 1162
+    },
+    {
+     "ym": "2025-05",
+     "n": 4512,
+     "players": 4512
+    },
+    {
+     "ym": "2025-06",
+     "n": 13011,
+     "players": 13010
+    },
+    {
+     "ym": "2025-07",
+     "n": 153,
+     "players": 152
+    },
+    {
+     "ym": "2025-08",
+     "n": 81,
+     "players": 81
+    }
+   ]
+  },
+  "players": {
+   "n_rows": 50149,
+   "ids": 50149,
+   "dob_missing": 49,
+   "dob_unparseable": 0,
+   "name_missing": 0,
+   "citizenship_missing": 269,
+   "position_missing": 586,
+   "distinct_names": 48825,
+   "min_dob": "1968-07-31",
+   "max_dob": "2011-02-23",
+   "positions": [
+    {
+     "v": "Defender",
+     "n": 15961
+    },
+    {
+     "v": "Midfield",
+     "n": 14272
+    },
+    {
+     "v": "Attack",
+     "n": 13502
+    },
+    {
+     "v": "Goalkeeper",
+     "n": 5828
+    },
+    {
+     "v": "Missing",
+     "n": 586
+    }
+   ],
+   "url_contains_player_id": 50149,
+   "normalized_name_groups_multi_id": 982,
+   "ids_in_name_collisions": 2389,
+   "name_dob_groups_multi_id": 1,
+   "ids_in_name_dob_collisions": 2
+  },
+  "competitions_gb": [
+   {
+    "competition_id": "FAC",
+    "competition_code": "fa-cup",
+    "name": "fa-cup",
+    "sub_type": "domestic_cup",
+    "type": "domestic_cup",
+    "country_name": "England",
+    "domestic_league_code": "GB1"
+   },
+   {
+    "competition_id": "GB1",
+    "competition_code": "premier-league",
+    "name": "premier-league",
+    "sub_type": "first_tier",
+    "type": "domestic_league",
+    "country_name": "England",
+    "domestic_league_code": "GB1"
+   },
+   {
+    "competition_id": "GBCS",
+    "competition_code": "community-shield",
+    "name": "community-shield",
+    "sub_type": "domestic_super_cup",
+    "type": "other",
+    "country_name": "England",
+    "domestic_league_code": "GB1"
+   }
+  ],
+  "clubs_gb1": 37,
+  "transfers": {
+   "n_rows": 175165,
+   "players": 23379,
+   "min_d": "1993-07-01",
+   "max_d": "2030-06-30",
+   "future_dated": 488,
+   "rows_in_research_window": 98947
+  },
+  "epl_appearance_population": [
+   {
+    "appearance_rows": 10578,
+    "games": 380,
+    "players": 512,
+    "clubs": 20,
+    "zero_or_null_minutes": 0,
+    "season": "2019/2020",
+    "window": [
+     "2019-08-09",
+     "2020-07-26"
+    ],
+    "fotmob_confirmed": 515,
+    "players_not_in_players_table": 0,
+    "players_multi_club": 7
+   },
+   {
+    "appearance_rows": 10356,
+    "games": 380,
+    "players": 522,
+    "clubs": 20,
+    "zero_or_null_minutes": 0,
+    "season": "2020/2021",
+    "window": [
+     "2020-09-12",
+     "2021-05-23"
+    ],
+    "fotmob_confirmed": 524,
+    "players_not_in_players_table": 0,
+    "players_multi_club": 8
+   },
+   {
+    "appearance_rows": 10369,
+    "games": 380,
+    "players": 508,
+    "clubs": 20,
+    "zero_or_null_minutes": 0,
+    "season": "2021/2022",
+    "window": [
+     "2021-08-13",
+     "2022-05-22"
+    ],
+    "fotmob_confirmed": 537,
+    "players_not_in_players_table": 0,
+    "players_multi_club": 9
+   },
+   {
+    "appearance_rows": 11345,
+    "games": 380,
+    "players": 554,
+    "clubs": 20,
+    "zero_or_null_minutes": 0,
+    "season": "2022/2023",
+    "window": [
+     "2022-08-05",
+     "2023-05-28"
+    ],
+    "fotmob_confirmed": 554,
+    "players_not_in_players_table": 0,
+    "players_multi_club": 15
+   },
+   {
+    "appearance_rows": 11384,
+    "games": 380,
+    "players": 570,
+    "clubs": 20,
+    "zero_or_null_minutes": 0,
+    "season": "2023/2024",
+    "window": [
+     "2023-08-11",
+     "2024-05-19"
+    ],
+    "fotmob_confirmed": 570,
+    "players_not_in_players_table": 0,
+    "players_multi_club": 10
+   },
+   {
+    "appearance_rows": 11567,
+    "games": 380,
+    "players": 562,
+    "clubs": 20,
+    "zero_or_null_minutes": 0,
+    "season": "2024/2025",
+    "window": [
+     "2024-08-16",
+     "2025-05-25"
+    ],
+    "fotmob_confirmed": 562,
+    "players_not_in_players_table": 0,
+    "players_multi_club": 12
+   }
+  ],
+  "valuation_coverage_tm_epl_population": [
+   {
+    "tm_epl_players": 512,
+    "no_valuation_at_all": 2,
+    "only_after_cutoff": 14,
+    "has_on_or_before": 496,
+    "median_age_days": 109.0,
+    "p90_age_days": 109.0,
+    "max_age_days": 229,
+    "age_0-30": 1,
+    "age_31-60": 0,
+    "age_61-90": 0,
+    "age_91-180": 492,
+    "age_>180": 3,
+    "season": "2019/2020",
+    "cutoff": "2020-07-26",
+    "valuations_all_players_in_season_window": 42485,
+    "same_date_conflicts_on_selected_date": 0
+   },
+   {
+    "tm_epl_players": 522,
+    "no_valuation_at_all": 0,
+    "only_after_cutoff": 9,
+    "has_on_or_before": 513,
+    "median_age_days": 66.0,
+    "p90_age_days": 66.0,
+    "max_age_days": 731,
+    "age_0-30": 5,
+    "age_31-60": 4,
+    "age_61-90": 490,
+    "age_91-180": 8,
+    "age_>180": 6,
+    "season": "2020/2021",
+    "cutoff": "2021-05-23",
+    "valuations_all_players_in_season_window": 33876,
+    "same_date_conflicts_on_selected_date": 0
+   },
+   {
+    "tm_epl_players": 508,
+    "no_valuation_at_all": 0,
+    "only_after_cutoff": 3,
+    "has_on_or_before": 505,
+    "median_age_days": 150.0,
+    "p90_age_days": 150.0,
+    "max_age_days": 332,
+    "age_0-30": 15,
+    "age_31-60": 90,
+    "age_61-90": 4,
+    "age_91-180": 392,
+    "age_>180": 4,
+    "season": "2021/2022",
+    "cutoff": "2022-05-22",
+    "valuations_all_players_in_season_window": 34554,
+    "same_date_conflicts_on_selected_date": 0
+   },
+   {
+    "tm_epl_players": 554,
+    "no_valuation_at_all": 4,
+    "only_after_cutoff": 8,
+    "has_on_or_before": 542,
+    "median_age_days": 206.0,
+    "p90_age_days": 206.0,
+    "max_age_days": 347,
+    "age_0-30": 2,
+    "age_31-60": 4,
+    "age_61-90": 173,
+    "age_91-180": 8,
+    "age_>180": 355,
+    "season": "2022/2023",
+    "cutoff": "2023-05-28",
+    "valuations_all_players_in_season_window": 36614,
+    "same_date_conflicts_on_selected_date": 0
+   },
+   {
+    "tm_epl_players": 570,
+    "no_valuation_at_all": 0,
+    "only_after_cutoff": 2,
+    "has_on_or_before": 568,
+    "median_age_days": 152.0,
+    "p90_age_days": 152.0,
+    "max_age_days": 166,
+    "age_0-30": 1,
+    "age_31-60": 5,
+    "age_61-90": 150,
+    "age_91-180": 412,
+    "age_>180": 0,
+    "season": "2023/2024",
+    "cutoff": "2024-05-19",
+    "valuations_all_players_in_season_window": 30760,
+    "same_date_conflicts_on_selected_date": 0
+   },
+   {
+    "tm_epl_players": 562,
+    "no_valuation_at_all": 6,
+    "only_after_cutoff": 11,
+    "has_on_or_before": 545,
+    "median_age_days": 160.0,
+    "p90_age_days": 160.0,
+    "max_age_days": 724,
+    "age_0-30": 2,
+    "age_31-60": 5,
+    "age_61-90": 213,
+    "age_91-180": 314,
+    "age_>180": 11,
+    "season": "2024/2025",
+    "cutoff": "2025-05-25",
+    "valuations_all_players_in_season_window": 26600,
+    "same_date_conflicts_on_selected_date": 0
+   }
+  ],
+  "identity_tm_epl": {
+   "identities": 1328,
+   "dob_missing": 0,
+   "citizenship_missing": 6,
+   "name_missing": 0,
+   "position_missing": 0,
+   "distinct_dobs": 1219,
+   "name_dob_groups_multi_id": 0,
+   "name_groups_multi_id": 0,
+   "dob_groups_multi_id": 100,
+   "ids_sharing_dob": 209,
+   "max_ids_per_dob": 3,
+   "appearance_player_name_missing": 0
+  },
+  "valuation_club_vs_game_club_2019_2025": {
+   "compared_valuations": 5773,
+   "club_agrees": 5642,
+   "club_disagrees": 131
+  }
+ }
+}

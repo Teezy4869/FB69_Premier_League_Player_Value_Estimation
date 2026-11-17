@@ -1,0 +1,17 @@
+{
+ "generated_at_utc": "2026-11-08T05:15:06.313570+00:00",
+ "historical_files": 16290,
+ "current_files": 16508,
+ "changed": [
+  "CLAUDE.md",
+  "src/research_scope/protect.py"
+ ],
+ "removed": [],
+ "added_count": 218,
+ "unexpected_changes": [],
+ "unexpected_added": [],
+ "documented_edits_changed": [
+  "CLAUDE.md"
+ ],
+ "historical_protected": true
+}

@@ -1,0 +1,2 @@
+task_id,request_key,season_label,stage,resource_type,decision,schema_status,scope_status,error_classification,raw_path,capture_id,missing_value_count,note
+tsk_833a320e09ad7b59f00ae94422801034ba401e872eaf8beec6ec857489fe6007,,2023/2024,D,PLAYER_EXPANSION_GATE,VALIDATED,,,,,,0,Appended 570 profile tasks from appeared IDs

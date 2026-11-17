@@ -1,0 +1,8 @@
+measure,reference,recomputed,matches_reference
+Median valuation age (days),150,150,True
+Usable targets older than 90 days (%),56.62,56.6185,True
+Appearances after the valuation date (%),44.1,44.0978,True
+Minutes after the valuation date (%),43.66,43.6647,True
+Targets older than 365 days,12,12,True
+Valuations after the season cutoff,0,0,True
+Usable targets dated before the season's first match,18,18,True

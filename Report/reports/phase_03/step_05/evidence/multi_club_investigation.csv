@@ -1,0 +1,81 @@
+﻿season,fotmob_player_id,player_name,team_names,confirmed_team_count,associated_team_count,is_multi_club,confirmed_appearance_count,confirmed_relations,unconfirmed_relations,appeared_rows,clubs_with_appearance,unknown_rows,clubs_any_squad_row,m_appearances,tm_clubs_with_games,tm_club_names,multi_club_class
+2019/2020,178776,Cenk Tosun,Everton|Crystal Palace,2,2,True,10,2,0,10,2,11,2,10.0,2,Crystal Palace | Everton FC,MULTI_CLUB_CONFIRMED_APPEARANCES
+2019/2020,160627,Cédric Soares,Southampton|Arsenal,2,2,True,21,2,0,21,2,4,2,21.0,2,Arsenal FC | Southampton FC,MULTI_CLUB_CONFIRMED_APPEARANCES
+2019/2020,173317,Danny Drinkwater,Aston Villa|Burnley,2,2,True,5,2,0,5,2,11,2,5.0,2,Aston Villa | Burnley FC,MULTI_CLUB_CONFIRMED_APPEARANCES
+2019/2020,46353,Danny Rose,Newcastle United|Tottenham Hotspur,2,2,True,23,2,0,23,2,5,2,23.0,2,Newcastle United | Tottenham Hotspur,MULTI_CLUB_CONFIRMED_APPEARANCES
+2019/2020,734042,Kyle Walker-Peters,Southampton|Tottenham Hotspur,2,2,True,13,2,0,13,2,4,2,13.0,2,Southampton FC | Tottenham Hotspur,MULTI_CLUB_CONFIRMED_APPEARANCES
+2019/2020,72417,Ryan Bennett,Leicester City|Wolverhampton Wanderers,2,2,True,16,2,0,16,2,7,2,16.0,2,Leicester City | Wolverhampton Wanderers,MULTI_CLUB_CONFIRMED_APPEARANCES
+2019/2020,955139,Tariq Lamptey,Brighton & Hove Albion|Chelsea,2,2,True,9,2,0,9,2,2,2,9.0,2,Brighton & Hove Albion | Chelsea FC,MULTI_CLUB_CONFIRMED_APPEARANCES
+2020/2021,604089,Ainsley Maitland-Niles,West Bromwich Albion|Arsenal,2,2,True,26,2,0,26,2,8,2,26.0,2,Arsenal FC | West Bromwich Albion,MULTI_CLUB_CONFIRMED_APPEARANCES
+2020/2021,62336,Dale Stephens,Brighton & Hove Albion|Burnley,1,2,True,7,1,1,7,1,20,2,7.0,1,Burnley FC,MULTI_CLUB_SQUAD_ONLY
+2020/2021,570461,Diogo Jota,Wolverhampton Wanderers|Liverpool,1,2,True,19,1,1,19,1,1,2,19.0,1,Liverpool FC,MULTI_CLUB_SQUAD_ONLY
+2020/2021,299215,Jesse Lingard,Manchester United|West Ham United,1,2,True,16,1,1,16,1,4,2,16.0,1,West Ham United,MULTI_CLUB_SQUAD_ONLY
+2020/2021,860975,Joseph Willock,Newcastle United|Arsenal,2,2,True,21,2,0,21,2,11,2,21.0,2,Arsenal FC | Newcastle United,MULTI_CLUB_CONFIRMED_APPEARANCES
+2020/2021,185644,Mathew Ryan,Brighton & Hove Albion|Arsenal,2,2,True,14,2,0,14,2,13,2,14.0,2,Arsenal FC | Brighton & Hove Albion,MULTI_CLUB_CONFIRMED_APPEARANCES
+2020/2021,32728,Robert Snodgrass,West Ham United|West Bromwich Albion,2,2,True,11,2,0,11,2,10,2,11.0,2,West Bromwich Albion | West Ham United,MULTI_CLUB_CONFIRMED_APPEARANCES
+2020/2021,215384,Ross Barkley,Aston Villa|Chelsea,2,2,True,26,2,0,26,2,5,2,26.0,2,Aston Villa | Chelsea FC,MULTI_CLUB_CONFIRMED_APPEARANCES
+2020/2021,604982,Ruben Loftus-Cheek,Chelsea|Fulham,2,2,True,31,2,0,31,2,2,2,31.0,2,Chelsea FC | Fulham FC,MULTI_CLUB_CONFIRMED_APPEARANCES
+2020/2021,408943,Takumi Minamino,Southampton|Liverpool,2,2,True,19,2,0,19,2,16,2,19.0,2,Liverpool FC | Southampton FC,MULTI_CLUB_CONFIRMED_APPEARANCES
+2020/2021,31013,Theo Walcott,Southampton|Everton,2,2,True,22,2,0,22,2,4,2,22.0,2,Everton FC | Southampton FC,MULTI_CLUB_CONFIRMED_APPEARANCES
+2021/2022,562267,Anwar El-Ghazi,Aston Villa|Everton,2,2,True,11,2,0,11,2,17,2,11.0,2,Aston Villa | Everton FC,MULTI_CLUB_CONFIRMED_APPEARANCES
+2021/2022,1077907,Brandon Williams,Manchester United|Norwich City,1,2,True,26,1,1,26,1,7,2,26.0,1,Norwich City,MULTI_CLUB_SQUAD_ONLY
+2021/2022,425255,Calum Chambers,Aston Villa|Arsenal,2,2,True,13,2,0,13,2,10,2,13.0,2,Arsenal FC | Aston Villa,MULTI_CLUB_CONFIRMED_APPEARANCES
+2021/2022,169719,Chris Wood,Newcastle United|Burnley,2,2,True,34,2,0,34,2,1,2,34.0,2,Burnley FC | Newcastle United,MULTI_CLUB_CONFIRMED_APPEARANCES
+2021/2022,188058,Daniel Burn,Brighton & Hove Albion|Newcastle United,2,2,True,29,2,0,29,2,3,2,29.0,2,Brighton & Hove Albion | Newcastle United,MULTI_CLUB_CONFIRMED_APPEARANCES
+2021/2022,717176,Daniel James,Manchester United|Leeds United,2,2,True,34,2,0,34,2,1,2,34.0,2,Leeds United | Manchester United,MULTI_CLUB_CONFIRMED_APPEARANCES
+2021/2022,363333,Dele Alli,Tottenham Hotspur|Everton,2,2,True,21,2,0,21,2,16,2,21.0,2,Everton FC | Tottenham Hotspur,MULTI_CLUB_CONFIRMED_APPEARANCES
+2021/2022,612836,Donny van de Beek,Manchester United|Everton,2,2,True,15,2,0,15,2,16,2,15.0,2,Everton FC | Manchester United,MULTI_CLUB_CONFIRMED_APPEARANCES
+2021/2022,281207,Kurt Zouma,Chelsea|West Ham United,1,2,True,24,1,1,24,1,3,2,24.0,1,West Ham United,MULTI_CLUB_SQUAD_ONLY
+2021/2022,210111,Lucas Digne,Aston Villa|Everton,2,2,True,29,2,0,29,2,1,2,29.0,2,Aston Villa | Everton FC,MULTI_CLUB_CONFIRMED_APPEARANCES
+2021/2022,538112,Matt Targett,Aston Villa|Newcastle United,2,2,True,33,2,0,33,2,3,2,33.0,2,Aston Villa | Newcastle United,MULTI_CLUB_CONFIRMED_APPEARANCES
+2021/2022,94550,Moussa Sissoko,Tottenham Hotspur|Watford,1,2,True,36,1,1,36,1,1,2,36.0,1,Watford FC,MULTI_CLUB_SQUAD_ONLY
+2022/2023,901495,Albert Sambi Lokonga,Arsenal|Crystal Palace,2,2,True,15,2,0,15,2,20,2,15.0,2,Arsenal FC | Crystal Palace,MULTI_CLUB_CONFIRMED_APPEARANCES
+2022/2023,906937,Anthony Gordon,Newcastle United|Everton,2,2,True,32,2,0,32,2,1,2,32.0,2,Everton FC | Newcastle United,MULTI_CLUB_CONFIRMED_APPEARANCES
+2022/2023,942549,Billy Gilmour,Brighton & Hove Albion|Chelsea,1,2,True,14,1,1,14,1,17,2,14.0,1,Brighton & Hove Albion,MULTI_CLUB_SQUAD_ONLY
+2022/2023,169719,Chris Wood,Nottingham Forest|Newcastle United,2,2,True,25,2,0,25,2,1,2,25.0,2,Newcastle United | Nottingham Forest,MULTI_CLUB_CONFIRMED_APPEARANCES
+2022/2023,247761,Conor Coady,Wolverhampton Wanderers|Everton,1,2,True,24,1,1,24,1,12,2,24.0,1,Everton FC,MULTI_CLUB_SQUAD_ONLY
+2022/2023,169162,Craig Dawson,Wolverhampton Wanderers|West Ham United,2,2,True,25,2,0,25,2,2,2,25.0,2,West Ham United | Wolverhampton Wanderers,MULTI_CLUB_CONFIRMED_APPEARANCES
+2022/2023,160627,Cédric Soares,Arsenal|Fulham,2,2,True,8,2,0,8,2,19,2,8.0,2,Arsenal FC | Fulham FC,MULTI_CLUB_CONFIRMED_APPEARANCES
+2022/2023,717176,Daniel James,Leeds United|Fulham,2,2,True,24,2,0,24,2,8,2,24.0,2,Fulham FC | Leeds United,MULTI_CLUB_CONFIRMED_APPEARANCES
+2022/2023,214426,Danny Ings,Aston Villa|West Ham United,2,2,True,35,2,0,35,2,3,2,35.0,2,Aston Villa | West Ham United,MULTI_CLUB_CONFIRMED_APPEARANCES
+2022/2023,215387,Jack Stephens,Southampton|AFC Bournemouth,2,2,True,17,2,0,17,2,15,2,17.0,2,AFC Bournemouth | Southampton FC,MULTI_CLUB_CONFIRMED_APPEARANCES
+2022/2023,950474,James Garner,Manchester United|Everton,1,2,True,16,1,1,16,1,7,2,16.0,1,Everton FC,MULTI_CLUB_SQUAD_ONLY
+2022/2023,490868,Jan Bednarek,Aston Villa|Southampton,2,2,True,23,2,0,23,2,13,2,23.0,2,Aston Villa | Southampton FC,MULTI_CLUB_CONFIRMED_APPEARANCES
+2022/2023,127130,Jonjo Shelvey,Nottingham Forest|Newcastle United,2,2,True,11,2,0,11,2,5,2,11.0,2,Newcastle United | Nottingham Forest,MULTI_CLUB_CONFIRMED_APPEARANCES
+2022/2023,282775,Jorginho,Chelsea|Arsenal,2,2,True,32,2,0,32,2,7,2,32.0,2,Arsenal FC | Chelsea FC,MULTI_CLUB_CONFIRMED_APPEARANCES
+2022/2023,424129,Leander Dendoncker,Aston Villa|Wolverhampton Wanderers,2,2,True,24,2,0,24,2,8,2,24.0,2,Aston Villa | Wolverhampton Wanderers,MULTI_CLUB_CONFIRMED_APPEARANCES
+2022/2023,318615,Leandro Trossard,Brighton & Hove Albion|Arsenal,2,2,True,36,2,0,36,2,1,2,36.0,2,Arsenal FC | Brighton & Hove Albion,MULTI_CLUB_CONFIRMED_APPEARANCES
+2022/2023,72241,Martin Dubravka,Manchester United|Newcastle United,1,2,True,2,1,1,2,1,26,2,2.0,1,Newcastle United,MULTI_CLUB_SQUAD_ONLY
+2022/2023,789502,Morgan Gibbs-White,Nottingham Forest|Wolverhampton Wanderers,2,2,True,37,2,0,37,2,0,2,37.0,2,Nottingham Forest | Wolverhampton Wanderers,MULTI_CLUB_CONFIRMED_APPEARANCES
+2022/2023,391064,Neal Maupay,Brighton & Hove Albion|Everton,1,2,True,27,1,1,27,1,8,2,27.0,1,Everton FC,MULTI_CLUB_SQUAD_ONLY
+2022/2023,917802,Wesley Fofana,Leicester City|Chelsea,2,2,True,17,2,0,17,2,1,2,17.0,2,Chelsea FC | Leicester City,MULTI_CLUB_CONFIRMED_APPEARANCES
+2022/2023,246331,Willy Boly,Nottingham Forest|Wolverhampton Wanderers,1,2,True,11,1,1,11,1,12,2,11.0,1,Nottingham Forest,MULTI_CLUB_SQUAD_ONLY
+2023/2024,604785,Alex Iwobi,Everton|Fulham,2,2,True,32,2,0,32,2,0,2,32.0,2,Everton FC | Fulham FC,MULTI_CLUB_CONFIRMED_APPEARANCES
+2023/2024,1372921,Andrey Santos,Nottingham Forest|Chelsea,1,2,True,1,1,1,1,1,6,2,1.0,1,Nottingham Forest,MULTI_CLUB_SQUAD_ONLY
+2023/2024,1077975,Armando Broja,Chelsea|Fulham,2,2,True,21,2,0,21,2,5,2,21.0,2,Chelsea FC | Fulham FC,MULTI_CLUB_CONFIRMED_APPEARANCES
+2023/2024,1076756,Brennan Johnson,Nottingham Forest|Tottenham Hotspur,2,2,True,35,2,0,35,2,0,2,35.0,2,Nottingham Forest | Tottenham Hotspur,MULTI_CLUB_CONFIRMED_APPEARANCES
+2023/2024,1086647,Cameron Archer,Aston Villa|Sheffield United,2,2,True,30,2,0,30,2,1,2,30.0,2,Aston Villa | Sheffield United,MULTI_CLUB_CONFIRMED_APPEARANCES
+2023/2024,1096353,Cole Palmer,Chelsea|Manchester City,2,2,True,34,2,0,34,2,2,2,34.0,2,Chelsea FC | Manchester City,MULTI_CLUB_CONFIRMED_APPEARANCES
+2023/2024,719330,Dean Henderson,Manchester United|Crystal Palace,1,2,True,18,1,1,18,1,10,2,18.0,1,Crystal Palace,MULTI_CLUB_SQUAD_ONLY
+2023/2024,1107648,James McAtee,Manchester City|Sheffield United,2,2,True,31,2,0,31,2,4,2,31.0,2,Manchester City | Sheffield United,MULTI_CLUB_CONFIRMED_APPEARANCES
+2023/2024,609755,Kalvin Phillips,Manchester City|West Ham United,2,2,True,12,2,0,12,2,20,2,12.0,2,Manchester City | West Ham United,MULTI_CLUB_CONFIRMED_APPEARANCES
+2023/2024,955529,Matheus Nunes,Manchester City|Wolverhampton Wanderers,2,2,True,19,2,0,19,2,16,2,19.0,2,Manchester City | Wolverhampton Wanderers,MULTI_CLUB_CONFIRMED_APPEARANCES
+2023/2024,391064,Neal Maupay,Everton|Brentford,2,2,True,31,2,0,31,2,3,2,31.0,2,Brentford FC | Everton FC,MULTI_CLUB_CONFIRMED_APPEARANCES
+2023/2024,724436,Sergio Reguilon,Manchester United|Brentford,2,2,True,25,2,0,25,2,5,2,25.0,2,Brentford FC | Manchester United,MULTI_CLUB_CONFIRMED_APPEARANCES
+2024/2025,746395,Aaron Ramsdale,Southampton|Arsenal,1,2,True,30,1,1,30,1,2,2,30.0,1,Southampton FC,MULTI_CLUB_SQUAD_ONLY
+2024/2025,696646,Axel Disasi,Aston Villa|Chelsea,2,2,True,13,2,0,13,2,13,2,13.0,2,Aston Villa | Chelsea FC,MULTI_CLUB_CONFIRMED_APPEARANCES
+2024/2025,1559639,Ayden Heaven,Manchester United|Arsenal,1,2,True,4,1,1,4,1,7,2,4.0,1,Manchester United,MULTI_CLUB_SQUAD_ONLY
+2024/2025,1128965,Charly Alcaraz,Southampton|Everton,2,2,True,16,2,0,16,2,0,2,16.0,2,Everton FC | Southampton FC,MULTI_CLUB_CONFIRMED_APPEARANCES
+2024/2025,860920,Edward Nketiah,Arsenal|Crystal Palace,1,2,True,29,1,1,29,1,4,2,29.0,1,Crystal Palace,MULTI_CLUB_SQUAD_ONLY
+2024/2025,1068482,Evan Ferguson,Brighton & Hove Albion|West Ham United,2,2,True,21,2,0,21,2,6,2,21.0,2,Brighton & Hove Albion | West Ham United,MULTI_CLUB_CONFIRMED_APPEARANCES
+2024/2025,1089645,Jaden Philogene-Bidace,Aston Villa|Ipswich Town,2,2,True,21,2,0,21,2,4,2,21.0,2,Aston Villa | Ipswich Town,MULTI_CLUB_CONFIRMED_APPEARANCES
+2024/2025,279490,James Ward-Prowse,Nottingham Forest|West Ham United,2,2,True,24,2,0,24,2,10,2,24.0,2,Nottingham Forest | West Ham United,MULTI_CLUB_CONFIRMED_APPEARANCES
+2024/2025,503659,Joachim Andersen,Crystal Palace|Fulham,2,2,True,30,2,0,30,2,2,2,30.0,2,Crystal Palace | Fulham FC,MULTI_CLUB_CONFIRMED_APPEARANCES
+2024/2025,154280,Jordan Ayew,Leicester City|Crystal Palace,2,2,True,31,2,0,31,2,6,2,31.0,2,Crystal Palace | Leicester City,MULTI_CLUB_CONFIRMED_APPEARANCES
+2024/2025,1073742,Julio Enciso,Brighton & Hove Albion|Ipswich Town,2,2,True,25,2,0,25,2,7,2,25.0,2,Brighton & Hove Albion | Ipswich Town,MULTI_CLUB_CONFIRMED_APPEARANCES
+2024/2025,696365,Marcus Rashford,Aston Villa|Manchester United,2,2,True,25,2,0,25,2,1,2,25.0,2,Aston Villa | Manchester United,MULTI_CLUB_CONFIRMED_APPEARANCES
+2024/2025,176186,Neto,AFC Bournemouth|Arsenal,1,2,True,2,1,1,2,1,33,2,2.0,1,AFC Bournemouth,MULTI_CLUB_SQUAD_ONLY
+2024/2025,637746,Odsonne Édouard,Leicester City|Crystal Palace,2,2,True,6,2,0,6,2,3,2,6.0,2,Crystal Palace | Leicester City,MULTI_CLUB_CONFIRMED_APPEARANCES
+2024/2025,748382,Reiss Nelson,Arsenal|Fulham,2,2,True,12,2,0,12,2,1,2,12.0,2,Arsenal FC | Fulham FC,MULTI_CLUB_CONFIRMED_APPEARANCES
+2024/2025,280287,Sam Johnstone,Wolverhampton Wanderers|Crystal Palace,1,2,True,7,1,1,7,1,17,2,7.0,1,Wolverhampton Wanderers,MULTI_CLUB_SQUAD_ONLY
+2024/2025,793907,Trevoh Chalobah,Chelsea|Crystal Palace,2,2,True,25,2,0,25,2,5,2,25.0,2,Chelsea FC | Crystal Palace,MULTI_CLUB_CONFIRMED_APPEARANCES

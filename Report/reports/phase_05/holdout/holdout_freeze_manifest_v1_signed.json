@@ -1,0 +1,16 @@
+{
+ "created_utc": "2026-11-16T08:44:32+00:00",
+ "status": "FROZEN_OWNER_SIGNED",
+ "decision_id": "D10",
+ "files": {
+  "configs/phase_05_model.yaml": "8ed7a39e2f303a305695831e6977b58b9ff3302f6c54cd6f51190533431d9d2d",
+  "src/phase5/season_start_prev_value.py": "91e43fbcbb9e4fc51bbb41e1c34e54e3aefb6b4981bff898ee327049ad006712",
+  "src/phase5/features.py": "d4f8305039567a94a536aa2e7c645f502caa37e05ad8bd778d844db608f21502",
+  "src/phase5/train_eval.py": "f1110b0eba215e0d2197a22ea3a78d93d15a4ebb43684a0569a2912e7cecbc9d",
+  "src/phase3/season_targets.py": "6061ea0019a465e3c95559f4ba3430c9c27900bf1479343ef1e6dd07a45ca47e",
+  "data/phase_05/features/model_input_v1/model_input.parquet": "0a6be373e96299a36b8a1d152671721a85d7af6dbfb21297391d8b88ca24495a",
+  "reports/phase_05/holdout/HOLDOUT_PREREGISTRATION.md": "be33d6d379c6f4a37cf3c4012b2fbf321c6d823afa3462242fb69fa9c6a496c0"
+ },
+ "signed_by": "project owner",
+ "signed_utc": "2026-11-16T08:45:55+00:00"
+}

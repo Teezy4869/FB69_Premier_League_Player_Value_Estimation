@@ -1,0 +1,515 @@
+{
+  "dataset_version": "fotmob_epl_2019_2025_v3_1",
+  "parent_release_version": "fotmob_epl_2019_2025_v3",
+  "population_by_season": [
+    {
+      "season_label": "2019/2020",
+      "season_id": "14022",
+      "completed_matches": 380,
+      "player_seasons": 614,
+      "confirmed_appeared": 515,
+      "confirmed_non_appeared": 0,
+      "unverified": 99,
+      "conflicting": 0,
+      "unknown_player_matches": 3420
+    },
+    {
+      "season_label": "2020/2021",
+      "season_id": "15382",
+      "completed_matches": 380,
+      "player_seasons": 641,
+      "confirmed_appeared": 524,
+      "confirmed_non_appeared": 0,
+      "unverified": 117,
+      "conflicting": 0,
+      "unknown_player_matches": 4250
+    },
+    {
+      "season_label": "2021/2022",
+      "season_id": "16390",
+      "completed_matches": 380,
+      "player_seasons": 679,
+      "confirmed_appeared": 537,
+      "confirmed_non_appeared": 0,
+      "unverified": 142,
+      "conflicting": 0,
+      "unknown_player_matches": 4677
+    },
+    {
+      "season_label": "2022/2023",
+      "season_id": "17664",
+      "completed_matches": 380,
+      "player_seasons": 699,
+      "confirmed_appeared": 554,
+      "confirmed_non_appeared": 0,
+      "unverified": 145,
+      "conflicting": 0,
+      "unknown_player_matches": 3840
+    },
+    {
+      "season_label": "2023/2024",
+      "season_id": "20720",
+      "completed_matches": 380,
+      "player_seasons": 734,
+      "confirmed_appeared": 570,
+      "confirmed_non_appeared": 0,
+      "unverified": 164,
+      "conflicting": 0,
+      "unknown_player_matches": 3796
+    },
+    {
+      "season_label": "2024/2025",
+      "season_id": "23685",
+      "completed_matches": 380,
+      "player_seasons": 685,
+      "confirmed_appeared": 562,
+      "confirmed_non_appeared": 0,
+      "unverified": 123,
+      "conflicting": 0,
+      "unknown_player_matches": 3621
+    }
+  ],
+  "appearance_by_season": [
+    {
+      "season_label": "2019/2020",
+      "season_id": "14022",
+      "completed_matches": 380,
+      "fully_resolved_matches": 0,
+      "total_player_match_records": 14034,
+      "started_count": 8360,
+      "substituted_on_count": 2254,
+      "unused_substitute_count": 0,
+      "unknown_count": 3420,
+      "conflicting_count": 0,
+      "resolved_ratio_pct": 75.63,
+      "appeared_ratio_pct": 75.63
+    },
+    {
+      "season_label": "2020/2021",
+      "season_id": "15382",
+      "completed_matches": 380,
+      "fully_resolved_matches": 0,
+      "total_player_match_records": 14643,
+      "started_count": 8360,
+      "substituted_on_count": 2033,
+      "unused_substitute_count": 0,
+      "unknown_count": 4250,
+      "conflicting_count": 0,
+      "resolved_ratio_pct": 70.98,
+      "appeared_ratio_pct": 70.98
+    },
+    {
+      "season_label": "2021/2022",
+      "season_id": "16390",
+      "completed_matches": 380,
+      "fully_resolved_matches": 0,
+      "total_player_match_records": 15162,
+      "started_count": 8360,
+      "substituted_on_count": 2125,
+      "unused_substitute_count": 0,
+      "unknown_count": 4677,
+      "conflicting_count": 0,
+      "resolved_ratio_pct": 69.15,
+      "appeared_ratio_pct": 69.15
+    },
+    {
+      "season_label": "2022/2023",
+      "season_id": "17664",
+      "completed_matches": 380,
+      "fully_resolved_matches": 0,
+      "total_player_match_records": 15185,
+      "started_count": 8360,
+      "substituted_on_count": 2985,
+      "unused_substitute_count": 0,
+      "unknown_count": 3840,
+      "conflicting_count": 0,
+      "resolved_ratio_pct": 74.71,
+      "appeared_ratio_pct": 74.71
+    },
+    {
+      "season_label": "2023/2024",
+      "season_id": "20720",
+      "completed_matches": 380,
+      "fully_resolved_matches": 0,
+      "total_player_match_records": 15180,
+      "started_count": 8360,
+      "substituted_on_count": 3024,
+      "unused_substitute_count": 0,
+      "unknown_count": 3796,
+      "conflicting_count": 0,
+      "resolved_ratio_pct": 74.99,
+      "appeared_ratio_pct": 74.99
+    },
+    {
+      "season_label": "2024/2025",
+      "season_id": "23685",
+      "completed_matches": 380,
+      "fully_resolved_matches": 0,
+      "total_player_match_records": 15188,
+      "started_count": 8360,
+      "substituted_on_count": 3207,
+      "unused_substitute_count": 0,
+      "unknown_count": 3621,
+      "conflicting_count": 0,
+      "resolved_ratio_pct": 76.16,
+      "appeared_ratio_pct": 76.16
+    }
+  ],
+  "metric_coverage_rows": 318,
+  "coverage_above_100": 0,
+  "coverage_undefined": 0,
+  "metric_conflict_actions": {
+    "RESOLVED_ROUNDING_TOLERANCE": 444,
+    "RECONCILED_PREFERRED_SOURCE": 95,
+    "PRESERVED_UNRESOLVED_NULL": 36
+  },
+  "xg_xa_coverage_quality": [
+    {
+      "season_label": "2019/2020",
+      "metric_name": "expected_goals",
+      "coverage_window_status": "UNKNOWN_COVERAGE_WINDOW",
+      "source_reported_grain": "PLAYER_SEASON_VALUE",
+      "partial_season_suspected": true,
+      "verified_window_start_utc": "",
+      "verified_window_end_utc": "",
+      "eligible_players": 515,
+      "observed_players": 69,
+      "source_evidence": "playerStats|leagueseasondeepstats; no explicit observation-window dates in saved season metadata",
+      "handling": "Preserve source value; do not assert full-season total or zero-fill missing periods"
+    },
+    {
+      "season_label": "2019/2020",
+      "metric_name": "expected_assists",
+      "coverage_window_status": "UNKNOWN_COVERAGE_WINDOW",
+      "source_reported_grain": "PLAYER_SEASON_VALUE",
+      "partial_season_suspected": true,
+      "verified_window_start_utc": "",
+      "verified_window_end_utc": "",
+      "eligible_players": 515,
+      "observed_players": 96,
+      "source_evidence": "playerStats|leagueseasondeepstats; no explicit observation-window dates in saved season metadata",
+      "handling": "Preserve source value; do not assert full-season total or zero-fill missing periods"
+    },
+    {
+      "season_label": "2020/2021",
+      "metric_name": "expected_goals",
+      "coverage_window_status": "UNKNOWN_COVERAGE_WINDOW",
+      "source_reported_grain": "PLAYER_SEASON_VALUE",
+      "partial_season_suspected": false,
+      "verified_window_start_utc": "",
+      "verified_window_end_utc": "",
+      "eligible_players": 524,
+      "observed_players": 433,
+      "source_evidence": "playerStats|leagueseasondeepstats; no explicit observation-window dates in saved season metadata",
+      "handling": "Preserve source value; do not assert full-season total or zero-fill missing periods"
+    },
+    {
+      "season_label": "2020/2021",
+      "metric_name": "expected_assists",
+      "coverage_window_status": "UNKNOWN_COVERAGE_WINDOW",
+      "source_reported_grain": "PLAYER_SEASON_VALUE",
+      "partial_season_suspected": false,
+      "verified_window_start_utc": "",
+      "verified_window_end_utc": "",
+      "eligible_players": 524,
+      "observed_players": 516,
+      "source_evidence": "playerStats|leagueseasondeepstats; no explicit observation-window dates in saved season metadata",
+      "handling": "Preserve source value; do not assert full-season total or zero-fill missing periods"
+    },
+    {
+      "season_label": "2021/2022",
+      "metric_name": "expected_goals",
+      "coverage_window_status": "UNKNOWN_COVERAGE_WINDOW",
+      "source_reported_grain": "PLAYER_SEASON_VALUE",
+      "partial_season_suspected": false,
+      "verified_window_start_utc": "",
+      "verified_window_end_utc": "",
+      "eligible_players": 537,
+      "observed_players": 446,
+      "source_evidence": "playerStats|leagueseasondeepstats; no explicit observation-window dates in saved season metadata",
+      "handling": "Preserve source value; do not assert full-season total or zero-fill missing periods"
+    },
+    {
+      "season_label": "2021/2022",
+      "metric_name": "expected_assists",
+      "coverage_window_status": "UNKNOWN_COVERAGE_WINDOW",
+      "source_reported_grain": "PLAYER_SEASON_VALUE",
+      "partial_season_suspected": false,
+      "verified_window_start_utc": "",
+      "verified_window_end_utc": "",
+      "eligible_players": 537,
+      "observed_players": 532,
+      "source_evidence": "playerStats|leagueseasondeepstats; no explicit observation-window dates in saved season metadata",
+      "handling": "Preserve source value; do not assert full-season total or zero-fill missing periods"
+    },
+    {
+      "season_label": "2022/2023",
+      "metric_name": "expected_goals",
+      "coverage_window_status": "UNKNOWN_COVERAGE_WINDOW",
+      "source_reported_grain": "PLAYER_SEASON_VALUE",
+      "partial_season_suspected": false,
+      "verified_window_start_utc": "",
+      "verified_window_end_utc": "",
+      "eligible_players": 554,
+      "observed_players": 458,
+      "source_evidence": "playerStats|leagueseasondeepstats; no explicit observation-window dates in saved season metadata",
+      "handling": "Preserve source value; do not assert full-season total or zero-fill missing periods"
+    },
+    {
+      "season_label": "2022/2023",
+      "metric_name": "expected_assists",
+      "coverage_window_status": "UNKNOWN_COVERAGE_WINDOW",
+      "source_reported_grain": "PLAYER_SEASON_VALUE",
+      "partial_season_suspected": false,
+      "verified_window_start_utc": "",
+      "verified_window_end_utc": "",
+      "eligible_players": 554,
+      "observed_players": 549,
+      "source_evidence": "playerStats|leagueseasondeepstats; no explicit observation-window dates in saved season metadata",
+      "handling": "Preserve source value; do not assert full-season total or zero-fill missing periods"
+    },
+    {
+      "season_label": "2023/2024",
+      "metric_name": "expected_goals",
+      "coverage_window_status": "UNKNOWN_COVERAGE_WINDOW",
+      "source_reported_grain": "PLAYER_SEASON_VALUE",
+      "partial_season_suspected": false,
+      "verified_window_start_utc": "",
+      "verified_window_end_utc": "",
+      "eligible_players": 570,
+      "observed_players": 460,
+      "source_evidence": "playerStats|leagueseasondeepstats; no explicit observation-window dates in saved season metadata",
+      "handling": "Preserve source value; do not assert full-season total or zero-fill missing periods"
+    },
+    {
+      "season_label": "2023/2024",
+      "metric_name": "expected_assists",
+      "coverage_window_status": "UNKNOWN_COVERAGE_WINDOW",
+      "source_reported_grain": "PLAYER_SEASON_VALUE",
+      "partial_season_suspected": false,
+      "verified_window_start_utc": "",
+      "verified_window_end_utc": "",
+      "eligible_players": 570,
+      "observed_players": 559,
+      "source_evidence": "playerStats|leagueseasondeepstats; no explicit observation-window dates in saved season metadata",
+      "handling": "Preserve source value; do not assert full-season total or zero-fill missing periods"
+    },
+    {
+      "season_label": "2024/2025",
+      "metric_name": "expected_goals",
+      "coverage_window_status": "UNKNOWN_COVERAGE_WINDOW",
+      "source_reported_grain": "PLAYER_SEASON_VALUE",
+      "partial_season_suspected": false,
+      "verified_window_start_utc": "",
+      "verified_window_end_utc": "",
+      "eligible_players": 562,
+      "observed_players": 457,
+      "source_evidence": "playerStats|leagueseasondeepstats; no explicit observation-window dates in saved season metadata",
+      "handling": "Preserve source value; do not assert full-season total or zero-fill missing periods"
+    },
+    {
+      "season_label": "2024/2025",
+      "metric_name": "expected_assists",
+      "coverage_window_status": "UNKNOWN_COVERAGE_WINDOW",
+      "source_reported_grain": "PLAYER_SEASON_VALUE",
+      "partial_season_suspected": false,
+      "verified_window_start_utc": "",
+      "verified_window_end_utc": "",
+      "eligible_players": 562,
+      "observed_players": 553,
+      "source_evidence": "playerStats|leagueseasondeepstats; no explicit observation-window dates in saved season metadata",
+      "handling": "Preserve source value; do not assert full-season total or zero-fill missing periods"
+    }
+  ],
+  "quality_gates": [
+    {
+      "check": "players_PRIMARY_KEY",
+      "status": "PASS",
+      "failures": 0,
+      "detail": "rows=1757"
+    },
+    {
+      "check": "teams_PRIMARY_KEY",
+      "status": "PASS",
+      "failures": 0,
+      "detail": "rows=120"
+    },
+    {
+      "check": "seasons_PRIMARY_KEY",
+      "status": "PASS",
+      "failures": 0,
+      "detail": "rows=6"
+    },
+    {
+      "check": "matches_PRIMARY_KEY",
+      "status": "PASS",
+      "failures": 0,
+      "detail": "rows=2281"
+    },
+    {
+      "check": "player_seasons_PRIMARY_KEY",
+      "status": "PASS",
+      "failures": 0,
+      "detail": "rows=4052"
+    },
+    {
+      "check": "player_team_seasons_PRIMARY_KEY",
+      "status": "PASS",
+      "failures": 0,
+      "detail": "rows=4135"
+    },
+    {
+      "check": "player_match_appearances_PRIMARY_KEY",
+      "status": "PASS",
+      "failures": 0,
+      "detail": "rows=89392"
+    },
+    {
+      "check": "complete_population_PRIMARY_KEY",
+      "status": "PASS",
+      "failures": 0,
+      "detail": "rows=4052"
+    },
+    {
+      "check": "wide_PRIMARY_KEY",
+      "status": "PASS",
+      "failures": 0,
+      "detail": "rows=4052"
+    },
+    {
+      "check": "curated_appeared_PRIMARY_KEY",
+      "status": "PASS",
+      "failures": 0,
+      "detail": "rows=3262"
+    },
+    {
+      "check": "PLAYER_SEASON_FOREIGN_KEYS",
+      "status": "PASS",
+      "failures": 0,
+      "detail": "player and season references"
+    },
+    {
+      "check": "MATCH_TEAM_SEASON_KEYS",
+      "status": "PASS",
+      "failures": 0,
+      "detail": "historical home/away teams"
+    },
+    {
+      "check": "APPEARANCE_FOREIGN_KEYS",
+      "status": "PASS",
+      "failures": 0,
+      "detail": "match and historical club relationship"
+    },
+    {
+      "check": "METRIC_FOREIGN_KEYS",
+      "status": "PASS",
+      "failures": 0,
+      "detail": "metric observations to player-season"
+    },
+    {
+      "check": "POSITION_FOREIGN_KEYS",
+      "status": "PASS",
+      "failures": 0,
+      "detail": "historical position references"
+    },
+    {
+      "check": "POSITIVE_POPULATION_EVIDENCE",
+      "status": "PASS",
+      "failures": 0,
+      "detail": "confirmed appeared requires match evidence"
+    },
+    {
+      "check": "NO_UNSUPPORTED_NEGATIVE",
+      "status": "PASS",
+      "failures": 0,
+      "detail": "unknowns retained"
+    },
+    {
+      "check": "POPULATION_PARTITION",
+      "status": "PASS",
+      "failures": 0,
+      "detail": "exclusive categories and curated"
+    },
+    {
+      "check": "COVERAGE_BOUNDS",
+      "status": "PASS",
+      "failures": 0,
+      "detail": "all metric-season rows"
+    },
+    {
+      "check": "COVERAGE_UNDEFINED",
+      "status": "PASS",
+      "failures": 0,
+      "detail": "zero denominator"
+    },
+    {
+      "check": "CONFLICT_NULL_PRESERVED",
+      "status": "PASS",
+      "failures": 0,
+      "detail": "source conflicts remain visible"
+    },
+    {
+      "check": "LEGACY_GATE_DISPOSITION",
+      "status": "PASS",
+      "failures": 0,
+      "detail": "documented_legacy_gates=12"
+    },
+    {
+      "check": "RAW_MATCH_CHECKSUMS",
+      "status": "PASS",
+      "failures": 0,
+      "detail": "Part 1 audited matchDetails checksum evidence"
+    },
+    {
+      "check": "ABANDONED_REPLAY",
+      "status": "PASS",
+      "failures": 0,
+      "detail": "Bournemouth-Luton"
+    },
+    {
+      "check": "2019/2020_MATCH_COUNT",
+      "status": "PASS",
+      "failures": 0,
+      "detail": "completed=380"
+    },
+    {
+      "check": "2020/2021_MATCH_COUNT",
+      "status": "PASS",
+      "failures": 0,
+      "detail": "completed=380"
+    },
+    {
+      "check": "2021/2022_MATCH_COUNT",
+      "status": "PASS",
+      "failures": 0,
+      "detail": "completed=380"
+    },
+    {
+      "check": "2022/2023_MATCH_COUNT",
+      "status": "PASS",
+      "failures": 0,
+      "detail": "completed=380"
+    },
+    {
+      "check": "2023/2024_MATCH_COUNT",
+      "status": "PASS",
+      "failures": 0,
+      "detail": "completed=380"
+    },
+    {
+      "check": "2024/2025_MATCH_COUNT",
+      "status": "PASS",
+      "failures": 0,
+      "detail": "completed=380"
+    }
+  ],
+  "season_acceptance": {
+    "2019/2020": "CONDITIONAL_PASS",
+    "2020/2021": "CONDITIONAL_PASS",
+    "2021/2022": "CONDITIONAL_PASS",
+    "2022/2023": "CONDITIONAL_PASS",
+    "2023/2024": "CONDITIONAL_PASS",
+    "2024/2025": "CONDITIONAL_PASS"
+  },
+  "release_verdict": "CONDITIONAL_GO"
+}

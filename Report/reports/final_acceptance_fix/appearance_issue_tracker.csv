@@ -1,0 +1,5 @@
+id,severity,status,count,description,next_action
+AF-01,HIGH,OPEN,23604,Substitute non-entry cannot be proven from available feed; corrected rows remain UNKNOWN.,Prompt 2 must document complete negative source semantics or retain unknowns.
+AF-02,HIGH,OPEN,790,Original v3 non-appeared player-seasons have no season-wide negative proof.,Recompute population coverage and dependent quality gates.
+AF-03,MEDIUM,OPEN,1,Legacy classify_participation() still implements unsupported negative inference for reproducibility of v3.,Route future releases through classify_participation_verified(); deprecate legacy path after migration.
+AF-04,MEDIUM,OPEN,4,Direct substitution-on events exist for players lacking active playerStats.,Review stats availability separately; do not negate direct substitution evidence.

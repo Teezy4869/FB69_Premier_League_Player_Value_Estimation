@@ -1,0 +1,6 @@
+group,rows,share_pct,goalkeepers,target_coverage_pct,mean_null_metrics
+1 confirmed appearance,190,6.92,22,83.68,43.99
+2-4 confirmed appearances,241,8.77,36,93.36,34.22
+minutes < 90 (reported),330,12.01,7,87.88,43.61
+minutes null,199,7.24,199,100.0,34.06
+all rows,2747,100.0,206,98.18,17.49

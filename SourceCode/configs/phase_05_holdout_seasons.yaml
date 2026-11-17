@@ -1,0 +1,11 @@
+# 2025/26 holdout season dates (D10). Kept separate from configs/phase_03_seasons.yaml so the development scope
+# and its validators are unchanged. Same reading as Phase 3: plain dates, first match = official opening fixture.
+seasons:
+  - season: "2025/2026"
+    season_id: null                     # FotMob tournament season id: not yet verified (needs a live FotMob probe)
+    first_match_date: "2025-08-15"
+    season_end_date: "2026-05-24"
+    official_evidence: https://www.premierleague.com/news/4324719
+    official_evidence_basis: Premier League fixture release, fetched directly 2026-11-16
+    corroboration: Transfermarkt snapshot tm_r2_20260905, GB1 2025/2026 games span 2025-08-15 to 2026-05-24
+    verification_status: VERIFIED

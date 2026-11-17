@@ -1,0 +1,9 @@
+issue_id,severity,status,finding,evidence,required_action,phase_02b1_gate
+H01,MEDIUM,OPEN_CONDITION,Full-season appearing-player denominator is unknown,population_coverage_report.md,Reconcile every finished fixture lineup with leaderboard union per season,REQUIRED
+H02,MEDIUM,OPEN_CONDITION,Three retrospective second-club relations remain inferred,historical_membership_rules.md,Retain inferred state until season-specific lineup or equivalent evidence,REQUIRED
+H03,MEDIUM,OPEN_CONDITION,Exact position labels are inferred or UNKNOWN,position_mapping_registry.json,Retain source codes and uncertainty; do not promote numeric bands,REQUIRED
+H04,MEDIUM,OPEN_CONDITION,Mac Allister minutes differ by one across sources,metric_reconciliation_report.csv,"Retain both values, flag conflict, no automatic preference",REQUIRED
+H05,MEDIUM,OPEN_CONDITION,playerMatches historical paging is unverified after bounded HTTP 400s,match_index_readiness.md,Use fixture plus matchDetails fallback with participation evidence,REQUIRED
+H06,MEDIUM,OPEN_CONDITION,Eight live responses have no direct season field; two team rosters are unusable historically,request_metrics.csv,Exclude unverified team rosters; derive playerStats entry from checked profile each batch,REQUIRED
+F01,LOW,FIXED,HTTP client previously ignored Retry-After,../../tests/collection/test_reliability_step05.py,Bounded Retry-After wait and stop on long wait implemented,MET
+F02,HIGH,FIXED,Wrong-season capture could previously be returned from cache,../../tests/collection/test_reliability_step05.py,Preserve raw mismatch but reject cache reuse,MET

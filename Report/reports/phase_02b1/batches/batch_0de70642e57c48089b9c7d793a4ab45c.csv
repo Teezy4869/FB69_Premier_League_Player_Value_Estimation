@@ -1,0 +1,2 @@
+task_id,request_key,season_label,stage,resource_type,decision,schema_status,scope_status,error_classification,raw_path,capture_id,missing_value_count,note
+tsk_4fca110312ce1677ad80b18ce7b4cd0a56b5de24546df4297d6f07744a6a7bd1,,2021/2022,B,POPULATION_GATE,VALIDATED,,,,data/phase_02b1/checkpoints/2021_2022/appeared_population.json,,0,537 appeared IDs; 0 missing candidates

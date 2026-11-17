@@ -1,0 +1,34 @@
+# Approved Transfermarkt source for FB69 Phase 3 (owner decision D1, 2026-11-04).
+# Do not edit pins to make a download pass. A mismatch requires owner approval.
+snapshot_id: tm_r2_20260905
+owner_approval: "D1 approved; D2 conditionally approved for internal academic research"
+source:
+  name: dcaribou/transfermarkt-datasets
+  repository: https://github.com/dcaribou/transfermarkt-datasets
+  repository_commit: e44f186d6f06dd8452aaf54c7921ba66c961f637
+  base_url: https://pub-e682421888d945d684bcae8890b0ec20.r2.dev/data/
+  r2_last_modified_utc: "2026-09-05"
+  related_distribution: "Kaggle davidcariboo/player-scores v679 (not used)"
+rights:
+  declared_license: CC0-1.0
+  declared_by: dataset maintainer (repository LICENSE file and Kaggle metadata)
+  upstream_rights_status: NOT_INDEPENDENTLY_VERIFIED
+  statement: >-
+    CC0 is the dataset maintainer's declaration. Transfermarkt has not been shown to grant CC0,
+    and upstream Transfermarkt rights were not independently verified.
+  permitted_project_use: internal academic research, with attribution
+  restrictions:
+    - Do not redistribute the raw dataset.
+    - Do not represent the data as officially licensed by Transfermarkt.
+  attribution: >-
+    Data derived from dcaribou/transfermarkt-datasets (David Cariboo), built from Transfermarkt
+    data (https://www.transfermarkt.co.uk/).
+files:
+  - {name: player_valuations.csv.gz, bytes: 7197935, sha256: 608e32e5ad2231074f3505c469ad727be66d7e6efda6af918afd85379439631d, etag: 087cb1d21a2469ff4a597b6ca86cced4}
+  - {name: players.csv.gz, bytes: 4389958, sha256: d22e407981d5b51a79bf8ff59835729f3526f7dc3495a6d8ed2f852ed2e86403, etag: bf46ce79e2aec6db1decce7713bb618c}
+  - {name: transfers.csv.gz, bytes: 5809514, sha256: 90326983daf7e6ac7aabdfe62b90936d9bf1dd2171e53dec75c3751eb1620a83, etag: 21cdd99be19205ed521890c45da44235}
+  - {name: clubs.csv.gz, bytes: 51281, sha256: aa57ab56e87faffaea1e8697439a32caf10116d8f2f2dfb3a57193c0bb1d641b, etag: f30713f2d0022ca4ecbb382cd695e389}
+  - {name: competitions.csv.gz, bytes: 2242, sha256: 8924ddfbc0e9989f4a42a3c32ebb6faa671614625086d7fa84353f955352ea88, etag: cc53fe35e2c82d73f57f3f5d3d8cf605}
+  - {name: appearances.csv.gz, bytes: 45253638, sha256: e096c2b158fc3d52c4550526c4d4850dd62f31007652f4bcae112eadb1646802, etag: e0444486c9d78a44a74544d7dfbcc8cc-6}
+  # Step 1 ran HEAD only on games, so no SHA-256 was approved. Verified by size and MD5 ETag at first acquisition.
+  - {name: games.csv.gz, bytes: 4995595, sha256: null, etag: 9d56854283f5d47601688ffbd3baaedd}

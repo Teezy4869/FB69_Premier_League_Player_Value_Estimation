@@ -1,0 +1,52 @@
+# Official EPL season cutoffs for FB69 Phase 3. target cutoff = official season end date, read as a plain date.
+# Two independent datasets also agree on these dates: frozen FotMob fixtures and Transfermarkt games.
+# `official_evidence_basis` says how each page was read on 2026-11-04.
+selection_rule_version: latest_valid_on_or_before_season_end_v1
+# Labels age only. It is NOT an exclusion rule: stale rows stay usable, and exact ages are kept.
+stale_label_days: 90
+seasons:
+  - season: "2019/2020"
+    season_id: "14022"
+    first_match_date: "2019-08-09"
+    season_end_date: "2020-07-26"
+    official_evidence: https://www.premierleague.com/news/1702418
+    official_evidence_basis: Premier League page, read via search summary
+    note: Season extended by the COVID-19 suspension.
+    verification_status: VERIFIED
+  - season: "2020/2021"
+    season_id: "15382"
+    first_match_date: "2020-09-12"
+    season_end_date: "2021-05-23"
+    official_evidence: https://www.premierleague.com/en/news/1752553
+    official_evidence_basis: Premier League page, read via search summary
+    verification_status: VERIFIED
+  - season: "2021/2022"
+    season_id: "16390"
+    first_match_date: "2021-08-13"
+    season_end_date: "2022-05-22"
+    official_evidence: https://www.premierleague.com/en/news/2171434
+    official_evidence_basis: Premier League fixture list, read via search summary
+    note: An early announcement gave 14 August 2021 as the start; the first match was played on 13 August.
+    verification_status: VERIFIED
+  - season: "2022/2023"
+    season_id: "17664"
+    first_match_date: "2022-08-05"
+    season_end_date: "2023-05-28"
+    official_evidence: https://www.premierleague.com/en/news/2264107
+    official_evidence_basis: Premier League page, read via search summary
+    note: An early announcement gave 6 August 2022 as the start; the first match was played on 5 August.
+    verification_status: VERIFIED
+  - season: "2023/2024"
+    season_id: "20720"
+    first_match_date: "2023-08-11"
+    season_end_date: "2024-05-19"
+    official_evidence: https://www.premierleague.com/en/news/3832048
+    official_evidence_basis: Premier League page, fetched directly
+    verification_status: VERIFIED
+  - season: "2024/2025"
+    season_id: "23685"
+    first_match_date: "2024-08-16"
+    season_end_date: "2025-05-25"
+    official_evidence: https://www.premierleague.com/en/news/3832048
+    official_evidence_basis: Premier League page, fetched directly
+    verification_status: VERIFIED

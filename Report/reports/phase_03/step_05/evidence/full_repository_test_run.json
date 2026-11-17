@@ -1,0 +1,18 @@
+{
+ "command": "python -W ignore -m unittest discover -s tests -t .",
+ "started_utc": "2026-11-05T02:29:12.276208+00:00",
+ "ended_utc": "2026-11-05T02:35:12.614869+00:00",
+ "exit_code": 0,
+ "tests_run": 366,
+ "seconds": 350.615,
+ "failed_summary": null,
+ "ok": true,
+ "failing_tests": [],
+ "mutable_files_unchanged": true,
+ "changed_mutable_files": [],
+ "fotmob_release": {
+  "files_checked": 38,
+  "mismatches": 0,
+  "manifest_sha256": "9aa00b227b2dbf9a6004258ff94c25e825d7c5cfd45a365cb94f5f98863fbf93"
+ }
+}

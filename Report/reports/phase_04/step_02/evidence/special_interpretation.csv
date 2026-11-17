@@ -1,0 +1,9 @@
+topic,features,interpretation
+Source-reported rates and totals (ISS-29),"m_aerials_won_percent, m_cross_accuracy, m_duels_won_percent, m_long_ball_accuracy, m_passing_accuracy, m_save_percentage, m_clean_sheets, m_goals_conceded_per90",Accepted as the source reports them; no independent window check; denominators not available. Conditional predictors.
+Pending owner decision RD-04,"m_clearances, m_clearances_per90, m_expected_goals_on_target, m_touches_opposition_box, m_goals_prevented",Described here; eligibility not decided. clearances has values in 3 of 5 seasons.
+Goalkeeper-only metrics (ISS-11),"m_saves, m_save_percentage, m_clean_sheets, m_goals_conceded, m_goals_conceded_per90, m_penalty_saves, m_goals_prevented","Described on GK rows only; outfield rows are UNVERIFIED_POSITION (not applicable, not zero). GK minutes null on 199 of 206 rows."
+Per-90 rates on small denominators (P4-B05),"m_shots_per90, m_shots_on_target_per90, m_accurate_passes_per90, m_accurate_long_passes_per90, m_tackles_per90, m_interceptions_per90, m_recoveries_per90, m_blocks_per90, m_clearances_per90",Rates from under 90 minutes produce the extreme values; read with minutes; no minimum-minutes rule applied.
+Percentages and ratings,"m_aerials_won_percent, m_cross_accuracy, m_duels_won_percent, m_long_ball_accuracy, m_passing_accuracy, m_save_percentage, m_rating",Bounded scales; skewness and IQR fences mean less here; small samples produce 0% and 100% values.
+Starts anomaly (DQ-RS5-04),m_starts,6 rows with starts > appearances kept as published.
+"Whole-season position (P4-B04, RD-03)",position_group_season,"Modal position over the whole season, partly after the valuation date."
+Zero-heavy counts,"m_red_cards, m_penalty_saves","Half or more of the observed values are 0 (rare events); medians are 0, means are driven by few players."

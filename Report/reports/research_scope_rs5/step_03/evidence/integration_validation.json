@@ -1,0 +1,254 @@
+{
+ "checks": [
+  {
+   "check": "five-season whitelist (all official seasons present, nothing else)",
+   "status": "PASS",
+   "observed": {
+    "2020/2021": 524,
+    "2021/2022": 537,
+    "2022/2023": 554,
+    "2023/2024": 570,
+    "2024/2025": 562
+   }
+  },
+  {
+   "check": "excluded season rejected (0 rows by label or id)",
+   "status": "PASS",
+   "observed": 0
+  },
+  {
+   "check": "excluded season absent from club evidence",
+   "status": "PASS",
+   "observed": null
+  },
+  {
+   "check": "no 2019/20 flag columns remain",
+   "status": "PASS",
+   "observed": null
+  },
+  {
+   "check": "player-season uniqueness",
+   "status": "PASS",
+   "observed": null
+  },
+  {
+   "check": "record count reconciles with rs5 Confirmed population",
+   "status": "PASS",
+   "observed": 2747
+  },
+  {
+   "check": "per-season counts reconcile",
+   "status": "PASS",
+   "observed": null
+  },
+  {
+   "check": "canonical id derives from FotMob id",
+   "status": "PASS",
+   "observed": null
+  },
+  {
+   "check": "one Transfermarkt id per player across seasons",
+   "status": "PASS",
+   "observed": null
+  },
+  {
+   "check": "one player per Transfermarkt id (no many-to-one)",
+   "status": "PASS",
+   "observed": null
+  },
+  {
+   "check": "dataset identity equals crosswalk",
+   "status": "PASS",
+   "observed": null
+  },
+  {
+   "check": "every crosswalk identity appears in the dataset",
+   "status": "PASS",
+   "observed": null
+  },
+  {
+   "check": "Transfermarkt ids exist (referential integrity)",
+   "status": "PASS",
+   "observed": null
+  },
+  {
+   "check": "unmapped rows carry an unresolved status",
+   "status": "PASS",
+   "observed": null
+  },
+  {
+   "check": "target uniqueness and equality with the target table",
+   "status": "PASS",
+   "observed": null
+  },
+  {
+   "check": "missing target handling: null value iff not usable, with a reason",
+   "status": "PASS",
+   "observed": 50
+  },
+  {
+   "check": "no valuation after cutoff",
+   "status": "PASS",
+   "observed": null
+  },
+  {
+   "check": "features unchanged from FotMob rs5 (feature-target separation)",
+   "status": "PASS",
+   "observed": 106
+  },
+  {
+   "check": "missingness preserved: null metric cells equal source",
+   "status": "PASS",
+   "observed": null
+  },
+  {
+   "check": "missing_feature_count equals null m_* count",
+   "status": "PASS",
+   "observed": null
+  },
+  {
+   "check": "schema: every column has a role",
+   "status": "PASS",
+   "observed": 175
+  },
+  {
+   "check": "no target/temporal/identity column is a candidate predictor",
+   "status": "PASS",
+   "observed": []
+  },
+  {
+   "check": "data dictionary covers every column with its type",
+   "status": "PASS",
+   "observed": null
+  },
+  {
+   "check": "provenance columns populated",
+   "status": "PASS",
+   "observed": null
+  },
+  {
+   "check": "usable targets carry source lineage",
+   "status": "PASS",
+   "observed": null
+  },
+  {
+   "check": "multi-club players stay one row; club evidence covers every row",
+   "status": "PASS",
+   "observed": null
+  },
+  {
+   "check": "reconciles with historical v1 in-scope rows on all shared non-identity columns",
+   "status": "PASS",
+   "observed": {
+    "shared_columns_compared": 168,
+    "differing_rows": 0
+   }
+  }
+ ],
+ "passed": 27,
+ "total": 27,
+ "statistics": {
+  "rows": 2747,
+  "unique_players": 1228,
+  "columns": 175,
+  "rows_by_season": {
+   "2020/2021": 524,
+   "2021/2022": 537,
+   "2022/2023": 554,
+   "2023/2024": 570,
+   "2024/2025": 562
+  },
+  "mapped_rows": 2745,
+  "unmapped_rows": 2,
+  "usable_targets": 2697,
+  "missing_targets": 50,
+  "missing_target_reasons": {
+   "ONLY_VALUATIONS_AFTER_CUTOFF": 37,
+   "NO_VALUATION_HISTORY": 11,
+   "NO_ELIGIBLE_IDENTITY_MATCH": 2
+  },
+  "duplicate_player_season_rows": 0,
+  "integration_coverage_pct": 98.18,
+  "mapping_coverage_rows_pct": 99.93,
+  "metric_cells": 145591,
+  "null_metric_cells": 48043,
+  "null_metric_cell_pct": 33.0,
+  "mean_null_metrics_with_target": 17.03,
+  "mean_null_metrics_without_target": 42.1,
+  "by_season": [
+   {
+    "season": "2020/2021",
+    "rows": 524,
+    "players": 524,
+    "mapped": 524,
+    "usable": 515,
+    "missing": 9,
+    "multi_club_confirmed": 8
+   },
+   {
+    "season": "2021/2022",
+    "rows": 537,
+    "players": 537,
+    "mapped": 536,
+    "usable": 528,
+    "missing": 9,
+    "multi_club_confirmed": 9
+   },
+   {
+    "season": "2022/2023",
+    "rows": 554,
+    "players": 554,
+    "mapped": 554,
+    "usable": 542,
+    "missing": 12,
+    "multi_club_confirmed": 15
+   },
+   {
+    "season": "2023/2024",
+    "rows": 570,
+    "players": 570,
+    "mapped": 569,
+    "usable": 567,
+    "missing": 3,
+    "multi_club_confirmed": 10
+   },
+   {
+    "season": "2024/2025",
+    "rows": 562,
+    "players": 562,
+    "mapped": 562,
+    "usable": 545,
+    "missing": 17,
+    "multi_club_confirmed": 12
+   }
+  ],
+  "multi_club_class": {
+   "MULTI_CLUB_CONFIRMED_APPEARANCES": 54,
+   "MULTI_CLUB_SQUAD_ONLY": 19,
+   "SINGLE_CLUB": 2674
+  },
+  "crosswalk_status_rows": {
+   "AUTO_ADJUDICATED": 82,
+   "AUTO_EXACT": 2663,
+   "REVIEW_REQUIRED": 2
+  },
+  "crosswalk_status_players": {
+   "AUTO_ADJUDICATED": 36,
+   "AUTO_EXACT": 1190,
+   "REVIEW_REQUIRED": 2
+  },
+  "identity_evidence_tier_rows": {
+   "AUTO_ADJUDICATED_EXTERNAL": 6,
+   "AUTO_ADJUDICATED_INDEPENDENT_RULE": 76,
+   "AUTO_EXACT_NOT_INDEPENDENTLY_VALIDATED": 449,
+   "AUTO_EXACT_VALIDATED": 2214,
+   "UNRESOLVED": 2
+  },
+  "identity_rs5_validation_label_rows": {
+   "CONFIRMED_MATCH": 2287,
+   "INCONCLUSIVE": 458,
+   "NOT_VALIDATED": 2
+  },
+  "club_evidence_rows": 2820
+ }
+}

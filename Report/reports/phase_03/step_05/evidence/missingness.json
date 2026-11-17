@@ -1,0 +1,939 @@
+{
+ "season": [
+  {
+   "season": "2019/2020",
+   "n": 515,
+   "with_value": 498,
+   "missing_value": 17,
+   "missing_valuation_date": 17,
+   "missing_tm_id": 1,
+   "mean_missing_features": 19.7
+  },
+  {
+   "season": "2020/2021",
+   "n": 524,
+   "with_value": 515,
+   "missing_value": 9,
+   "missing_valuation_date": 9,
+   "missing_tm_id": 0,
+   "mean_missing_features": 17.41
+  },
+  {
+   "season": "2021/2022",
+   "n": 537,
+   "with_value": 528,
+   "missing_value": 9,
+   "missing_valuation_date": 9,
+   "missing_tm_id": 1,
+   "mean_missing_features": 17.14
+  },
+  {
+   "season": "2022/2023",
+   "n": 554,
+   "with_value": 542,
+   "missing_value": 12,
+   "missing_valuation_date": 12,
+   "missing_tm_id": 0,
+   "mean_missing_features": 17.91
+  },
+  {
+   "season": "2023/2024",
+   "n": 570,
+   "with_value": 567,
+   "missing_value": 3,
+   "missing_valuation_date": 3,
+   "missing_tm_id": 1,
+   "mean_missing_features": 18.29
+  },
+  {
+   "season": "2024/2025",
+   "n": 562,
+   "with_value": 545,
+   "missing_value": 17,
+   "missing_valuation_date": 17,
+   "missing_tm_id": 0,
+   "mean_missing_features": 16.68
+  }
+ ],
+ "target_status": [
+  {
+   "target_status": "STALE_TARGET",
+   "n": 2024,
+   "with_value": 2024,
+   "missing_value": 0,
+   "missing_valuation_date": 0,
+   "missing_tm_id": 0,
+   "mean_missing_features": 17.96
+  },
+  {
+   "target_status": "TARGET_MISSING",
+   "n": 67,
+   "with_value": 0,
+   "missing_value": 67,
+   "missing_valuation_date": 67,
+   "missing_tm_id": 3,
+   "mean_missing_features": 40.13
+  },
+  {
+   "target_status": "VALID",
+   "n": 1171,
+   "with_value": 1171,
+   "missing_value": 0,
+   "missing_valuation_date": 0,
+   "missing_tm_id": 0,
+   "mean_missing_features": 16.36
+  }
+ ],
+ "target_missing_reason": [
+  {
+   "target_missing_reason": "NO_ELIGIBLE_IDENTITY_MATCH",
+   "n": 3,
+   "with_value": 0,
+   "missing_value": 3,
+   "missing_valuation_date": 3,
+   "missing_tm_id": 3,
+   "mean_missing_features": 38.0
+  },
+  {
+   "target_missing_reason": "NO_VALUATION_HISTORY",
+   "n": 13,
+   "with_value": 0,
+   "missing_value": 13,
+   "missing_valuation_date": 13,
+   "missing_tm_id": 0,
+   "mean_missing_features": 47.0
+  },
+  {
+   "target_missing_reason": "ONLY_VALUATIONS_AFTER_CUTOFF",
+   "n": 51,
+   "with_value": 0,
+   "missing_value": 51,
+   "missing_valuation_date": 51,
+   "missing_tm_id": 0,
+   "mean_missing_features": 38.51
+  },
+  {
+   "target_missing_reason": null,
+   "n": 3195,
+   "with_value": 3195,
+   "missing_value": 0,
+   "missing_valuation_date": 0,
+   "missing_tm_id": 0,
+   "mean_missing_features": 17.37
+  }
+ ],
+ "crosswalk_status": [
+  {
+   "crosswalk_status": "AUTO_ADJUDICATED",
+   "n": 98,
+   "with_value": 95,
+   "missing_value": 3,
+   "missing_valuation_date": 3,
+   "missing_tm_id": 0,
+   "mean_missing_features": 21.03
+  },
+  {
+   "crosswalk_status": "AUTO_EXACT",
+   "n": 3161,
+   "with_value": 3100,
+   "missing_value": 61,
+   "missing_valuation_date": 61,
+   "missing_tm_id": 0,
+   "mean_missing_features": 17.72
+  },
+  {
+   "crosswalk_status": "REVIEW_REQUIRED",
+   "n": 3,
+   "with_value": 0,
+   "missing_value": 3,
+   "missing_valuation_date": 3,
+   "missing_tm_id": 3,
+   "mean_missing_features": 38.0
+  }
+ ],
+ "identity_evidence_tier": [
+  {
+   "identity_evidence_tier": "AUTO_ADJUDICATED_EXTERNAL",
+   "n": 8,
+   "with_value": 8,
+   "missing_value": 0,
+   "missing_valuation_date": 0,
+   "missing_tm_id": 0,
+   "mean_missing_features": 28.38
+  },
+  {
+   "identity_evidence_tier": "AUTO_ADJUDICATED_INDEPENDENT_RULE",
+   "n": 90,
+   "with_value": 87,
+   "missing_value": 3,
+   "missing_valuation_date": 3,
+   "missing_tm_id": 0,
+   "mean_missing_features": 20.38
+  },
+  {
+   "identity_evidence_tier": "AUTO_EXACT_NOT_INDEPENDENTLY_VALIDATED",
+   "n": 584,
+   "with_value": 551,
+   "missing_value": 33,
+   "missing_valuation_date": 33,
+   "missing_tm_id": 0,
+   "mean_missing_features": 22.4
+  },
+  {
+   "identity_evidence_tier": "AUTO_EXACT_VALIDATED",
+   "n": 2577,
+   "with_value": 2549,
+   "missing_value": 28,
+   "missing_valuation_date": 28,
+   "missing_tm_id": 0,
+   "mean_missing_features": 16.66
+  },
+  {
+   "identity_evidence_tier": "UNRESOLVED",
+   "n": 3,
+   "with_value": 0,
+   "missing_value": 3,
+   "missing_valuation_date": 3,
+   "missing_tm_id": 3,
+   "mean_missing_features": 38.0
+  }
+ ],
+ "multi_club_class": [
+  {
+   "multi_club_class": "MULTI_CLUB_CONFIRMED_APPEARANCES",
+   "n": 61,
+   "with_value": 61,
+   "missing_value": 0,
+   "missing_valuation_date": 0,
+   "missing_tm_id": 0,
+   "mean_missing_features": 12.03
+  },
+  {
+   "multi_club_class": "MULTI_CLUB_SQUAD_ONLY",
+   "n": 19,
+   "with_value": 19,
+   "missing_value": 0,
+   "missing_valuation_date": 0,
+   "missing_tm_id": 0,
+   "mean_missing_features": 20.0
+  },
+  {
+   "multi_club_class": "SINGLE_CLUB",
+   "n": 3182,
+   "with_value": 3115,
+   "missing_value": 67,
+   "missing_valuation_date": 67,
+   "missing_tm_id": 3,
+   "mean_missing_features": 17.94
+  }
+ ],
+ "position_group_season": [
+  {
+   "position_group_season": "DEF",
+   "n": 1117,
+   "with_value": 1099,
+   "missing_value": 18,
+   "missing_valuation_date": 18,
+   "missing_tm_id": 1,
+   "mean_missing_features": 15.24
+  },
+  {
+   "position_group_season": "FWD",
+   "n": 906,
+   "with_value": 884,
+   "missing_value": 22,
+   "missing_valuation_date": 22,
+   "missing_tm_id": 0,
+   "mean_missing_features": 18.28
+  },
+  {
+   "position_group_season": "GK",
+   "n": 243,
+   "with_value": 243,
+   "missing_value": 0,
+   "missing_valuation_date": 0,
+   "missing_tm_id": 0,
+   "mean_missing_features": 34.71
+  },
+  {
+   "position_group_season": "MID",
+   "n": 996,
+   "with_value": 969,
+   "missing_value": 27,
+   "missing_valuation_date": 27,
+   "missing_tm_id": 2,
+   "mean_missing_features": 16.23
+  }
+ ],
+ "temporal_alignment_class": [
+  {
+   "temporal_alignment_class": "ALL_GAMES_AFTER_VALUATION",
+   "n": 240,
+   "with_value": 240,
+   "missing_value": 0,
+   "missing_valuation_date": 0,
+   "missing_tm_id": 0,
+   "mean_missing_features": 30.34
+  },
+  {
+   "temporal_alignment_class": "ALL_GAMES_ON_OR_BEFORE_VALUATION",
+   "n": 433,
+   "with_value": 433,
+   "missing_value": 0,
+   "missing_valuation_date": 0,
+   "missing_tm_id": 0,
+   "mean_missing_features": 28.7
+  },
+  {
+   "temporal_alignment_class": "MIXED",
+   "n": 2522,
+   "with_value": 2522,
+   "missing_value": 0,
+   "missing_valuation_date": 0,
+   "missing_tm_id": 0,
+   "mean_missing_features": 14.19
+  },
+  {
+   "temporal_alignment_class": "NO_VALUATION_SELECTED",
+   "n": 67,
+   "with_value": 0,
+   "missing_value": 67,
+   "missing_valuation_date": 67,
+   "missing_tm_id": 3,
+   "mean_missing_features": 40.13
+  }
+ ],
+ "target_staleness_bucket": [
+  {
+   "target_staleness_bucket": "0-30",
+   "n": 28,
+   "with_value": 28,
+   "missing_value": 0,
+   "missing_valuation_date": 0,
+   "missing_tm_id": 0,
+   "mean_missing_features": 34.04
+  },
+  {
+   "target_staleness_bucket": "31-60",
+   "n": 113,
+   "with_value": 113,
+   "missing_value": 0,
+   "missing_valuation_date": 0,
+   "missing_tm_id": 0,
+   "mean_missing_features": 17.11
+  },
+  {
+   "target_staleness_bucket": "61-90",
+   "n": 1030,
+   "with_value": 1030,
+   "missing_value": 0,
+   "missing_valuation_date": 0,
+   "missing_tm_id": 0,
+   "mean_missing_features": 15.79
+  },
+  {
+   "target_staleness_bucket": "91-180",
+   "n": 1634,
+   "with_value": 1634,
+   "missing_value": 0,
+   "missing_valuation_date": 0,
+   "missing_tm_id": 0,
+   "mean_missing_features": 17.71
+  },
+  {
+   "target_staleness_bucket": ">180",
+   "n": 390,
+   "with_value": 390,
+   "missing_value": 0,
+   "missing_valuation_date": 0,
+   "missing_tm_id": 0,
+   "mean_missing_features": 19.02
+  },
+  {
+   "target_staleness_bucket": null,
+   "n": 67,
+   "with_value": 0,
+   "missing_value": 67,
+   "missing_valuation_date": 67,
+   "missing_tm_id": 3,
+   "mean_missing_features": 40.13
+  }
+ ],
+ "identity_fields_missing": {
+  "canonical_player_id": 0,
+  "fotmob_player_name": 0,
+  "fotmob_birth_date": 0,
+  "nationality_profile_present_day": 0,
+  "transfermarkt_player_id": 3
+ },
+ "per_metric_nulls": [
+  {
+   "metric": "m_accurate_long_passes",
+   "null_total": 480,
+   "2019/2020": 62,
+   "2020/2021": 70,
+   "2021/2022": 70,
+   "2022/2023": 89,
+   "2023/2024": 102,
+   "2024/2025": 87
+  },
+  {
+   "metric": "m_accurate_long_passes_per90",
+   "null_total": 480,
+   "2019/2020": 62,
+   "2020/2021": 70,
+   "2021/2022": 70,
+   "2022/2023": 89,
+   "2023/2024": 102,
+   "2024/2025": 87
+  },
+  {
+   "metric": "m_accurate_passes",
+   "null_total": 371,
+   "2019/2020": 46,
+   "2020/2021": 52,
+   "2021/2022": 52,
+   "2022/2023": 68,
+   "2023/2024": 82,
+   "2024/2025": 71
+  },
+  {
+   "metric": "m_accurate_passes_per90",
+   "null_total": 372,
+   "2019/2020": 46,
+   "2020/2021": 52,
+   "2021/2022": 52,
+   "2022/2023": 68,
+   "2023/2024": 82,
+   "2024/2025": 72
+  },
+  {
+   "metric": "m_aerials_won",
+   "null_total": 691,
+   "2019/2020": 94,
+   "2020/2021": 108,
+   "2021/2022": 106,
+   "2022/2023": 119,
+   "2023/2024": 134,
+   "2024/2025": 130
+  },
+  {
+   "metric": "m_aerials_won_percent",
+   "null_total": 691,
+   "2019/2020": 94,
+   "2020/2021": 108,
+   "2021/2022": 106,
+   "2022/2023": 119,
+   "2023/2024": 134,
+   "2024/2025": 130
+  },
+  {
+   "metric": "m_appearances",
+   "null_total": 2,
+   "2019/2020": 1,
+   "2020/2021": 0,
+   "2021/2022": 0,
+   "2022/2023": 0,
+   "2023/2024": 0,
+   "2024/2025": 1
+  },
+  {
+   "metric": "m_assists",
+   "null_total": 219,
+   "2019/2020": 36,
+   "2020/2021": 37,
+   "2021/2022": 38,
+   "2022/2023": 35,
+   "2023/2024": 36,
+   "2024/2025": 37
+  },
+  {
+   "metric": "m_big_chances_created",
+   "null_total": 1435,
+   "2019/2020": 219,
+   "2020/2021": 237,
+   "2021/2022": 235,
+   "2022/2023": 253,
+   "2023/2024": 250,
+   "2024/2025": 241
+  },
+  {
+   "metric": "m_blocked_shots",
+   "null_total": 1127,
+   "2019/2020": 174,
+   "2020/2021": 189,
+   "2021/2022": 176,
+   "2022/2023": 188,
+   "2023/2024": 194,
+   "2024/2025": 206
+  },
+  {
+   "metric": "m_blocks_per90",
+   "null_total": 1127,
+   "2019/2020": 174,
+   "2020/2021": 189,
+   "2021/2022": 176,
+   "2022/2023": 188,
+   "2023/2024": 194,
+   "2024/2025": 206
+  },
+  {
+   "metric": "m_chances_created",
+   "null_total": 693,
+   "2019/2020": 100,
+   "2020/2021": 111,
+   "2021/2022": 112,
+   "2022/2023": 118,
+   "2023/2024": 128,
+   "2024/2025": 124
+  },
+  {
+   "metric": "m_clean_sheets",
+   "null_total": 3027,
+   "2019/2020": 478,
+   "2020/2021": 485,
+   "2021/2022": 496,
+   "2022/2023": 515,
+   "2023/2024": 532,
+   "2024/2025": 521
+  },
+  {
+   "metric": "m_clearances",
+   "null_total": 2700,
+   "2019/2020": 484,
+   "2020/2021": 524,
+   "2021/2022": 504,
+   "2022/2023": 554,
+   "2023/2024": 519,
+   "2024/2025": 115
+  },
+  {
+   "metric": "m_clearances_per90",
+   "null_total": 2700,
+   "2019/2020": 484,
+   "2020/2021": 524,
+   "2021/2022": 504,
+   "2022/2023": 554,
+   "2023/2024": 519,
+   "2024/2025": 115
+  },
+  {
+   "metric": "m_cross_accuracy",
+   "null_total": 1346,
+   "2019/2020": 199,
+   "2020/2021": 209,
+   "2021/2022": 217,
+   "2022/2023": 232,
+   "2023/2024": 251,
+   "2024/2025": 238
+  },
+  {
+   "metric": "m_dribbles_succeeded",
+   "null_total": 783,
+   "2019/2020": 102,
+   "2020/2021": 125,
+   "2021/2022": 127,
+   "2022/2023": 129,
+   "2023/2024": 149,
+   "2024/2025": 151
+  },
+  {
+   "metric": "m_duels_won",
+   "null_total": 609,
+   "2019/2020": 84,
+   "2020/2021": 92,
+   "2021/2022": 94,
+   "2022/2023": 107,
+   "2023/2024": 120,
+   "2024/2025": 112
+  },
+  {
+   "metric": "m_duels_won_percent",
+   "null_total": 609,
+   "2019/2020": 84,
+   "2020/2021": 92,
+   "2021/2022": 94,
+   "2022/2023": 107,
+   "2023/2024": 120,
+   "2024/2025": 112
+  },
+  {
+   "metric": "m_expected_assists",
+   "null_total": 457,
+   "2019/2020": 419,
+   "2020/2021": 8,
+   "2021/2022": 5,
+   "2022/2023": 5,
+   "2023/2024": 11,
+   "2024/2025": 9
+  },
+  {
+   "metric": "m_expected_goals",
+   "null_total": 939,
+   "2019/2020": 446,
+   "2020/2021": 91,
+   "2021/2022": 91,
+   "2022/2023": 96,
+   "2023/2024": 110,
+   "2024/2025": 105
+  },
+  {
+   "metric": "m_expected_goals_on_target",
+   "null_total": 1339,
+   "2019/2020": 479,
+   "2020/2021": 158,
+   "2021/2022": 159,
+   "2022/2023": 176,
+   "2023/2024": 180,
+   "2024/2025": 187
+  },
+  {
+   "metric": "m_fouls_committed",
+   "null_total": 651,
+   "2019/2020": 90,
+   "2020/2021": 97,
+   "2021/2022": 103,
+   "2022/2023": 112,
+   "2023/2024": 125,
+   "2024/2025": 124
+  },
+  {
+   "metric": "m_fouls_won",
+   "null_total": 689,
+   "2019/2020": 98,
+   "2020/2021": 107,
+   "2021/2022": 109,
+   "2022/2023": 118,
+   "2023/2024": 129,
+   "2024/2025": 128
+  },
+  {
+   "metric": "m_goals",
+   "null_total": 237,
+   "2019/2020": 38,
+   "2020/2021": 39,
+   "2021/2022": 41,
+   "2022/2023": 39,
+   "2023/2024": 38,
+   "2024/2025": 42
+  },
+  {
+   "metric": "m_goals_conceded",
+   "null_total": 3027,
+   "2019/2020": 478,
+   "2020/2021": 485,
+   "2021/2022": 496,
+   "2022/2023": 515,
+   "2023/2024": 532,
+   "2024/2025": 521
+  },
+  {
+   "metric": "m_goals_conceded_per90",
+   "null_total": 3027,
+   "2019/2020": 478,
+   "2020/2021": 485,
+   "2021/2022": 496,
+   "2022/2023": 515,
+   "2023/2024": 532,
+   "2024/2025": 521
+  },
+  {
+   "metric": "m_goals_prevented",
+   "null_total": 3082,
+   "2019/2020": 515,
+   "2020/2021": 486,
+   "2021/2022": 496,
+   "2022/2023": 515,
+   "2023/2024": 534,
+   "2024/2025": 536
+  },
+  {
+   "metric": "m_interceptions",
+   "null_total": 724,
+   "2019/2020": 100,
+   "2020/2021": 112,
+   "2021/2022": 114,
+   "2022/2023": 130,
+   "2023/2024": 135,
+   "2024/2025": 133
+  },
+  {
+   "metric": "m_interceptions_per90",
+   "null_total": 724,
+   "2019/2020": 100,
+   "2020/2021": 112,
+   "2021/2022": 114,
+   "2022/2023": 130,
+   "2023/2024": 135,
+   "2024/2025": 133
+  },
+  {
+   "metric": "m_key_passes",
+   "null_total": 3262,
+   "2019/2020": 515,
+   "2020/2021": 524,
+   "2021/2022": 537,
+   "2022/2023": 554,
+   "2023/2024": 570,
+   "2024/2025": 562
+  },
+  {
+   "metric": "m_long_ball_accuracy",
+   "null_total": 480,
+   "2019/2020": 62,
+   "2020/2021": 70,
+   "2021/2022": 70,
+   "2022/2023": 89,
+   "2023/2024": 102,
+   "2024/2025": 87
+  },
+  {
+   "metric": "m_minutes_played",
+   "null_total": 237,
+   "2019/2020": 38,
+   "2020/2021": 39,
+   "2021/2022": 41,
+   "2022/2023": 39,
+   "2023/2024": 38,
+   "2024/2025": 42
+  },
+  {
+   "metric": "m_non_penalty_xg",
+   "null_total": 1057,
+   "2019/2020": 448,
+   "2020/2021": 108,
+   "2021/2022": 113,
+   "2022/2023": 119,
+   "2023/2024": 137,
+   "2024/2025": 132
+  },
+  {
+   "metric": "m_passing_accuracy",
+   "null_total": 371,
+   "2019/2020": 46,
+   "2020/2021": 52,
+   "2021/2022": 52,
+   "2022/2023": 68,
+   "2023/2024": 82,
+   "2024/2025": 71
+  },
+  {
+   "metric": "m_penalty_saves",
+   "null_total": 3093,
+   "2019/2020": 487,
+   "2020/2021": 497,
+   "2021/2022": 511,
+   "2022/2023": 524,
+   "2023/2024": 540,
+   "2024/2025": 534
+  },
+  {
+   "metric": "m_rating",
+   "null_total": 176,
+   "2019/2020": 19,
+   "2020/2021": 19,
+   "2021/2022": 21,
+   "2022/2023": 28,
+   "2023/2024": 39,
+   "2024/2025": 50
+  },
+  {
+   "metric": "m_recoveries",
+   "null_total": 611,
+   "2019/2020": 84,
+   "2020/2021": 94,
+   "2021/2022": 93,
+   "2022/2023": 108,
+   "2023/2024": 120,
+   "2024/2025": 112
+  },
+  {
+   "metric": "m_recoveries_per90",
+   "null_total": 611,
+   "2019/2020": 84,
+   "2020/2021": 94,
+   "2021/2022": 93,
+   "2022/2023": 108,
+   "2023/2024": 120,
+   "2024/2025": 112
+  },
+  {
+   "metric": "m_red_cards",
+   "null_total": 371,
+   "2019/2020": 46,
+   "2020/2021": 52,
+   "2021/2022": 52,
+   "2022/2023": 68,
+   "2023/2024": 82,
+   "2024/2025": 71
+  },
+  {
+   "metric": "m_save_percentage",
+   "null_total": 3029,
+   "2019/2020": 479,
+   "2020/2021": 486,
+   "2021/2022": 496,
+   "2022/2023": 515,
+   "2023/2024": 532,
+   "2024/2025": 521
+  },
+  {
+   "metric": "m_saves",
+   "null_total": 3027,
+   "2019/2020": 478,
+   "2020/2021": 485,
+   "2021/2022": 496,
+   "2022/2023": 515,
+   "2023/2024": 532,
+   "2024/2025": 521
+  },
+  {
+   "metric": "m_shots",
+   "null_total": 606,
+   "2019/2020": 83,
+   "2020/2021": 91,
+   "2021/2022": 93,
+   "2022/2023": 107,
+   "2023/2024": 120,
+   "2024/2025": 112
+  },
+  {
+   "metric": "m_shots_on_target",
+   "null_total": 1010,
+   "2019/2020": 161,
+   "2020/2021": 156,
+   "2021/2022": 158,
+   "2022/2023": 170,
+   "2023/2024": 180,
+   "2024/2025": 185
+  },
+  {
+   "metric": "m_shots_on_target_per90",
+   "null_total": 1010,
+   "2019/2020": 161,
+   "2020/2021": 156,
+   "2021/2022": 158,
+   "2022/2023": 170,
+   "2023/2024": 180,
+   "2024/2025": 185
+  },
+  {
+   "metric": "m_shots_per90",
+   "null_total": 606,
+   "2019/2020": 83,
+   "2020/2021": 91,
+   "2021/2022": 93,
+   "2022/2023": 107,
+   "2023/2024": 120,
+   "2024/2025": 112
+  },
+  {
+   "metric": "m_starts",
+   "null_total": 2,
+   "2019/2020": 1,
+   "2020/2021": 0,
+   "2021/2022": 0,
+   "2022/2023": 0,
+   "2023/2024": 0,
+   "2024/2025": 1
+  },
+  {
+   "metric": "m_successful_crosses",
+   "null_total": 1346,
+   "2019/2020": 199,
+   "2020/2021": 209,
+   "2021/2022": 217,
+   "2022/2023": 232,
+   "2023/2024": 251,
+   "2024/2025": 238
+  },
+  {
+   "metric": "m_tackles",
+   "null_total": 634,
+   "2019/2020": 90,
+   "2020/2021": 97,
+   "2021/2022": 100,
+   "2022/2023": 113,
+   "2023/2024": 121,
+   "2024/2025": 113
+  },
+  {
+   "metric": "m_tackles_per90",
+   "null_total": 634,
+   "2019/2020": 90,
+   "2020/2021": 97,
+   "2021/2022": 100,
+   "2022/2023": 113,
+   "2023/2024": 121,
+   "2024/2025": 113
+  },
+  {
+   "metric": "m_touches",
+   "null_total": 606,
+   "2019/2020": 83,
+   "2020/2021": 91,
+   "2021/2022": 93,
+   "2022/2023": 107,
+   "2023/2024": 120,
+   "2024/2025": 112
+  },
+  {
+   "metric": "m_touches_opposition_box",
+   "null_total": 683,
+   "2019/2020": 101,
+   "2020/2021": 107,
+   "2021/2022": 111,
+   "2022/2023": 116,
+   "2023/2024": 125,
+   "2024/2025": 123
+  },
+  {
+   "metric": "m_yellow_cards",
+   "null_total": 371,
+   "2019/2020": 46,
+   "2020/2021": 52,
+   "2021/2022": 52,
+   "2022/2023": 68,
+   "2023/2024": 82,
+   "2024/2025": 71
+  }
+ ],
+ "missing_feature_count_distribution": [
+  {
+   "season": "2019/2020",
+   "min_missing": 9,
+   "median_missing": 16.0,
+   "max_missing": 53
+  },
+  {
+   "season": "2020/2021",
+   "min_missing": 10,
+   "median_missing": 12.0,
+   "max_missing": 48
+  },
+  {
+   "season": "2021/2022",
+   "min_missing": 8,
+   "median_missing": 12.0,
+   "max_missing": 48
+  },
+  {
+   "season": "2022/2023",
+   "min_missing": 10,
+   "median_missing": 12.0,
+   "max_missing": 48
+  },
+  {
+   "season": "2023/2024",
+   "min_missing": 8,
+   "median_missing": 12.0,
+   "max_missing": 48
+  },
+  {
+   "season": "2024/2025",
+   "min_missing": 8,
+   "median_missing": 10.0,
+   "max_missing": 52
+  }
+ ]
+}

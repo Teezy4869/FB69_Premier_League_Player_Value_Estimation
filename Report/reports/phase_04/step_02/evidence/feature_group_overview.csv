@@ -1,0 +1,10 @@
+analysis_group,features,conditional_or_pending,median_missing_pct_applicable,max_missing_pct_applicable,strongly_right_skewed,values_beyond_3iqr
+1 Player context and age,1,0,0,0,0,0
+2 Playing time and participation,3,0,0.0364033,7.24427,0,0
+3 Attacking,9,1,21.1867,44.2665,9,329
+4 Expected (model-based) metrics,4,1,20.0582,31.3069,4,234
+5 Passing and possession,10,3,15.2166,41.7546,6,196
+6 Defensive,14,4,21.7328,80.6698,9,104
+7 Discipline and fouls,4,0,16.1267,21.5144,3,229
+8 Goalkeeping,7,4,3.8835,31.5534,1,0
+9 Overall match rating,1,0,5.71533,5.71533,0,0

@@ -1,0 +1,111 @@
+{
+ "identities_processed": 1343,
+ "identities_without_candidates": 0,
+ "mapped_pairs_found_in_candidates": 1340,
+ "mapped_identities": 1340,
+ "mapped_pairs_with_block": {
+  "EXACT_NAME": 1302,
+  "DOB_EXACT": 1337,
+  "DOB_NEAR": 0,
+  "BIRTH_YEAR_NAME": 1310,
+  "ROSTER_NAME": 1324,
+  "GAME_SET": 1163
+ },
+ "mapped_pairs_lost_if_block_removed": {
+  "EXACT_NAME": 0,
+  "DOB_EXACT": 0,
+  "DOB_NEAR": 0,
+  "BIRTH_YEAR_NAME": 0,
+  "ROSTER_NAME": 0,
+  "GAME_SET": 0
+ },
+ "mapped_pairs_by_block_count": {
+  "5": 1127,
+  "3": 41,
+  "4": 167,
+  "2": 5
+ },
+ "lowest_name_similarity_of_mapped_pairs": [
+  [
+   50.0,
+   "Kiko",
+   "Kiko Femenía"
+  ],
+  [
+   52.2,
+   "Adrian | Adrián",
+   "Adrián San Miguel"
+  ],
+  [
+   52.6,
+   "Quina",
+   "Domingos Quina"
+  ],
+  [
+   57.1,
+   "Toti Gomes",
+   "Toti"
+  ],
+  [
+   58.3,
+   "Trincao | Trincão",
+   "Francisco Trincão"
+  ],
+  [
+   62.1,
+   "Juan Hernández",
+   "Cucho Hernández"
+  ],
+  [
+   63.2,
+   "Wesley",
+   "Wesley Moraes"
+  ],
+  [
+   66.7,
+   "Alisson Becker",
+   "Alisson"
+  ]
+ ],
+ "mapped_pairs_rank_1": 1340,
+ "mapped_pairs_not_rank_1": [],
+ "false_dob_near_flags_on_exact_dates": 0,
+ "mapped_pairs_near_blocking_floor": {
+  "dob_exact_within_10_of_floor": 0,
+  "without_game_set_block": 177,
+  "with_under_3_fotmob_games": 165
+ },
+ "mapped_pair_stays_rank_1_of_1340": {
+  "baseline": 1340,
+  "name_similarity_half": 1340,
+  "name_similarity_x1.5": 1340,
+  "name_similarity_zero": 1339,
+  "name_subset_half": 1340,
+  "name_subset_x1.5": 1340,
+  "name_subset_zero": 1340,
+  "dob_exact_half": 1340,
+  "dob_exact_x1.5": 1340,
+  "dob_exact_zero": 1340,
+  "dob_near_half": 1340,
+  "dob_near_x1.5": 1340,
+  "dob_near_zero": 1340,
+  "dob_same_year_half": 1340,
+  "dob_same_year_x1.5": 1340,
+  "dob_same_year_zero": 1340,
+  "game_set_jaccard_half": 1340,
+  "game_set_jaccard_x1.5": 1340,
+  "game_set_jaccard_zero": 1339,
+  "nationality_half": 1340,
+  "nationality_x1.5": 1340,
+  "nationality_zero": 1340,
+  "position_half": 1340,
+  "position_x1.5": 1340,
+  "position_zero": 1340
+ },
+ "double_counting": {
+  "subset_true_among_mapped": 1319,
+  "mean_similarity_when_subset": 99.61,
+  "note": "name_subset and name_similarity both read names, so names can earn up to 40 points. Game Jaccard, birth date, nationality and position read other fields.",
+  "score_max_points": 100
+ }
+}

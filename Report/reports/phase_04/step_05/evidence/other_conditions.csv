@@ -1,0 +1,10 @@
+condition,topic,evidence,handling
+ISS-28,key_passes excluded,m_key_passes null on 2747 of 2747 rows; s_key_passes UNSUPPORTED on 2747,Excluded; no data to assess
+P4-A04,Present-day nationality excluded,"2747 rows with a value, 88 distinct values; collected November 2026",Not a historical fact; excluded
+DQ-RS5-04,Starts greater than appearances,"6 rows, seasons ['2020/2021']",Kept as published; affects start-share ratios only
+RS5-13,Historical source revisions,expected_goals 34; minutes_played 3; rating 58,Later source value kept; values may differ from what was visible at season end
+RD-01,Old valuation labels,12 usable targets older than 365 days (max 731),Kept; weak labels; owner decision open
+ISS-04,Unresolved identities,"2 rows (REVIEW_REQUIRED, no target)",Human review required; not adjudicated
+P4-B02,Conflicting cells,accurate_passes_per90 1; goals_prevented 18; rating 17,Null and traceable; never zero
+P4-B02,Unverified-position cells,"17899 cells: 17787 on outfield rows (GK-only metrics), 112 on GK rows",Not applicable; never zero
+ISS-27,Rows without target,"50: ONLY_VALUATIONS_AFTER_CUTOFF 37, NO_VALUATION_HISTORY 11, NO_ELIGIBLE_IDENTITY_MATCH 2",Kept in the dataset; no target imputed

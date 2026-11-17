@@ -1,0 +1,10 @@
+{
+ "rows": 187,
+ "by_reason": {
+  "NEW_AUTO_EXACT": 136,
+  "REVIEW_REQUIRED": 51
+ },
+ "identities": 165,
+ "source_run": "data/holdout_2025_26/entity_resolution/matching_v2_1__reviews_none",
+ "output_sha256": "123f411c445f69090213b3131dec122cf52d1d51b0b9bde625dfdc00901a28e6"
+}

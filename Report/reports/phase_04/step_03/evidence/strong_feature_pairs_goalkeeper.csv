@@ -1,0 +1,9 @@
+feature_a,feature_b,spearman,pearson_raw,n_pairs,relation
+m_appearances,m_starts,0.996055,0.999246,205,playing-time measures
+m_saves,m_goals_conceded,0.951098,0.939289,198,same metric family (Goalkeeping)
+m_appearances,m_saves,0.94538,0.93556,198,volume metric scales with playing time
+m_starts,m_saves,0.94437,0.934865,198,volume metric scales with playing time
+m_appearances,m_goals_conceded,0.910581,0.897873,198,volume metric scales with playing time
+m_starts,m_goals_conceded,0.909682,0.89664,198,volume metric scales with playing time
+m_starts,m_clean_sheets,0.882811,0.844686,198,volume metric scales with playing time
+m_appearances,m_clean_sheets,0.881554,0.843554,198,volume metric scales with playing time

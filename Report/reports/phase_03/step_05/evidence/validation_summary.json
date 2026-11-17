@@ -1,0 +1,173 @@
+{
+ "generated_at_utc": "2026-11-05T02:29:00.769366+00:00",
+ "checks": 31,
+ "passed": 31,
+ "failed": 0,
+ "results": [
+  {
+   "check": "row count equals frozen Confirmed population",
+   "status": "PASS",
+   "detail": 3262
+  },
+  {
+   "check": "one row per canonical player-season",
+   "status": "PASS",
+   "detail": 3262
+  },
+  {
+   "check": "one row per FotMob player-season",
+   "status": "PASS",
+   "detail": 3262
+  },
+  {
+   "check": "distinct players",
+   "status": "PASS",
+   "detail": 1343
+  },
+  {
+   "check": "no key is null",
+   "status": "PASS",
+   "detail": 0
+  },
+  {
+   "check": "no Confirmed row lost and none added",
+   "status": "PASS",
+   "detail": {
+    "lost": 0,
+    "extra": 0
+   }
+  },
+  {
+   "check": "no Unverified row entered",
+   "status": "PASS",
+   "detail": 0
+  },
+  {
+   "check": "population status is Confirmed appeared only",
+   "status": "PASS",
+   "detail": 0
+  },
+  {
+   "check": "crosswalk key unique",
+   "status": "PASS",
+   "detail": 0
+  },
+  {
+   "check": "crosswalk TM ID unique",
+   "status": "PASS",
+   "detail": 0
+  },
+  {
+   "check": "target key unique",
+   "status": "PASS",
+   "detail": 0
+  },
+  {
+   "check": "FotMob feature values and nulls identical to source",
+   "status": "PASS",
+   "detail": {
+    "cells_different": 0,
+    "columns": 106
+   }
+  },
+  {
+   "check": "no null feature became zero",
+   "status": "PASS",
+   "detail": 0
+  },
+  {
+   "check": "target fields identical to target dataset",
+   "status": "PASS",
+   "detail": 0
+  },
+  {
+   "check": "no selected valuation after cutoff",
+   "status": "PASS",
+   "detail": 0
+  },
+  {
+   "check": "age equals cutoff minus date",
+   "status": "PASS",
+   "detail": 0
+  },
+  {
+   "check": "missing target stays null, no zero",
+   "status": "PASS",
+   "detail": 0
+  },
+  {
+   "check": "missing target count",
+   "status": "PASS",
+   "detail": 67
+  },
+  {
+   "check": "no future valuation date exceeds a later valuation substitute",
+   "status": "PASS",
+   "detail": 0
+  },
+  {
+   "check": "target value equals original CSV row",
+   "status": "PASS",
+   "detail": 0
+  },
+  {
+   "check": "unresolved identities retained without target",
+   "status": "PASS",
+   "detail": 3
+  },
+  {
+   "check": "no automated match labeled human",
+   "status": "PASS",
+   "detail": 0
+  },
+  {
+   "check": "adjudicated rows name an automated adjudicator",
+   "status": "PASS",
+   "detail": 0
+  },
+  {
+   "check": "2019/20 rows retained and flagged",
+   "status": "PASS",
+   "detail": 515
+  },
+  {
+   "check": "April 2020 batch flagged on 491 rows, values unchanged",
+   "status": "PASS",
+   "detail": 491
+  },
+  {
+   "check": "multi-club classes reconcile (61 + 19 = 80)",
+   "status": "PASS",
+   "detail": {
+    "SINGLE_CLUB": 3182,
+    "MULTI_CLUB_CONFIRMED_APPEARANCES": 61,
+    "MULTI_CLUB_SQUAD_ONLY": 19
+   }
+  },
+  {
+   "check": "multi-club players are not duplicated",
+   "status": "PASS",
+   "detail": 0
+  },
+  {
+   "check": "club evidence retained separately",
+   "status": "PASS",
+   "detail": 3342
+  },
+  {
+   "check": "no forbidden present-day or future column",
+   "status": "PASS",
+   "detail": []
+  },
+  {
+   "check": "every column has a role",
+   "status": "PASS",
+   "detail": 180
+  },
+  {
+   "check": "target and audit columns are not predictors",
+   "status": "PASS",
+   "detail": 108
+  }
+ ]
+}

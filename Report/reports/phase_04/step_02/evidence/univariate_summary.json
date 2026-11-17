@@ -1,0 +1,173 @@
+{
+ "dataset": "data/releases/fb69_player_season_integrated_rs5_v1/player_season_integrated_rs5_v1.parquet",
+ "sha256_verified": true,
+ "scope_check": {
+  "season": {
+   "2020/2021": 524,
+   "2021/2022": 537,
+   "2022/2023": 554,
+   "2023/2024": 570,
+   "2024/2025": 562
+  },
+  "season_id": {
+   "15382": 524,
+   "16390": 537,
+   "17664": 554,
+   "20720": 570,
+   "23685": 562
+  }
+ },
+ "scope_id": "rs5_v1",
+ "scope_check_derived_target_season_table": {
+  "season": {
+   "2020/2021": 1,
+   "2021/2022": 1,
+   "2022/2023": 1,
+   "2023/2024": 1,
+   "2024/2025": 1
+  }
+ },
+ "target": {
+  "n": 2697.0,
+  "mean": 19259306.637004077,
+  "std": 20433237.142912664,
+  "min": 100000.0,
+  "p01": 200000.0,
+  "p05": 800000.0,
+  "p10": 1500000.0,
+  "p25": 5000000.0,
+  "p50": 13000000.0,
+  "p75": 25000000.0,
+  "p90": 45000000.0,
+  "p95": 60000000.0,
+  "p99": 90000000.0,
+  "max": 200000000.0,
+  "iqr": 20000000.0,
+  "skew": 2.3064014038984584,
+  "kurtosis": 8.709426384329786,
+  "zero_pct": 0.0,
+  "upper_1_5iqr": 151.0,
+  "upper_3iqr": 32.0,
+  "lower_1_5iqr": 0.0,
+  "lower_3iqr": 0.0,
+  "mean_to_median_ratio": 1.4814851259233905,
+  "shape": "strongly right-skewed",
+  "rows_total": 2747.0,
+  "rows_missing_target": 50.0
+ },
+ "target_log10": {
+  "n": 2697.0,
+  "mean": 7.006568482745921,
+  "std": 0.5815345968926555,
+  "min": 5.0,
+  "p01": 5.301029995663981,
+  "p05": 5.903089986991944,
+  "p10": 6.176091259055681,
+  "p25": 6.698970004336019,
+  "p50": 7.113943352306837,
+  "p75": 7.3979400086720375,
+  "p90": 7.653212513775344,
+  "p95": 7.778151250383644,
+  "p99": 7.954242509439325,
+  "max": 8.301029995663981,
+  "iqr": 0.6989700043360187,
+  "skew": -0.844969034802515,
+  "kurtosis": 0.46458184606719566,
+  "zero_pct": 0.0,
+  "upper_1_5iqr": 0.0,
+  "upper_3iqr": 0.0,
+  "lower_1_5iqr": 79.0,
+  "lower_3iqr": 0.0,
+  "mean_to_median_ratio": NaN,
+  "shape": "moderately left-skewed",
+  "rows_total": 2747.0,
+  "rows_missing_target": 50.0
+ },
+ "tail_consistency": {
+  "upper_3iqr_rows": 32,
+  "upper_3iqr_players": 17,
+  "with_previous_valuation": 32,
+  "ratio_to_previous_median": 1.0,
+  "ratio_to_previous_min": 0.8333,
+  "ratio_to_previous_max": 1.4444,
+  "previous_value_median_eur": 110000000.0,
+  "tail_rows_by_season": {
+   "2020/2021": 7,
+   "2021/2022": 5,
+   "2022/2023": 4,
+   "2023/2024": 7,
+   "2024/2025": 9
+  },
+  "tail_rows_by_position": {
+   "GK": 0,
+   "DEF": 1,
+   "MID": 14,
+   "FWD": 17
+  }
+ },
+ "granularity": {
+  "distinct_values": 84,
+  "multiple_of_100k_pct": 99.14720059325177,
+  "multiple_of_1m_pct": 86.91138301816834,
+  "multiple_of_5m_pct": 40.748980348535405,
+  "most_common_eur": {
+   "10000000": 133,
+   "25000000": 129,
+   "15000000": 116,
+   "20000000": 114,
+   "12000000": 107,
+   "18000000": 102,
+   "22000000": 101,
+   "35000000": 97,
+   "8000000": 97,
+   "5000000": 94
+  }
+ },
+ "detailed_block_missing": {
+  "outfield_rows_with_minutes": 2541,
+  "rows_without_detailed_stats": 317,
+  "median_minutes": 14.0,
+  "max_minutes": 344.0,
+  "share_under_90_minutes_pct": 89.27444794952682,
+  "median_null_metrics": 46.0,
+  "target_coverage_pct": 86.75078864353313,
+  "by_season": {
+   "2020/2021": 50,
+   "2021/2022": 51,
+   "2022/2023": 68,
+   "2023/2024": 80,
+   "2024/2025": 68
+  }
+ },
+ "age_overall": {
+  "n": 2747.0,
+  "mean": 26.548656716417913,
+  "std": 4.434195899900038,
+  "min": 15.87,
+  "p01": 18.1192,
+  "p05": 19.536,
+  "p10": 20.646,
+  "p25": 23.285,
+  "p50": 26.39,
+  "p75": 29.72,
+  "p90": 32.424,
+  "p95": 34.03,
+  "p99": 36.757799999999996,
+  "max": 40.65,
+  "iqr": 6.434999999999999,
+  "skew": 0.1934961742228906,
+  "kurtosis": -0.4810967590316683,
+  "zero_pct": 0.0,
+  "upper_1_5iqr": 6.0,
+  "upper_3iqr": 0.0,
+  "lower_1_5iqr": 0.0,
+  "lower_3iqr": 0.0
+ },
+ "features_analysed": 53,
+ "dataset_sha256_after": "4d94ec73cfb9d72421fb2bbb1d7976bcf29f8a4f6cc985435955e574b072eedd",
+ "versions": {
+  "python": "3.13.13",
+  "pandas": "3.1.0",
+  "numpy": "2.5.4"
+ }
+}

@@ -1,0 +1,313 @@
+# CLAUDE.md — FB69 Project Guide
+
+> Read this file before inspecting, planning, editing, or executing any project task. It defines the project context, approved decisions, technical constraints, data contracts, and working rules for Claude Code.
+
+## 1. Project Overview
+
+**Project name:** FB69  
+**Research topic:** Football player market value estimation  
+**Primary scope:** English Premier League (EPL), seasons 2019/20 through 2024/25.  
+**Core objective:** Build a reproducible player-season dataset that combines FotMob performance features with historical Transfermarkt market valuations, then use the resulting dataset for later exploratory analysis and machine-learning experiments.
+
+Phase 3 is the **Transfermarkt Data Integration** phase. Its job is to obtain and audit a suitable existing Transfermarkt dataset, normalize the relevant records, resolve player identities between FotMob and Transfermarkt, construct a time-valid season-end market-value target, and integrate that target with the frozen FotMob population.
+
+Phase 3 is a data engineering and data-quality phase. It must not prematurely select, fit, or optimize predictive models. Modeling and broader exploratory analysis belong to later phases.
+
+## 2. Approved Research Decisions
+
+Treat the following decisions as locked unless the project owner explicitly changes them:
+
+| Decision | Approved value | Implementation meaning |
+|---|---|---|
+| FotMob population | `confirmed` only | Use only Confirmed Player–Season records from the frozen FotMob v3.1 release. Exclude Unverified records from the modeling population, but preserve their audit counts and exclusion rationale. |
+| Expected FotMob population | 3,262 Confirmed Player–Season records | This is a reconciliation checkpoint, not permission to fabricate or force records. Verify it against the actual frozen input. These are player-season rows, not unique players. |
+| Research seasons | 2019/20–2024/25 | Six EPL seasons. |
+| Target cutoff | `season_end` | For each season, use its official EPL season end date as the valuation cutoff. Verify and document the date from a reliable official source or approved project input. |
+| Target selection | Latest valuation on or before cutoff | For player `p` and season `s`, select the latest valid Transfermarkt valuation where `valuation_date <= season_end_date`. Never use a valuation after the cutoff. |
+| Entity matching | `hybrid` | Combine deterministic identifiers, candidate generation/fuzzy comparison, and human review. Fuzzy similarity alone must never confirm a match. |
+| Transfermarkt acquisition | Existing dataset first | Investigate and use a suitable pre-existing dataset/release. Do not build a crawler or scrape Transfermarkt as a fallback. |
+| Main performance feature source | FotMob v3.1 | Keep FotMob as the authoritative source for performance features. Do not replace FotMob features with Transfermarkt appearances or statistics. |
+| Market-value target source | Transfermarkt historical valuation records | Use the historical valuation table/history, not a current player-profile market-value field. |
+
+The current working source candidate is **dcaribou/transfermarkt-datasets**:  
+https://github.com/dcaribou/transfermarkt-datasets
+
+A related dataset distribution has been referred to as **Player Scores** on Kaggle:  
+https://www.kaggle.com/datasets/davidcariboo/player-scores
+
+These are candidates, not pre-approved facts about the current release. Verify the exact snapshot, schema, coverage, license, provenance, and availability before use. Do not assume a particular table or column exists until the actual source has been inspected.
+
+## 3. Scope and Non-Goals
+
+### In scope
+
+- Inspect the existing repository and frozen FotMob v3.1 inputs.
+- Audit candidate Transfermarkt dataset availability, provenance, license, schema, and temporal coverage.
+- Acquire a suitable existing snapshot without scraping.
+- Normalize relevant Transfermarkt player, club, competition, and valuation records as supported by the source.
+- Build and evaluate FotMob-to-Transfermarkt player crosswalks.
+- Construct historical season-end market-value targets.
+- Join targets to the frozen FotMob player-season population.
+- Produce quality reports, manifests, tests, and reproducibility documentation.
+
+### Out of scope
+
+- Crawling or scraping Transfermarkt pages.
+- Replacing FotMob performance data with Transfermarkt performance data.
+- Training or tuning prediction models during Phase 3.
+- Adding infrastructure that is not necessary for this prototype (Docker, orchestration platforms, hosted databases, distributed processing, or complex services).
+- Silently imputing missing performance features or missing market-value targets.
+- Rewriting or deleting raw source data.
+
+## 4. Data Architecture and Technology
+
+Use a simple, reproducible, file-based pipeline. Follow the repository's existing conventions where they are sound; do not restructure the repository merely to match a proposed layout.
+
+Logical data layers:
+
+1. **Source / Raw:** immutable source snapshots and frozen FotMob inputs. Preserve original bytes and provenance. Never edit source files in place.
+2. **Staging:** inspected, typed, normalized, and auditable intermediate tables. Retain source identifiers and traceable source fields.
+3. **Curated / Integrated:** canonical player crosswalk, player-season target table, and final integrated player-season dataset.
+
+Preferred tools:
+
+- Python for data processing and validation.
+- DuckDB for querying local tabular datasets, especially a DuckDB source snapshot when available.
+- Parquet for typed analytical outputs.
+- CSV for human-review queues and exchange files.
+- YAML or JSON for explicit configuration and manifests.
+- pytest or the repository's existing test framework for automated checks.
+
+Do not install packages globally. Use the repository's existing virtual environment or create/use a project-local `.venv` only when necessary and permitted by repository conventions. Do not introduce Docker.
+
+### Suggested project organization
+
+This is a target organization, not an instruction to blindly create duplicate folders. Inspect the actual repository first and adapt paths while preserving the same logical separation.
+
+```text
+FB69/
+├── CLAUDE.md
+├── data/
+│   ├── fotmob/releases/v3_1/          # frozen FotMob source
+│   └── transfermarkt/
+│       ├── source/                    # immutable downloaded snapshot
+│       ├── staging/                   # normalized intermediate data
+│       ├── curated/                   # validated reusable tables
+│       └── metadata/                  # source manifest, schema, checksums
+├── phase3/
+│   ├── config/                        # season, matching, integration configs
+│   ├── foundation/
+│   ├── acquisition/
+│   ├── normalization/
+│   ├── entity_resolution/
+│   │   ├── candidates/
+│   │   ├── review/
+│   │   └── output/
+│   ├── temporal_alignment/
+│   ├── integration/
+│   ├── validation/
+│   ├── outputs/
+│   │   ├── crosswalk/
+│   │   ├── targets/
+│   │   ├── integrated/
+│   │   └── review/
+│   ├── reports/
+│   └── documentation/
+├── tests/
+│   ├── unit/
+│   ├── integration/
+│   └── acceptance/
+└── documentation/
+```
+
+## 5. Canonical Data Grain and Contracts
+
+### 5.1 Canonical grain
+
+The main integrated dataset must contain **exactly one row per canonical player × season**. The business key is:
+
+`canonical_player_id + season`
+
+The expected population starts from the frozen FotMob v3.1 Confirmed Player–Season records. Do not infer that 3,262 rows represent 3,262 distinct people.
+
+### 5.2 Core logical entities
+
+Use source-native names only after schema inspection. The following are logical entities, not guaranteed source table or column names:
+
+- `fotmob_player_season`: frozen Confirmed FotMob player-season feature rows.
+- `tm_player`: normalized Transfermarkt player entities and stable source IDs.
+- `tm_valuation_history`: historical valuation observations, with player ID, valuation date, value, currency/unit, and provenance where available.
+- `player_crosswalk`: mapping between FotMob identity and Transfermarkt identity, including decision evidence and review status.
+- `player_season_target`: one target decision per canonical player-season, including selected valuation date, cutoff, value, staleness, and target status.
+- `player_season_integrated`: final one-row-per-player-season dataset.
+
+### 5.3 Missing data
+
+- Preserve missing values as missing/null. Never silently convert missing values to zero.
+- Do not impute target values during Phase 3.
+- Do not discard unmatched players, missing targets, or ambiguous cases from audit outputs.
+- Any exclusion from the final modeling-ready subset must have an explicit reason and a count in the report.
+
+## 6. Entity Resolution Rules
+
+Use a hybrid process with deterministic matching first, candidate generation second, and human review for uncertainty.
+
+Potential evidence, subject to actual source availability:
+
+- Stable source IDs or an independently verified ID bridge.
+- Player full name and normalized name variants.
+- Date of birth.
+- Nationality.
+- Historical club/team evidence for the relevant season.
+- Position as supporting evidence only.
+
+Rules:
+
+- Never confirm a match using name similarity alone.
+- Never assume FotMob player IDs and Transfermarkt player IDs are interchangeable.
+- Do not use present-day club, age, or profile fields as historical facts without historical evidence.
+- Preserve raw names and raw identifiers alongside normalized comparison fields.
+- Ambiguous candidates must go to a review queue, not be auto-selected.
+- Record the matching method, confidence/evidence, decision status, reviewer, and review date.
+
+Recommended statuses (adapt only with documented justification):
+
+- `AUTO_EXACT`
+- `AUTO_HIGH_CONFIDENCE`
+- `REVIEW_REQUIRED`
+- `MANUAL_CONFIRMED`
+- `UNMATCHED`
+- `AMBIGUOUS`
+
+Confidence thresholds must be explicit in configuration, justified by a labeled validation sample, and approved by the project owner. Do not invent thresholds or silently change them.
+
+## 7. Temporal Alignment and Target Rules
+
+For each season, establish the official EPL season end date and store it in a season configuration with source/evidence and timezone/date interpretation documented.
+
+For each matched player-season:
+
+1. Filter to valid historical Transfermarkt valuation records for that Transfermarkt player ID.
+2. Keep only observations with `valuation_date <= season_end_date`.
+3. Select the latest eligible valuation date.
+4. Retain the selected value, date, original currency/unit, source record identifier, cutoff date, and calculation provenance.
+5. Calculate valuation age/staleness: `season_end_date - valuation_date`.
+6. If multiple conflicting records exist on the same latest date, flag them for investigation; do not select arbitrarily.
+
+Audit staleness using these reporting bins:
+
+- 0–30 days
+- 31–60 days
+- 61–90 days
+- 91–180 days
+- More than 180 days
+
+A 90-day stale-target boundary is a candidate for later analysis, **not a locked exclusion rule**. Preserve the exact staleness in days and report distributions before recommending any filtering policy.
+
+Recommended target statuses:
+
+- `VALID`
+- `STALE_TARGET`
+- `TARGET_MISSING`
+- `INVALID_VALUATION`
+- `AMBIGUOUS_VALUATION`
+
+Do not use a valuation after the season end cutoff, even if it is closer in time. Do not substitute `players.market_value_in_eur` or `highest_market_value_in_eur` for historical valuation history.
+
+## 8. Integration and Leakage Controls
+
+- Start the integration from the frozen FotMob Confirmed Player–Season population; use a controlled left join to preserve the population.
+- Join through the reviewed crosswalk and canonical player-season key.
+- Validate join cardinality before and after every merge. A many-to-many join is a blocking defect.
+- Multi-club players must remain one player-season row. Aggregate the FotMob season-level features according to their existing definitions and retain club-level evidence separately where needed for audit.
+- Do not duplicate a player's season-level target because they played for multiple clubs.
+- Keep target provenance and feature provenance independently traceable.
+- Features must represent information available within the approved observation window and no later than the season-end cutoff. Audit feature windows, especially time-dependent features such as xG/xA.
+- Do not use future valuations, post-cutoff performance, current profile attributes, or post-season facts as historical predictors.
+- Produce a leakage audit documenting each feature's source, temporal window, and any unresolved risk.
+
+## 9. Required Outputs and Deliverables
+
+Names may be adapted to established repository conventions, but equivalent outputs must be produced and documented.
+
+### Data outputs
+
+- `source_manifest.json`
+- `schema_snapshot.json`
+- normalized Transfermarkt player table (for example `tm_players.parquet`)
+- normalized Transfermarkt valuation history (for example `tm_valuation_history.parquet`)
+- `player_crosswalk.parquet` plus human-review queue (CSV)
+- `player_season_target.parquet`
+- `player_season_integrated_v1.parquet`
+- `integration_manifest.json`
+
+### Reports and documentation
+
+- Transfermarkt source audit.
+- Transfermarkt schema and temporal coverage audit.
+- Valuation coverage and staleness report.
+- Identity feasibility and matching evaluation report.
+- Target construction report.
+- Integration and cardinality audit.
+- `LEAKAGE_AUDIT.md`
+- `ISSUE_TRACKER.md`
+- `PHASE3_FINAL_REPORT.md`
+
+Every output must identify its inputs, transformation/config version, generation timestamp, relevant code version or commit when available, row counts, and validation status.
+
+## 10. Phase 3 Execution Plan: Five Prompt Steps
+
+Execute the five prompts supplied by the project owner sequentially. Each prompt is a separate work unit and must stop at its stated gate. Do not continue to a later step automatically.
+
+1. **Step 1 — Reconnaissance, input freeze, and source feasibility:** inspect repository/FotMob inputs; reconcile population; audit Transfermarkt dataset candidate, schema, license, provenance, six-season valuation coverage, and identity feasibility. Produce a go/conditional-go/no-go recommendation. Do not begin scraping or silently acquire an unapproved source.
+2. **Step 2 — Snapshot acquisition and normalization:** after the owner approves the source decision, acquire the selected existing snapshot, preserve immutable source bytes, record checksums/provenance, inspect schema, and build normalized staging/curated tables.
+3. **Step 3 — Hybrid entity resolution:** generate deterministic matches and candidate queues, calibrate on a labeled sample, create a reviewable crosswalk, and leave unresolved records unresolved.
+4. **Step 4 — Season-end target construction:** verify season cutoff dates, select the latest eligible historical valuation on/before cutoff, compute staleness, and produce target coverage and temporal audits.
+5. **Step 5 — Controlled integration and final acceptance:** join targets to the frozen FotMob population, perform cardinality/missingness/leakage/reproducibility checks, and deliver the final dataset and Phase 3 report.
+
+Each step must read the previous step's reports and outputs rather than assuming success. If a required prior gate is absent or failed, stop and report the blocker.
+
+## 11. Mandatory Engineering and Collaboration Rules
+
+1. **Inspect before editing.** First inspect repository structure, existing documentation, data contracts, configuration, tests, and available inputs. Do not assume file paths or schemas.
+2. **Plan before implementation.** Before modifying files, summarize intended changes, affected paths, dependencies, and tests. Follow the prompt's approval gates.
+3. **No destructive operations.** Never overwrite or delete raw source data. Never drop records before writing an auditable exclusion report. Do not modify frozen FotMob v3.1 inputs.
+4. **No fabricated data.** Never create synthetic player records, valuations, IDs, match decisions, source metadata, or test outcomes to make counts look correct. Clearly label test fixtures as synthetic and keep them separate from research outputs.
+5. **No unsupported assumptions.** Inspect schemas and sample rows before writing SQL or transformation code. Document unavailable source fields rather than inventing them.
+6. **No unauthorized scope expansion.** No crawler, Docker, model training, new database server, or complex infrastructure. Ask for approval when a source, threshold, or scope decision is not covered by this file.
+7. **Reproducibility.** Make transformations deterministic where possible; use explicit configuration; log input/output row counts; retain manifests, checksums, and validation results.
+8. **Testing.** Add or update unit, integration, and acceptance tests for data transformations and invariants. Run relevant tests and report actual results. Do not claim tests passed when they were not run.
+9. **Data quality.** Validate uniqueness, nulls, types, date ranges, allowed statuses, currency units, duplicates, referential integrity, and join cardinality.
+10. **Human review.** Keep ambiguous entity matches and conflicting valuations in review queues. Do not make irreversible decisions on behalf of the project owner.
+11. **Security and environment.** Do not expose secrets or credentials in code, logs, reports, or commits. Do not install packages globally. Do not use Docker.
+12. **Communication.** At the end of every step, provide: summary, changed/created files, commands run, tests and outcomes, row counts, unresolved issues, gate assessment, and the exact decision/input required from the project owner.
+
+## 12. Acceptance Gates
+
+- **G0 — Foundation ready:** frozen FotMob v3.1 location and checksum recorded; Confirmed population reconciled; six season cutoff configurations verified; data contract documented.
+- **G1 — Source feasible:** Transfermarkt source provenance/license/schema are understood; relevant historical valuation coverage for all six seasons is measured; identity feasibility is assessed; limitations and acquisition decision are explicit.
+- **G2 — Normalization valid:** source snapshot is immutable and traceable; normalized tables have verified types, IDs, dates, units, duplicate handling, and row-count reconciliation.
+- **G3 — Crosswalk defensible:** one-to-one/expected cardinality constraints are checked; labeled review sample is evaluated; ambiguous/unmatched cases are retained; critical false matches are resolved or explicitly quarantined.
+- **G4 — Targets temporally valid:** every selected valuation is on/before cutoff; same-date conflicts are handled; staleness and missingness are reported; target provenance is complete.
+- **G5 — Integration valid:** one row per canonical player-season; source population is reconciled; no unintended row multiplication; missingness is preserved; leakage and reproducibility audits are complete.
+
+A gate may be `PASS`, `CONDITIONAL PASS`, or `FAIL`. Explain evidence and unresolved conditions. A `CONDITIONAL PASS` must list precisely what remains blocked and must not be represented as a full pass.
+
+## 13. Definition of Done for Phase 3
+
+Phase 3 is complete only when:
+
+- The source and license decision is documented and approved.
+- Frozen FotMob population counts are reconciled.
+- Transfermarkt source snapshot and normalized data are traceable and reproducible.
+- Crosswalk decisions and review evidence are preserved.
+- Season-end targets obey the no-future-valuation rule.
+- Missing targets and stale targets are transparently reported, not hidden or imputed.
+- The integrated dataset has exactly one row per canonical player-season and preserves the intended FotMob population.
+- Data-quality, integration, and leakage tests/audits have actual recorded outcomes.
+- `PHASE3_FINAL_REPORT.md`, `LEAKAGE_AUDIT.md`, `ISSUE_TRACKER.md`, and manifests are present and consistent with the generated data.
+- The project owner has reviewed and accepted the final gate.
+
+---
+
+**Default operating principle:** preserve evidence, expose uncertainty, and prefer a smaller defensible dataset over a larger dataset built on unverifiable matches or temporally invalid targets.

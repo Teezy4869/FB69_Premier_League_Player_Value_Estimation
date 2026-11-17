@@ -1,0 +1,5 @@
+scale,fence,lower_fence,upper_fence,below,above
+raw_eur,1.5 IQR,-2.5e+07,5.5e+07,0,151
+raw_eur,3.0 IQR,-5.5e+07,8.5e+07,0,32
+log10_eur,1.5 IQR,447214,2.79508e+08,79,0
+log10_eur,3.0 IQR,40000,3.125e+09,0,0

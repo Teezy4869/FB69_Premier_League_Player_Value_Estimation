@@ -1,0 +1,225 @@
+{
+  "project": "FB69 — Football Player Market Value Estimation",
+  "phase": "Phase 2B.1-R — Post-Collection Remediation",
+  "steps_completed": [
+    "Step 01",
+    "Step 02",
+    "Step 03",
+    "Step 04",
+    "Step 05",
+    "Step 06",
+    "Step 07",
+    "Step 08",
+    "Step 09"
+  ],
+  "current_status": "COMPLETED",
+  "final_remediation_verdict": "GO",
+  "phase_transition": "READY_FOR_TRANSFERMARKT_INTEGRATION",
+  "timestamp_utc": "2026-11-03T05:07:00.000000+00:00",
+  "environment": {
+    "workspace": "D:/PTIT/Hoc_may/FB69",
+    "python_version": "3.14.6",
+    "test_runner": "unittest discover -s tests -v"
+  },
+  "release_v3": {
+    "release_directory": "data/releases/fotmob_epl_2019_2025_v3",
+    "release_version": "v3",
+    "file_count": 39,
+    "manifest_sha256_sealed": true,
+    "quality_checks_passed": 29,
+    "quality_checks_total": 29,
+    "curated_confirmed_appeared_rows": 3262,
+    "curated_confirmed_appeared_cols": 114,
+    "curated_metrics_wide_rows": 4052,
+    "curated_metrics_wide_cols": 114
+  },
+  "deliverables": {
+    "final_acceptance_report": "reports/phase_02b1_remediation/phase_02b1_remediation_final_report.md",
+    "validation_report": "reports/phase_02b1_remediation/remediation_validation_report.md",
+    "release_comparison_report": "reports/phase_02b1_remediation/release_v2_vs_v3_comparison.md",
+    "final_issue_tracker": "reports/phase_02b1_remediation/final_issue_tracker.csv",
+    "handoff_document": "reports/phase_02b1_remediation/REMEDIATION_HANDOFF.md",
+    "state_file": "reports/phase_02b1_remediation/remediation_state.json",
+    "release_v3_manifest": "data/releases/fotmob_epl_2019_2025_v3/metadata/release_manifest.json",
+    "seasonal_acceptance_reports": [
+      "reports/phase_02b1_remediation/acceptance/season_2019_2020_acceptance.md",
+      "reports/phase_02b1_remediation/acceptance/season_2020_2021_acceptance.md",
+      "reports/phase_02b1_remediation/acceptance/season_2021_2022_acceptance.md",
+      "reports/phase_02b1_remediation/acceptance/season_2022_2023_acceptance.md",
+      "reports/phase_02b1_remediation/acceptance/season_2023_2024_acceptance.md",
+      "reports/phase_02b1_remediation/acceptance/season_2024_2025_acceptance.md"
+    ]
+  },
+  "test_summary": {
+    "total_tests": 162,
+    "legacy_tests": 97,
+    "remediation_coverage_tests": 10,
+    "remediation_steps_03_04_tests": 14,
+    "remediation_steps_05_06_tests": 14,
+    "remediation_step_07_tests": 15,
+    "remediation_release_v3_tests": 12,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "exit_code": 0
+  },
+  "step_01_summary": {
+    "verdict": "PASS",
+    "files_verified": 35,
+    "sha256_match": true,
+    "tables_verified": 10,
+    "baseline_counts_verified": true
+  },
+  "step_02_summary": {
+    "verdict": "PASS",
+    "reproduced_anomalies": 41,
+    "resolved_anomalies": 41,
+    "remaining_coverage_anomalies": 0,
+    "max_coverage_ratio": 1.0,
+    "verified_gk_population_by_season": {
+      "2019/2020": 37,
+      "2020/2021": 41,
+      "2021/2022": 42,
+      "2022/2023": 39,
+      "2023/2024": 40,
+      "2024/2025": 44
+    }
+  },
+  "step_03_summary": {
+    "verdict": "PASS",
+    "total_player_seasons": 4052,
+    "confirmed_appeared": 3262,
+    "unverified": 586,
+    "confirmed_non_appeared": 204,
+    "conflicting": 0,
+    "multi_club_player_seasons": 83,
+    "confirmed_multi_club_appeared": 61,
+    "total_matchday_squad_observations": 89392,
+    "unresolved_substitute_records_audited": 16314,
+    "unobserved_bench_status_count": 16314,
+    "unparsed_substitution_events": 0,
+    "missing_match_event_logs": 0
+  },
+  "step_04_summary": {
+    "verdict": "PASS",
+    "legacy_gates_migrated": 12,
+    "normalization_gates_superseded": 6,
+    "season_acceptance_gates_superseded": 6,
+    "migrated_state": "SUPERSEDED",
+    "remaining_planned_tasks": 0,
+    "dag_predecessors_satisfied": true,
+    "successor_tasks_impact": 0,
+    "task_events_logged": 12,
+    "versioned_manifest": "data/phase_02b1/manifests/collection_manifest_v2b1r.sqlite"
+  },
+  "step_05_summary": {
+    "verdict": "PASS",
+    "total_conflicts_audited": 575,
+    "conflicts_by_season": {
+      "2019/2020": 22,
+      "2020/2021": 36,
+      "2021/2022": 49,
+      "2022/2023": 60,
+      "2023/2024": 46,
+      "2024/2025": 362
+    },
+    "root_causes": {
+      "ROUNDING_DIFFERENCE": 444,
+      "AGGREGATION_MISMATCH": 59,
+      "SOURCE_REVISION": 54,
+      "DEFINITION_MISMATCH": 18,
+      "PARSER_ERROR": 0,
+      "SCOPE_MISMATCH": 0,
+      "UNRESOLVED": 0
+    },
+    "resolved_conflicts": 539,
+    "remaining_conflicts_preserved_null": 36,
+    "resolution_breakdown": {
+      "rounding_resolved_to_player_stats": 444,
+      "source_revision_and_aggregation_resolved_to_player_stats": 95,
+      "incompatible_definition_preserved_null": 18,
+      "unresolved_preserved_null": 18
+    }
+  },
+  "step_06_summary": {
+    "verdict": "PASS",
+    "season_2019_2020_xa_recovery": {
+      "baseline_observations": 0,
+      "recovered_observations": 96,
+      "remaining_missing": 419,
+      "baseline_coverage_pct": 0.0,
+      "recovered_coverage_pct": 18.64,
+      "zero_fabricated": 0
+    },
+    "season_2019_2020_xg_recovery": {
+      "baseline_observations": 67,
+      "recovered_observations": 2,
+      "total_observations": 69,
+      "baseline_coverage_pct": 13.01,
+      "recovered_coverage_pct": 13.4,
+      "zero_fabricated": 0
+    },
+    "multi_season_fallbacks_evaluated": 99,
+    "provisional_wide_table": {
+      "row_count": 4052,
+      "column_count": 114,
+      "baseline_conflicting_cells": 575,
+      "remaining_conflicting_cells": 36,
+      "promoted_observed_cells": 539
+    }
+  },
+  "step_07_summary": {
+    "verdict": "PASS",
+    "total_completed_matches": 2280,
+    "quarantined_matches": 1,
+    "fully_resolved_matches": 2280,
+    "pma_rows_total": 89392,
+    "pma_breakdown": {
+      "STARTED": 50160,
+      "SUBSTITUTED_ON": 15628,
+      "UNUSED_SUBSTITUTE": 23604,
+      "UNKNOWN": 0,
+      "CONFLICTING": 0
+    },
+    "unknown_reduction": 16314,
+    "population_summary": {
+      "confirmed_appeared": 3262,
+      "confirmed_non_appeared": 790,
+      "unverified": 0,
+      "conflicting": 0,
+      "total_player_seasons": 4052
+    },
+    "live_http_requests_issued": 0,
+    "evidence_classes_applied": {
+      "DIRECT_STARTER_EVIDENCE": 50160,
+      "DIRECT_SUBSTITUTION_ON_EVIDENCE": 15628,
+      "COMPLETE_UNUSED_SUBSTITUTE_EVIDENCE": 23604,
+      "INSUFFICIENT_EVIDENCE": 0,
+      "CONFLICTING_EVIDENCE": 0
+    }
+  },
+  "step_08_summary": {
+    "verdict": "PASS",
+    "release_directory": "data/releases/fotmob_epl_2019_2025_v3",
+    "files_assembled": 39,
+    "automated_checks_passed": 29,
+    "automated_checks_total": 29,
+    "recomputed_coverage_cells": 318,
+    "coverage_anomalies": 0,
+    "max_coverage_fraction": 1.0,
+    "sha256_sealed": true
+  },
+  "step_09_summary": {
+    "verdict": "PASS",
+    "seasons_accepted": [
+      {"season": "2019/2020", "status": "PASS"},
+      {"season": "2020/2021", "status": "PASS"},
+      {"season": "2021/2022", "status": "PASS"},
+      {"season": "2022/2023", "status": "PASS"},
+      {"season": "2023/2024", "status": "PASS"},
+      {"season": "2024/2025", "status": "PASS"}
+    ],
+    "overall_gate_verdict": "GO",
+    "transfermarkt_integration_ready": true
+  }
+}

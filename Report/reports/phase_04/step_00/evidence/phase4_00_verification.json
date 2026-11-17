@@ -1,0 +1,561 @@
+{
+ "dataset_path": "data/releases/fb69_player_season_integrated_rs5_v1/player_season_integrated_rs5_v1.parquet",
+ "dataset_sha256": "4d94ec73cfb9d72421fb2bbb1d7976bcf29f8a4f6cc985435955e574b072eedd",
+ "dataset_sha256_matches_expected": true,
+ "manifest": {
+  "files_listed": 21,
+  "files_verified": 21,
+  "failed": [],
+  "unlisted_files_on_disk": [],
+  "listed_missing": [],
+  "manifest_dataset_sha256": "4d94ec73cfb9d72421fb2bbb1d7976bcf29f8a4f6cc985435955e574b072eedd",
+  "manifest_dataset_rows": 2747,
+  "seasons": [
+   "2020/2021",
+   "2021/2022",
+   "2022/2023",
+   "2023/2024",
+   "2024/2025"
+  ],
+  "excluded_seasons": [
+   "2019/2020"
+  ],
+  "scope_id": "rs5_v1"
+ },
+ "integration_manifest_mentions_dataset_sha": true,
+ "scope_snapshot_identical_to_config": true,
+ "research_scope_yaml_sha256": "a028b7d54dd1e8f6a7d6ea447d6c03152796b7a8d9617f0758a8407fc87fc4bf",
+ "release_doc_copies_identical": {
+  "docs/PHASE4_CONDITIONS.md": true,
+  "docs/ISSUE_TRACKER.md": true,
+  "docs/DATA_CONTRACT_RS5.md": true,
+  "docs/LEAKAGE_AUDIT.md": true
+ },
+ "rows": 2747,
+ "columns": 175,
+ "unique_players": 1228,
+ "unique_fotmob_ids": 1228,
+ "season_distribution": {
+  "2020/2021": 524,
+  "2021/2022": 537,
+  "2022/2023": 554,
+  "2023/2024": 570,
+  "2024/2025": 562
+ },
+ "season_label_id_pairs": [
+  [
+   "2020/2021",
+   "15382"
+  ],
+  [
+   "2021/2022",
+   "16390"
+  ],
+  [
+   "2022/2023",
+   "17664"
+  ],
+  [
+   "2023/2024",
+   "20720"
+  ],
+  [
+   "2024/2025",
+   "23685"
+  ]
+ ],
+ "pk_duplicates": 0,
+ "pk_nulls": 0,
+ "fotmob_key_duplicates": 0,
+ "duplicate_full_rows": 0,
+ "target_usable": 2697,
+ "target_value_nonnull": 2697,
+ "target_missing": 50,
+ "usable_iff_value": 0,
+ "target_coverage_pct": 98.18,
+ "target_missing_reasons": {
+  "ONLY_VALUATIONS_AFTER_CUTOFF": 37,
+  "NO_VALUATION_HISTORY": 11,
+  "NO_ELIGIBLE_IDENTITY_MATCH": 2
+ },
+ "target_status": {
+  "STALE_TARGET": 1527,
+  "VALID": 1170,
+  "TARGET_MISSING": 50
+ },
+ "target_eur": {
+  "median": 13000000.0,
+  "mean": 19259306.637004077,
+  "max": 200000000,
+  "min": 100000
+ },
+ "target_currency": {
+  "EUR": 2697,
+  "None": 50
+ },
+ "usable_by_season": {
+  "2020/2021": 515,
+  "2021/2022": 528,
+  "2022/2023": 542,
+  "2023/2024": 567,
+  "2024/2025": 545
+ },
+ "dictionary_rows": 175,
+ "dictionary_columns_equal_schema_order": true,
+ "dictionary_type_mismatches": [],
+ "dtype_counts": {
+  "string": 96,
+  "int64": 9,
+  "bool": 3,
+  "double": 58,
+  "date32[day]": 3,
+  "int32": 6
+ },
+ "role_counts": {
+  "KEY": 4,
+  "IDENTITY_LINK": 1,
+  "IDENTITY_CONTEXT": 4,
+  "POPULATION_EVIDENCE": 8,
+  "CLUB_CONTEXT": 8,
+  "CONTEXT_FEATURE": 2,
+  "TARGET": 2,
+  "TARGET_METADATA": 11,
+  "TARGET_AUDIT_NOT_A_PREDICTOR": 3,
+  "IDENTITY_QUALITY": 11,
+  "TEMPORAL_ALIGNMENT_NOT_A_PREDICTOR": 8,
+  "QUALITY_FLAG": 1,
+  "PROVENANCE": 6,
+  "FEATURE_FOTMOB_METRIC": 53,
+  "FEATURE_STATUS_FOTMOB": 53
+ },
+ "candidate_predictor_true": 108,
+ "candidate_predictor_roles": [
+  "CONTEXT_FEATURE",
+  "FEATURE_FOTMOB_METRIC",
+  "FEATURE_STATUS_FOTMOB"
+ ],
+ "forbidden_columns_flagged_candidate": [],
+ "scope_labels": [
+  "2020/2021",
+  "2021/2022",
+  "2022/2023",
+  "2023/2024",
+  "2024/2025"
+ ],
+ "scope_ids": [
+  "15382",
+  "16390",
+  "17664",
+  "20720",
+  "23685"
+ ],
+ "scope_excluded": [
+  "2019/2020"
+ ],
+ "scope_cutoffs": {
+  "2020/2021": "2021-05-23",
+  "2021/2022": "2022-05-22",
+  "2022/2023": "2023-05-28",
+  "2023/2024": "2024-05-19",
+  "2024/2025": "2025-05-25"
+ },
+ "scope_check_dataset": {
+  "season": {
+   "2020/2021": 524,
+   "2021/2022": 537,
+   "2022/2023": 554,
+   "2023/2024": 570,
+   "2024/2025": 562
+  },
+  "season_id": {
+   "15382": 524,
+   "16390": 537,
+   "17664": 554,
+   "20720": 570,
+   "23685": 562
+  }
+ },
+ "rows_2019_20": 0,
+ "research_scope_id_values": {
+  "rs5_v1": 2747
+ },
+ "dataset_version_values": {
+  "player_season_integrated_rs5_v1": 2747
+ },
+ "cutoff_by_season": {
+  "2020/2021": "2021-05-23",
+  "2021/2022": "2022-05-22",
+  "2022/2023": "2023-05-28",
+  "2023/2024": "2024-05-19",
+  "2024/2025": "2025-05-25"
+ },
+ "cutoff_consistent": true,
+ "valuations_after_cutoff": 0,
+ "rs5_parquet_scope_scan": {
+  "files": 26,
+  "checked": 23,
+  "ok": 23,
+  "failed": [],
+  "no_season_column": [
+   "data/releases/fotmob_epl_2020_2025_rs5_v1/normalized/players.parquet",
+   "data/research_rs5/entity_resolution/matching_v2_1_rs5__reviews_none/matching_candidates.parquet",
+   "data/research_rs5/entity_resolution/matching_v2_1_rs5__reviews_none/player_crosswalk.parquet"
+  ]
+ },
+ "excluded_season_string_hits_in_rs5_csv": [
+  {
+   "path": "data/releases/fb69_player_season_integrated_rs5_v1/docs/leakage_audit.csv",
+   "matches": 1
+  }
+ ],
+ "multi_season_players": 687,
+ "rows_of_multi_season_players": 2206,
+ "crosswalk_status": {
+  "AUTO_EXACT": 2663,
+  "AUTO_ADJUDICATED": 82,
+  "REVIEW_REQUIRED": 2
+ },
+ "identity_evidence_tier": {
+  "AUTO_EXACT_VALIDATED": 2214,
+  "AUTO_EXACT_NOT_INDEPENDENTLY_VALIDATED": 449,
+  "AUTO_ADJUDICATED_INDEPENDENT_RULE": 76,
+  "AUTO_ADJUDICATED_EXTERNAL": 6,
+  "UNRESOLVED": 2
+ },
+ "identity_rs5_validation_label": {
+  "CONFIRMED_MATCH": 2287,
+  "INCONCLUSIVE": 458,
+  "None": 2
+ },
+ "identity_human_reviewed": {
+  "False": 2747
+ },
+ "players_by_crosswalk_status": {
+  "AUTO_EXACT": 1190,
+  "AUTO_ADJUDICATED": 36,
+  "REVIEW_REQUIRED": 2
+ },
+ "rows_not_auto_exact_validated_or_inconclusive": 533,
+ "rd02_rows": [
+  {
+   "fotmob_player_id": "111930",
+   "name": "Ahmed El Mohamady",
+   "season": "2020/2021",
+   "tm_id": "66333",
+   "crosswalk_status": "AUTO_ADJUDICATED",
+   "tier": "AUTO_ADJUDICATED_INDEPENDENT_RULE",
+   "label": "INCONCLUSIVE",
+   "adjudicator": "automated:claude-opus-5-5",
+   "target_usable": true
+  },
+  {
+   "fotmob_player_id": "656562",
+   "name": "Wesley",
+   "season": "2020/2021",
+   "tm_id": "381362",
+   "crosswalk_status": "AUTO_ADJUDICATED",
+   "tier": "AUTO_ADJUDICATED_INDEPENDENT_RULE",
+   "label": "INCONCLUSIVE",
+   "adjudicator": "automated:claude-opus-5-5",
+   "target_usable": true
+  },
+  {
+   "fotmob_player_id": "656562",
+   "name": "Wesley",
+   "season": "2021/2022",
+   "tm_id": "381362",
+   "crosswalk_status": "AUTO_ADJUDICATED",
+   "tier": "AUTO_ADJUDICATED_INDEPENDENT_RULE",
+   "label": "INCONCLUSIVE",
+   "adjudicator": "automated:claude-opus-5-5",
+   "target_usable": true
+  }
+ ],
+ "adjudicated_inconclusive_rows": [
+  [
+   "Ahmed El Mohamady",
+   "2020/2021",
+   "AUTO_ADJUDICATED",
+   "INCONCLUSIVE"
+  ],
+  [
+   "H\u00e1kon Rafn Valdimarsson",
+   "2024/2025",
+   "AUTO_ADJUDICATED",
+   "INCONCLUSIVE"
+  ],
+  [
+   "Joshua King",
+   "2024/2025",
+   "AUTO_ADJUDICATED",
+   "INCONCLUSIVE"
+  ],
+  [
+   "Joshua Onomah",
+   "2020/2021",
+   "AUTO_ADJUDICATED",
+   "INCONCLUSIVE"
+  ],
+  [
+   "Joshua Onomah",
+   "2022/2023",
+   "AUTO_ADJUDICATED",
+   "INCONCLUSIVE"
+  ],
+  [
+   "Michael Olakigbe",
+   "2023/2024",
+   "AUTO_ADJUDICATED",
+   "INCONCLUSIVE"
+  ],
+  [
+   "Rasmus Kristensen",
+   "2022/2023",
+   "AUTO_ADJUDICATED",
+   "INCONCLUSIVE"
+  ],
+  [
+   "Wesley",
+   "2020/2021",
+   "AUTO_ADJUDICATED",
+   "INCONCLUSIVE"
+  ],
+  [
+   "Wesley",
+   "2021/2022",
+   "AUTO_ADJUDICATED",
+   "INCONCLUSIVE"
+  ]
+ ],
+ "unresolved_rows": [
+  [
+   "982620",
+   "Daniel Chesters",
+   "2021/2022",
+   "REVIEW_REQUIRED",
+   "NO_ELIGIBLE_IDENTITY_MATCH"
+  ],
+  [
+   "1188035",
+   "Jimi Tauriainen",
+   "2023/2024",
+   "REVIEW_REQUIRED",
+   "NO_ELIGIBLE_IDENTITY_MATCH"
+  ]
+ ],
+ "median_age_days": 150.0,
+ "pct_over_90": 56.62,
+ "appearances_after_valuation": {
+  "after": 24286,
+  "total": 55073,
+  "pct": 44.1
+ },
+ "minutes_after_valuation_pct": 43.66,
+ "staleness_bucket": {
+  "0-30": 27,
+  "31-60": 113,
+  "61-90": 1030,
+  "91-180": 1140,
+  ">180": 387
+ },
+ "rd01_over_365": [
+  [
+   "Khanya Leshabela",
+   "2020/2021",
+   "2019-05-23",
+   "731"
+  ],
+  [
+   "Alex Palmer",
+   "2024/2025",
+   "2023-06-01",
+   "724"
+  ],
+  [
+   "Wes Burns",
+   "2024/2025",
+   "2023-06-09",
+   "716"
+  ],
+  [
+   "Liam Delap",
+   "2021/2022",
+   "2020-10-13",
+   "586"
+  ],
+  [
+   "Jakub Stolarczyk",
+   "2024/2025",
+   "2023-10-27",
+   "576"
+  ],
+  [
+   "Christian Walton",
+   "2024/2025",
+   "2023-10-27",
+   "576"
+  ],
+  [
+   "Patson Daka",
+   "2024/2025",
+   "2023-10-27",
+   "576"
+  ],
+  [
+   "Alfie Dorrington",
+   "2024/2025",
+   "2023-12-19",
+   "523"
+  ],
+  [
+   "Dane Scarlett",
+   "2021/2022",
+   "2020-12-17",
+   "521"
+  ],
+  [
+   "Edmond-Paris Maghoma",
+   "2024/2025",
+   "2023-12-27",
+   "515"
+  ],
+  [
+   "Tyler Onyango",
+   "2021/2022",
+   "2021-03-18",
+   "430"
+  ],
+  [
+   "Harrison Ashby",
+   "2021/2022",
+   "2021-03-18",
+   "430"
+  ]
+ ],
+ "min_valuation_date": [
+  [
+   "2020/2021",
+   "Khanya Leshabela",
+   "2019-05-23",
+   "731"
+  ],
+  [
+   "2020/2021",
+   "Antwoine Hackford",
+   "2020-10-13",
+   "222"
+  ],
+  [
+   "2020/2021",
+   "Maxime Le Marchand",
+   "2020-10-13",
+   "222"
+  ]
+ ],
+ "valuations_before_first_match": 18,
+ "n_m": 53,
+ "n_s": 53,
+ "m_s_pairing_complete": true,
+ "key_passes_nonnull": 0,
+ "key_passes_status": {
+  "UNSUPPORTED": 2747
+ },
+ "clearances_nonnull_by_season": {
+  "2020/2021": 0,
+  "2021/2022": 33,
+  "2022/2023": 0,
+  "2023/2024": 51,
+  "2024/2025": 447
+ },
+ "clearances_per90_nonnull_by_season": {
+  "2020/2021": 0,
+  "2021/2022": 33,
+  "2022/2023": 0,
+  "2023/2024": 51,
+  "2024/2025": 447
+ },
+ "goals_prevented_nonnull_by_season": {
+  "2020/2021": 38,
+  "2021/2022": 41,
+  "2022/2023": 39,
+  "2023/2024": 36,
+  "2024/2025": 26
+ },
+ "xgot_nonnull_by_season": {
+  "2020/2021": 366,
+  "2021/2022": 378,
+  "2022/2023": 378,
+  "2023/2024": 390,
+  "2024/2025": 375
+ },
+ "touches_box_nonnull_by_season": {
+  "2020/2021": 417,
+  "2021/2022": 426,
+  "2022/2023": 438,
+  "2023/2024": 445,
+  "2024/2025": 439
+ },
+ "s_status_values_all_columns": {
+  "CONFLICTING": 36,
+  "MISSING": 27361,
+  "OBSERVED": 91289,
+  "OBSERVED_FALLBACK_LEADERBOARD": 402,
+  "OBSERVED_SOURCE_REVISED": 95,
+  "OBSERVED_ZERO": 5762,
+  "UNSUPPORTED": 2747,
+  "UNVERIFIED_POSITION": 17899
+ },
+ "s_types": [
+  "string"
+ ],
+ "metric_null_cells": {
+  "null": 48043,
+  "total": 145591,
+  "pct": 33.0
+ },
+ "null_metric_with_OBSERVED_status": {},
+ "mean_null_metrics_usable_vs_missing": [
+  [
+   false,
+   42.1,
+   50
+  ],
+  [
+   true,
+   17.03,
+   2697
+  ]
+ ],
+ "mean_null_metrics_by_position": [
+  [
+   "DEF",
+   15.01,
+   935
+  ],
+  [
+   "FWD",
+   17.92,
+   767
+  ],
+  [
+   "GK",
+   34.49,
+   206
+  ],
+  [
+   "MID",
+   15.69,
+   839
+  ]
+ ],
+ "starts_gt_appearances": 6,
+ "multi_club_rows": 73,
+ "nationality_nonnull": 2747,
+ "age_nulls": 0,
+ "position_group_values": {
+  "DEF": 935,
+  "FWD": 767,
+  "GK": 206,
+  "MID": 839
+ }
+}

@@ -1,0 +1,54 @@
+{
+ "dataset_sha256": "4d94ec73cfb9d72421fb2bbb1d7976bcf29f8a4f6cc985435955e574b072eedd",
+ "sha256_verified": true,
+ "scope_id": "rs5_v1",
+ "scope_check": {
+  "season": {
+   "2020/2021": 524,
+   "2021/2022": 537,
+   "2022/2023": 554,
+   "2023/2024": 570,
+   "2024/2025": 562
+  },
+  "season_id": {
+   "15382": 524,
+   "16390": 537,
+   "17664": 554,
+   "20720": 570,
+   "23685": 562
+  }
+ },
+ "rows_excluded_season": 0,
+ "consistency_all": true,
+ "consistency_failures": [],
+ "excluded_season_hits_in_evidence": 0,
+ "predictor_integrity_ok": true,
+ "eligibility_rebuild": {
+  "registered_sha256": "711cd3f668480332793786089c56206d469cef309242c225cfc1de5866b7098d",
+  "rebuilt_sha256": "711cd3f668480332793786089c56206d469cef309242c225cfc1de5866b7098d",
+  "identical": true,
+  "category_counts": {
+   "STATUS_MISSINGNESS": 53,
+   "CANDIDATE_PREDICTOR": 41,
+   "IDENTITY_METADATA": 33,
+   "CONDITIONAL_PREDICTOR": 21,
+   "TARGET": 16,
+   "TEMPORAL_AUDIT": 8,
+   "EXCLUDED_PREDICTOR": 3
+  }
+ },
+ "notebook": {
+  "cells": 319,
+  "code_cells": 138,
+  "executed_in_order": true,
+  "error_outputs": [],
+  "large_text_outputs": [],
+  "absolute_paths_in_source": []
+ },
+ "dataset_sha256_after": "4d94ec73cfb9d72421fb2bbb1d7976bcf29f8a4f6cc985435955e574b072eedd",
+ "versions": {
+  "python": "3.14.6",
+  "pandas": "3.1.0",
+  "numpy": "2.5.4"
+ }
+}

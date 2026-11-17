@@ -1,0 +1,7 @@
+season_label,player_id,metric_name,raw_path,rebuilt_value,observed_value,curated_value,raw_conflicts,status
+2019/2020,23229,goals,data/phase_02b1/raw/2019_2020/playerStats/cap_fc80b87f5ba1443e85bdb895238e9f02/response.json,3.0,3.0,3.0,0,PASS
+2020/2021,2802,goals,data/phase_02b1/raw/2020_2021/playerStats/cap_08c82d2aa7c748b7ba5bca34f0a3cfe0/response.json,0.0,0.0,0.0,0,PASS
+2021/2022,23293,goals,data/phase_02b1/raw/2021_2022/playerStats/cap_fa45253726414b67ab5bd3756d8d9137/response.json,1.0,1.0,1.0,0,PASS
+2022/2023,19243,goals,data/pilot/raw/2022_2023_playerStats_29483b34f1a8332b1a92.json,1.0,1.0,1.0,0,PASS
+2023/2024,23354,goals,data/phase_02b1/raw/2023_2024/playerStats/cap_11974fde13fc4783a4b166d2a6c7cb9a/response.json,0.0,0.0,0.0,0,PASS
+2024/2025,23354,goals,data/phase_02b1/raw/2024_2025/playerStats/cap_f01838ec3f954edb87e27a0d36a2f22c/response.json,1.0,1.0,1.0,0,PASS

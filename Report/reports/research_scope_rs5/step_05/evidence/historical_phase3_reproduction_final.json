@@ -1,0 +1,73 @@
+{
+ "generated_at_utc": "2026-11-07T13:59:35.090134+00:00",
+ "fotmob_preflight": {
+  "files_checked": 38,
+  "mismatches": 0,
+  "manifest_sha256": "9aa00b227b2dbf9a6004258ff94c25e825d7c5cfd45a365cb94f5f98863fbf93"
+ },
+ "stages_checked": 12,
+ "all_identical": true,
+ "failed": [],
+ "results": [
+  {
+   "stage": "1 raw snapshot",
+   "output": "7 files, hash check",
+   "identical": true
+  },
+  {
+   "stage": "2 normalization",
+   "output": "13 tables",
+   "identical": true
+  },
+  {
+   "stage": "3 identity validation",
+   "output": "auto_match_validation_all_1299.csv",
+   "identical": true
+  },
+  {
+   "stage": "3 adjudication",
+   "output": "automated_adjudications.csv",
+   "identical": true
+  },
+  {
+   "stage": "3 entity resolution",
+   "output": "player_crosswalk.parquet",
+   "identical": true
+  },
+  {
+   "stage": "3 entity resolution",
+   "output": "matching_candidates.parquet",
+   "identical": true
+  },
+  {
+   "stage": "3 entity resolution",
+   "output": "unresolved_identities.csv",
+   "identical": true
+  },
+  {
+   "stage": "4 targets",
+   "output": "player_season_target.parquet",
+   "identical": true
+  },
+  {
+   "stage": "4.1 audit",
+   "output": "temporal_alignment_by_player_season.parquet",
+   "identical": true
+  },
+  {
+   "stage": "4.1 audit",
+   "output": "target_quality_flags.parquet",
+   "identical": true
+  },
+  {
+   "stage": "5 integration",
+   "output": "player_season_integrated_v1.parquet",
+   "identical": true
+  },
+  {
+   "stage": "5 integration",
+   "output": "player_team_season_evidence.parquet",
+   "identical": true
+  }
+ ]
+}

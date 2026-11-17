@@ -1,0 +1,2 @@
+task_id,request_key,season_label,stage,resource_type,decision,schema_status,scope_status,error_classification,raw_path,capture_id,missing_value_count,note
+tsk_eac6ba248f4c17d39e9c21080c449cd44bb54595885ee75fa35144154d875908,,2019/2020,C,SEASON_STATS_GATE,VALIDATED,,,,,,0,All appended playerStats tasks validated; unresolved metric conflicts remain flagged

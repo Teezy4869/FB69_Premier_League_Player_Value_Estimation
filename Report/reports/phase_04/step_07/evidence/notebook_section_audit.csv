@@ -1,0 +1,8 @@
+section,cells,code_cells,markdown_cells,figures,markdown_before_first_code,interpretation_blocks,rd03_mentions,objective_stated,limitations_section,conclusion_section,causal_disclaimer
+4.1,34,18,16,7,True,7,0,True,False,True,True
+4.2,43,17,26,7,True,15,7,True,True,True,True
+4.3,41,15,26,7,True,12,10,True,True,True,True
+4.4,30,14,16,9,True,8,6,True,True,True,True
+4.5,40,16,24,9,True,11,7,True,True,True,True
+4.6,24,9,15,4,True,6,9,True,True,True,True
+4.7,12,3,9,1,True,2,5,True,True,True,True

@@ -1,0 +1,4 @@
+check,rows_compared,agree_within_0_1pp,max_abs_difference,reading
+save_percentage = saves / (saves + goals_conceded) x 100,197,197,0.05,consistent with the reported totals (rounding only)
+goals_conceded_per90 = goals_conceded x 90 / lineup minutes,198,198,4.44089e-16,identical: the rate is computed from lineup minutes that exist for every GK row
+clean_sheets <= appearances,198,198,,bound holds; clean sheets per match not verifiable from this dataset

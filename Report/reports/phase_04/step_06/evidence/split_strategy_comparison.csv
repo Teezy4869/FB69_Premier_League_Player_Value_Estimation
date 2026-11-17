@@ -1,0 +1,6 @@
+strategy,definition,properties,requirements,recommendation
+Random row split,Not allowed (RS5-11),Same player in train and test; inflated scores,-,Prohibited
+"Grouped by player (K-fold, players kept together)",Every player-season belongs to one fold,"No identity leakage; uses all five seasons; folds mix seasons, so the season batch effect is shared between train and test",Stratify or report by season and position; report a P4-B01 sensitivity run,Primary evaluation
+"Temporal hold-out (train earlier seasons, test 2024/25)","Train 2020/21-2023/24, test 2024/25","Matches the use case 'estimate this season's values from past seasons'; tests generalisation to a new batch; 74.7% of test rows belong to players seen in earlier seasons (138 new-player rows); shift in level, batch timing and clearances coverage",Report returning and new players separately; consider excluding test players from training as a stricter variant,Secondary evaluation
+Rolling origin (expanding window),Test 2021/22 ... 2024/25 in turn with earlier seasons as training,Several temporal estimates; first folds are small (515 training rows),Use if temporal stability matters,Optional
+Combined grouped + temporal,Temporal hold-out where test players are removed from training,"Strictest; smallest training set; answers 'new player, new season'",Owner choice,Optional stricter variant

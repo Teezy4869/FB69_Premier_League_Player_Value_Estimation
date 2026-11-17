@@ -1,0 +1,133 @@
+season_label,season_id,priority,group,metric_name,leaderboard_stat,source_title,unit,aggregation_type,source_field,expected_appeared_players,catalog_status,collection_state,pagination_contract,team_filter_contract
+2019/2020,14022,1,GENERAL,minutes_played,mins_played,Minutes played,minutes,total,statValue.value,515,PRESENT,CACHED,UNVERIFIED,UNVERIFIED
+2019/2020,14022,2,GENERAL,rating,rating,FotMob rating,FotMob rating points,rating,statValue.value,515,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2019/2020,14022,3,ATTACK,goals,goals,Top scorer,count,total,statValue.value,515,PRESENT,CACHED,UNVERIFIED,UNVERIFIED
+2019/2020,14022,4,ATTACK,assists,goal_assist,Assists,count,total,statValue.value,515,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2019/2020,14022,5,ATTACK,shots_per90,total_scoring_att,Shots per 90,count,per90,statValue.value,515,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2019/2020,14022,6,ATTACK,shots_on_target_per90,ontarget_scoring_att,Shots on target per 90,count,per90,statValue.value,515,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2019/2020,14022,7,ATTACK,big_chances_created,big_chance_created,Big chances created,count,total,statValue.value,515,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2019/2020,14022,8,EXPECTED,expected_goals,expected_goals,Expected goals (xG),expected goals,total,statValue.value,515,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2019/2020,14022,9,EXPECTED,expected_assists,expected_assists,Expected assist (xA),expected assists,total,statValue.value,515,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2019/2020,14022,10,PASSING,accurate_passes_per90,accurate_pass,Accurate passes per 90,count,per90,statValue.value,515,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2019/2020,14022,11,PASSING,chances_created,total_att_assist,Chances created,count,total,statValue.value,515,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2019/2020,14022,12,PASSING,accurate_long_passes_per90,accurate_long_balls,Accurate long balls per 90,count,per90,statValue.value,515,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2019/2020,14022,13,DEFENDING,tackles_per90,total_tackle,Tackles per 90,count,per90,statValue.value,515,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2019/2020,14022,14,DEFENDING,interceptions_per90,interception,Interceptions per 90,count,per90,statValue.value,515,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2019/2020,14022,15,DEFENDING,clearances_per90,effective_clearance,Clearances per 90,count,per90,statValue.value,515,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2019/2020,14022,16,DEFENDING,blocks_per90,outfielder_block,Blocks per 90,count,per90,statValue.value,515,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2019/2020,14022,17,DEFENDING,recoveries_per90,ball_recovery,Recoveries per 90,count,per90,statValue.value,515,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2019/2020,14022,18,GOALKEEPING,saves,saves,Saves per 90,count,total,substatValue.value,515,PRESENT,CACHED,UNVERIFIED,UNVERIFIED
+2019/2020,14022,19,GOALKEEPING,clean_sheets,clean_sheet,Clean sheets,count,total,statValue.value,515,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2019/2020,14022,20,GOALKEEPING,save_percentage,_save_percentage,Save percentage,percent,percentage,statValue.value,515,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2019/2020,14022,21,GOALKEEPING,goals_conceded_per90,goals_conceded,Goals conceded per 90,count,per90,statValue.value,515,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2019/2020,14022,22,GOALKEEPING,goals_prevented,_goals_prevented,Goals prevented,goal-equivalent,total,statValue.value,515,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2020/2021,15382,1,GENERAL,minutes_played,mins_played,Minutes played,minutes,total,statValue.value,524,PRESENT,CACHED,UNVERIFIED,UNVERIFIED
+2020/2021,15382,2,GENERAL,rating,rating,FotMob rating,FotMob rating points,rating,statValue.value,524,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2020/2021,15382,3,ATTACK,goals,goals,Top scorer,count,total,statValue.value,524,PRESENT,CACHED,UNVERIFIED,UNVERIFIED
+2020/2021,15382,4,ATTACK,assists,goal_assist,Assists,count,total,statValue.value,524,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2020/2021,15382,5,ATTACK,shots_per90,total_scoring_att,Shots per 90,count,per90,statValue.value,524,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2020/2021,15382,6,ATTACK,shots_on_target_per90,ontarget_scoring_att,Shots on target per 90,count,per90,statValue.value,524,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2020/2021,15382,7,ATTACK,big_chances_created,big_chance_created,Big chances created,count,total,statValue.value,524,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2020/2021,15382,8,EXPECTED,expected_goals,expected_goals,Expected goals (xG),expected goals,total,statValue.value,524,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2020/2021,15382,9,EXPECTED,expected_assists,expected_assists,Expected assist (xA),expected assists,total,statValue.value,524,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2020/2021,15382,10,PASSING,accurate_passes_per90,accurate_pass,Accurate passes per 90,count,per90,statValue.value,524,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2020/2021,15382,11,PASSING,chances_created,total_att_assist,Chances created,count,total,statValue.value,524,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2020/2021,15382,12,PASSING,accurate_long_passes_per90,accurate_long_balls,Accurate long balls per 90,count,per90,statValue.value,524,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2020/2021,15382,13,DEFENDING,tackles_per90,total_tackle,Tackles per 90,count,per90,statValue.value,524,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2020/2021,15382,14,DEFENDING,interceptions_per90,interception,Interceptions per 90,count,per90,statValue.value,524,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2020/2021,15382,15,DEFENDING,clearances_per90,effective_clearance,Clearances per 90,count,per90,statValue.value,524,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2020/2021,15382,16,DEFENDING,blocks_per90,outfielder_block,Blocks per 90,count,per90,statValue.value,524,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2020/2021,15382,17,DEFENDING,recoveries_per90,ball_recovery,Recoveries per 90,count,per90,statValue.value,524,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2020/2021,15382,18,GOALKEEPING,saves,saves,Saves per 90,count,total,substatValue.value,524,PRESENT,CACHED,UNVERIFIED,UNVERIFIED
+2020/2021,15382,19,GOALKEEPING,clean_sheets,clean_sheet,Clean sheets,count,total,statValue.value,524,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2020/2021,15382,20,GOALKEEPING,save_percentage,_save_percentage,Save percentage,percent,percentage,statValue.value,524,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2020/2021,15382,21,GOALKEEPING,goals_conceded_per90,goals_conceded,Goals conceded per 90,count,per90,statValue.value,524,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2020/2021,15382,22,GOALKEEPING,goals_prevented,_goals_prevented,Goals prevented,goal-equivalent,total,statValue.value,524,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2021/2022,16390,1,GENERAL,minutes_played,mins_played,Minutes played,minutes,total,statValue.value,537,PRESENT,CACHED,UNVERIFIED,UNVERIFIED
+2021/2022,16390,2,GENERAL,rating,rating,FotMob rating,FotMob rating points,rating,statValue.value,537,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2021/2022,16390,3,ATTACK,goals,goals,Top scorer,count,total,statValue.value,537,PRESENT,CACHED,UNVERIFIED,UNVERIFIED
+2021/2022,16390,4,ATTACK,assists,goal_assist,Assists,count,total,statValue.value,537,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2021/2022,16390,5,ATTACK,shots_per90,total_scoring_att,Shots per 90,count,per90,statValue.value,537,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2021/2022,16390,6,ATTACK,shots_on_target_per90,ontarget_scoring_att,Shots on target per 90,count,per90,statValue.value,537,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2021/2022,16390,7,ATTACK,big_chances_created,big_chance_created,Big chances created,count,total,statValue.value,537,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2021/2022,16390,8,EXPECTED,expected_goals,expected_goals,Expected goals (xG),expected goals,total,statValue.value,537,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2021/2022,16390,9,EXPECTED,expected_assists,expected_assists,Expected assist (xA),expected assists,total,statValue.value,537,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2021/2022,16390,10,PASSING,accurate_passes_per90,accurate_pass,Accurate passes per 90,count,per90,statValue.value,537,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2021/2022,16390,11,PASSING,chances_created,total_att_assist,Chances created,count,total,statValue.value,537,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2021/2022,16390,12,PASSING,accurate_long_passes_per90,accurate_long_balls,Accurate long balls per 90,count,per90,statValue.value,537,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2021/2022,16390,13,DEFENDING,tackles_per90,total_tackle,Tackles per 90,count,per90,statValue.value,537,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2021/2022,16390,14,DEFENDING,interceptions_per90,interception,Interceptions per 90,count,per90,statValue.value,537,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2021/2022,16390,15,DEFENDING,clearances_per90,effective_clearance,Clearances per 90,count,per90,statValue.value,537,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2021/2022,16390,16,DEFENDING,blocks_per90,outfielder_block,Blocks per 90,count,per90,statValue.value,537,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2021/2022,16390,17,DEFENDING,recoveries_per90,ball_recovery,Recoveries per 90,count,per90,statValue.value,537,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2021/2022,16390,18,GOALKEEPING,saves,saves,Saves per 90,count,total,substatValue.value,537,PRESENT,CACHED,UNVERIFIED,UNVERIFIED
+2021/2022,16390,19,GOALKEEPING,clean_sheets,clean_sheet,Clean sheets,count,total,statValue.value,537,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2021/2022,16390,20,GOALKEEPING,save_percentage,_save_percentage,Save percentage,percent,percentage,statValue.value,537,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2021/2022,16390,21,GOALKEEPING,goals_conceded_per90,goals_conceded,Goals conceded per 90,count,per90,statValue.value,537,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2021/2022,16390,22,GOALKEEPING,goals_prevented,_goals_prevented,Goals prevented,goal-equivalent,total,statValue.value,537,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2022/2023,17664,1,GENERAL,minutes_played,mins_played,Minutes played,minutes,total,statValue.value,554,PRESENT,CACHED,UNVERIFIED,UNVERIFIED
+2022/2023,17664,2,GENERAL,rating,rating,FotMob rating,FotMob rating points,rating,statValue.value,554,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2022/2023,17664,3,ATTACK,goals,goals,Top scorer,count,total,statValue.value,554,PRESENT,CACHED,UNVERIFIED,UNVERIFIED
+2022/2023,17664,4,ATTACK,assists,goal_assist,Assists,count,total,statValue.value,554,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2022/2023,17664,5,ATTACK,shots_per90,total_scoring_att,Shots per 90,count,per90,statValue.value,554,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2022/2023,17664,6,ATTACK,shots_on_target_per90,ontarget_scoring_att,Shots on target per 90,count,per90,statValue.value,554,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2022/2023,17664,7,ATTACK,big_chances_created,big_chance_created,Big chances created,count,total,statValue.value,554,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2022/2023,17664,8,EXPECTED,expected_goals,expected_goals,Expected goals (xG),expected goals,total,statValue.value,554,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2022/2023,17664,9,EXPECTED,expected_assists,expected_assists,Expected assist (xA),expected assists,total,statValue.value,554,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2022/2023,17664,10,PASSING,accurate_passes_per90,accurate_pass,Accurate passes per 90,count,per90,statValue.value,554,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2022/2023,17664,11,PASSING,chances_created,total_att_assist,Chances created,count,total,statValue.value,554,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2022/2023,17664,12,PASSING,accurate_long_passes_per90,accurate_long_balls,Accurate long balls per 90,count,per90,statValue.value,554,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2022/2023,17664,13,DEFENDING,tackles_per90,total_tackle,Tackles per 90,count,per90,statValue.value,554,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2022/2023,17664,14,DEFENDING,interceptions_per90,interception,Interceptions per 90,count,per90,statValue.value,554,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2022/2023,17664,15,DEFENDING,clearances_per90,effective_clearance,Clearances per 90,count,per90,statValue.value,554,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2022/2023,17664,16,DEFENDING,blocks_per90,outfielder_block,Blocks per 90,count,per90,statValue.value,554,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2022/2023,17664,17,DEFENDING,recoveries_per90,ball_recovery,Recoveries per 90,count,per90,statValue.value,554,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2022/2023,17664,18,GOALKEEPING,saves,saves,Saves per 90,count,total,substatValue.value,554,PRESENT,CACHED,UNVERIFIED,UNVERIFIED
+2022/2023,17664,19,GOALKEEPING,clean_sheets,clean_sheet,Clean sheets,count,total,statValue.value,554,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2022/2023,17664,20,GOALKEEPING,save_percentage,_save_percentage,Save percentage,percent,percentage,statValue.value,554,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2022/2023,17664,21,GOALKEEPING,goals_conceded_per90,goals_conceded,Goals conceded per 90,count,per90,statValue.value,554,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2022/2023,17664,22,GOALKEEPING,goals_prevented,_goals_prevented,Goals prevented,goal-equivalent,total,statValue.value,554,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2023/2024,20720,1,GENERAL,minutes_played,mins_played,Minutes played,minutes,total,statValue.value,570,PRESENT,CACHED,UNVERIFIED,UNVERIFIED
+2023/2024,20720,2,GENERAL,rating,rating,FotMob rating,FotMob rating points,rating,statValue.value,570,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2023/2024,20720,3,ATTACK,goals,goals,Top scorer,count,total,statValue.value,570,PRESENT,CACHED,UNVERIFIED,UNVERIFIED
+2023/2024,20720,4,ATTACK,assists,goal_assist,Assists,count,total,statValue.value,570,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2023/2024,20720,5,ATTACK,shots_per90,total_scoring_att,Shots per 90,count,per90,statValue.value,570,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2023/2024,20720,6,ATTACK,shots_on_target_per90,ontarget_scoring_att,Shots on target per 90,count,per90,statValue.value,570,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2023/2024,20720,7,ATTACK,big_chances_created,big_chance_created,Big chances created,count,total,statValue.value,570,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2023/2024,20720,8,EXPECTED,expected_goals,expected_goals,Expected goals (xG),expected goals,total,statValue.value,570,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2023/2024,20720,9,EXPECTED,expected_assists,expected_assists,Expected assist (xA),expected assists,total,statValue.value,570,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2023/2024,20720,10,PASSING,accurate_passes_per90,accurate_pass,Accurate passes per 90,count,per90,statValue.value,570,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2023/2024,20720,11,PASSING,chances_created,total_att_assist,Chances created,count,total,statValue.value,570,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2023/2024,20720,12,PASSING,accurate_long_passes_per90,accurate_long_balls,Accurate long balls per 90,count,per90,statValue.value,570,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2023/2024,20720,13,DEFENDING,tackles_per90,total_tackle,Tackles per 90,count,per90,statValue.value,570,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2023/2024,20720,14,DEFENDING,interceptions_per90,interception,Interceptions per 90,count,per90,statValue.value,570,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2023/2024,20720,15,DEFENDING,clearances_per90,effective_clearance,Clearances per 90,count,per90,statValue.value,570,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2023/2024,20720,16,DEFENDING,blocks_per90,outfielder_block,Blocks per 90,count,per90,statValue.value,570,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2023/2024,20720,17,DEFENDING,recoveries_per90,ball_recovery,Recoveries per 90,count,per90,statValue.value,570,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2023/2024,20720,18,GOALKEEPING,saves,saves,Saves per 90,count,total,substatValue.value,570,PRESENT,CACHED,UNVERIFIED,UNVERIFIED
+2023/2024,20720,19,GOALKEEPING,clean_sheets,clean_sheet,Clean sheets,count,total,statValue.value,570,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2023/2024,20720,20,GOALKEEPING,save_percentage,_save_percentage,Save percentage,percent,percentage,statValue.value,570,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2023/2024,20720,21,GOALKEEPING,goals_conceded_per90,goals_conceded,Goals conceded per 90,count,per90,statValue.value,570,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2023/2024,20720,22,GOALKEEPING,goals_prevented,_goals_prevented,Goals prevented,goal-equivalent,total,statValue.value,570,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2024/2025,23685,1,GENERAL,minutes_played,mins_played,Minutes played,minutes,total,statValue.value,562,PRESENT,CACHED,UNVERIFIED,UNVERIFIED
+2024/2025,23685,2,GENERAL,rating,rating,FotMob rating,FotMob rating points,rating,statValue.value,562,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2024/2025,23685,3,ATTACK,goals,goals,Top scorer,count,total,statValue.value,562,PRESENT,CACHED,UNVERIFIED,UNVERIFIED
+2024/2025,23685,4,ATTACK,assists,goal_assist,Assists,count,total,statValue.value,562,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2024/2025,23685,5,ATTACK,shots_per90,total_scoring_att,Shots per 90,count,per90,statValue.value,562,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2024/2025,23685,6,ATTACK,shots_on_target_per90,ontarget_scoring_att,Shots on target per 90,count,per90,statValue.value,562,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2024/2025,23685,7,ATTACK,big_chances_created,big_chance_created,Big chances created,count,total,statValue.value,562,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2024/2025,23685,8,EXPECTED,expected_goals,expected_goals,Expected goals (xG),expected goals,total,statValue.value,562,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2024/2025,23685,9,EXPECTED,expected_assists,expected_assists,Expected assist (xA),expected assists,total,statValue.value,562,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2024/2025,23685,10,PASSING,accurate_passes_per90,accurate_pass,Accurate passes per 90,count,per90,statValue.value,562,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2024/2025,23685,11,PASSING,chances_created,total_att_assist,Chances created,count,total,statValue.value,562,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2024/2025,23685,12,PASSING,accurate_long_passes_per90,accurate_long_balls,Accurate long balls per 90,count,per90,statValue.value,562,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2024/2025,23685,13,DEFENDING,tackles_per90,total_tackle,Tackles per 90,count,per90,statValue.value,562,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2024/2025,23685,14,DEFENDING,interceptions_per90,interception,Interceptions per 90,count,per90,statValue.value,562,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2024/2025,23685,15,DEFENDING,clearances_per90,effective_clearance,Clearances per 90,count,per90,statValue.value,562,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2024/2025,23685,16,DEFENDING,blocks_per90,outfielder_block,Blocks per 90,count,per90,statValue.value,562,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2024/2025,23685,17,DEFENDING,recoveries_per90,ball_recovery,Recoveries per 90,count,per90,statValue.value,562,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2024/2025,23685,18,GOALKEEPING,saves,saves,Saves per 90,count,total,substatValue.value,562,PRESENT,CACHED,UNVERIFIED,UNVERIFIED
+2024/2025,23685,19,GOALKEEPING,clean_sheets,clean_sheet,Clean sheets,count,total,statValue.value,562,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2024/2025,23685,20,GOALKEEPING,save_percentage,_save_percentage,Save percentage,percent,percentage,statValue.value,562,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2024/2025,23685,21,GOALKEEPING,goals_conceded_per90,goals_conceded,Goals conceded per 90,count,per90,statValue.value,562,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED
+2024/2025,23685,22,GOALKEEPING,goals_prevented,_goals_prevented,Goals prevented,goal-equivalent,total,statValue.value,562,PRESENT,PLANNED,UNVERIFIED,UNVERIFIED

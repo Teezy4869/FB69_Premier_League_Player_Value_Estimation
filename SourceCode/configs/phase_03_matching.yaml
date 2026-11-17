@@ -1,0 +1,83 @@
+# Hybrid entity resolution settings for FB69 Phase 3, Step 3.
+# Only exact name + exact birth date can create an automatic mapping.
+# Every other setting below only finds, orders or describes candidates for human review.
+# matching_v1 is the original. matching_v2 is a superseded draft that also mapped 2 thin cases; it was never used downstream.
+matching_version: matching_v2_1
+
+# Exact-rule settings. Not tunable thresholds: the rule uses equality and uniqueness.
+auto_exact:
+  require_unique_on_both_sides: true
+  send_club_contradiction_to_review: true
+
+# CLAUDE.md requires a labeled sample and owner approval before this tier can create mappings.
+# While disabled, qualifying identities remain REVIEW_REQUIRED and are only counted.
+auto_high_confidence:
+  enabled: false
+  owner_approved: false
+  labeled_sample_evaluated: false
+  proposed_criteria:
+    date_of_birth: exact
+    min_game_set_jaccard: 0.9
+    min_fotmob_games: 5
+    must_be_only_likely_candidate: true
+
+# Blocking is recall-oriented. These values choose which pairs a reviewer sees, never a match.
+blocking:
+  dob_exact_min_name_similarity: 40      # same birth date is rare, so a loose name check is enough
+  dob_near_min_name_similarity: 75       # near dates are weaker, so the name must agree more
+  roster_min_name_similarity: 70         # same club and season is a small pool
+  birth_year_min_name_similarity: 88     # a whole birth year is a large pool, so require a close name
+  game_set_min_jaccard: 0.8              # nearly identical appearance sets, regardless of name
+  game_set_min_shared_games: 3           # guards against teammates who overlap in only a game or two
+
+# Ranking points. These are ordering aids chosen by judgment, not probabilities.
+# Missing evidence earns no points, and score_available records the points that could be earned.
+scoring:
+  name_similarity: 35        # scaled by token-sort similarity
+  name_subset: 5             # one name's tokens all appear in the other, e.g. mononyms
+  dob_exact: 30
+  dob_near: 12               # one day apart, or day and month swapped
+  dob_same_year: 3
+  game_set_jaccard: 20       # scaled by Jaccard; game-level history is independent of names
+  nationality: 5             # support only: present-day and single-valued in Transfermarkt
+  position: 5                # support only: Transfermarkt position is a present-day profile value
+
+# Describes candidates to the reviewer. Does not create mappings.
+suggestion:
+  likely_min_name_similarity: 60
+  likely_min_jaccard: 0.8
+  near_dob_likely_min_name_similarity: 90
+  near_dob_likely_min_jaccard: 0.5
+  possible_min_name_similarity: 85
+
+review:
+  queue_candidates_per_identity: 20  # v1's cap of 5 hid one candidate
+
+# Spelling -> shared form, applied to both sources. Built from inspecting both vocabularies.
+nationality_aliases:
+  Republic of Ireland: Ireland
+  USA: United States
+  Ivory Coast: Cote d'Ivoire
+  Côte d'Ivoire: Cote d'Ivoire
+  Türkiye: Turkey
+  Turkiye: Turkey
+  Czechia: Czech Republic
+  Bosnia and Herzegovina: Bosnia-Herzegovina
+  Congo DR: DR Congo
+  Curaçao: Curacao
+  Korea Republic: Korea, South
+  South Korea: Korea, South
+  St. Kitts and Nevis: St. Kitts & Nevis
+
+position_map:
+  GK: Goalkeeper
+  DEF: Defender
+  MID: Midfield
+  FWD: Attack
+
+# Blank labels for a human. Sizes reflect what the sample must support.
+validation_sample:
+  seed: fb69-matching-v1
+  # Random AUTO_EXACT sample: 0 errors in about 300 gives a 95% lower bound near 99% precision.
+  auto_exact_random: 300
+  per_stratum: 40
